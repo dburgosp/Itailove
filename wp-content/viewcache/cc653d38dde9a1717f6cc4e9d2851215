@@ -1,0 +1,27 @@
+<?php echo $__env->make('layout.default__header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <?php echo $__env->make('core.style', [
+      "breakpoint__medium_up" => "
+        body {
+          padding: ". ( flo_get_option("flo-cube-pages__vertical-border") / 16 ) ."rem ". ( flo_get_option("flo-cube-pages__horizontal-border") / 16) ."rem;
+        }
+        .flo-header-section,
+        .flo-page-hero .flo-page-hero__slide-content {
+          height: calc(100vh - ". ( flo_get_option("flo-cube-pages__horizontal-border") / 16) ."rem);
+        }
+      "
+    ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <?php echo $__env->yieldContent('before-content'); ?>
+
+    <main class="flo_page_wrap <?php echo isset($flo_page_wrap__padding_top) ? $flo_page_wrap__padding_top : ""; ?>">
+      <div class="flo_page">
+        <?php echo $__env->yieldContent('content'); ?>
+      </div>
+      <?php if($layout_type && $layout_type != 'full_width'): ?>
+      <div class="flo_sidebar flo-post <?php echo $sidebar_container_class; ?>">
+        <?php dynamic_sidebar($sidebar) ?>
+      </div>
+      <?php endif; ?>
+    </main>
+    <?php echo $__env->yieldContent('after-content'); ?>
+    <?php echo $__env->make('components.flo-splash', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('layout.default__footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

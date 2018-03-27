@@ -1,0 +1,349 @@
+.flo-footer{
+  $b: 'flo-footer';
+  $gap-side: rem-calc(124);
+  position: relative;
+  width: 100%;
+  background-color: $color-black;
+  color: $color-white;
+
+  &__content{
+    margin: 0 auto;
+    width: calc(100% - #{$gap-side * 2});
+    padding-top: rem-calc(113);
+    padding-bottom: rem-calc(100);
+  }
+
+  &--sidebars{
+    &:first-child{
+      padding-top: rem-calc(30);
+    }
+    .column .widget:not(:first-child){
+      margin-top: rem-calc(30)
+    }
+  }
+  &-sidebars--full-width, &-sidebars--three-columns{
+    margin: 0 auto rem-calc(30);
+    width: calc(100% - 15.5rem);
+  }
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+    }
+
+      .flo-header__logo {
+        color: $color-white;
+        padding: 0;
+      }
+
+      .widget_nav_menu{
+        .menu{
+          li{
+            display: block;
+          }
+        }
+      }
+      &__menu {
+      }
+
+      &__contact-block {
+        font-family: $font-playfair;
+        font-style: italic;
+        font-size: rem-calc(14);
+        line-height: rem-calc(20.5);
+
+      }
+        &__newsletter-form {
+          margin-top: rem-calc(47);
+          display: flex;
+          align-items: stretch;
+          justify-content: space-between;
+          input.flo-footer__newsletter-form-email {
+            display: block;
+            flex-grow: 1;
+            border: 1px solid white;
+            border-right: none;
+            margin-bottom: 0;
+            height: auto;
+            padding-left: rem-calc(10);
+          }
+          input.flo-footer__newsletter-form-submit {
+            display: block;
+            background-color: white;
+            color: black;
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+        }
+        &__contact-block-message{
+          font-family: $font-playfair;
+          font-size: rem-calc(17.5);
+          line-height: rem-calc(16.5);
+          margin-bottom: rem-calc(16.5);
+        }
+        &__contact-block-email {
+
+        }
+        &__contact-block-phone {
+
+        }
+        &__contact-block-separator {
+          font-style: normal;
+          padding-left: rem-calc(23);
+          padding-right: rem-calc(22);
+        }
+
+      &__subscribe{
+        font-size: rem-calc(12);
+        text-transform: uppercase;
+        text-decoration: underline !important;
+        letter-spacing: 0.325em;
+      }
+
+      &__addons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: rem-calc(75);
+      }
+        &__addons-copyright {
+          font-family: $font-lato;
+          font-size: rem-calc(9.48);
+          letter-spacing: 0.3em;
+          text-transform: uppercase;
+        }
+        &__addons-social {
+          display: flex;
+          justify-content: space-between;
+          .flo-social-links {
+            .flo-social-links__link {
+              font-size: rem-calc(10);
+              margin-right: rem-calc(39);
+            }
+          }
+        }
+      &__flothemes-logo {
+        font-size: rem-calc(22);
+      }
+
+  &__scroll-up{
+    display: flex;
+    align-items: center;
+    font-size: rem-calc(15);
+    cursor: pointer;
+    @include global-transition(color);
+
+    &:hover {
+      color: $color-gray;
+    }
+    .flo-icon-flo-arrow-up{
+      font-size: rem-calc(20);
+      padding-left: rem-calc(12);
+    }
+  }
+
+  &__social-link{
+      width: rem-calc(17);
+      margin-right: rem-calc(15);
+      text-align: center;
+      font-size: rem-calc(14);
+      &:last-child{
+          margin-right: 0;
+      }
+
+      &.custom-icon{
+          display: inline-block;
+          &:not(.hide-label){
+            width: auto !important;
+          }
+          img{
+            max-width: 100%;
+          }
+          .flo-footer__social-custom-icon-hover{
+              display: none;
+          }
+          .flo-footer__social-custom-icon{
+            display: block;
+          }
+          &:hover{
+              .flo-footer__social-custom-icon{
+                  display: none;
+              }
+              .flo-footer__social-custom-icon-hover{
+                  display: block;
+              }
+          }
+          &.hide-label{
+              .flo-footer__social-label{
+                  display: none;
+              }
+          }
+
+      }
+  }
+
+  @include breakpoint(medium up) {
+    &__first-half {
+      display: flex;
+    }
+
+    &__menu {
+      width: rem-calc(288);
+      margin-left: rem-calc(90);
+
+      .menu {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .menu-item {
+        width: rem-calc(144);
+        margin-bottom: rem-calc(17);
+      }
+
+      a {
+        display: block;
+        width: 100%;
+      }
+      li:hover {
+        ul {
+          opacity: 1;
+          pointer-events: initial;
+        }
+      }
+      li > ul {
+        position: absolute;
+        text-align: center;
+        padding: rem-calc(20) rem-calc(20);
+        border: 0;
+
+        opacity: 0;
+        pointer-events: none;
+        @include global-transition(opacity);
+      }
+    }
+
+    &-sidebars--three-columns{
+      .column:first-child{
+        padding-right: rem-calc(30);
+      }
+      .column:last-child{
+        padding-left: rem-calc(30);
+      }
+      .column:nth-child(2){
+        padding-right: rem-calc(15);
+        padding-left: rem-calc(15);
+      }
+    }
+  }
+
+  @include breakpoint(large up){
+    &__contact-block {
+      width: rem-calc(444.5);
+    }
+    &__addons-social {
+      width: rem-calc(444.5);
+    }
+  }
+
+  @include breakpoint(medium only){
+    &__contact-block {
+      width: rem-calc(444.5);
+    }
+    &__addons-social {
+      width: rem-calc(444.5);
+    }
+  }
+
+  @include breakpoint(small only){
+    $gap-side: rem-calc(25);
+    text-align: center;
+
+    &__content{
+      width: calc(100% - #{$gap-side * 2});
+      padding-top: rem-calc(72);
+    }
+      &__top{
+        flex-direction: column;
+        justify-content: space-around;
+      }
+        .flo-footer__logo {
+          display: block;
+          margin-bottom: rem-calc(40)
+        }
+
+        &__menu {
+          //display: none;
+          margin: 0 auto;
+          margin-bottom: rem-calc(40);
+          width: 100%;
+          & > div > ul {
+            display: flex;
+            flex-direction: column;
+          }
+
+          li {
+            width: 100%;
+          }
+          a {
+            width: 100%;
+          }
+        }
+        &__contact-block {
+          .flo-form {
+            margin-top: rem-calc(73.5);
+          }
+        }
+          &__newsletter-form {
+            margin-top: rem-calc(20);
+          }
+
+    &__addons{
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+      &__addons-copyright {
+        margin-top: rem-calc(63);
+        padding: 0 rem-calc(60);
+      }
+      &__addons-social{
+        flex-direction: column;
+        justify-content: center;
+
+        .flo-social-links {
+
+          .flo-social-links__link {
+            margin-right: rem-calc(10);
+            margin-left: rem-calc(10);
+          }
+        }
+      }
+    &__flothemes-logo {
+      position: absolute;
+      bottom: rem-calc(50);
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    .flo-shcode-instgm-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .img-block {
+        width: 50% !important;
+        img {
+          vertical-align: middle;
+        }
+      }
+    }
+
+    &-sidebars--three-columns{
+      width: auto;
+      margin: 0 auto;
+      padding: 0 rem-calc(20);
+    }
+  }
+
+  #instagram_widget .insta-profile-btn{
+    color: #181818 !important;
+  }
+}

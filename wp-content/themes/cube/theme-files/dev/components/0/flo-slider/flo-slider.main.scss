@@ -1,0 +1,27 @@
+.slick-slider{
+  $gap-side: rem-calc(40);
+
+  position: relative;
+
+  .flo-slider-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-size: rem-calc(50);
+    cursor: pointer;
+    &:hover{
+      color: $color-gray-light;
+      @include global-transition(color)
+    }
+  }
+  .flo-icon-flo-arrow-left{
+    left: $gap-side;
+  }
+  .flo-icon-flo-arrow-right{
+    right: $gap-side;
+  }
+  @include breakpoint(small only){
+
+  }
+
+}

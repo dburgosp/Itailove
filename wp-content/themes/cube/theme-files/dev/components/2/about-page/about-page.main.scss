@@ -1,0 +1,28 @@
+.about-page{
+  $b: '.about-page';
+
+  &--top-section{
+    padding-bottom: rem-calc(13.5);
+  }
+
+  &--image-block{
+    padding-bottom: rem-calc(113);
+  }
+
+  &--information-block {
+
+  }
+
+  &--quote-block {
+    padding-bottom: rem-calc(217);
+  }
+
+  @include breakpoint(small only){
+    &--quote-block {
+      padding-bottom: rem-calc(70)!important;
+    }
+    &--image-block {
+      display: none;
+    }
+  }
+}

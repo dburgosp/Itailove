@@ -1,0 +1,137 @@
+.flo-post-title-wrap{
+  $b: ".flo-post-title-wrap";
+  $gap-side: rem-calc(40);
+  width: 100%;
+
+  text-align: left;
+  padding-bottom: rem-calc(45);
+  position: relative;
+
+  &__left-wrap,
+  &__right-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__left-wrap {
+
+  }
+
+  &__right-wrap {
+
+  }
+
+  &__category {
+  }
+
+  &__title{
+  }
+
+  &__excerpt {
+  }
+
+  @include breakpoint(medium up) {
+    display: flex;
+    justify-content: space-between;
+
+    width: calc(100% - #{rem-calc(267)});
+
+    &--centered {
+      display: block;
+      text-align: center;
+      width: 100%;
+
+      #{$b}__left-wrap,
+      #{$b}__right-wrap
+      {
+        width: 100%;
+        text-align: center;
+        display: block;
+      }
+        #{$b}__categories,
+        #{$b}__title,
+        #{$b}__date,
+        .flo-share-wrap
+        {
+          display: block;
+          text-align: center;
+        }
+        #{$b}__date {
+          margin-bottom: rem-calc(20);
+        }
+        .flo-share-wrap {
+          a {
+            padding: 0 rem-calc(15);
+          }
+        }
+
+      #{$b}__left-wrap {
+      }
+      #{$b}__right-wrap {
+        width: 100%;
+      }
+    }
+
+    &__left-wrap {
+      align-items: flex-start;
+      justify-content: space-between;
+      text-align: left;
+    }
+      &__category {
+        margin-bottom: rem-calc(20);
+      }
+      &__title {
+        margin-bottom: rem-calc(10);
+      }
+
+    &__right-wrap {
+      align-items: flex-end;
+      justify-content: space-between;
+      text-align: right;
+    }
+      &__categories {
+        a {
+          margin-left: rem-calc(8);
+        }
+      }
+
+    .flo-share-wrap {
+    }
+  }
+
+  @include breakpoint(small only){
+    padding-top: rem-calc(40);
+    text-align: center;
+
+    &__category {
+      margin-bottom: rem-calc(20);
+    }
+    &__title {
+      margin-bottom: rem-calc(20);
+    }
+    &__excerpt {
+      margin-bottom: rem-calc(30);
+    }
+    .flo-share-wrap {
+      justify-content: center;
+      margin-top: rem-calc(40);
+      a {
+        padding: 0 rem-calc(20);
+      }
+    }
+  }
+}
+
+
+.flo-section__content--post-title-top {
+  .flo-post-title-wrap {
+  }
+}
+
+@include breakpoint(medium up) {
+  .flo-section__content--post-title-under {
+    .flo-post-title-wrap {
+      // padding-left: rem-calc(364.5);
+    }
+  }
+}

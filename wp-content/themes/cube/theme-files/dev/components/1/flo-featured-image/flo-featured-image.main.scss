@@ -1,0 +1,50 @@
+.flo-featured-image {
+  $b: ".flo-featured-image";
+
+  width: 100%;
+  margin-top: rem-calc(11.5);
+  margin-bottom: rem-calc(55);
+  position: relative;
+
+  &__size-full-width {
+    height: rem-calc(650);
+    background-size: cover;
+    background-position: center center;
+
+    img {
+      display: none;
+    }
+  }
+  &__size-original {
+    background-image: none!important;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    //display: block;
+    img {
+      height: inherit;
+      width: auto;
+    }
+  }
+
+  @include breakpoint(medium up) {
+    &__size-full-width {
+    }
+    &__size-original {
+
+    }
+  }
+
+  @include breakpoint(small only) {
+    height: rem-calc(300)!important;
+    margin-bottom: 0;
+
+    &__size-full-width {
+
+    }
+    &__size-original {
+
+    }
+  }
+
+}

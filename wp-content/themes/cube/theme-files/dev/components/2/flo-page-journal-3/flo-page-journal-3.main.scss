@@ -1,0 +1,9 @@
+//Set Paddings
+.flo-section{
+  &--first-journal-3-card{
+    padding-top: rem-calc(114);
+  }
+  &--journal-3-card{
+    padding-bottom: rem-calc(152);
+  }
+}

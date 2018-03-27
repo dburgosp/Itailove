@@ -1,0 +1,227 @@
+V 0.7
+
+- Block header -> fixed video button overlapping over submenu items;
+- Image Link With Parallax -> fixed URL option;
+- Listing Grid 4 -> Fixed category;
+- WP Content Block -> Fixed rendering when used within template builder;
+- Fixed bottom link label for image links 2 block;
+- Listing Card 2, Listing Grid 3 -> Fixed Category;
+- About Page Template -> Fixed "D.2.1. Content Block 2 Links Font" option;
+- Listing Title -> Category switcher fixed;
+- Optimized Font Delivery;
+- Gallery Type B -> Improved autoplay and Keyboard navigation behavior;
+- Slideshow 2 Block -> Improved autoplay and Keyboard navigation behavior;
+- Slideshow 2 -> Fixed minor video related bug;
+- Updated Default Favicon;
+
+============================================================
+
+V 0.6
+
+- 4.4 Listing Views -> Fixed Title and Category font picker conditions;
+- Blog post -> Hidden Featured Image if post is password protected;
+- Fixed issue affecting the number of posts per page in the dashboard
+- Fix for Safari browsers related to the IOS 11 update
+- Password-Protected Single Gallery -> Fixed contents when the featured image is not present;
+- 4.8. Portfolio Gallery -> 4.8.3. Social Sharing fixed label option for single galleries;\
+- Flothemes Icon -> Opens in new tab;
+- 8. Typography -> Added Typography Kits;
+- Added predefined block templates and new blocks.
+
+============================================================
+
+V 0.5.8
+
+- Single Gallery -> Removed doubled content block for the Title above type layout;
+- Cube listing views - optimized the image sizes;
+- 4. Pages -> Portfolio Gallery Title Area -> Added option for hiding featured image;
+- Default Template -> Listing Block -> Fixed font pickers;
+- 4.4. Listing Page Template -> Fixed Category switcher bug occurring on homepage;
+- 4. Pages -> 4.6 Blog Post -> 4.6.3 Special Block -> Fixed A.1.1. Related Posts Titles Font option;
+- 4. Pages -> 4.6 Blog Post -> 4.6.3 Special Block -> Removed animation class;
+- 5. Generics -> Updated the Button Background and Text Color options;
+
+============================================================
+
+V 0.5.7
+
+- Default page template - Listing block -> fixed the thumb image sizing functionality;
+
+============================================================
+
+V 0.5.6
+
+- Archive/Search pages - fixed the grid image sizes and the number of posts per page options;
+- Home Page Image Blocks - added option for padding between images;
+- Fade id effect - fixed issue for Chrome 61;
+- Added 'Listing Layout' block to the Default page template Layout.
+- Blog post centered text - adjusted the position;
+- Fixed the related items title;
+- Fixed compatibility with the Simple Custom Posts Order plugin;
+- Home page - fixed listing pagination;
+- Post -> Added Related Posts and Centered Title Style;
+- Updated text image block font options functionality;
+- Home images Block - Fixed mobile visibility issue;
+- Fixed category block for galleries list view;
+- Single gallery - show content for title above;
+- Fixed auto set featured images option.
+
+============================================================
+
+V 0.5.5
+
+- Added the configuration file for WPML
+
+============================================================
+
+V 0.5.4
+
+
+- Single gallery grid view -> changed the lazy loading process.
+- Password protected page fix when the content block is disabled
+- Added live SEO Validation to Yoast SEO while having custom ACF Fields.
+
+============================================================
+
+V 0.5.3
+
+- Added back the header 4 and 5 that were deleted by accident.
+
+============================================================
+
+V 0.5.2
+
+- Featured block - fixed mobile layout
+- Added 1 click demo settings import
+- Listing page, category filter -> added 'All' as first option.
+
+============================================================
+
+V 0.5.1
+
+- Horizintal border correction when we have horizontal padding for the body
+- Fixed autoplay for main slideshow
+- Single gallery  type c and d - added option to choose the transition effect between Fade and Slide
+- Enabled the sticky menu for iPad as well.
+- Listing page, category filter -> added 'All' as first option.
+
+============================================================
+
+V 0.5
+
+- Header mobile slideshow -> Implemented the portrait orientation image position.
+- Listing Grid 2 -> added options for image size
+- Listing Grid 2 - added option to show the post excerpt
+- Added support for FloSwitch plugin PP migration Prophoto
+- Image Blocks -> added option to choose between 2,3 and 4 columns
+- Typography -> Added Tablet Font Size Zoom Factor Option
+- Added option to  turn this off the fading effect when scrolling through pages.
+- Listing page template -> show the page content below the page title if it is available.
+- Fixed masonry view for iPad
+- 4.1.3. Information Block - added option to select the image position on the left or on the right side of the text.
+- Header menu center -> added option for the distance between menu items
+- Pricing block - added option to add up to 4 columns and background color for each package
+- Added WC styling for the elements that needed refinement.
+- Mobile Menu -> Added "collapsed or expanded" style option.
+
+============================================================
+
+V 0.4.1
+
+- PHP 5.3 -> prevent premature error on theme activation
+- Updated the dummy data files
+- Let WP handle the site title
+- Single gallery -> social sharing disable option fixed
+- One click Dummy data import -> replaced some depricated functios
+
+============================================================
+
+V 0.4
+
+- Default Page -> Custom Blocks -> Added: Packages List, Testimonials Slideshow, Special Link;
+- Pages -> Desktop -> Options -> Vertical and Horizontal Border
+- Pages -> Splash Page -> Animation
+- Video Embed -> Adjusted Pointer Events, so that the links in the background of the embed div would work
+- Default Template -> Added option to hide page title
+- Fixed FB comments
+- Home -> Image Blocks -> Decorative Layer -> Added;
+- Contact -> Pretitle Option -> Now Works;
+- Default -> Page Border + Page Hero -> Height -> Now Depends on the border and is proper;
+- About -> Quote Block -> If no image -> center text;
+- Listing Card -> Added Background Check;
+- Listing views - added option to disable the category
+
+
+============================================================
+
+V 0.3.2
+
+- Listing page: added option for the gutter between columns for Grid & Grid 2 views
+- Fixed minification issue
+- Fixed content opacity issue ocurring due to conflict with some plugins.
+- Listing pagination - added font option
+- Quote block - added option for the top padding
+
+============================================================
+
+V 0.3.1
+
+- Footer Copyright -> fixed %year% replacement with the current year.
+- Flo shortcodes -> 'List posts' pagination fix for the case when there is only one page.
+- Fixed tumblr icon.
+- Listing pagination back arrow fix.
+- List view full content: show the bottom area like on single blog post.
+- List view full content: fixed the typography issue.
+- Minified the main js and css files.
+- Listing page template - fixed the 'B. Category Switcher' options issue.
+- Listing page template: added possibility to use the featured image as hero image at the top of the page.
+
+============================================================
+
+V 0.3
+
+- Added mobile light logo option
+- Fix: Max Width Option
+- Header and Page hero -> Elements Color Selectors Adjusted
+- Mobile Menu and Gallery With thumbnails -> Mobile -> CSS Adjustments
+- Fix: Header -> Light Logo + No Sticky -> Now working
+- Listing page: Removed conditional login for the number of posts
+- Listing page template - fixed the Show/Hide title block option
+- Sticky header - added background opacity option
+- Grid view - if featured image is not available, we show the placeholder image
+- Fixed the slideshow text link issue
+- Footer settings - added option for top and bottom padding
+- Safari -> Global CSS Adjustments
+- Listing -> Title -> Categories Switcher -> Mobile -> CSS Adjusted
+- Single post and page: Init WP loop to ensure compatibility with plugins
+- Contact Block -> Removed Font styles from CSS; Mobile Menu -> Close Button -> JS -> Adjusted for iOS
+- About page - added option to disable the 'Top Block'
+- Mobile Header -> Sticky -> Added
+- Header -> Desktop -> Centered Menu Layouts -> Added
+- Single gallery - added option for the slider image height sizing
+- About page template - fixed pretitle selector
+- Gallery Top Title w Feat IMG + Header -> Color Change & Z Index -> Adjusted
+- Gallery -> Mobile -> Slideshow -> Image Width -> Set to 100%
+- Gallery -> Title w/o Feat IMG -> Fixed Styling
+- Press page -> Implemented mobile view
+- Galleries -> Added Video options
+- Popup header - fixed layout issue when social icons are not available
+
+
+============================================================
+
+V 0.2
+
+- Typography settings - added option for the mobile font size
+- Mobile menu fixes
+- Sidebar adjustments
+- Added light logo option
+
+
+============================================================
+
+V 0.1
+
+Initial release
+
+============================================================

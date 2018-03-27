@@ -1,0 +1,590 @@
+{
+    "key": "group_59f1898f6bc11",
+    "title": "4.1.1. Top Block",
+    "fields": [
+        {
+            "key": "field_57fb7258d333c",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-about__top-block.jpg\" style=\"display: block; width: 100%;\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_58a1b8a734d14",
+            "label": "Display Block",
+            "name": "about-page__top-block-show",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59f1a91e02a73",
+            "label": "A.1. Featured Image Type",
+            "name": "about-page__featured-image-type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a1b8a734d14",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page": "Page's Featured Image",
+                "custom": "Custom Featured Image"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "custom",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_57fb7342d333f",
+            "label": "A.1.1. Featured Image",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a1b8a734d14",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_59f1a91e02a73",
+                        "operator": "==",
+                        "value": "page"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "The Featured Image setting can be found on right side of this page.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59f1a97902a75",
+            "label": "A.1.1. Featured Image",
+            "name": "about-page__featured-image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a1b8a734d14",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_59f1a91e02a73",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_57fb729fd333d",
+            "label": "B.1. Pretitle",
+            "name": "about-page__pretitle",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a1b8a734d14",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "About us",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5889a4158a4af",
+            "label": "B.1.1. Pretitle Font",
+            "name": "about-page__pretitle-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a1b8a734d14",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_1"
+        },
+        {
+            "key": "field_582c9320777e8",
+            "label": "B.2. Title",
+            "name": "about-page__title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a1b8a734d14",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "MEET<br>THE TEAM",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5889a4c52168c",
+            "label": "B.2.1. Title Font",
+            "name": "about-page__title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 3",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a1b8a734d14",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_3"
+        },
+        {
+            "key": "field_582c9378777e9",
+            "label": "B.3. Subtitle",
+            "name": "about-page__subtitle",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a1b8a734d14",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "FASHION PHOTOGRAPHY HAS UNMISTAKABLE SOFTNESS AND GRACE",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5889a5092168d",
+            "label": "B.3.1. Subtitle Font",
+            "name": "about-page__subtitle-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a1b8a734d14",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_1"
+        },
+        {
+            "key": "field_59f1a81748ef1",
+            "label": "C.1. Content Type",
+            "name": "about-page__content-type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a1b8a734d14",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page": "Page Content",
+                "custom": "Custom Content"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "custom",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_57fb73c5d3340",
+            "label": "C.1.1. Content Block 1",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a1b8a734d14",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_59f1a81748ef1",
+                        "operator": "==",
+                        "value": "page"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "The Content can be changed in the text editor at the top of this page.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59f1a7f648ef0",
+            "label": "C.1.1. Content",
+            "name": "about-page__content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a1b8a734d14",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_59f1a81748ef1",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5889a7ed56836",
+            "label": "C.2. Content Font",
+            "name": "about-page__content-font",
+            "type": "font_style_select",
+            "instructions": "Default: Paragraph 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a1b8a734d14",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "paragraph_1"
+        },
+        {
+            "key": "field_582c93f6777eb",
+            "label": "D.1. Content Block 2 Title",
+            "name": "about-page__content-block-title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a1b8a734d14",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "CLIENTS",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5889a83a328bf",
+            "label": "D.1.1. Content Block 2 Title Font",
+            "name": "about-page__content-block2-title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 2",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a1b8a734d14",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_2"
+        },
+        {
+            "key": "field_582c93c7777ea",
+            "label": "D.2. Content Block 2 Links",
+            "name": "about-page__content-block-links",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a1b8a734d14",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_582c942c777ed",
+            "min": 1,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Link",
+            "sub_fields": [
+                {
+                    "key": "field_582c942c777ed",
+                    "label": "Label",
+                    "name": "label",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "LINK LABEL",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_582c941e777ec",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                }
+            ]
+        },
+        {
+            "key": "field_5889a8bd328c0",
+            "label": "D.2.1. Content Block 2 Links Font",
+            "name": "about-page__content-block2-links-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 2",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a1b8a734d14",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1509010993
+}

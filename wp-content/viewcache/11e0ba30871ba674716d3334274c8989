@@ -1,0 +1,61 @@
+
+<?php
+
+  $dropdown__background_color = flo_get_option("flo-cube-header__menu-dropdown-background-color","#000000");
+  $dropdown__items_color = flo_get_option("flo-cube-header__menu-dropdown-items-color","#ffffff");
+
+?>
+
+<?php echo $__env->make('core.style', [
+  "breakpoint__medium_up" => "
+    .flo-header__menu .menu-item ul {
+      background-color: ". $dropdown__background_color .";
+    }
+    .flo-header__menu .menu-item ul a {
+      color: ". $dropdown__items_color .";
+    }
+  "
+], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php
+    $feat_img_enabled = true;
+    if($post->post_type == 'gallery'){
+        $feat_img_enabled = flo_get_option('gallery_featured_image', true);
+    }
+?>
+
+<?php if(isset($header__slider_id)): ?>
+    <?php echo $__env->make("components.flo-header-section", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php elseif(isset($header__hero_post) && has_post_thumbnail($header__hero_post) && $feat_img_enabled): ?>
+    <?php echo $__env->make("components.flo-mobile-menu", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <?php echo $__env->make('components.flo-header-mobile', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <header class="full-scrollable-section">
+        <!-- Start: Flo Header Section -->
+        <div class="flo-section flo-header-section flo-header-section--layout-page-title">
+            <?php echo $__env->make("components.flo-header", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php echo $__env->make("components.flo-page-hero", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+        </div>
+        <!-- End: Flo Header Section -->
+    </header>
+<?php else: ?>
+    <?php echo $__env->make("components.flo-mobile-menu", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <?php echo $__env->make('components.flo-header-mobile', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    <header>
+        <?php echo $__env->make("components.flo-header", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+    </header>
+<?php endif; ?>
+
+<?php 
+  ob_start();
+  ob_clean();
+  dynamic_sidebar('top-sidebar');
+  $top_sidebar = ob_get_clean();
+
+  if($top_sidebar){
+?>
+    <div class="flo-header-sidebars flo-section flo-section--padding-small">
+                <?php echo $top_sidebar; ?>
+
+    </div>
+<?php
+  }
+?>

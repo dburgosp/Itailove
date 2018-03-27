@@ -1,0 +1,136 @@
+{
+    "key": "group_58a5ad8338ca0",
+    "title": "Custom Page. Special Link",
+    "fields": [
+        {
+            "message": "<img class=\"acf-img\" src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/flo-special-link.jpg\" \/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_58a5ad98b640c",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "not decided yet?",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_58a5adbdb640d",
+            "label": "A.1. Pretitle",
+            "name": "flo-special-link__pretitle",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_58a5adeeb640e",
+            "label": "A.2. Pretitle Font",
+            "name": "flo-special-link__pretitle-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 5",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_5"
+        },
+        {
+            "default_value": "GET IN TOUCH WITH US",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_58a5ae2db640f",
+            "label": "B.1. Title",
+            "name": "flo-special-link__title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_58a5ae4eb6410",
+            "label": "B.2. Title URL",
+            "name": "flo-special-link__title-url",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_58a5ae68b6411",
+            "label": "B.2. Title Font",
+            "name": "flo-special-link__title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_2"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1487253145
+}

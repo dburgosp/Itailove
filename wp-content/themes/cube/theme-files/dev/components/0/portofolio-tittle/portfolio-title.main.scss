@@ -1,0 +1,14 @@
+.flo-portfolio-title{
+  text-align: center;
+  flex-grow: 1;
+  &__decoration{
+    max-width: rem-calc(80);
+    margin: 0 auto rem-calc(22);
+  }
+  &__text{
+    font-size: rem-calc(15);
+    letter-spacing: 1em;
+    text-transform: uppercase;
+    margin-right: -1em;
+  }
+}

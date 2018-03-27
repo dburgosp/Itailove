@@ -1,0 +1,438 @@
+/* START: TEMPORARY */
+/* END: TEMPORARY */
+
+/* START: FONTELLO */
+  @import url("../fonts/fontello/css/flo-icons.css"); // relative to public/css/
+/* END: FONTELLO */
+
+/* START: VARS */
+  $global-padding--horizontal: rem-calc(100);
+  $global-padding--vertical: rem-calc(85);
+  $global-padding-mobile--horizontal: rem-calc(20);
+  $global-padding-mobile--vertical: rem-calc(20);
+  $global-column-width: rem-calc(90);
+/* END: VARS */
+
+/* START: MIXINS */
+
+  /* End: Transitions */
+    $global-transition-speed: 0.4s;
+    $global-easing: cubic-bezier(0.445, 0.050, 0.550, 0.950);
+
+    @mixin global-transition($transitions...) {
+      $s: $global-transition-speed;
+      $unfoldedTransitions: ();
+      @each $transition in $transitions {
+        $unfoldedTransitions: append($unfoldedTransitions, $transition + " " + $s, comma)
+      }
+      transition: $unfoldedTransitions;
+      transition-timing-function: $global-easing;
+    }
+  /* End: Transitions */
+
+
+   @mixin placeholder($opacity, $color){
+     &::-webkit-input-placeholder {
+       color: $color;
+       opacity: $opacity;
+     }
+     &::-moz-placeholder {
+       color: $color;
+       opacity: $opacity;
+     }
+     &:-ms-input-placeholder {
+       color: $color;
+       opacity: $opacity;
+     }
+     &:-moz-placeholder {
+       color: $color;
+       opacity: $opacity;
+     }
+   }
+
+  /* Start: Background image */
+    @mixin global-bgi-contain {
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    @mixin global-bgi-cover {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+  /* End: Background image */
+
+  /* Start: Box Sizing */
+    @mixin box-sizing($data) {
+      -webkit-box-sizing: $data;
+      -moz-box-sizing: $data;
+      box-sizing: $data;
+    }
+
+  /* End: Box sizing */
+
+  @mixin global-clickable {
+    cursor: pointer;
+    user-select: none;
+  }
+
+/* END: MIXINS */
+
+/* START: COLORS */
+  $color-white: white;
+  $color-red: red;
+  $color-black: #181818;
+  $color-gray-dark: #383838;
+  $color-gray: #e5e5e5;
+  $color-gray-light: #ddd;
+  $color-gray95: #959595;
+  $color-grayf7: #f7f7f7;
+  $color-gray6f: #6f6f6f;
+  $color-gray9e: #9e9e9e;
+
+/* END: COLORS */
+
+/* START: FONTS */
+  @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Playfair+Display|Quicksand');
+  $font-lato: 'Lato', sans-serif;
+  $font-playfair: 'Playfair Display', serif;
+  $font-quicksand: 'Quicksand', sans-serif;
+/* END: FONTS */
+
+/* START: GLOBAL STYLES */
+  html {
+    // Ensure good design proportion from tablet up while using rems (yes forget about zoom).
+    @include breakpoint(medium up) {
+      font-size: 1.15vw;
+    };
+  }
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  p {
+    line-height: inherit;
+  }
+  // Styles outside post
+  *:not(.flo-post), *:not(.flo-post__styles) {
+    a {
+      // text-decoration: none;
+      @include global-transition(color, background, border, opacity, transform);
+      &:hover {
+        // color: $color-gray;
+      }
+    }
+
+    .hover-block{
+      display: block;
+
+      figure{
+        opacity: 1;
+        @include global-transition(opacity);
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+      &:hover{
+          color: inherit;
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+
+    }
+
+  }
+
+  .text-underline{
+    &:after{
+      content: '';
+      border-top: 1px solid $color-gray-dark;
+      opacity: 0;
+      display: block;
+    }
+    &:hover {
+      &:after{
+        opacity: 1;
+        @include global-transition(opacity)
+      }
+    }
+  }
+  // Styles inside post
+  .flo-post, .flo-post__styles {
+
+  }
+
+
+  //Reset default styles
+  body{
+    color: $color-gray-dark;
+  }
+  h1,h2,h3,h4,h5,h6{
+    margin: 0;
+  }
+
+  [class^="flo-icon-"]:before,
+  [class*=" flo-icon-"]:before{
+    width: auto;
+    height: auto;
+  }
+  button{
+    outline: none;
+  }
+  a{
+    color: inherit;
+    &:hover{
+      color: inherit;
+    }
+    &:visited{
+      //color: $color-gray-dark;
+      // color: inherit;
+    }
+
+  }
+
+  figure{
+    margin: 0;
+  }
+
+  .row{
+    max-width: none;
+    width: initial;
+  }
+
+
+  .row-flex{
+    &:before {
+      content: none;
+    }
+    @include breakpoint(medium up){
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .column{
+    padding: 0;
+    float: none;
+  }
+
+
+
+  //Text styles line up
+  .title-line-up{
+    &:before{
+      content: '─';
+      display: block;
+      line-height: 1;
+      padding-bottom: rem-calc(8);
+    }
+  }
+  .title-line-bottom{
+    position: relative;
+    padding-bottom: rem-calc(50);
+    &:after{
+      content: '';
+      display: block;
+      height: rem-calc(26);
+      width: 2px;
+      background: $color-gray-dark;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    &--center{
+      &:after{
+        left: 50%;
+        transform: translate(-50%,0);
+      }
+    }
+    @include breakpoint(small only){
+      text-align: center;
+      &:after{
+        left: 50%;
+        transform: translate(-50%,0);
+      }
+    }
+  }
+
+
+  //Slick Slider reset default styles
+
+  .slick-initialized {
+    .slick-slide{
+      outline: none;
+    }
+  }
+
+  //Form items global styles
+
+  //Inputs and Textarea default styles
+  input[type]:not([type="submit"]),
+  textarea{
+    border: none;
+    border: 1px solid $color-black;
+    box-shadow: none;
+    padding-left: rem-calc(15);
+    @include box-sizing(border-box);
+    @include global-transition(background-image, border-color, line-height, padding);
+
+    &:hover,
+    &:focus{
+      background-image: none;
+      padding-left: rem-calc(25);
+    }
+  }
+
+  //Input
+  input[type]:not([type="submit"]){
+      background: none;
+      height: rem-calc(41.5);
+  }
+
+  //Placeholders
+  input[type]:not([type="submit"]),
+  textarea{
+    &:hover,
+    &:focus{
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  // Start: Buttons (.flo-btn & submit)
+    .flo-btn,
+    input[type='submit']
+    {
+      border: 0;
+      background: $color-black;
+      outline: 0;
+      padding: rem-calc(20);
+      min-width: rem-calc(150);
+      box-shadow: none;
+      cursor: pointer;
+      color: white;
+      text-align: center;
+      // font-size: rem-calc(12);
+      // font-family: $font-lato;
+      // font-weight: 700;
+      // font-style: normal;
+      // text-transform: uppercase;
+      // letter-spacing: .1em;
+      // text-decoration: underline; //reset the default class
+      display: inline-block;
+      @include global-transition(color, opacity, background);
+      &:hover{
+        color: $color-gray;
+      }
+    }
+    // .flo{
+    //   &-btn{
+    //     border: 0;
+    //     background: 0;
+    //     outline: 0;
+    //     box-shadow: none;
+    //     text-transform: uppercase;
+    //     cursor: pointer;
+    //     color: inherit;
+    //   }
+    //   &-btn--link{ //Button link
+    //     font-size: rem-calc(12);
+    //     letter-spacing: .375em;
+    //     text-decoration: underline !important; //reset the default class
+    //     display: inline-block;
+    //     @include global-transition(color);
+    //     &:hover{
+    //       color: $color-gray;
+    //     }
+    //   }
+    // }
+  // End: Buttons (.flo-btn & submit)
+
+  //Textarea
+  textarea {
+    $padding: rem-calc(17);
+    $line-height: calc(1em + #{$padding * 2});
+    // resize: none;
+    min-height: rem-calc(100);
+    // line-height: 1.8em;
+    //background-image:
+    //  linear-gradient(to right, transparent 0, transparent 0),
+    //  linear-gradient(to left, transparent 0, transparent 0),
+    //  repeating-linear-gradient(transparent, transparent calc(1em + #{$padding * 2}), $color-gray calc(1em + #{$padding * 2}), $color-gray , transparent calc(1em + #{rem-calc($padding * 2)} + 0.0875rem));
+    &:focus,
+    &:hover {
+    }
+  }
+
+  // Button
+  .button {
+    background-color: $color-white;
+    text-transform: uppercase;
+    font-size: rem-calc(11);
+    font-family: $font-lato;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: $color-black;
+    &:hover {
+      color: $color-white;
+      background-color: $color-black;
+    }
+  }
+
+/* END: GLOBAL STYLES */
+
+body{
+  opacity: 0;
+  transition: opacity .25s ease-in;
+}
+
+/* START: APPEAR ANIMATION */
+  body:not(.flo-appear-disabled) {
+    .flo-block:not(:first-child),
+    .flo_page > .flo-section:not(:first-of-type):not(.disable-appear),
+    .flo-post > .flo-to-be-visible,
+    .flo-footer,
+    .to-appear,
+    .widget:not(:first-child) {
+      opacity: 0;
+      transform: translateY(rem-calc(80));
+      // @include global_transition(opacity, transform);
+      transition-timing-function: $global-easing;
+      &:nth-child(1n),
+      &.to-appear--uniform
+      {
+        transition: opacity $global-transition-speed, transform $global-transition-speed, color $global-transition-speed;
+      }
+      &:not(.to-appear--uniform):nth-child(2n) {
+        transition: opacity $global-transition-speed 0.1s, transform $global-transition-speed 0.1s, color $global-transition-speed;
+      }
+      &.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+/* END: APPEAR ANIMATION */
+
+/* START: HTML OVERFLOW FOR SAFARI FIX */
+  html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    height: auto;
+  }
+/* END: HTML OVERFLOW FOR SAFARI FIX */
+
+/* START: Z-INDEX MAP */
+  @import "z-index-map.scss";
+/* END: Z-INDEX MAP */

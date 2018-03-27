@@ -1,0 +1,41 @@
+{
+    "key": "group_58affa97e365c",
+    "title": "9. Stylekit 2",
+    "fields": [
+        {
+            "message": "Please follow <a href=\"http:\/\/docs.flothemes.com\/cube-cube-2\/\" target=\"_blank\">this link<\/a> for  the tutorial on the second stylekit.",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_58affaa71df0a",
+            "label": "Tutorial",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-9-stylekit-2"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1487928967
+}

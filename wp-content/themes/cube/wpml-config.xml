@@ -1,0 +1,23 @@
+<wpml-config>
+    <admin-texts>
+        <key name="options_flo-cube-footer__copyright-text" />
+        <key name="options_flo-cube-header__logo-text" />
+        <key name="options_flo-cube-header-popup__title" />
+        <key name="options_flo-cube-header__logo-text" />
+        <key name="options_flo-search-page__page-title" />
+        <key name="options_flo-not-found-page__title" />
+        <key name="options_flo-not-found-page__description" />
+        <key name="options_flo-not-found-page__link-title" />
+        <key name="options_flo-cube-blog-post__related-posts-block-title" />
+        <key name="options_flo-cube-blog-post-bottom__share-label" />
+        <key name="options_flo-cube-footer__contact-block--message" />
+        <key name="options_flo-cube-footer__contact-block--email" />
+        <key name="options_flo-cube-footer__contact-block--phone" />
+        <key name="options_flo-cube-portfolio-gallery__content-share-label" />
+
+        <key name="options_flo-cube-comments-top-bar__comments-title" />
+        <key name="options_flo-cube-comments-comment__reply-label" />
+        <key name="options_flo-cube-comments-form__title" />
+        <key name="options_flo-cube-comments-form__submit-label" />
+    </admin-texts>
+</wpml-config>

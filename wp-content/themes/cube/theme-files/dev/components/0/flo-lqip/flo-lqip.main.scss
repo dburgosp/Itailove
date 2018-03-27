@@ -1,0 +1,10 @@
+*[data-lqip-src]
+{
+  @include global-transition(filter, background-image);
+  // transform: translateZ(0);
+  // will-change: transform;
+  &:not(.flo-lqip--original-loaded) {
+    filter: blur(40px);
+    // opacity: 0;
+  }
+}

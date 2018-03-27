@@ -1,0 +1,410 @@
+@font-face {
+  font-family: 'ProximaNovaSemibold';
+  src: url(../fonts/proxima-nova-semibold.ttf) format("truetype"), url(../fonts/proxima-nova-semibold.otf) format("opentype"); }
+
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url(../fonts/proxima-nova-regular.ttf) format("truetype"), url(../fonts/proxima-nova-regular.otf) format("opentype"); }
+
+.flo-forms-settings {
+  padding: 30px;
+  background-color: #fff; }
+  .flo-forms-settings .title {
+    font-family: ProximaNovaSemibold;
+    font-size: 30px; }
+  .flo-forms-settings .options-header {
+    margin-bottom: 30px; }
+  .flo-forms-settings .button-primary, .flo-forms-settings .button-primary:hover {
+    font-family: ProximaNovaSemibold;
+    background: #bd965a;
+    border-width: 0px;
+    border-radius: 40px;
+    box-shadow: 0 0 0 #bd965a;
+    text-shadow: 0 0 0 #bd965a;
+    padding: 2px 25px !important;
+    height: 40px !important; }
+  .flo-forms-settings .for-submit {
+    text-align: right; }
+  .flo-forms-settings input[type="text"] {
+    width: 250px; }
+  .flo-forms-settings .hint {
+    font-size: 10px;
+    font-style: italic; }
+  .flo-forms-settings h4 {
+    margin-bottom: 0.3em; }
+
+.post-type-flo_forms .form-settings-wrapper {
+  font-family: ProximaNovaRegular; }
+  .post-type-flo_forms .form-settings-wrapper .hint {
+    font-style: italic;
+    color: #6d6d6d;
+    font-size: 10px; }
+
+.post-type-flo_forms .ui-widget {
+  font-family: ProximaNovaSemibold;
+  font-size: 13px; }
+
+.post-type-flo_forms #poststuff #post-body.columns-2 {
+  margin-right: 0px; }
+
+.post-type-flo_forms #post-body.columns-2 #postbox-container-1 {
+  margin-right: 0px;
+  width: 100%; }
+
+.post-type-flo_forms #poststuff #post-body.columns-2 #side-sortables {
+  width: 100%; }
+
+.post-type-flo_forms #submitdiv.postbox {
+  width: 280px;
+  float: right; }
+
+.post-type-flo_forms #flo-publishing-action {
+  text-align: right;
+  bottom: 10px;
+  position: absolute;
+  right: 0px; }
+  .post-type-flo_forms #flo-publishing-action .button-primary {
+    font-family: ProximaNovaSemibold;
+    background: #bd965a;
+    border-width: 0px;
+    border-radius: 40px;
+    box-shadow: 0 0 0 #bd965a;
+    text-shadow: 0 0 0 #bd965a;
+    padding: 2px 25px;
+    height: 40px; }
+
+.post-type-flo_forms .flo-submit-button {
+  background-color: #23282d;
+  color: #fff;
+  width: 125px;
+  text-align: center;
+  height: 35px;
+  vertical-align: middle; }
+
+.post-type-flo_forms .ui-corner-all {
+  border-radius: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-left: 0px; }
+
+.post-type-flo_forms #submitdiv {
+  display: none; }
+
+.post-type-flo_forms input[type="text"], .post-type-flo_forms input[type="email"] {
+  padding: 7px; }
+
+#flo_form_settings .form-settings-wrapper {
+  display: flex; }
+
+#form-tabs {
+  max-width: 280px;
+  display: inline-block;
+  vertical-align: top; }
+  #form-tabs.ui-tabs {
+    padding-left: 0px;
+    padding-right: 0.4em; }
+  #form-tabs .tab-title {
+    font-family: ProximaNovaRegular;
+    font-style: italic;
+    font-size: 12px;
+    color: #565656;
+    margin-bottom: 23px; }
+  #form-tabs input, #form-tabs textarea {
+    font-family: ProximaNovaRegular; }
+  #form-tabs .field-settings-label {
+    position: relative;
+    display: block; }
+  #form-tabs .ui-tabs-nav {
+    background: transparent;
+    border-width: 0px; }
+    #form-tabs .ui-tabs-nav a {
+      outline: none;
+      padding: .5em .5em; }
+      #form-tabs .ui-tabs-nav a:focus {
+        box-shadow: 0 0 0 0 #cfcfcf, 0 0 0 0 #cfcfcf; }
+    #form-tabs .ui-tabs-nav .ui-state-default {
+      background: #f8f8f8;
+      color: #23282d;
+      border-radius: 0px;
+      border-width: 0px; }
+      #form-tabs .ui-tabs-nav .ui-state-default.ui-state-active {
+        background: #23282d;
+        border-color: #23282d; }
+        #form-tabs .ui-tabs-nav .ui-state-default.ui-state-active a {
+          color: #ffffff; }
+    #form-tabs .ui-tabs-nav li {
+      padding-left: 1px;
+      padding-right: 1px; }
+  #form-tabs .ui-tabs-panel {
+    padding: 1em 0.5em; }
+  #form-tabs .field-buttons li {
+    width: 48%;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 18px;
+    height: 30px;
+    font-family: ProximaNovaSemibold;
+    vertical-align: middle; }
+    #form-tabs .field-buttons li:before {
+      position: absolute;
+      left: 8px;
+      font-size: 14px;
+      top: 11px;
+      font-family: 'dashicons';
+      color: #bd965a; }
+    #form-tabs .field-buttons li a {
+      font-family: ProximaNovaSemibold;
+      padding: 9px 0 7px 30px;
+      display: block;
+      position: relative;
+      border: 1px solid #d8d8d8;
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+      background-clip: padding-box;
+      font-size: 13px !important;
+      text-align: left;
+      vertical-align: middle;
+      text-decoration: none;
+      line-height: 20px; }
+    #form-tabs .field-buttons li.dashicons-editor-textcolor:before {
+      content: 'Aa';
+      font-family: ProximaNovaSemibold; }
+    #form-tabs .field-buttons li.dashicons-arrow-down:before {
+      font-size: 18px;
+      left: 4px;
+      top: 10px; }
+    #form-tabs .field-buttons li.dashicons-marker:before {
+      font-size: 16px;
+      color: #d6d6d6; }
+    #form-tabs .field-buttons li.dashicons-marker:after {
+      content: '.';
+      position: absolute;
+      top: -7px;
+      left: 11.5px;
+      font-size: 36px;
+      color: #bd965a; }
+    #form-tabs .field-buttons li:nth-child(odd) {
+      padding-right: 5px; }
+  #form-tabs #form-settings input[type="text"], #form-tabs #form-settings textarea, #form-tabs #form-settings .page-confirmation-value, #form-tabs #fields-settings input[type="text"], #form-tabs #fields-settings textarea, #form-tabs #fields-settings .page-confirmation-value {
+    width: 98%; }
+  #form-tabs #form-settings input.flo-forms-color-picker, #form-tabs #fields-settings input.flo-forms-color-picker {
+    width: 50px;
+    margin-right: 5px; }
+  #form-tabs label.label-placement {
+    line-height: 26px;
+    margin-bottom: 10px; }
+    #form-tabs label.label-placement select {
+      float: right; }
+  #form-tabs .confirmation-label {
+    width: 130px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px; }
+    #form-tabs .confirmation-label div {
+      display: inline-block;
+      width: 85px; }
+    #form-tabs .confirmation-label input {
+      vertical-align: top;
+      margin-top: 1px; }
+
+.form-preview {
+  padding-left: 12px;
+  display: inline-block;
+  flex: 1; }
+  .form-preview .flo-section-break {
+    width: 96%; }
+  .form-preview .add-field-spinner {
+    margin-right: 50%; }
+  .form-preview .req {
+    color: red; }
+  .form-preview label.desc {
+    display: inline-block;
+    width: 110px;
+    vertical-align: top;
+    padding-right: 10px; }
+  .form-preview li.form-preview-row {
+    padding: 5px 2px;
+    border: 2px solid #fff;
+    position: relative;
+    vertical-align: top; }
+    .form-preview li.form-preview-row:hover {
+      cursor: pointer; }
+    .form-preview li.form-preview-row:not(.focused):hover {
+      border: 2px dashed #d3d3d3; }
+    .form-preview li.form-preview-row.hidden {
+      display: block; }
+    .form-preview li.form-preview-row .delete-field {
+      display: none; }
+    .form-preview li.form-preview-row.focused {
+      background-color: #f8f8f8;
+      border: 2px dashed #d3d3d3; }
+      .form-preview li.form-preview-row.focused .delete-field {
+        display: block;
+        color: red;
+        position: absolute;
+        right: -8px;
+        bottom: -10px;
+        font-size: 16px; }
+      .form-preview li.form-preview-row.focused .field-id {
+        color: grey; }
+    .form-preview li.form-preview-row.width-50 {
+      width: 48%;
+      display: inline-block; }
+    .form-preview li.form-preview-row .choice {
+      margin-right: 20px; }
+    .form-preview li.form-preview-row .the-choice {
+      vertical-align: top; }
+    .form-preview li.form-preview-row.two-columns .the-choice {
+      width: 49%;
+      display: inline-block; }
+    .form-preview li.form-preview-row.two-columns .the-choice:nth-child(2n+1):after {
+      visibility: hidden;
+      display: block;
+      content: "";
+      clear: both;
+      height: 0; }
+    .form-preview li.form-preview-row.three-columns .the-choice {
+      width: 32.5%;
+      display: inline-block; }
+    .form-preview li.form-preview-row.three-columns .the-choice:nth-child(3n+1):after {
+      visibility: hidden;
+      display: block;
+      content: "";
+      clear: both;
+      height: 0; }
+    .form-preview li.form-preview-row.one-column .the-choice {
+      display: block; }
+    .form-preview li.form-preview-row .field-id {
+      display: none; }
+  .form-preview .fid_submit_button {
+    width: 97%;
+    overflow: auto; }
+    .form-preview .fid_submit_button div.center {
+      text-align: center; }
+    .form-preview .fid_submit_button div.right {
+      text-align: right; }
+  .form-preview label.desc {
+    line-height: 32px; }
+  .form-preview.topLabel label.desc {
+    width: 100%; }
+  .form-preview.rightLabel label.desc {
+    text-align: right; }
+  .form-preview input[type="text"], .form-preview input[type="email"], .form-preview textarea {
+    width: 100%; }
+  .form-preview.rightLabel .width-100, .form-preview.leftLabel .width-100 {
+    display: flex; }
+    .form-preview.rightLabel .width-100 .desc, .form-preview.leftLabel .width-100 .desc {
+      margin-right: 5px; }
+  .form-preview.rightLabel .field-box-wrap, .form-preview.leftLabel .field-box-wrap {
+    width: 70%;
+    display: inline-block;
+    padding-top: 8px; }
+  .form-preview .width-100.form-preview-row {
+    width: 94%;
+    margin: 7px; }
+  .form-preview .width-100 input[type="text"], .form-preview .width-100 input[type="email"], .form-preview .width-100 textarea {
+    width: 70%; }
+  .form-preview.topLabel .width-100 label.desc {
+    width: 98%; }
+  .form-preview .the-label {
+    font-family: ProximaNovaSemibold; }
+  .form-preview [class^="choice_block_"] {
+    line-height: 30px; }
+  .form-preview .left_block, .form-preview .right_block {
+    width: 48%;
+    float: left;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    display: inline-flex;
+    height: 100%;
+    visibility: hidden; }
+  .form-preview .right_block ul, .form-preview .left_block ul {
+    width: 99.9%;
+    margin: 0;
+    min-height: 60px;
+    background-color: #f8f8f8; }
+    .form-preview .right_block ul li, .form-preview .left_block ul li {
+      width: 94%;
+      border: 2px solid #f8f8f8; }
+      .form-preview .right_block ul li.width-50, .form-preview .left_block ul li.width-50 {
+        width: 44%;
+        margin: 5px; }
+      .form-preview .right_block ul li .field-id, .form-preview .left_block ul li .field-id {
+        color: #f8f8f8; }
+
+.form-preview.row {
+  height: 100%; }
+
+.fields-controls .preselected-choice {
+  display: none; }
+
+.fields-controls .field-settings {
+  display: none; }
+  .fields-controls .field-settings.visible {
+    display: block; }
+
+.fields-controls .field-id-value {
+  display: block;
+  margin-bottom: 23px;
+  font-weight: 100;
+  font-family: ProximaNovaRegular;
+  color: #565656; }
+
+.fields-controls .add-new-choice {
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  color: #fff;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: #bd965a; }
+  .fields-controls .add-new-choice:before {
+    content: "\f132" !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.fields-controls .remove-choice {
+  color: #000;
+  cursor: pointer;
+  position: relative;
+  width: 12px;
+  height: 12px;
+  margin-top: 2px; }
+  .fields-controls .remove-choice:before {
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    top: 1px; }
+
+.fields-controls .choice-block {
+  margin-top: 4px;
+  margin-bottom: 8px; }
+  .fields-controls .choice-block input[type="text"] {
+    margin-right: 7px;
+    width: 190px !important; }
+
+.form-shortcode-preview {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+  clear: both;
+  position: relative; }
+
+.post-type-flo_form_entry .wp-list-table tbody tr {
+  font-weight: bold; }
+  .post-type-flo_form_entry .wp-list-table tbody tr.entry-read {
+    font-weight: 100; }
+    .post-type-flo_form_entry .wp-list-table tbody tr.entry-read strong a {
+      font-weight: 100; }

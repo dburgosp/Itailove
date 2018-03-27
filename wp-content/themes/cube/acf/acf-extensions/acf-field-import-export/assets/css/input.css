@@ -1,0 +1,30 @@
+.acf-field-import-export .flo-warning{
+	color: red;
+}
+
+.acf-field-import-export .spinner{
+	float: none;
+}
+.acf-field-import-export textarea{
+	// max-width: 350px;
+	margin-top: 15px;
+}
+
+.acf-field-import-export .hint{
+	vertical-align: top;
+	// margin-left: 50px;
+	color: #666;
+	display: inline-block;
+	font-size: 11px;
+	font-style: italic;
+}
+
+.acf-field-import-export  .block{
+	margin-top: 50px;
+}
+
+.spinner-container{
+	position: absolute;
+	top: 0;
+	left: 150px;
+}

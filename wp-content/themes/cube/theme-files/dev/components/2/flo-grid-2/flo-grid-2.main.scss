@@ -1,0 +1,20 @@
+.flo-grid-2{
+  $b: ".flo-grid-2";
+
+  width: 100%;
+
+  .column{
+    padding: 0;
+    &:not(:last-child) {
+      margin-bottom: rem-calc(85);
+    }
+  }
+
+  @include breakpoint(medium up){
+
+    &__row{
+      max-width: rem-calc(849.5);
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.flo-video-embed {
+  $b: ".flo-video-embed";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  &__screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    @include global-transition(opacity);
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%
+    }
+  }
+
+
+  &__video-button {
+    pointer-events: initial;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    z-index: 100;
+
+    $size: rem-calc(80);
+    width: $size;
+    height: $size;
+    border-radius: $size;
+    font-size: $size / 1.61 / 1.61 / 1.61;
+
+    color: $color-white;
+    border: 1px solid $color-white;
+
+    user-select: none;
+    cursor: pointer;
+
+    @include global-transition(color, top, opacity, border, transform);
+
+    &:hover {
+      opacity: 0.4;
+    }
+  }
+    &__video-button-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include global-transition(opacity);
+
+      &--play {
+        opacity: 0;
+      }
+      &--stop {
+        opacity: 0;
+      }
+    }
+
+  $loaded_modificator: "--loaded";
+
+  // Start: Video Not Playing State
+    &:not(&#{$loaded_modificator}) {
+      #{$b}__screen {
+        opacity: 0;
+        pointer-events: none;
+      }
+      #{$b}__video-button {
+        top: 50%;
+      }
+        #{$b}__video-button-icon--play {
+          opacity: 1;
+        }
+    }
+  // End: Video Not Playing State
+
+  // Start: Video Playing State
+    &#{$loaded_modificator} {
+      #{$b}__screen {
+        opacity: 1;
+        pointer-events: initial;
+      }
+      #{$b}__video-button {
+        top: rem-calc(70);
+      }
+        #{$b}__video-button-icon--stop {
+          opacity: 1;
+        }
+      &:not(:hover) {
+        #{$b}__video-button {
+          opacity: 0;
+        }
+      }
+    }
+  // End: Video Playing State
+
+  @include breakpoint(small only){
+    &__video-button {
+      $size: rem-calc(48);
+      width: $size;
+      height: $size;
+      border-radius: $size;
+      font-size: $size / 1.61 / 1.61 / 1.61;
+    }
+  }
+}

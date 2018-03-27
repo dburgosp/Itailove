@@ -1,0 +1,325 @@
+<?php
+
+namespace Classy;
+
+/**
+ * Includes multiple helper function
+ */
+
+class Helper {
+
+	/**
+	 *
+	 *
+	 * @param string  $text
+	 * @param int     $num_words
+	 * @param string|null|false  $more text to appear in "Read more...". Null to use default, false to hide
+	 * @param string  $allowed_tags
+	 * @return string
+	 */
+	public static function trim_words( $text, $num_words = 55, $more = null, $allowed_tags = 'p a span b i br blockquote' ) {
+		if ( null === $more ) {
+			$more = __( '&hellip;','flotheme' );
+		}
+
+		$original_text = $text;
+		$allowed_tag_string = '';
+
+		foreach ( explode( ' ', $allowed_tags ) as $tag ) {
+			$allowed_tag_string .= '<' . $tag . '>';
+		}
+
+		$text = strip_tags( $text, $allowed_tag_string );
+
+		/* translators: If your word count is based on single characters (East Asian characters),
+		enter 'characters'. Otherwise, enter 'words'. Do not translate into your own language. */
+
+		if ( 'characters' === _x( 'words', 'word count: words or characters?','flotheme' ) && preg_match( '/^utf\-?8$/i', get_option( 'blog_charset' ) ) ) {
+			$text = trim( preg_replace( "/[\n\r\t ]+/", ' ', $text ), ' ' );
+			preg_match_all( '/./u', $text, $words_array );
+			$words_array = array_slice( $words_array[0], 0, $num_words + 1 );
+			$sep = '';
+		} else {
+			$words_array = preg_split( "/[\n\r\t ]+/", $text, $num_words + 1, PREG_SPLIT_NO_EMPTY );
+			$sep = ' ';
+		}
+
+		if ( count( $words_array ) > $num_words ) {
+			array_pop( $words_array );
+			$text = implode( $sep, $words_array );
+			$text = $text . $more;
+		} else {
+			$text = implode( $sep, $words_array );
+		}
+
+		$text = self::close_tags( $text );
+
+		return apply_filters( 'wp_trim_words', $text, $num_words, $more, $original_text );
+	}
+
+
+	/**
+	 *
+	 *
+	 * @param string  $html
+	 * @return string
+	 */
+	public static function close_tags( $html ) {
+		//put all opened tags into an array
+		preg_match_all( '#<([a-z]+)(?: .*)?(?<![/|/ ])>#iU', $html, $result );
+
+		$openedtags = $result[1];
+
+		//put all closed tags into an array
+		preg_match_all( '#</([a-z]+)>#iU', $html, $result );
+
+		$closedtags = $result[1];
+		$len_opened = count( $openedtags );
+
+		// all tags are closed
+		if ( count( $closedtags ) === $len_opened ) {
+			return $html;
+		}
+
+		$openedtags = array_reverse( $openedtags );
+
+		// close tags
+		for ( $i = 0; $i < $len_opened; $i++ ) {
+			if ( ! in_array( $openedtags[ $i ], $closedtags, true ) ) {
+				$html .= '</' . $openedtags[ $i ] . '>';
+			} else {
+				unset( $closedtags[ array_search( $openedtags[ $i ], $closedtags ) ] );
+			}
+		}
+
+		$html = str_replace( array( '</br>', '</hr>', '</wbr>' ), '', $html );
+		$html = str_replace( array( '<br>', '<hr>', '<wbr>' ), array( '<br />', '<hr />', '<wbr />' ), $html );
+
+		return $html;
+	}
+
+	/**
+	 * Displays variable if WP_DEBUG is up
+	 *
+	 * @param  mixed $arg
+	 *
+	 * @return bool
+	 */
+	public static function error_log( $arg ) {
+		if ( ! WP_DEBUG ) {
+			return true;
+		}
+		if ( is_object( $arg ) || is_array( $arg ) ) {
+			$arg = print_r( $arg, true );
+		}
+		return error_log( $arg );
+	}
+
+	/**
+	 *
+	 *
+	 * @param string  $args
+	 * @return array
+	 */
+	public static function paginate_links( $args = '' ) {
+		$defaults = array(
+			'base' => '%_%', // http://example.com/all_posts.php%_% : %_% is replaced by format (below)
+			'format' => '?page=%#%', // ?page=%#% : %#% is replaced by the page number
+			'total' => 1,
+			'current' => 0,
+			'show_all' => false,
+			'prev_next' => true,
+			'prev_text' => __( '&laquo; Previous', 'flotheme' ),
+			'next_text' => __( 'Next &raquo;', 'flotheme' ),
+			'end_size' => 1,
+			'mid_size' => 2,
+			'type' => 'array',
+			'add_args' => false, // array of query args to add
+			'add_fragment' => '',
+		);
+		$args = wp_parse_args( $args, $defaults );
+		// Who knows what else people pass in $args
+		$args['total'] = intval( (int) $args['total'] );
+		if ( $args['total'] < 2 ) {
+			return array();
+		}
+		$args['current'] = (int) $args['current'];
+		$args['end_size'] = 0 < (int) $args['end_size'] ? (int) $args['end_size'] : 1; // Out of bounds?  Make it the default.
+		$args['mid_size'] = 0 <= (int) $args['mid_size'] ? (int) $args['mid_size'] : 2;
+		$args['add_args'] = is_array( $args['add_args'] ) ? $args['add_args'] : false;
+		$page_links = array();
+		$dots = false;
+		if ( $args['prev_next'] && $args['current'] && 1 < $args['current'] ) {
+			$link = str_replace( '%_%', 2 === absint( $args['current'] ) ? '' : $args['format'], $args['base'] );
+			$link = str_replace( '%#%', $args['current'] - 1, $link );
+			if ( $args['add_args'] ) {
+				$link = add_query_arg( $args['add_args'], $link );
+			}
+			$link .= $args['add_fragment'];
+			$link = untrailingslashit( $link );
+			$page_links[] = array(
+				'class' => 'prev page-numbers',
+				'link' => esc_url( apply_filters( 'paginate_links', $link ) ),
+				'title' => $args['prev_text'],
+			);
+		}
+		for ( $n = 1; $n <= $args['total']; $n++ ) {
+			$n_display = number_format_i18n( $n );
+			if ( absint( $args['current'] ) === $n ) {
+				$page_links[] = array(
+					'class' => 'page-number page-numbers current',
+					'title' => $n_display,
+					'text' => $n_display,
+					'name' => $n_display,
+					'current' => true,
+				);
+				$dots = true;
+			} else {
+				if ( $args['show_all'] || ( $n <= $args['end_size'] || ( $args['current'] && $n >= $args['current'] - $args['mid_size'] && $n <= $args['current'] + $args['mid_size'] ) || $n > $args['total'] - $args['end_size'] ) ) {
+					$link = str_replace( '%_%', 1 === absint( $n ) ? '' : $args['format'], $args['base'] );
+					$link = str_replace( '%#%', $n, $link );
+					$link = trailingslashit( $link ) . ltrim( $args['add_fragment'], '/' );
+					if ( $args['add_args'] ) {
+						$link = rtrim( add_query_arg( $args['add_args'], $link ), '/' );
+					}
+					$link = str_replace( ' ', '+', $link );
+					$link = untrailingslashit( $link );
+					$page_links[] = array(
+						'class' => 'page-number page-numbers',
+						'link' => esc_url( apply_filters( 'paginate_links', $link ) ),
+						'title' => $n_display,
+						'name' => $n_display,
+						'current' => absint( $args['current'] ) === $n,
+					);
+					$dots = true;
+				} elseif ( $dots && ! $args['show_all'] ) {
+					$page_links[] = array(
+						'class' => 'dots',
+						'title' => __( '&hellip;', 'flotheme' ),
+					);
+					$dots = false;
+				}
+			}
+		}
+		if ( $args['prev_next'] && $args['current'] && ( $args['current'] < $args['total'] || -1 === intval( $args['total'] ) ) ) {
+			$link = str_replace( '%_%', $args['format'], $args['base'] );
+			$link = str_replace( '%#%', $args['current'] + 1, $link );
+			if ( $args['add_args'] ) {
+				$link = add_query_arg( $args['add_args'], $link );
+			}
+			$link = untrailingslashit( trailingslashit( $link ) . $args['add_fragment'] );
+			$page_links[] = array(
+				'class' => 'next page-numbers',
+				'link' => esc_url( apply_filters( 'paginate_links', $link ) ),
+				'title' => $args['next_text'],
+			);
+		}
+		return $page_links;
+	}
+
+
+	/**
+	 * Converts array to object recursively
+	 *
+	 * @param  array $array
+	 * @return object
+	 */
+	public static function array_to_object( $array ) {
+		$obj = new \stdClass;
+
+		foreach ( $array as $k => $v ) {
+			if ( strlen( $k ) ) {
+				if ( is_array( $v ) ) {
+					$obj->{$k} = self::array_to_object( $v ); //RECURSION
+				} else {
+					$obj->{$k} = $v;
+				}
+			}
+		}
+
+		return $obj;
+
+	}
+
+
+	/**
+	 * Returns Current Archives Page Title
+	 *
+	 * @return string
+	 */
+	public static function get_archives_title() {
+
+		$textdomain = 'flotheme';
+
+	    $archives_title = '';
+
+	    if ( is_category() || is_tax('gallery-category') ) {
+
+	        $archives_title = __('Category: ','flotheme') . single_cat_title( '', false );
+
+	    } else if ( is_tag() || is_tax('gallery-tag') ) {
+
+	        $archives_title = __('Tag: ','flotheme') . single_tag_title( '', false );
+
+	    } else if ( is_author() ) {
+
+	        if ( have_posts() ) {
+
+	            the_post();
+	            $archives_title = 'Author: ' . get_the_author();
+
+	        }
+
+	        rewind_posts();
+
+	    } else if ( is_search() ) {
+
+	    	global $flo_options;
+	    	if(isset($flo_options['flo-search-page__page-title']) && strlen($flo_options['flo-search-page__page-title']) ){
+	    		$search_title = str_replace('%','%s',$flo_options['flo-search-page__page-title']);
+	    	}else{
+	    		$search_title = __( 'Search Results for: %s', 'flotheme' );
+	    	}
+
+	        $archives_title = sprintf( $search_title, '<span>' . get_search_query() . '</span>' );
+
+	    } else if ( is_archive() ) {
+
+	        if ( is_day() ) {
+
+	            $archives_title = get_the_date();
+
+	        } elseif ( is_month() ) {
+
+	            $archives_title = get_the_date( _x( 'F Y', 'Monthly archives date format', 'flotheme' ) );
+
+	        } elseif ( is_year() ) {
+
+	            $archives_title = get_the_date( _x( 'Y', 'Yearly archives date format', 'flotheme' ) );
+
+	        } else {
+
+	            $archives_title = 'Archives';
+
+	        }
+		} else {
+
+	        $archives_title = 'Archives';
+
+	    }
+
+     // added filter for further use
+     // Sample Usage:
+     // function rename_it(){
+     //  if ( is_category() || is_tax('gallery-category') ) {
+     //   $archives_title = single_cat_title( '', false );
+     //   return $archives_title;
+     //  }
+     // }
+     // add_filter('rename_archive_label', 'rename_it');
+
+     $archives_title = apply_filters('rename_archive_label', $archives_title);
+	    return $archives_title;
+
+	}
+}

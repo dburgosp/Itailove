@@ -1,0 +1,2147 @@
+{
+    "key": "group_57f35b6a8465e",
+    "title": "3. Header",
+    "fields": [
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_584aa62babe3f",
+            "label": "Introduction to Header Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "Introduction to Header Settings\r\n\r\nHey folks! So in this area we are going to customize the layout of the website Header. The Header basically consists out of your Menu, Logo and a Search Field that is optional. \r\n\r\nPlease take a moment to watch our Introduction Video to the Header Settings where we explain some of the options. \r\n\r\n<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/59N1xRV6UvA\" frameborder=\"0\" allowfullscreen><\/iframe>\r\n\r\n\r\n<h4>When Finished<\/h4>\r\n\r\nOnce the Header has been modified to your preferences you can now head on over Flotheme -> 4.Pages -> Introduction to Page Settings, and follow the guide provided inside to setup your website Pages.",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_584aa5821b4f6",
+            "label": "Introduction to Header Settings",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_5811ede480f15",
+            "label": "3.1. Desktop Header",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "vertical",
+            "choices": {
+                "menu-right": "<img src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/header-type--logo-left.jpg\">",
+                "menu-center": "<img src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/header-type--logo-center.jpg\">",
+                "menu-left": "<img src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/header-type--logo-right.jpg\">",
+                "burger-right": "<img src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/header-type--logo-left-with-popup.jpg\">",
+                "burger-left": "<img src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/header-type--logo-right-with-popup.jpg\">",
+                "logo-center-burger-right": "<img src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/header-type--logo-center-with-popup-right.jpg\">",
+                "logo-center-burger-left": "<img src=\"https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/header-type--logo-center-with-popup-left.jpg\">"
+            },
+            "default_value": "menu-right",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_5824277951be3",
+            "label": "A.1. Menu Layout",
+            "name": "flo-cube-header__layout",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--label-on-top flo-image-select flo-image-select--columns-1",
+                "id": ""
+            }
+        },
+        {
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/header--classic.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_5811edb780f14",
+            "label": "Overview for the Classic Header Type",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-right"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-center"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/header--with-trigger.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_58807ef7ca23f",
+            "label": "Overview for the Trigger Header Type",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-right"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-right"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "slider_min_value": 0,
+            "slider_max_value": 200,
+            "increment_value": 1,
+            "slider_units": "px",
+            "default_value": 0,
+            "key": "field_58d22e77978c8",
+            "label": "Distance between the menu items on the left side of the Logo(in px)",
+            "name": "flo-cube-header__menu-items-gutter-left",
+            "type": "number_slider",
+            "instructions": "If you want to use the default value, leave it as '0'.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-center"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "slider_min_value": 0,
+            "slider_max_value": 200,
+            "increment_value": 1,
+            "slider_units": "px",
+            "default_value": 0,
+            "key": "field_58d22fe7978c9",
+            "label": "Distance between the menu items on the right side of the Logo(in px) (copy)",
+            "name": "flo-cube-header__menu-items-gutter-right",
+            "type": "number_slider",
+            "instructions": "If you want to use the default value, leave it as '0'.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-center"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#ffffff",
+            "key": "field_582da9bc9ad79",
+            "label": "Header Background Color",
+            "name": "flo-cube-header__background-color",
+            "type": "color_picker",
+            "instructions": "Default: #FFFFFF\r\n<br\/>\r\n<br\/>\r\nThis setting does not affect the Header over a Slideshow. Headers over a Sideshow remain transparent at all times",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#000000",
+            "key": "field_5888b6a4406a3",
+            "label": "Header Elements Color",
+            "name": "flo-cube-header__elements-color",
+            "type": "color_picker",
+            "instructions": "Default: #000000",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_58209595514ca",
+            "label": "Enable Sticky Header",
+            "name": "flo-cube-header__sticky-header",
+            "type": "true_false",
+            "instructions": "This feature keeps the Menu locked to the top of the page at all times",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#000000",
+            "key": "field_587e411f4976b",
+            "label": "Sticky Header Background Color",
+            "name": "flo-cube-header__sticky-header-bg-color",
+            "type": "color_picker",
+            "instructions": "Default: #000000",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "slider_min_value": 0,
+            "slider_max_value": 100,
+            "increment_value": 1,
+            "slider_units": "",
+            "default_value": 100,
+            "key": "field_58a197c23d00d",
+            "label": "Sticky Header Background Opacity",
+            "name": "flo-cube-header__sticky-header-bg-opacity",
+            "type": "number_slider",
+            "instructions": "Default: 100",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#ffffff",
+            "key": "field_587e430a4976c",
+            "label": "Sticky Header Elements Color",
+            "name": "flo-cube-header__sticky-header-text-color",
+            "type": "color_picker",
+            "instructions": "Default: #ffffff",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_582d794da30cd",
+            "label": "A.1. Menu Items Font",
+            "name": "flo-cube-header__menu-item-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 2",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-right"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-center"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-header__menu .menu-item a",
+            "active_css_selectors": ".flo-header__menu li.current-menu-item a",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        },
+        {
+            "default_value": "#000000",
+            "key": "field_5888b7c2406a5",
+            "label": "A.2.1. Menu Dropdown Background Color",
+            "name": "flo-cube-header__menu-dropdown-background-color",
+            "type": "color_picker",
+            "instructions": "Default: #000000",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-right"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-center"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#ffffff",
+            "key": "field_5888b7e8406a6",
+            "label": "A.2.2. Menu Dropdown Items Color",
+            "name": "flo-cube-header__menu-dropdown-items-color",
+            "type": "color_picker",
+            "instructions": "Default: #ffffff",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-right"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-center"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_5888b7a5406a4",
+            "label": "A.2.3. Menu Dropdown Items Font",
+            "name": "flo-cube-header__menu-dropdown-item-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 2",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-right"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-center"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-header__menu .menu-item ul a",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        },
+        {
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_57f361bd9f097",
+            "label": "A.3. Display Search Field",
+            "name": "flo-cube-header__enable-search-field",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-right"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-center"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#f7f7f7",
+            "key": "field_5889b85286660",
+            "label": "A.1. Menu Trigger Background Color",
+            "name": "flo-cube-header__menu-trigger-background-color",
+            "type": "color_picker",
+            "instructions": "Default: #f7f7f7",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-right"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-right"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#000000",
+            "key": "field_5889e37ea176e",
+            "label": "A.1.1. Menu Trigger Background Color on Hover",
+            "name": "flo-cube-header__menu-trigger-background-color--hover",
+            "type": "color_picker",
+            "instructions": "Default: #000000",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-right"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-right"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#000000",
+            "key": "field_5889b8a586661",
+            "label": "A.2. Menu Trigger Icon Color",
+            "name": "flo-cube-header__menu-trigger-icon-color",
+            "type": "color_picker",
+            "instructions": "Default: #000000",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-right"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-right"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#f7f7f7",
+            "key": "field_5889e39ca176f",
+            "label": "A.2.1. Menu Trigger Icon Color on Hover",
+            "name": "flo-cube-header__menu-trigger-icon-color--hover",
+            "type": "color_picker",
+            "instructions": "Default: #f7f7f7",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-right"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-right"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#f7f7f7",
+            "key": "field_5889b8e286662",
+            "label": "A.3. Sticky Header - Menu Trigger Background Color",
+            "name": "flo-cube-header__menu-trigger-background-color--sticky",
+            "type": "color_picker",
+            "instructions": "Default: #f7f7f7",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-right"
+                    },
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-left"
+                    },
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-left"
+                    },
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-right"
+                    },
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#000000",
+            "key": "field_5889e3eda1770",
+            "label": "A.3.1. Sticky Header - Menu Trigger Background Color on Hover",
+            "name": "flo-cube-header__menu-trigger-background-color--sticky-hover",
+            "type": "color_picker",
+            "instructions": "Default: #000000",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-right"
+                    },
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-left"
+                    },
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-left"
+                    },
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-right"
+                    },
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#000000",
+            "key": "field_5889b91586664",
+            "label": "A.4. Sticky Header - Menu Trigger Icon Color",
+            "name": "flo-cube-header__menu-trigger-icon-color--sticky",
+            "type": "color_picker",
+            "instructions": "Default: #000000",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-right"
+                    },
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-left"
+                    },
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-left"
+                    },
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-right"
+                    },
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#FFFFFF",
+            "key": "field_5889e3ffa1771",
+            "label": "A.4.1. Sticky Header - Menu Trigger Icon Color on Hover",
+            "name": "flo-cube-header__menu-trigger-icon-color--sticky-hover",
+            "type": "color_picker",
+            "instructions": "Default: #FFFFFF",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-right"
+                    },
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-left"
+                    },
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-left"
+                    },
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-right"
+                    },
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "image": "Image Logo",
+                "site-title": "Site Title",
+                "text": "Text Logo"
+            },
+            "default_value": [
+                "site-title"
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value",
+            "key": "field_5810a0036b234",
+            "label": "B.1. Logo Type",
+            "name": "flo-cube-header__logo-type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_5810a02b6b235",
+            "label": "B.2. Logo Image",
+            "name": "flo-cube-header__logo-image",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5810a0036b234",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_587f3b9ed1817",
+            "label": "B.2.1 Sticky Header Logo Image",
+            "name": "flo-cube-header__logo-image-sticky-header",
+            "type": "image",
+            "instructions": "If the sticky header is enabled and it requires a different logo than the default one, then you can use this option.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5810a0036b234",
+                        "operator": "==",
+                        "value": "image"
+                    },
+                    {
+                        "field": "field_58209595514ca",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_589dd913591a1",
+            "label": "B.2.2. Light Logo Image",
+            "name": "flo-cube-header__logo-image--light",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5810a0036b234",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_5810a05d6b236",
+            "label": "B.3. Logo Font",
+            "name": "flo-cube-header-mobile__logo-font",
+            "type": "font_style_select",
+            "instructions": "Default: Special Heading 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5810a0036b234",
+                        "operator": "==",
+                        "value": "site-title"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5810a0036b234",
+                        "operator": "==",
+                        "value": "text"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-header__logo, .flo-header-mobile__logo",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "special_heading_1"
+        },
+        {
+            "default_value": "Lorem Ipsum",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_5810a0a66b239",
+            "label": "B.4. Logo Text",
+            "name": "flo-cube-header__logo-text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5810a0036b234",
+                        "operator": "==",
+                        "value": "text"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "slider_min_value": 50,
+            "slider_max_value": 800,
+            "increment_value": 1,
+            "slider_units": "px",
+            "default_value": 100,
+            "key": "field_5810a0c76b23a",
+            "label": "B.5. Logo Maximum Width",
+            "name": "flo-cube-header__logo-max-width",
+            "type": "number_slider",
+            "instructions": "Default: 100px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "slider_min_value": 50,
+            "slider_max_value": 800,
+            "increment_value": 1,
+            "slider_units": "px",
+            "default_value": 100,
+            "key": "field_5810a1106b23c",
+            "label": "B.6. Logo Width for Tablet",
+            "name": "flo-cube-header__logo-max-width--tablet",
+            "type": "number_slider",
+            "instructions": "Default: 100px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_5878d35302d69",
+            "label": "C.1. Display Social Icons",
+            "name": "flo-cube-header__social-icons",
+            "type": "true_false",
+            "instructions": "If this option is enabled then the social links set in the 5.4. Generics -> Social Links section will be displayed.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-right"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-center"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "Used only for websites for multi lingual websites. Add the required widget in Appearance -> Widgets -> Header Translation",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_5889b7950c191",
+            "label": "C.2. Language Switcher Area",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-right"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-center"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_5889b31f372c3",
+            "label": "- 3.1.2. Menu Popup",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-right"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "burger-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-left"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "logo-center-burger-right"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "<img class=\"acf-img\" src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/header__popup.jpg\" \/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_5889b369372c6",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#FFFFFF",
+            "key": "field_5889e80643f38",
+            "label": "Background Color",
+            "name": "flo-cube-header-popup__background-color",
+            "type": "color_picker",
+            "instructions": "Default: #FFFFFF",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#000000",
+            "key": "field_5889e88e43f39",
+            "label": "Elements Color",
+            "name": "flo-cube-header-popup__elements-color",
+            "type": "color_picker",
+            "instructions": "Default: #000000",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "MENU",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_5889e5ff43f35",
+            "label": "A.1. Title",
+            "name": "flo-cube-header-popup__title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_5889e71843f36",
+            "label": "A.2. Title Font",
+            "name": "flo-cube-header-popup__title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 3",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-header-popup__title",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_3"
+        },
+        {
+            "key": "field_5889e7f743f37",
+            "label": "B.1. Menu Items Font",
+            "name": "flo-cube-header-popup__menu-items-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 4",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-header-popup__menu > div > ul > li > a",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_4"
+        },
+        {
+            "default_value": "#000000",
+            "key": "field_5889e94d43f3d",
+            "label": "B.2.1. Dropdown Menu Background Color",
+            "name": "flo-cube-header-popup__menu-dropdown-background-color",
+            "type": "color_picker",
+            "instructions": "Default: #000000",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#ffffff",
+            "key": "field_5889e91a43f3c",
+            "label": "B.2.2. Dropdown Menu Items Color",
+            "name": "flo-cube-header-popup__menu-dropdown-items-color",
+            "type": "color_picker",
+            "instructions": "Default: #ffffff",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_5889e90143f3b",
+            "label": "B.2.3. Dropdown Menu Items Font",
+            "name": "flo-cube-header-popup__menu-dropdown-items-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-header-popup__menu ul ul a",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        },
+        {
+            "sub_fields": [
+                {
+                    "default_value": "Investment",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_5889ea1aeb727",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "#",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_5889ea27eb728",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "min": 0,
+            "max": 2,
+            "layout": "table",
+            "button_label": "Add Links",
+            "collapsed": "",
+            "key": "field_5889e9fdeb726",
+            "label": "C.1. Featured Links",
+            "name": "flo-cube-header-popup__featured-links",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_5889ea34eb729",
+            "label": "C.2. Featured Links Font",
+            "name": "flo-cube-header-popup__featured-links-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-header-popup__special-link",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_1"
+        },
+        {
+            "sub_fields": [
+                {
+                    "default_value": "Contact",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_5889ec3b5deff",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "default_value": "",
+                    "delay": 0,
+                    "key": "field_5889ec505df00",
+                    "label": "Content",
+                    "name": "content",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Block",
+            "collapsed": "",
+            "key": "field_5889ec145defe",
+            "label": "D.1. Contact Blocks",
+            "name": "flo-cube-header-popup__contact-blocks",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--label-on-top",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_5889ec965df01",
+            "label": "D.2. Contact Block Title Font",
+            "name": "flo-cube-header-popup__contact-block-title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-header-popup__contact-block-title",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_2"
+        },
+        {
+            "message": "The Fonts can be setup at Flotheme -> 8. Typography -> 8.1. Generic Typography.",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_5889eccb5df04",
+            "label": "D.3. Contact Block Content Fonts",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_5889ecf43c4f1",
+            "label": "E.1. Display Social Links",
+            "name": "flo-cube-header-popup__social-links-display",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_5889ed333c4f2",
+            "label": "E.2. Display Search",
+            "name": "flo-cube-header-popup__search-display",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_588f04b1c1efd",
+            "label": "E.2.1. Search Field Font",
+            "name": "flo-cube-header-popup__search-field-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 5",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5889ed333c4f2",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-header-popup__search-input",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_5"
+        },
+        {
+            "message": "This area will display the widget that will be set inside Appearance -> Widgets -> Header Translation.",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_5889edba3c4f3",
+            "label": "E.3. Language Switcher Area",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "<img class=\"acf-img\" src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/header__search-popup.jpg\" \/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_5889b390372c7",
+            "label": "Search Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5824277951be3",
+                        "operator": "==",
+                        "value": "menu-right"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_5811ef7b2c31e",
+            "label": "3.2. Mobile Header",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/flo-header-mobile.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_585d399de7573",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_585d39bfe7574",
+            "label": "- 3.2.1. Mobile Header",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/flo-header-mobile__mobile-header.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_585d39d2e7575",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "slider_min_value": 50,
+            "slider_max_value": 800,
+            "increment_value": 1,
+            "slider_units": "px",
+            "default_value": 150,
+            "key": "field_5810a11f6b23d",
+            "label": "A.1. Logo Width",
+            "name": "flo-cube-header__logo-max-width--phone",
+            "type": "number_slider",
+            "instructions": "Default: 150px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_585d2895a805e",
+            "label": "A.2. Text Logo Font",
+            "name": "flo-cube-mobile-logo__text-font",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5810a0036b234",
+                        "operator": "!=",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_3"
+        },
+        {
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_587f5fe92074f",
+            "label": "A.2. Mobile Logo Image",
+            "name": "flo-header__logo-image-mobile",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5810a0036b234",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_58a17c433cd33",
+            "label": "A.3. Mobile Light Logo Image",
+            "name": "flo-header__logo-image-mobile--light",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5810a0036b234",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#f7f7f7",
+            "key": "field_589c848920c97",
+            "label": "B.1. Menu Trigger Background Color",
+            "name": "flo-header-mobile__menu-trigger-background-color",
+            "type": "color_picker",
+            "instructions": "Default: #f7f7f7",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#000000",
+            "key": "field_589c84d220c98",
+            "label": "B.2. Menu Trigger Icon Color",
+            "name": "flo-header-mobile__menu-trigger-icon-color",
+            "type": "color_picker",
+            "instructions": "Default: #000000",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_585d39eae7576",
+            "label": "- 3.2.2. Menu Popup",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/flo-header-mobile__menu-popup.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_585d39fae7577",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#ffffff",
+            "key": "field_585d2806a805c",
+            "label": "A.1. Menu Background Color",
+            "name": "flo-cube-mobile-menu__background-color",
+            "type": "color_picker",
+            "instructions": "Default: #ffffff",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#000000",
+            "key": "field_589caed8d2386",
+            "label": "A.2. Menu Elements Color",
+            "name": "flo-cube-mobile-menu__elements-color",
+            "type": "color_picker",
+            "instructions": "Default: #000000",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_585d28fda805f",
+            "label": "B. Menu Item Font",
+            "name": "flo-cube-mobile-menu__item-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 3",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-mobile-menu__menu > ul > li > a",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_3"
+        },
+        {
+            "layout": "vertical",
+            "choices": {
+                "collapsed": "Collapsed",
+                "expanded": "Always Expanded"
+            },
+            "default_value": "collapsed",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_58d2982d1eb35",
+            "label": "B.2.1. Submenu Style",
+            "name": "flo-cube-mobile-menu__subemenu-style",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_589d8f27e3ae0",
+            "label": "B.2.2. Submenu Item Font",
+            "name": "flo-cube-mobile-menu__subemenu-item-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-mobile-menu__menu li ul a",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_1"
+        },
+        {
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_589caefbd2387",
+            "label": "C.1. Display Social Icons",
+            "name": "flo-cube-mobile-menu__social-icons-display",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_589caf24d2388",
+            "label": "C.2. Display Search",
+            "name": "flo-cube-mobile-menu__search-display",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-3-header"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1490196633
+}

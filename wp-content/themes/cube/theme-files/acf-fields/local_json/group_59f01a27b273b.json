@@ -1,0 +1,493 @@
+{
+    "key": "group_59f01a27b273b",
+    "title": "4.4.1. Listing Title",
+    "fields": [
+        {
+            "key": "field_5800d463311fe",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-listing__title.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5800d5294d8a7",
+            "label": "1. Display Block",
+            "name": "page-listing-title__show-title-block",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59f3037542c64",
+            "label": "A.1. Title Type",
+            "name": "page-listing-title__title-type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5800d5294d8a7",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page": "Page's Title",
+                "custom": "Custom"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "custom",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59f303da42c66",
+            "label": "A.1.1. Title",
+            "name": "page-listing-title__title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5800d5294d8a7",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_59f3037542c64",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Title",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5800d4a84d8a5",
+            "label": "A.1.1. Title",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5800d5294d8a7",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_59f3037542c64",
+                        "operator": "==",
+                        "value": "page"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "The page title above will be used for this field.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_588609d067d5e",
+            "label": "A.2. Title Font",
+            "name": "page-listing-title__title-font",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5800d5294d8a7",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_2"
+        },
+        {
+            "key": "field_5825be9b4713a",
+            "label": "A.3. Subtitle",
+            "name": "page-listing-title__subtitle",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5800d5294d8a7",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "DAILY NEWS",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58860a1267d5f",
+            "label": "A.3.1. Subtitle Font",
+            "name": "page-listing-title__subtitle-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 2",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5800d5294d8a7",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        },
+        {
+            "key": "field_5800d4f54d8a6",
+            "label": "B. Category Switcher",
+            "name": "page-listing-title__category-switcher",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5800d5294d8a7",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_59f30d4cda6ce",
+            "label": "B.1. Categories Source",
+            "name": "page-listing-title__categories-source",
+            "type": "radio",
+            "instructions": "<b>Note: <\/b> the category switcher requires a Listing block to be added to the page.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5800d5294d8a7",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5800d4f54d8a6",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "old": "Listing Template",
+                "gallery_categories": "Gallery Categories",
+                "post_categories": "Post Categories",
+                "links": "Links"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "post_categories",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59f30dc0da6d1",
+            "label": "B.1.1. Post Categories",
+            "name": "page-listing-title__categories-post",
+            "type": "taxonomy",
+            "instructions": "Note: If none are selected, all the categories will be displayed.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5800d5294d8a7",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5800d4f54d8a6",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_59f30d4cda6ce",
+                        "operator": "==",
+                        "value": "post_categories"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        },
+        {
+            "key": "field_59f31b8bc52af",
+            "label": "B.1.1. Links",
+            "name": "page-listing-title__categories-links",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5800d5294d8a7",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5800d4f54d8a6",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_59f30d4cda6ce",
+                        "operator": "==",
+                        "value": "links"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 1,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Link",
+            "sub_fields": [
+                {
+                    "key": "field_59f31ba0c52b0",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "Title",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_59f31badc52b1",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_59f315a34d5fa",
+            "label": "B.1.1. Listing Block Categories",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5800d5294d8a7",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5800d4f54d8a6",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_59f30d4cda6ce",
+                        "operator": "==",
+                        "value": "old"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Note: This option is used to display the categories that are available in the Listing Template -> Template overview area.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59f30e0fda6d3",
+            "label": "B.1.1. Gallery Categories",
+            "name": "page-listing-title__categories-gallery",
+            "type": "taxonomy",
+            "instructions": "Note: If none are selected, all the categories will be displayed.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5800d5294d8a7",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5800d4f54d8a6",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_59f30d4cda6ce",
+                        "operator": "==",
+                        "value": "gallery_categories"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "gallery-category",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1509350365
+}

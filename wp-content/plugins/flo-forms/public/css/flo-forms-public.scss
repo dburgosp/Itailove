@@ -1,0 +1,321 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.display-none{
+	display:none
+}
+
+.flo-form{
+	max-width: 800px;
+	margin: 0 auto;
+	.field-row{
+		vertical-align: top;
+		min-height: 40px;
+		margin-bottom: 10px;
+		&.btn-center{
+			text-align: center;
+		}
+		&.btn-right{
+			text-align: right;
+		}
+		&.submit-row{
+			padding-top: 30px;
+			// overflow: auto;
+			// float: none;
+			// clear: both;
+		}
+		.error{
+			border-color: red;
+			color: red;
+			
+		}
+		label.error{
+			display: block;
+			margin-bottom: 15px;
+		}
+
+		textarea{
+			min-height: 90px;
+		}
+
+		input[type="checkbox"] {
+			height: auto;
+		}
+	}
+	.main-label{
+		vertical-align: top;
+	}
+	.topLabel{
+		.main-label{
+			margin-bottom: 5px;
+			display: block;
+		}
+	}
+    .left_column, .right_column{
+      width: 50%;
+      float: left;
+    }
+    .clear{
+      clear: both;
+    }
+  @media only screen and (max-width:767px){
+    .left_column, .right_column{
+      width: 100%;
+      float: none;
+    }
+  }
+	.leftLabel,.rightLabel{
+		.main-label{
+			width: 30%;
+			display: inline-block;
+			padding-right: 2%;
+		}
+		.field-box{
+			width: 70%;
+			display: inline-block;
+		}
+	}
+	.rightLabel{
+		.main-label{
+			text-align: right;
+		}
+
+	}
+	.field-box{
+		.choice{
+			margin-right: 20px;
+			margin-left: 3px;
+			display: inline-block;
+		}
+		.the-choice{
+			display: block;
+			margin-bottom: 8px;
+		}
+	}
+	.flo-response{
+		padding-top: 30px;
+		text-align: center;
+		font-size: 24px;
+	}
+	.flo-submit-button:focus{
+		outline: none;
+	}
+	.flo.overlay-loader {
+		display: none;
+		margin: auto;
+		width: 25px;
+		height: 25px;
+		position: relative;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.loader {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		width: 25px;
+		height: 25px;
+		animation-name: rotateAnim;
+			-o-animation-name: rotateAnim;
+			-ms-animation-name: rotateAnim;
+			-webkit-animation-name: rotateAnim;
+			-moz-animation-name: rotateAnim;
+		animation-duration: 0.72s;
+			-o-animation-duration: 0.72s;
+			-ms-animation-duration: 0.72s;
+			-webkit-animation-duration: 0.72s;
+			-moz-animation-duration: 0.72s;
+		animation-iteration-count: infinite;
+			-o-animation-iteration-count: infinite;
+			-ms-animation-iteration-count: infinite;
+			-webkit-animation-iteration-count: infinite;
+			-moz-animation-iteration-count: infinite;
+		animation-timing-function: linear;
+			-o-animation-timing-function: linear;
+			-ms-animation-timing-function: linear;
+			-webkit-animation-timing-function: linear;
+			-moz-animation-timing-function: linear;
+	}
+	.loader div {
+		width: 2px;
+		height: 2px;
+		border-radius: 50%;
+		border: 0px solid rgb(0,0,0);
+		position: absolute;
+		top: 0px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	.loader div:nth-child(odd) {
+		border-top: none;
+		border-left: none;
+	}
+	.loader div:nth-child(even) {
+		border-bottom: none;
+		border-right: none;
+	}
+	.loader div:nth-child(2) {
+		border-width: 0px;
+		left: 0px;
+		top: -1px;
+		width: 3px;
+		height: 3px;
+	}
+	.loader div:nth-child(3) {
+		border-width: 0px;
+		left: -0px;
+		top: 1px;
+		width: 4px;
+		height: 4px;
+	}
+	.loader div:nth-child(4) {
+		border-width: 1px;
+		left: -0px;
+		top: -1px;
+		width: 6px;
+		height: 6px;
+	}
+	.loader div:nth-child(5) {
+		border-width: 1px;
+		left: -0px;
+		top: 1px;
+		width: 8px;
+		height: 8px;
+	}
+	.loader div:nth-child(6) {
+		border-width: 1px;
+		left: 0px;
+		top: -1px;
+		width: 10px;
+		height: 10px;
+	}
+	.loader div:nth-child(7) {
+		border-width: 1px;
+		left: 0px;
+		top: 1px;
+		width: 12px;
+		height: 12px;
+	}
+
+
+	@keyframes rotateAnim {
+		from {
+			transform: rotate(360deg);
+		}
+		to {
+			transform: rotate(0deg);
+		}
+	}
+
+	@-o-keyframes rotateAnim {
+		from {
+			-o-transform: rotate(360deg);
+		}
+		to {
+			-o-transform: rotate(0deg);
+		}
+	}
+
+	@-ms-keyframes rotateAnim {
+		from {
+			-ms-transform: rotate(360deg);
+		}
+		to {
+			-ms-transform: rotate(0deg);
+		}
+	}
+
+	@-webkit-keyframes rotateAnim {
+		from {
+			-webkit-transform: rotate(360deg);
+		}
+		to {
+			-webkit-transform: rotate(0deg);
+		}
+	}
+
+	@-moz-keyframes rotateAnim {
+		from {
+			-moz-transform: rotate(360deg);
+		}
+		to {
+			-moz-transform: rotate(0deg);
+		}
+	}
+
+	// mobile portrait styles
+	@media only screen and (min-width:500px){
+
+		.field-box{
+
+			.the-choice{
+				vertical-align: top;
+				line-height: 1.5em;
+				display: inline-block;
+			}
+			&.two-columns{
+				.the-choice{
+					width: 49%;
+					display: inline-block;
+				}
+				.the-choice:nth-child(2n+1){
+					&:after{
+						visibility: hidden;
+						display: block;
+						content: "";
+						clear: both;
+						height: 0;
+					}
+					
+				}
+			}
+			&.three-columns{
+				.the-choice{
+					width: 32.5%;
+					display: inline-block;
+				}
+				.the-choice:nth-child(3n+1){
+					&:after{
+						visibility: hidden;
+						display: block;
+						content: "";
+						clear: both;
+						height: 0;
+					}
+				}
+			}
+			&.one-column{
+				.the-choice{
+					display: block
+				}
+			}
+		}
+
+		.width-50{
+			position: relative;
+			display: inline-block;
+			width: 50%;
+		}
+		.width-100,.width-50{
+			padding: 3px 3px 3px 8px;
+		}
+		// .field-row{
+		// 	&.flo-left{
+		// 		float: left;
+		// 	}
+		// 	&.flo-right{
+		// 		float: right;
+		// 	}
+		// }
+
+	}
+
+}

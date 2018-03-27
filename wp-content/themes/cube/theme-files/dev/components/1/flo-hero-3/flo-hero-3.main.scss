@@ -1,0 +1,104 @@
+.flo-hero-3{
+  $b: ".flo-hero-3";
+  color: white;
+  position: relative;
+
+  // Hide images while Reveal fires
+  .slider .slick-slide:not(:first-child) {
+    opacity: 0;
+  }
+
+  // Display images after Reveal fires
+  .slick-track .slick-slide:not(:first-child) {
+    opacity: 1;
+  }
+  .slick-list {
+    @include global-transition(height);
+  }
+
+  .flo-icon-flo-arrow-left{
+    left: rem-calc(65);
+  }
+  .flo-icon-flo-arrow-right{
+    right: rem-calc(65);
+  }
+
+  &__slide-content{
+    height: rem-calc(587);
+    @include global-bgi-cover;
+    display: block;
+  }
+
+  &__slide{
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+  }
+
+  &__arrow {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+  }
+    &__arrow--prev {
+
+    }
+    &__arrow--next {
+
+    }
+
+  @include breakpoint(medium up){
+
+    &--no-crop {
+      #{$b}__slide-content {
+        background-size: contain;
+      }
+
+    }
+    &--crop,
+    &--no-crop
+    {
+      #{$b}__slide-content {
+
+      }
+      img {
+        display: none!important;
+      }
+    }
+
+    $arrows__side_gap: rem-calc(83);
+    &__arrow {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+      &__arrow--prev {
+        left: $arrows__side_gap;
+      }
+      &__arrow--next {
+        right: $arrows__side_gap;
+      }
+
+  }
+
+  @include breakpoint(small only){
+    $hero-text-gap: rem-calc(30);
+
+    $arrows__side_gap: rem-calc(20);
+    &__arrow {
+      top: rem-calc(20);
+    }
+      &__arrow--prev {
+        left: $arrows__side_gap;
+      }
+      &__arrow--next {
+        right: $arrows__side_gap;
+      }
+
+    &__slide-content{
+      display: none;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

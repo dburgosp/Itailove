@@ -1,0 +1,133 @@
+.flo-a-text-with-image{
+  $b: ".flo-a-text-with-image";
+  $gap-side: rem-calc(30);
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  &__img{
+    width: 100%;
+    margin: 0;
+  }
+
+  &__tittle-offset{
+    position: relative;
+    z-index: 99;
+  }
+
+
+  &__content-title{
+    font-size: rem-calc(24);
+    line-height: 1.2;
+    display: block;
+  }
+
+  &__date{
+    font-weight: 700;
+    font-size: rem-calc(8);
+    letter-spacing: 0.675em;
+    text-transform: uppercase;
+    display: block;
+    max-width: rem-calc(190);
+  }
+
+  &__content-text{
+    font-size: rem-calc(18);
+    line-height: 1.6;
+    text-align: justify;
+    max-width: rem-calc(400);
+    margin-top: rem-calc(32);
+  }
+
+  &__text-line-left{
+    #{$b}__date{
+      margin-bottom: rem-calc(32);
+    }
+    #{$b}__content-text{
+      padding-left: rem-calc(40);
+      position: relative;
+      &:before{
+        content: '─';
+        width: rem-calc(40);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  @include breakpoint(medium up){
+    $gap-side: rem-calc(40);
+    flex-direction: row;
+
+    &__item{
+      width: 50%;
+    }
+
+    &__text {
+      padding: 0 $gap-side;
+    }
+
+    &__content-text{
+      margin-top: rem-calc(78);
+    }
+
+    &__tittle-offset{
+      left: -#{rem-calc(80)};
+    }
+
+    &__img {
+      height: rem-calc(428);
+      @include global-bgi-cover;
+      img{
+        display: none;
+      }
+    }
+
+    &__text-line-left {
+      #{$b}__date {
+        padding-left: rem-calc(60);
+        margin-bottom: rem-calc(65);
+      }
+      #{$b}__content-text {
+        padding-left: rem-calc(60);
+        &:before {
+          width: rem-calc(60);
+          text-align: center;
+        }
+      }
+    }
+    &__content-title{
+      font-size: rem-calc(55);
+      max-width: 98%;
+    }
+  }
+
+@include breakpoint(small only){
+      flex-direction: column;
+
+     &__img{
+       margin-left: -#{$gap-side};
+       width: calc(100% + #{$gap-side});
+     }
+
+    &__item{
+      margin-top: rem-calc(30);
+      &:first-of-type{
+        margin-top: 0;
+      }
+    }
+
+    &__content-title{
+        max-width: rem-calc(270);
+    }
+
+    &__date{
+      max-width: rem-calc(180);
+    }
+  .sticky{
+    position: initial !important;
+  }
+  }
+}

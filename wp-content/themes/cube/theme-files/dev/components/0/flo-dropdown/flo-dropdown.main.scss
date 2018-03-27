@@ -1,0 +1,82 @@
+.flo-dropdown-menu{
+  $gap-side: rem-calc(40);
+
+  .flo-icon{
+    font-size: rem-calc(22);
+    position: relative;
+    width: rem-calc(38);
+    &:before,
+    &:after{
+      text-align: center;
+      @include global-transition(visibility, opacity, font-size);
+      position: absolute;
+      top: 50%;
+      transform: translate(0,-50%);
+    }
+
+    &:after{
+      content:'\e807';
+      font-family: 'fontello';
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+  .hover{
+
+    .flo-icon{
+      color: #5a5a5a;
+      font-size: rem-calc(14);
+      &:before{
+        opacity: 0;
+        visibility: hidden;
+
+      }
+      &:after{
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  &__btn{
+    font-size: rem-calc(11);
+    text-transform: uppercase;
+    letter-spacing: 0.2185em;
+    display: flex;
+    align-items: center;
+    outline: none;
+    height: 100%;
+  }
+
+
+  &__pane{
+    width: 100%;
+    text-align: right;
+    border: 0;
+    padding: rem-calc(152) $gap-side;
+    min-height: rem-calc(420);
+    opacity: 0;
+    @include box-sizing(content-box);
+    @include global-transition(visibility, opacity, right);
+
+    left: initial !important;
+    right: -100%;
+    &.is-open{
+      opacity: 1;
+      right: 0;
+
+    }
+  }
+
+  &__link{
+    font-size: rem-calc(45);
+    outline: none;
+  }
+  @include breakpoint(small only){
+    $gap-side: rem-calc(40);
+
+    &__pane{
+      padding-left: $gap-side;
+      padding-right: $gap-side;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.acf-fields.-left > .acf-field {
+  margin: 0;
+  padding: 0;
+  /* mobile */
+}
+.acf-fields.-left > .acf-field:after {
+  content: "";
+  display: block;
+  line-height: 0;
+  clear: both;
+}
+.acf-fields.-left > .acf-field:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  background: transparent;
+  border-color: #E1E1E1;
+  border-style: solid;
+  border-width: 0 0 0 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 24%;
+  /* rtl */
+}
+html[dir="rtl"] .acf-fields.-left > .acf-field:before {
+  border-right-width: 0;
+  border-left-width: 1px;
+  left: auto;
+  right: 0;
+}
+.acf-fields.-left > .acf-field > .acf-label,
+.acf-fields.-left > .acf-field > .acf-input {
+  margin: 0;
+  padding: 28px 25px;
+  float: left;
+  position: relative;
+  /* rtl */
+}
+html[dir="rtl"] .acf-fields.-left > .acf-field > .acf-label,
+html[dir="rtl"] .acf-fields.-left > .acf-field > .acf-input {
+  float: right;
+}
+.acf-fields.-left > .acf-field > .acf-label {
+  width: 24%;
+}
+.acf-fields.-left > .acf-field > .acf-input {
+  width: 76%;
+}
+.acf-fields.-left > .acf-field[data-width] {
+  width: 100% !important;
+}
+@media screen and (max-width: 782px) {
+  .acf-fields.-left > .acf-field {
+    padding: 15px 12px;
+  }
+  .acf-fields.-left > .acf-field:before {
+    display: none;
+  }
+  .acf-fields.-left > .acf-field > .acf-label,
+  .acf-fields.-left > .acf-field > .acf-input {
+    padding: 0;
+    float: none;
+    width: auto;
+  }
+  .acf-fields.-left > .acf-field > .acf-label {
+    margin: 0 0 10px;
+  }
+}

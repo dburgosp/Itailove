@@ -1,0 +1,13 @@
+.flo-featured-items {
+  $b: '.flo-featured-items';
+
+  margin-top: rem-calc(60);
+
+  @include breakpoint(medium up) {
+
+  }
+
+  @include breakpoint(small only) {
+
+  }
+}

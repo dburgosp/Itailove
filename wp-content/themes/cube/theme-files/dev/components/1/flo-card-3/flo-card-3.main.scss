@@ -1,0 +1,89 @@
+.flo-card-3{
+  $b: ".flo-card-3";
+
+  position: relative;
+  @include global-transition(color);
+  color: $color-black;
+
+  &:hover {
+    #{$b}__text {
+      opacity: 1;
+    }
+  }
+
+  &__img{
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+
+  &__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $color-white;
+    width: rem-calc(217);
+    height: rem-calc(217);
+    padding-left: rem-calc(30);
+    padding-right: rem-calc(30);
+    @include box-sizing(border-box);
+    @include global-transition(opacity);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+    &__title{
+      font-size: rem-calc(11.875);
+      font-family: $font-lato;
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      line-height: rem-calc(18.855);
+      text-transform: uppercase;
+      margin-bottom: rem-calc(15);
+    }
+
+    &__category{
+      font-size: rem-calc(15);
+      font-family: $font-playfair;
+      font-style: italic;
+      max-width: rem-calc(226);
+      text-transform: lowercase;
+      margin-bottom: rem-calc(32);
+    }
+
+
+  @include breakpoint(medium up){
+    &__img{
+      height: rem-calc(432.5);
+      @include global-bgi-cover;
+
+      img{
+        display: none;
+      }
+    }
+  }
+
+  @include breakpoint(small only){
+    &__img{
+      background: none;
+    }
+    &__text {
+      position: relative;
+      opacity: 1;
+      height: auto;
+      background: transparent;
+      width: 100%;
+      padding: rem-calc(25);
+      text-align: center;
+    }
+      &__category {
+        width: 100%;
+        max-width: 100%;
+      }
+  }
+}

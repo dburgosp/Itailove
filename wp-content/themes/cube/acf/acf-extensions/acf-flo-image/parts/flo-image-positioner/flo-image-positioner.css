@@ -1,0 +1,84 @@
+.acf-flo-image-positioner {
+
+}
+  .acf-flo-image-positioner__content {
+    display: inline-block;
+    position: relative;
+    overflow: hidden
+  }
+    .acf-flo-image-positioner__container-area {
+      cursor: move;
+
+      /*border: 2px dashed black;*/
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      /*height: calc(100% - 4px);*/
+      height: 100%;
+      width: 200px;
+    }
+      .acf-flo-image-positioner__container-area:before,
+      .acf-flo-image-positioner__container-area:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+
+        width: 100vw;
+        height: 100%;
+
+        background-color: white;
+        opacity: 0.8;
+      }
+      .acf-flo-image-positioner__container-area:after {
+        right: 100%
+      }
+      .acf-flo-image-positioner__container-area:before {
+        left: 100%;
+      }
+      .acf-flo-image-positioner__container-area-aim {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        pointer-events: none;
+      }
+        .acf-flo-image-positioner__container-area-aim:before,
+        .acf-flo-image-positioner__container-area-aim:after {
+          content: " ";
+          position: absolute;
+          border-color: white;
+        }
+        .acf-flo-image-positioner__container-area-aim:before {
+          border-left: 1px dashed white;
+          width: 1px;
+          margin-left: -1px;
+          left: 50%;
+          transform: translateX(-50%);
+
+          height: 100%;
+          top: 0;
+        }
+        .acf-flo-image-positioner__container-area-aim:after {
+          display: none;
+          border-top: 1px dashed white;
+          height: 1px;
+          margin-top: -1px;
+          top: 50%;
+          transform: translateY(-50%);
+
+          width: 100%;
+          left: 0;
+        }
+
+    .acf-flo-image-positioner__image {
+      position: relative;
+
+      display: block!important;
+      height: 300px!important;
+      width: auto!important;
+    }

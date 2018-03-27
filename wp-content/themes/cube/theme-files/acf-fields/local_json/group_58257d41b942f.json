@@ -1,0 +1,600 @@
+{
+    "key": "group_58257d41b942f",
+    "title": "2. Getting Started",
+    "fields": [
+        {
+            "message": "<div style=\"position:relative;height:0;padding-bottom:56.25%\"><iframe src=\"https:\/\/www.youtube.com\/embed\/Bv1mihF1DKM?list=PLpRYqajK67Ohjj1siA8OMlcze2KXIfq0T?ecver=2\" width=\"640\" height=\"360\" frameborder=\"0\" style=\"position:absolute;width:100%;height:100%;left:0\" allowfullscreen><\/iframe>\r\n<\/div>\r\n\r\n<br><br>\r\nFor more details check the  video below:\r\n\r\n<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/toNeP7YaecU\" frameborder=\"0\" allowfullscreen><\/iframe>\r\n\r\n<br>\r\n\r\nWelcome to the Getting Started section. Please take a moment to answer the question(s) below. Our step by step guide will adjust based on your selections.",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_584a687bd9a94",
+            "label": "Introduction",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--label-on-top",
+                "id": ""
+            }
+        },
+        {
+            "layout": "vertical",
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": "",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 1,
+            "return_format": "value",
+            "key": "field_5847c71dd3ab9",
+            "label": "Does your website have existing content? e.g Blog Posts, Pages, etc.",
+            "name": "questionnaire__existing-content",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--label-on-top",
+                "id": ""
+            }
+        },
+        {
+            "layout": "vertical",
+            "choices": {
+                "yes": "Yes",
+                "no": "No"
+            },
+            "default_value": "",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 1,
+            "return_format": "value",
+            "key": "field_584a6753db640",
+            "label": "Would you like your website to look like the Demo Site?",
+            "name": "questionnaire__demo",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5847c71dd3ab9",
+                        "operator": "==",
+                        "value": "no"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--label-on-top",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_5841823ee15b5",
+            "label": "Install Plugins",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5847c71dd3ab9",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_584a6753db640",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_584a6753db640",
+                        "operator": "==",
+                        "value": "no"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "enhanced_message": "<?php\r\n\t\t\techo sprintf(__('Plugins are add-ons to your site that can make life easier for you. There are 2 types of Plugins - Required and Recommended. For example:\r\n<br\/>\r\nFlo-Updater - required Plugin to keep your Theme up to date.\r\n<br\/>\r\nFlo-Instagram - recommended Plugin to show your Instagram feed in the Footer.  %s\r\n\t\t\t\tIf you are not sure what you need, you can leave this for later. %s%s','flotheme'), '<br\/>','<br\/>','<br\/>','<br\/>');\r\n\r\n\t\t\techo sprintf(__('%sInstall and Activate%s recommended Plugins','flotheme'),'<a href=\"'.get_dashboard_url().'themes.php?page=install-required-plugins\" target=\"_blank\">','<\/a>' );\r\n\t\t?>",
+            "hide_label": "no",
+            "key": "field_5841827ce15b6",
+            "label": "Recommended Plugins",
+            "name": "recommended_plugins",
+            "type": "enhanced_message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_58418c6b68a34",
+            "label": "Import Demo Content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5847c71dd3ab9",
+                        "operator": "==",
+                        "value": "no"
+                    },
+                    {
+                        "field": "field_584a6753db640",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "clone": [
+                "field_5825bb2ff94a3"
+            ],
+            "prefix_label": 0,
+            "prefix_name": 0,
+            "display": "seamless",
+            "layout": "block",
+            "key": "field_58418e54d6168",
+            "label": "Select demo content you want to import",
+            "name": "flo-get_started__import_demo_content",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "<input type=\"button\" class=\"import-demo-content generic-record-button  button-primary  \" value=\"Import dummy data\" onclick=\"importDummyData();\">\r\n<div class=\"spinner-container\"><span class=\"spinner import-demo-spinner\"><\/span><\/div>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_58418eedc5212",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--no-top-border",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_5841875b647eb",
+            "label": "Setup the Header",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5847c71dd3ab9",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_584a6753db640",
+                        "operator": "==",
+                        "value": "no"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "In the following area you can add your Logo and website Navigation Menu",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_584973adc870f",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "image": "Image Logo",
+                "text": "Text Logo"
+            },
+            "default_value": [
+                "site-title"
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value",
+            "key": "field_584186e8e0ea3",
+            "label": "Select Logo Type",
+            "name": "flo-cube-header__logo-type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_584186f0e0ea4",
+            "label": "Logo Image",
+            "name": "flo-cube-header__logo-image",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_584186e8e0ea3",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "Monte",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_584188ba63002",
+            "label": "Logo Text",
+            "name": "flo-cube-header__logo-text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_584186e8e0ea3",
+                        "operator": "==",
+                        "value": "text"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_584186f4e0ea5",
+            "label": "Logo Font",
+            "name": "flo-cube-header__logo-font",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_584186e8e0ea3",
+                        "operator": "!=",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-header__logo, .flo-header-mobile__logo",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "flo-typography",
+            "default_typography_style": "special_heading_1"
+        },
+        {
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "0": "Select an option",
+                "automatically": "Automatically create the menu from existing pages",
+                "manually": "Set one of the existing menus as the Primary menu"
+            },
+            "default_value": [],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value",
+            "key": "field_58419d854134f",
+            "label": "Website Menu Settings",
+            "name": "flo-quick_setup__menu_options",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "menu-creation",
+                "id": ""
+            }
+        },
+        {
+            "enhanced_message": "<?php\r\n$menus = get_terms( 'nav_menu', array( 'hide_empty' => false ) );\r\n\r\nif(sizeof($menus)){\r\n?>\r\n\t<select  class=\"redux-select-item main-menu-select\" >\r\n\t\t<option value=\"\">Select a menu<\/option>\r\n\t<?php\r\n\t\tforeach ($menus as $key => $menu) {\r\n\t\t?>\r\n\t\t\t<option value=\"<?php echo $menu->term_id; ?>\"><?php echo $menu->name; ?><\/option>\r\n\t\t<?php\r\n\r\n\t\t}\r\n\t?>\r\n\t<\/select>\r\n<?php\r\n\r\n}\r\n?>",
+            "hide_label": "yes",
+            "key": "field_58450e38ac2b2",
+            "label": "Drop down with available menus",
+            "name": "drop_down_with_available_menus",
+            "type": "enhanced_message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58419d854134f",
+                        "operator": "==",
+                        "value": "manually"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "flo-available-menus",
+                "id": ""
+            }
+        },
+        {
+            "message": "<input type=\"button\" class=\" generic-record-button import-demo-content button-primary  \" value=\"Set the primary menu\" onclick=\"floSetMainMenu();\">\r\n\r\n<div class=\"spinner-container\">\r\n\t<span class=\"spinner wizard-menu-spinner\"><\/span>\r\n<\/div>\r\n\r\n<div class=\"wizard-menu-response response-box\"><\/div>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_58450f51eb4cd",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58419d854134f",
+                        "operator": "!=",
+                        "value": "0"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "flo-button__set-primary-menu",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_5841934d3bbf5",
+            "label": "Setup Generics",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5847c71dd3ab9",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_584a6753db640",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_584a6753db640",
+                        "operator": "==",
+                        "value": "no"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 0,
+            "message": "<div class=\"wizard-permalinks-response response-box success hidden\"> The permalinks structure was updated succesfully<\/div>",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_584193943bbf6",
+            "label": "Enable pretty permalinks",
+            "name": "flo-quick_setup__enable_pretty_permalinks",
+            "type": "true_false",
+            "instructions": "Set the permalinks to 'Post name' option\t\r\nFor more permalinks options you can go <a href=\"http:\/\/localhost\/flo\/porto\/wp-admin\/options-permalink.php\" target=\"_blank\"> here <\/a> .",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5847c71dd3ab9",
+                        "operator": "==",
+                        "value": "no"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "flo_pretty_permalinks",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "ico",
+            "key": "field_58418a449118a",
+            "label": "Favicon",
+            "name": "flo-get_started__favicon",
+            "type": "image",
+            "instructions": "<h3>What are favicons?<\/h3>\r\n\r\nFavicons are small 16x16 icon files that are displayed next to the URL of your site in a browser's address bar.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_584a839c85407",
+            "label": "Setup Footer",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5847c71dd3ab9",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_584a6753db640",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_584a6753db640",
+                        "operator": "==",
+                        "value": "no"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "\u00a9 2016 CUBE | FLOTHEMES",
+            "new_lines": "wpautop",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": "",
+            "key": "field_584a83ba85408",
+            "label": "Footer Copyrights Text",
+            "name": "flo-cube-footer__copyright-text",
+            "type": "textarea",
+            "instructions": "In order to display the current year use \"%year%\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-2-getting-started"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1490709423
+}

@@ -1,0 +1,64 @@
+.flo-block-image-link-with-parallax {
+  $b: ".flo-block-image-link-with-parallax";
+  display: block;
+  @include global-bgi-cover();
+
+  &__overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+    &__title {
+      display: inline-block;
+    }
+    &__subtitle {
+      display: inline-block;
+      margin-top: rem-calc(10);
+    }
+    &__button {
+      display: inline-block;
+      margin-top: rem-calc(33);
+      padding: rem-calc(13) rem-calc(43);
+    }
+
+  @include breakpoint(large up) {
+    &--parallax-enabled {
+      background-attachment: fixed;
+    }
+  }
+
+  @include breakpoint(medium up) {
+    &__overlay {
+      width: 100%;
+      height: 100%;
+    }
+      &__title {
+
+      }
+      &__subtitle {
+
+      }
+      &__button {
+
+      }
+
+  }
+
+  @include breakpoint(small only) {
+    &__overlay {
+      padding: rem-calc(60) $global-padding-mobile--horizontal;
+    }
+      &__title {
+
+      }
+      &__subtitle {
+
+      }
+      &__button {
+
+      }
+
+  }
+}

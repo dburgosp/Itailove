@@ -1,0 +1,84 @@
+.flo-card-4{
+
+  &__img {
+    width: 100%;
+  }
+
+  &__text{
+    margin-top: rem-calc(45);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__category{
+    font-size: rem-calc(29.765);
+    font-family: $font-playfair;
+    font-style: italic;
+    text-transform: capitalize;
+  }
+
+  &__title{
+    margin-top: rem-calc(19);
+    font-size: rem-calc(47.905);
+    font-family: $font-lato;
+    letter-spacing: 0.2em;
+    line-height: rem-calc(61.38);
+  }
+  &__excerpt {
+    margin-top: rem-calc(20);
+    // font-family: $font-lato;
+    // font-size: rem-calc(9.48);
+    // letter-spacing: 0.3em;
+    // text-transform: uppercase;
+  }
+
+  &__open-post {
+    margin-top: rem-calc(20);
+    display: inline-block;
+    min-width: rem-calc(150.5);
+    // height: rem-calc(45.5);
+    padding: 0 rem-calc(26);
+    background-color: $color-black;
+    color: $color-white;
+    font-size: rem-calc(10);
+    font-family: $font-lato;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    //line-height: rem-calc(45.5);
+    padding: rem-calc(16) 0;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    &:visited {
+      color: $color-white;
+    }
+    &:hover {
+      border-color: $color-black;
+      background-color: $color-white;
+      color: $color-black !important;
+    }
+  }
+  &__content{
+    width: 100%;
+  }
+
+  @include breakpoint(medium up){
+    &__img{
+      width: 100%;
+      height: rem-calc(526);
+      @include global-bgi-cover;
+      img{
+        display: none;
+      }
+    }
+  }
+  @include breakpoint(small only){
+    &__img{
+      background-image: none !important;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

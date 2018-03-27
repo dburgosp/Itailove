@@ -1,0 +1,20 @@
+.flo-card-1{
+  $b: 'flo-card-1';
+  text-align: center;
+  justify-content: center;
+
+  &__decoration{
+    max-width: rem-calc(125);
+    height: rem-calc(160);
+    margin: 0 auto rem-calc(70);
+    @include global-bgi-contain;
+  }
+
+  &__text{
+    font-size: rem-calc(18);
+  }
+
+  &__btn{
+    margin-top: rem-calc(42);
+  }
+}

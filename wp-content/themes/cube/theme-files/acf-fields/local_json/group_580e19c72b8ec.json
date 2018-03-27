@@ -1,0 +1,2928 @@
+{
+    "key": "group_580e19c72b8ec",
+    "title": "Custom Page (Default Page Template)",
+    "fields": [
+        {
+            "key": "field_580f41db53512",
+            "label": "How to's",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5a31417c2eef4",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/jiXBhemyZqE\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen><\/iframe>\r\n\r\n<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/3A0CgfVVmek\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen><\/iframe>\r\n\r\n<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/QNlKXgoOme0\" frameborder=\"0\" gesture=\"media\" allow=\"encrypted-media\" allowfullscreen><\/iframe>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_580e3f64b23c0",
+            "label": "4.9.1. Custom Header With Slider",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_589c974ccd1f7",
+            "label": "Slideshow Fields",
+            "name": "slideshow_fields",
+            "type": "clone",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_58aad53e9ba75"
+            ],
+            "prefix_label": 0,
+            "prefix_name": 0,
+            "display": "seamless",
+            "layout": "block"
+        },
+        {
+            "key": "field_58a2eda0e1272",
+            "label": "- 4.9.1.1. Tutorials",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_58a2edcee1273",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/FBp-XTqEYig\" frameborder=\"0\" allowfullscreen><\/iframe>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_580f3fb4b3eb8",
+            "label": "4.9.2. Text Content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_580f3fcfb3eb9",
+            "label": "4.9.2.1. Page Content Fields",
+            "name": "page_content_block_fields",
+            "type": "clone",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "clone": [
+                "group_585cd97a951b6"
+            ],
+            "prefix_label": 0,
+            "prefix_name": 0,
+            "display": "seamless",
+            "layout": "block"
+        },
+        {
+            "key": "field_580e3f9fb23c1",
+            "label": "4.9.3. Layout",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59f18ef750564",
+            "label": "Template Selector",
+            "name": "template_selector",
+            "type": "flo_template_selector",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "title": "Choose a Layout Template",
+            "subtitle": "Note: all the blocks from the current layout will be replaced with the ones from the selected template.",
+            "flexible_content_field_name": "layout",
+            "optimize_for_json_block_fetching": 1,
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_59f196ec50565",
+            "label": "- 4.9.3.1. Layout Blocks",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_59ef268a3ffac",
+            "label": "Layout",
+            "name": "layout",
+            "type": "flo_flexible_content",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "button_label": "Add Block",
+            "min": "",
+            "max": "",
+            "layouts": [
+                {
+                    "key": "59f18d44ac065",
+                    "name": "top_block",
+                    "label": "4.1.1. Top Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59f18d44ac066",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59f18d44ac067",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_59f1898f6bc11"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59f18d44ac068",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-about__top-block.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-about__top-block.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59f18d44ac061",
+                    "name": "image_block",
+                    "label": "4.1.2. Image Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59f18d44ac062",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59f18d44ac063",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_59f18cca82f8d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59f18d44ac064",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-about__image-block.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-about__image-block.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59ef2eca81eca",
+                    "name": "info_block",
+                    "label": "4.1.3. Information Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59ef2eca81ecb",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59ef2eca81ecc",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5889b51961838"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59ef2eca81ecd",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-about__information-block.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-about__information-block.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59ef2f4881ed2",
+                    "name": "quote_block",
+                    "label": "4.1.4. Quote Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59ef2f4881ed3",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59ef2f4881ed4",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5889b6fe398e5"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59ef2f4881ed5",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-about__quote-block.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-about__quote-block.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59f1c415ce895",
+                    "name": "contact",
+                    "label": "4.2. Contact",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59f1c415ce896",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59f1c415ce897",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_57fcc4945d442"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59f1c415ce898",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/contact-1.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/contact-1.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59ef2b6ec3ab9",
+                    "name": "image_blocks",
+                    "label": "4.3.2. Home: Image Blocks",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59ef2d273ffad",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59ef2d323ffae",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_588ef96c20257"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59ef2dc13ffaf",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-home__image-blocks-thumb--type-a.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-home__image-blocks-thumb--type-a.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59ef2df79a820",
+                    "name": "home_text_block",
+                    "label": "4.3.3. Home: Text Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59ef2df79a821",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59ef2df79a822",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_588efb00b58b3"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59ef2df79a823",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-home__text-blocks.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-home__text-blocks.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59ef2e5b9a82c",
+                    "name": "featured_posts",
+                    "label": "4.3.4. Home: Featured Posts",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59ef2e5b9a82d",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59ef2e5b9a82e",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_588efe8845fb1"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59ef2e5b9a82f",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-home__featured-items-2.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-home__featured-items-2.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59f0186e59884",
+                    "name": "section-listing-title",
+                    "label": "4.4.1. Listing Title",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59f0186e59885",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59f0186e59886",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_59f01a27b273b"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59f0186e59887",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-listing__title.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-listing__title.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59f0186e59880",
+                    "name": "section-listing-featured-item",
+                    "label": "4.4.2. Listing Featured Item",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59f0186e59881",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59f0186e59882",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_59f01b4c114a0"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59f0186e59883",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-listing__featured-item.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-listing__featured-item.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59f01782ca764",
+                    "name": "section-listing",
+                    "label": "4.4.3. Listing",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59f01782ca765",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59f6e154a4753",
+                            "label": "\"What to list?\" Fields",
+                            "name": "what_to_list_fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_59f6e09a545e4"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59f01782ca766",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_587cf2af83fcd"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59f01782ca767",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-listing__listing.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-listing__listing.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59f01ebd2cf72",
+                    "name": "section-listing-pagination",
+                    "label": "4.4.4. Listing Pagination",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59f01ebd2cf73",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59f01ebd2cf74",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_59f01e5914f32"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59f01ebd2cf75",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-listing__pagination.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-listing__pagination.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59ef2eca81ece",
+                    "name": "press_block",
+                    "label": "4.6. Press Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59ef2eca81ecf",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59ef2eca81ed0",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_588af11212532"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59ef2eca81ed1",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-press.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/page-press.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "5a252f339f7d9",
+                    "name": "divider",
+                    "label": "Divider",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a252f339f7da",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a252f339f7db",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a251d54041fd"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5a252f339f7dc",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-divider.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-divider.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "5a252f719f7e1",
+                    "name": "featured-links-1",
+                    "label": "Featured Links 1",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a252f719f7e2",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a252f719f7e3",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a251ddc2411b"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5a252f719f7e4",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-featured-links-1.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-featured-links-1.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "5a252da49f7c9",
+                    "name": "featured-slideshow-1",
+                    "label": "Featured Slideshow 1",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a252da49f7ca",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a252da49f7cb",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a25048210060"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5a252da49f7cc",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-featured-slideshow-1.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-featured-slideshow-1.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "5a20024727fd8",
+                    "name": "image-link-with-parallax",
+                    "label": "Image Link With Parallax",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a20024727fd9",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a20024727fda",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a1fffa6ca2bc"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5a20024727fdb",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-image-link-with-parallax.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-image-link-with-parallax.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "5a1fc7a87fecc",
+                    "name": "image-links",
+                    "label": "Image Links 1",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a1fc7a87fecd",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a1fc7a87fece",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a1fc678f0746"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5a1fc7a87fecf",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-image-links.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-image-links.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "5a1fff2bda3d2",
+                    "name": "image-links-2",
+                    "label": "Image Links 2",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a1fff2bda3d3",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a1fff2bda3d4",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a1ff7710be4d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5a1fff2bda3d5",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-image-links-2.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-image-links-2.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "5a1ff70b94c44",
+                    "name": "information-block-2",
+                    "label": "Information Block 2",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a1ff70b94c45",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a1ff70b94c46",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a1fef68d3f0a"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5a1ff70b94c47",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-information-block-2.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-information-block-2.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "5a252df29f7d1",
+                    "name": "information-block-3",
+                    "label": "Information Block 3",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a252df29f7d2",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a252df29f7d3",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a251a06d4168"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5a252df29f7d4",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-information-block-3.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-information-block-3.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "5a27e775ac975",
+                    "name": "instagram",
+                    "label": "Instagram",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a27e776ac976",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a27e776ac977",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a27e5df7e115"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5a27e776ac978",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-instagram.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-instagram.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "5a2530ed9f7e9",
+                    "name": "newsletter-2",
+                    "label": "Newsletter 2",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a2530ed9f7ea",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a2530ed9f7eb",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a2520570bfe9"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5a2530ed9f7ec",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-newsletter-2.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-newsletter-2.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "5a1d03766be8d",
+                    "name": "slideshow-1",
+                    "label": "Slideshow 1",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a1d03766be8e",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a1d03766be8f",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a1cf8c91ec27"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5a1d03766be90",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-slideshow-1.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-slideshow-1.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "5a1d04a076e60",
+                    "name": "slideshow-2",
+                    "label": "Slideshow 2",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a1d04a076e61",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a1d04a076e62",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a1d045bb171f"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5a1d04a076e63",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-slideshow-2.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-slideshow-2.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59f01651ca754",
+                    "name": "section-text-content",
+                    "label": "Text Content Block",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59f01651ca755",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59f01651ca756",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_585bbbc937d43"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59f01651ca757",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/section-text-content.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/section-text-content.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "5a1fc60115a16",
+                    "name": "title-1",
+                    "label": "Title 1",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a1fc60115a17",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a1fc60115a18",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a1fc53737666"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5a1fc60115a19",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-title-1.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-title-1.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "5a27c980b4c2f",
+                    "name": "title-2",
+                    "label": "Title 2",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a27c980b4c30",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a27c980b4c31",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a27c8750776f"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5a27c980b4c32",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-title-2.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-title-2.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59f016e8ca760",
+                    "name": "section-pricing-packages",
+                    "label": "Pricing Packages",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59f016e8ca761",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59f016e8ca762",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58a5a21385655"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59f016e8ca763",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-pricing-packages.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-pricing-packages.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "5a27e101ab2b8",
+                    "name": "pricing-packages-2",
+                    "label": "Pricing Packages 2",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a27e101ab2b9",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a27e101ab2ba",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a27c9a59754f"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5a27e101ab2bb",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-pricing-packages-2.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-pricing-packages-2.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59f016e8ca75c",
+                    "name": "section-testimonials-slideshow",
+                    "label": "Testimonials Slideshow",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59f016e8ca75d",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59f016e8ca75e",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58a5ae9acb959"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59f016e8ca75f",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-testimonial-slideshow.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-testimonial-slideshow.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "5a27e5a3662f9",
+                    "name": "testimonials-2",
+                    "label": "Testimonials 2",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a27e5a3662fa",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a27e5a3662fb",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a27e3dd7ec1c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5a27e5a3662fc",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-testimonials-2.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-testimonials-2.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59f01782ca768",
+                    "name": "section-special-link",
+                    "label": "Special Link",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59f01782ca769",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59f01782ca76a",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58a5ad8338ca0"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59f01782ca76b",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-special-link.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-special-link.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "5a1fed7062636",
+                    "name": "video",
+                    "label": "Video",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5a1fed7062637",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a1fed7062638",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5a1fec05bd336"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_5a1fed7062639",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-video.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/flo-block-video.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59f1845a18e81",
+                    "name": "wordpress_title",
+                    "label": "WordPress Title",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59f1845a18e82",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59f1845a18e83",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5908332d547eb"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59f1845a18e84",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/wordpress-title.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/wordpress-title.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                },
+                {
+                    "key": "59f1845a18e7d",
+                    "name": "wordpress_content",
+                    "label": "WordPress Content",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_59f1845a18e7e",
+                            "label": "Specific",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_59f1845a18e7f",
+                            "label": "Fields",
+                            "name": "fields",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_590833596e214"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        },
+                        {
+                            "key": "field_59f1845a18e80",
+                            "label": "Additional",
+                            "name": "additional",
+                            "type": "clone",
+                            "value": null,
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_58eb425e82b8c"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "thumbnail_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/wordpress-content.thumb.jpg",
+                    "preview_url": "https:\/\/s3-us-west-2.amazonaws.com\/flothemes-dashboard-images\/cube\/wordpress-content.preview.jpg",
+                    "hide_if": "",
+                    "show_if": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1514988498
+}

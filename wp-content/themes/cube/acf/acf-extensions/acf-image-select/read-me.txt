@@ -1,0 +1,15 @@
+Supported css classes:
+
+layout_sidebars -> sets the proper width for the layout icons
+
+hidden-label -> use this class if you need to hide the label for the Image select field
+
+
+The custom image select fields have problems with the Conditional Logic.
+Therefore if you need to use conditional logic, use 'radio inputs' and use the class 'flo-image-select'
+
+That class is used by the js and the icon is inserted afer the radio button.
+
+ the icon should be in png format and have the same name as 
+ the radio input value.
+ i.e. if the radio input has the value 'full_width' ,  then the icon should be full_width.png

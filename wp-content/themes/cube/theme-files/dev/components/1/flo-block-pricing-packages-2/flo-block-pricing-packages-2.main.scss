@@ -1,0 +1,217 @@
+.flo-block-pricing-packages-2 {
+  $b: ".flo-block-pricing-packages-2";
+
+  &__wrap {
+    position: relative;
+  }
+    &__title-area-wrap {
+      position: relative;
+    }
+      &__title-area {
+        text-align: center;
+      }
+        &__title {
+          margin-bottom: rem-calc(12);
+        }
+        &__subtitle {
+
+        }
+      &__title-area-side-wrap {
+
+      }
+        &__side-link {
+          display: inline-block;
+          padding: rem-calc(12) rem-calc(27);
+          border: 1px solid;
+        }
+
+    &__packages {
+      position: relative;
+    }
+      &__package {
+
+      }
+        &__package-image {
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: rem-calc(35);
+          @include global-bgi-cover;
+        }
+          &__package-image-border {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            $size: calc(100% - #{rem-calc(9 * 2)});
+            width: $size;
+            height: $size;
+            border: 1px solid;
+          }
+        &__package-bottom-area {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+        }
+          &__package-pretitle {
+            width: 100%;
+          }
+          &__package-title {
+            width: 60%;
+          }
+          &__package-price {
+            padding: 0 rem-calc(15);
+            min-width: rem-calc(76);
+            text-align: center;
+          }
+
+  @include breakpoint(medium up) {
+    padding: rem-calc(40) $global-padding--horizontal;
+    &__wrap {
+      padding: rem-calc(74) $global-column-width / 2 0 $global-column-width / 2;
+      &:before {
+        content: " ";
+
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(100% - #{rem-calc(132)});
+      }
+    }
+      &__title-area-wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: rem-calc(84);
+      }
+        &__title-area {
+          width: 50%;
+        }
+          &__title {
+
+          }
+          &__subtitle {
+
+          }
+        &__title-area-side-wrap {
+          width: 30%;
+          &--left {
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+          &__side-link {
+            margin-right: rem-calc(38);
+          }
+
+      &__packages {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+        &__package {
+          &:hover {
+            #{$b}__package-image {
+              // transform: translateY(#{rem-calc(-30)});
+            }
+            #{$b}__package-image-border {
+              opacity: 1;
+            }
+          }
+          &:not(:last-child) {
+            margin-right: rem-calc(47);
+          }
+        }
+          &__package-image {
+            $size: rem-calc(333);
+            width: $size;
+            height: $size;
+            // @include global-transition(transform);
+          }
+            &__package-image-border {
+              opacity: 0;
+              @include global-transition(opacity);
+            }
+          &__package-bottom-area {
+
+          }
+            &__package-pretitle {
+
+            }
+            &__package-title {
+
+            }
+            &__package-price {
+
+            }
+  }
+
+  @include breakpoint(small only) {
+    padding: rem-calc(40) $global-padding-mobile--horizontal;
+    &__wrap {
+
+    }
+      &__title-area-wrap {
+        text-align: center;
+        padding: rem-calc(30) rem-calc(20) 0 rem-calc(20);
+        margin-bottom: rem-calc(40);
+        &:before {
+          content: " ";
+
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: calc(100% + #{rem-calc(132)});
+        }
+      }
+        &__title-area {
+          position: relative;
+        }
+          &__title {
+
+          }
+          &__subtitle {
+
+          }
+        &__title-area-side-wrap {
+          position: relative;
+        }
+          &__side-link {
+            margin-top: rem-calc(30);
+          }
+
+      &__packages {
+        padding: 0 rem-calc(20);
+      }
+        &__package {
+          &:not(:last-child) {
+            margin-bottom: rem-calc(40);
+          }
+        }
+          &__package-image {
+            width: 100%;
+            height: rem-calc(300);
+          }
+            &__package-image-border {
+
+            }
+          &__package-bottom-area {
+
+          }
+            &__package-pretitle {
+
+            }
+            &__package-title {
+
+            }
+            &__package-price {
+
+            }
+  }
+}

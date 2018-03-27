@@ -1,0 +1,43 @@
+{
+    "key": "group_5846a20315c74",
+    "title": "5.6. Pagination",
+    "fields": [
+        {
+            "key": "field_5846a24a815b0",
+            "label": "5.6.1. Pagination Font",
+            "name": "flo-cube-pagination__font",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-1-introduction"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1486389358
+}

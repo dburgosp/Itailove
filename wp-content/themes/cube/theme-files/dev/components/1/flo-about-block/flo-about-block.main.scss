@@ -1,0 +1,129 @@
+.flo-about-block{
+  $b: ".flo-about-block";
+  $left-column-width: rem-calc(375);
+  $right-column-width: rem-calc(385.5);
+
+  width: 100%;
+  margin-top: rem-calc(33);
+
+  &__section {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: rem-calc(85);
+  }
+
+  &__img{
+    width: 100%;
+  }
+
+  &__page-title {
+    font-family: $font-playfair;
+    font-style: italic;
+    font-size: rem-calc(29.765);
+    margin-top: rem-calc(120);
+    padding-bottom: rem-calc(20);
+  }
+
+  &__title{
+    font-family: $font-lato;
+    font-size: rem-calc(47.905);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    line-height: rem-calc(61.38);
+  }
+
+  &__subtitle {
+    margin-top: rem-calc(48);
+    font-family: $font-lato;
+    font-size: rem-calc(9.48);
+    letter-spacing: 0.3em;
+    line-height: rem-calc(24.375);
+    text-transform: uppercase;
+  }
+
+  &__content-text{
+    font-family: $font-playfair;
+    font-size: rem-calc(17.5);
+    line-height: rem-calc(35.395);
+  }
+
+  .flo-information-block__featured-item-block {
+    width: 100%;
+  }
+  .flo-information-block__featured-items {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint(medium up){
+    &__section {
+      flex-direction: row;
+    }
+
+    &__text{
+      max-width: $left-column-width;
+    }
+
+    &__item-img{
+      width: $right-column-width;
+    }
+    &__item-text{
+      max-width: 50%;
+    }
+
+    &__title{
+      //font-size: rem-calc(109);
+    }
+
+    &__content-text{
+      max-width: $left-column-width;
+    }
+
+    .flo-information-block__featured-item-block {
+      max-width: $right-column-width;
+    }
+
+    &__img{
+      height: 100%;
+      min-height: rem-calc(548);
+      max-height: rem-calc(580);
+      @include global-bgi-cover;
+      img{
+        display: none;
+      }
+    }
+  }
+
+  @include breakpoint(small only){
+    &__section {
+      flex-direction: column;
+      padding-bottom: rem-calc(25);
+    }
+
+    &__img{
+      margin: 0 auto;
+      position: initial;
+      background: none;
+    }
+
+    &__page-title {
+      margin-top: 0;
+    }
+
+    &__title{
+      //font-size: rem-calc(58);
+    }
+
+    &__subtitle {
+      margin-top: rem-calc(20);
+      margin-bottom: rem-calc(30);
+    }
+
+    &__content-text{
+      //margin-top: rem-calc(60/2);
+      //text-align: center;
+    }
+    &__text{
+      //margin-top: rem-calc(40);
+    }
+  }
+}

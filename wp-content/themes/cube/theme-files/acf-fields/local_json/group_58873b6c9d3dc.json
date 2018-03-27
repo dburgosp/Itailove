@@ -1,0 +1,396 @@
+{
+    "key": "group_58873b6c9d3dc",
+    "title": "4.6. Block Post Options",
+    "fields": [
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_589b293855fee",
+            "label": "Title Block",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_589b294455fef",
+            "label": "Use Different Title Block Position",
+            "name": "flo-blog-post__different-title-block-position",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "vertical",
+            "choices": {
+                "above": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-post__title-position-thumb--above.jpg\"><p>Above Featured Image<\/p>",
+                "under": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-post__title-position-thumb--under.jpg\"><p>Under Featured Image<\/p>"
+            },
+            "default_value": "",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_589b297e55ff0",
+            "label": "Different Title Block Position",
+            "name": "flo-cube-blog-post__title-block-position",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_589b294455fef",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "flo-image-select acf-field--label-on-top",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_589b1288459cc",
+            "label": "Special Block",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "The content added here will show up if the \"Special Block\" is enabled from 4.Pages -> 4.6 Blog Post -> 4.6.3 Special Block",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_589b13c1a705b",
+            "label": "NOTE",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_589b26c4c0f9d",
+            "label": "Use a Different Special Block Type",
+            "name": "flo-blog-post__different-special-block-type",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "vertical",
+            "choices": {
+                "related_posts": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-post__special-block-thumb--type-1.jpg\"><p>Type A<\/p>",
+                "additional_information": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-post__special-block-thumb--type-2.jpg\"><p>Type B<\/p>"
+            },
+            "default_value": "",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_589b2702c0f9e",
+            "label": "Different Special Block Type",
+            "name": "flo-cube-blog-post__special-block-type",
+            "type": "radio",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_589b26c4c0f9d",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "flo-image-select acf-field--label-on-top",
+                "id": ""
+            }
+        },
+        {
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-post__special-block--type-1.jpg\" class=\"acf-img\"\/>\r\n\r\nRelated Posts are blog posts within the same category.",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_589b129b459cd",
+            "label": "Type A. Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_589b26c4c0f9d",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_589b26c4c0f9d",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_589b2702c0f9e",
+                        "operator": "==",
+                        "value": "related_posts"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--label-on-top",
+                "id": ""
+            }
+        },
+        {
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-post__special-block--type-2.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_589b12b1459ce",
+            "label": "Type B. Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_589b26c4c0f9d",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_589b26c4c0f9d",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_589b2702c0f9e",
+                        "operator": "==",
+                        "value": "additional_information"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--label-on-top",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_589b0fe5f5720",
+            "label": "- Generic Options",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "default_value": "",
+            "delay": 0,
+            "key": "field_58873b82d5782",
+            "label": "Special Block Text",
+            "name": "flo-special_block__text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_589b0fb3043f2",
+            "label": "- Type B Options",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_589b26c4c0f9d",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_589b26c4c0f9d",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_589b2702c0f9e",
+                        "operator": "==",
+                        "value": "additional_information"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-post__special-block--type-2.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_589b1104d0785",
+            "label": "Type B. Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "sub_fields": [
+                {
+                    "default_value": "TITLE:",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_583e92caa5bc9",
+                    "label": "Title",
+                    "name": "key",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "TEXT",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_583e92d3a5bca",
+                    "label": "Text",
+                    "name": "value",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Block",
+            "collapsed": "field_583e92caa5bc9",
+            "key": "field_583e92aaa5bc8",
+            "label": "Type B. Additional Information",
+            "name": "flo-blog-post__additional-information",
+            "type": "repeater",
+            "instructions": "The content added here will show up if the \"Special Block\" is enabled from 4.Pages -> 4.6 Blog Post -> 4.6.3 Special Block -> Special Block Type is set to \"Additional Information\"",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Single blog post options",
+    "modified": 1487684278
+}

@@ -1,0 +1,136 @@
+.acf-flo-stylekit-selector {
+  $b: ".acf-flo-stylekit-selector";
+
+  text-align: center;
+
+  &__title {
+    font-size: 21px;
+    font-family: "Miller Banner", sans;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    line-height: 1.3em;
+    color: #1c1c1c;
+    padding: 0 28px 25px;
+  }
+  &__subtitle {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    padding: 0 70px;
+    margin-bottom: 30px;
+  }
+  &__stylekits-and-preview {
+    display: flex;
+    align-items: flex-start;
+  }
+    &__stylekits {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      box-sizing: border-box;
+      @include global-transition(width);
+    }
+      &__stylekit {
+        margin-right: 25px;
+        margin-bottom: 30px;
+        &:hover,
+        &--active {
+          #{$b}__stylekit-thumb-wrap {
+            border-color: $color-orange;
+          }
+        }
+      }
+        &__stylekit-thumb-wrap {
+          position: relative;
+          $size: 185px;
+          width: $size;
+          height: $size;
+          border: solid 1px $color-gray;
+          background-color: $color-gray-light;
+
+          border-radius: 15px;
+          margin-bottom: 22.5px;
+          cursor: pointer;
+          user-select: none;
+          @include global-transition(border-color, width, height);
+        }
+          &__stylekit-thumb {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            $size: calc(100% - 25px);
+            width: $size;
+            height: $size;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+          }
+        &__stylekit-name {
+          font-family: "Miller Banner";
+          font-size: 18px;
+        }
+    &__right-wrap {
+      display: none;
+      flex-grow: 0;
+      flex-shrink: 0;
+      width: 50%;
+      box-sizing: border-box;
+      padding-left: 33px;
+      border-left: 1px solid $color-gray;
+    }
+      &__apply-button {
+        margin-bottom: 33.5px;
+      }
+      &__preview-wrap {
+        position: relative;
+        border-radius: 10px;
+        background-color: $color-gray-light;
+        border: 1px solid $color-gray;
+      }
+        &__preview-loading {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &__preview {
+          position: relative;
+          width: 100%;
+          height: 600px;
+          background-size: 35%;
+          background-repeat: no-repeat;
+          background-position: center;
+          opacity: 0;
+          pointer-events: none;
+          @include global-transition(background-size, opacity);
+          &[data-img-loaded="true"] {
+            opacity: 1;
+            pointer-events: initial;
+          }
+        }
+          &__preview-navigation-box {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 80%;
+          }
+
+  &--preview-open {
+    #{$b}__stylekits {
+      padding-right: 33px;
+      width: 50%;
+    }
+    #{$b}__stylekit-thumb-wrap {
+      $size: 130px;
+      width: $size;
+      height: $size;
+    }
+    #{$b}__right-wrap {
+    }
+  }
+}

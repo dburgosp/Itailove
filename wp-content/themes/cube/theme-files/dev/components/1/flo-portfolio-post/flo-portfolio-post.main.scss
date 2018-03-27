@@ -1,0 +1,66 @@
+.flo-portfolio-post{
+  $b: ".flo-portfolio-post";
+  display: flex;
+  flex-direction: column;
+
+  &__subtitle{
+    margin-bottom: rem-calc(20);
+  }
+
+  &__title{
+  }
+  &__share-links{
+    padding: rem-calc(6) 0;
+  }
+  &__text{
+  }
+  &__thumbnails {
+    padding-top: rem-calc(43.5);
+    .column {
+      max-width: rem-calc(182);
+    }
+  }
+
+  @include breakpoint(medium up){
+    align-items: stretch;
+    flex-direction: row;
+    &--title-under {
+      .flo-portfolio-post__left {
+        padding-top: rem-calc(43.5);
+      }
+      .flo-post-title-wrap__excerpt {
+        margin-top: rem-calc(45);
+        max-width: 80%;
+      }
+    }
+    &__text{
+      width: rem-calc(581);
+      padding-left: rem-calc(40);
+    }
+    &__text-content {
+      padding-top: rem-calc(30);
+      width: rem-calc(353.5);
+    }
+    &__left{
+      width: rem-calc(462.5);
+      display: flex;
+      flex-direction: column;
+      margin-left: rem-calc(256.5);
+    }
+
+    &__share-links{
+      flex-grow: 1;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  @include breakpoint(small only){
+    &--title-under {
+      padding-top: rem-calc(50);
+    }
+    &__thumbnails {
+      display: none!important;
+    }
+  }
+}

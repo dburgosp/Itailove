@@ -1,0 +1,20 @@
+.flo-social-block{
+
+  &__link{
+    font-size: rem-calc(11.5);
+    margin-right: rem-calc(34.5);
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  @include breakpoint(large up){
+    display: inline-flex;
+  }
+
+  @include breakpoint(small only){
+    &__link{
+      font-size: rem-calc(14);
+    }
+  }
+}

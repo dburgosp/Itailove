@@ -1,0 +1,1812 @@
+{
+    "key": "group_5847bb6ae1a6a",
+    "title": "5. Generics",
+    "fields": [
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_5865467716ba5",
+            "label": "Introduction",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "This area is related to the miscellaneous settings.\r\n<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/l7n1t0vOows\" frameborder=\"0\" allowfullscreen><\/iframe>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_5865468016ba6",
+            "label": "Video Tutorial",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_5847bc1e3d637",
+            "label": "5.1. Social Media",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "clone": [
+                "group_57fe687a9bed6"
+            ],
+            "prefix_label": 0,
+            "prefix_name": 0,
+            "display": "seamless",
+            "layout": "block",
+            "key": "field_5847bc5661301",
+            "label": "5.1.1. Social Links Fields",
+            "name": "social_links_fields",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "sub_fields": [
+                {
+                    "multiple": 1,
+                    "allow_null": 0,
+                    "choices": {
+                        "facebook": "Facebook",
+                        "twitter": "Twitter",
+                        "gplus": "Google +"
+                    },
+                    "default_value": [
+                        "facebook",
+                        "twitter"
+                    ],
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "return_format": "array",
+                    "ID": 0,
+                    "key": "field_5847bc5661301_field_585404234efd5",
+                    "label": "5.1.1. Social Sharing Options",
+                    "name": "flo-cube-sharing-options",
+                    "prefix": "acf[field_5847bc5661301]",
+                    "type": "select",
+                    "value": null,
+                    "menu_order": 0,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_57fe687a9bed6",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-sharing-options",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5847bc5661301",
+                    "__key": "field_585404234efd5",
+                    "__name": "flo-cube-sharing-options",
+                    "__label": "5.1.1. Social Sharing Options"
+                },
+                {
+                    "sub_fields": [
+                        {
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "choices": {
+                                "facebook": "Facebook",
+                                "twitter": "Twitter",
+                                "gplus": "Google Plus",
+                                "yahoo": "Yahoo",
+                                "dribbble": "Dribble",
+                                "linkedin": "Linkedin",
+                                "vimeo": "Vimeo",
+                                "youtube": "YouTube",
+                                "tumblr": "Tumblr",
+                                "delicious": "Delicious",
+                                "flickr": "Flickr",
+                                "instagram": "Instagram",
+                                "pinterest": "Pinterest",
+                                "mail": "Email",
+                                "custom": "Add Other"
+                            },
+                            "default_value": [],
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "return_format": "array",
+                            "ID": 0,
+                            "key": "field_57fe68e4c57a9",
+                            "label": "9.1.1. Label and Icon",
+                            "name": "type",
+                            "prefix": "acf",
+                            "type": "select",
+                            "value": null,
+                            "menu_order": 0,
+                            "instructions": "",
+                            "required": 1,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": 0,
+                            "parent": "field_57fe68b5c57a7",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "type",
+                            "_prepare": 0,
+                            "_valid": 1
+                        },
+                        {
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "ID": 0,
+                            "key": "field_57fe68cdc57a8",
+                            "label": "9.1.2. Link",
+                            "name": "link",
+                            "prefix": "acf",
+                            "type": "text",
+                            "value": null,
+                            "menu_order": 1,
+                            "instructions": "",
+                            "required": 1,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": 0,
+                            "parent": "field_57fe68b5c57a7",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "link",
+                            "_prepare": 0,
+                            "_valid": 1
+                        },
+                        {
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "ID": 0,
+                            "key": "field_57fe69c6c57ab",
+                            "label": "9.1.5. Custom Icon",
+                            "name": "custom-icon",
+                            "prefix": "acf",
+                            "type": "image",
+                            "value": null,
+                            "menu_order": 2,
+                            "instructions": "",
+                            "required": 0,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_57fe68e4c57a9",
+                                        "operator": "==",
+                                        "value": "custom"
+                                    }
+                                ]
+                            ],
+                            "parent": "field_57fe68b5c57a7",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "custom-icon",
+                            "_prepare": 0,
+                            "_valid": 1
+                        },
+                        {
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "ID": 0,
+                            "key": "field_57ff3b7a4dc83",
+                            "label": "9.1.6. Custom Icon - Hover State",
+                            "name": "custom-icon--hover",
+                            "prefix": "acf",
+                            "type": "image",
+                            "value": null,
+                            "menu_order": 3,
+                            "instructions": "If set, this image will appear when pointing on the  custom icon (9.1.4.) with your mouse cursor.",
+                            "required": 0,
+                            "id": "",
+                            "class": "",
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_57fe68e4c57a9",
+                                        "operator": "==",
+                                        "value": "custom"
+                                    }
+                                ]
+                            ],
+                            "parent": "field_57fe68b5c57a7",
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "_name": "custom-icon--hover",
+                            "_prepare": 0,
+                            "_valid": 1
+                        }
+                    ],
+                    "min": 0,
+                    "max": 0,
+                    "layout": "row",
+                    "button_label": "Add Social Link",
+                    "collapsed": "",
+                    "ID": 0,
+                    "key": "field_5847bc5661301_field_57fe68b5c57a7",
+                    "label": "5.1.2. Social Links Options",
+                    "name": "flo-social-links",
+                    "prefix": "acf[field_5847bc5661301]",
+                    "type": "repeater",
+                    "value": null,
+                    "menu_order": 1,
+                    "instructions": "<b>NOTE!<\/b> The font icons are available for the following services: <b>Facebook, Twitter, Google Plus, Yahoo, Dribbble, Linkedin, Vimeo, YouTube, Tumblr, Delicious, Flickr, Instagram, Pinterest, Email<\/b>. For any other social profiles you'll have to upload custom image icons.",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_57fe687a9bed6",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-social-links",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5847bc5661301",
+                    "__key": "field_57fe68b5c57a7",
+                    "__name": "flo-social-links",
+                    "__label": "5.1.2. Social Links Options"
+                }
+            ]
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_5847bb98ccfb8",
+            "label": "5.2. Comment Areas",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "clone": [
+                "group_5847bd19c6778"
+            ],
+            "prefix_label": 0,
+            "prefix_name": 0,
+            "display": "seamless",
+            "layout": "block",
+            "key": "field_5847bd3400ffe",
+            "label": "5.2. Comment Areas Fields",
+            "name": "comment_areas_fields",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "sub_fields": [
+                {
+                    "multiple": 1,
+                    "allow_null": 1,
+                    "choices": {
+                        "wp": "Enable WordPress comments",
+                        "fb_comments": "Enable Facebook comments"
+                    },
+                    "default_value": [
+                        "wp"
+                    ],
+                    "ui": 1,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "return_format": "value",
+                    "ID": 0,
+                    "key": "field_5847bd3400ffe_field_58203eb886db3",
+                    "label": "Comment Type",
+                    "name": "flo-cube-blog-post__comments",
+                    "prefix": "acf[field_5847bd3400ffe]",
+                    "type": "select",
+                    "value": null,
+                    "menu_order": 0,
+                    "instructions": "If both comment types are enabled, you can change their order by simply dragging them around.",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bd19c6778",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-blog-post__comments",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5847bd3400ffe",
+                    "__key": "field_58203eb886db3",
+                    "__name": "flo-cube-blog-post__comments",
+                    "__label": "Comment Type"
+                },
+                {
+                    "value": null,
+                    "message": "<img class=\"acf-img\" src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/comment-area.jpg\" \/>",
+                    "esc_html": 0,
+                    "new_lines": "wpautop",
+                    "ID": 0,
+                    "key": "field_5847bd3400ffe_field_585257ec49f95",
+                    "label": "Overview",
+                    "name": "",
+                    "prefix": "acf[field_5847bd3400ffe]",
+                    "type": "message",
+                    "menu_order": 1,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bd19c6778",
+                    "wrapper": {
+                        "width": "",
+                        "class": "acf-field--full-width",
+                        "id": ""
+                    },
+                    "_name": "",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5847bd3400ffe",
+                    "__key": "field_585257ec49f95",
+                    "__name": "",
+                    "__label": "Overview"
+                },
+                {
+                    "default_value": "COMMENTS",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "ID": 0,
+                    "key": "field_5847bd3400ffe_field_5898a767479d8",
+                    "label": "A.1. Comments Area Title",
+                    "name": "flo-cube-comments-top-bar__comments-title",
+                    "prefix": "acf[field_5847bd3400ffe]",
+                    "type": "text",
+                    "value": null,
+                    "menu_order": 2,
+                    "instructions": "Default: COMMENTS",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bd19c6778",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-comments-top-bar__comments-title",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5847bd3400ffe",
+                    "__key": "field_5898a767479d8",
+                    "__name": "flo-cube-comments-top-bar__comments-title",
+                    "__label": "A.1. Comments Area Title"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5847bd3400ffe_field_5898a7a7479d9",
+                    "label": "A.2. Comments Area Title Font",
+                    "name": "flo-cube-comments-top-bar__comments-title-font",
+                    "prefix": "acf[field_5847bd3400ffe]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 3,
+                    "instructions": "Default: Heading 2",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bd19c6778",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-comments-top-bar__comments-title-font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".comments-block__title",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "heading_2",
+                    "_clone": "field_5847bd3400ffe",
+                    "__key": "field_5898a7a7479d9",
+                    "__name": "flo-cube-comments-top-bar__comments-title-font",
+                    "__label": "A.2. Comments Area Title Font"
+                },
+                {
+                    "default_value": 1,
+                    "message": "",
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ID": 0,
+                    "key": "field_5847bd3400ffe_field_5898a89d479da",
+                    "label": "B.1. Display Avatars",
+                    "name": "flo-cube-comments-comment__avatars-display",
+                    "prefix": "acf[field_5847bd3400ffe]",
+                    "type": "true_false",
+                    "value": null,
+                    "menu_order": 4,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bd19c6778",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-comments-comment__avatars-display",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5847bd3400ffe",
+                    "__key": "field_5898a89d479da",
+                    "__name": "flo-cube-comments-comment__avatars-display",
+                    "__label": "B.1. Display Avatars"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5847bd3400ffe_field_5898a8dd479db",
+                    "label": "B.2. Comment Author Name Font",
+                    "name": "flo-cube-comments-comment__name-font",
+                    "prefix": "acf[field_5847bd3400ffe]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 5,
+                    "instructions": "Default: Label 5",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bd19c6778",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-comments-comment__name-font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".comment-author",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "label_5",
+                    "_clone": "field_5847bd3400ffe",
+                    "__key": "field_5898a8dd479db",
+                    "__name": "flo-cube-comments-comment__name-font",
+                    "__label": "B.2. Comment Author Name Font"
+                },
+                {
+                    "default_value": 1,
+                    "message": "",
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ID": 0,
+                    "key": "field_5847bd3400ffe_field_5898aa8b479dc",
+                    "label": "B.3. Display Date and Time",
+                    "name": "flo-cube-comments-comment__date-display",
+                    "prefix": "acf[field_5847bd3400ffe]",
+                    "type": "true_false",
+                    "value": null,
+                    "menu_order": 6,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bd19c6778",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-comments-comment__date-display",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5847bd3400ffe",
+                    "__key": "field_5898aa8b479dc",
+                    "__name": "flo-cube-comments-comment__date-display",
+                    "__label": "B.3. Display Date and Time"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5847bd3400ffe_field_5898aaac479dd",
+                    "label": "B.3.1. Date and Time Font",
+                    "name": "flo-cube-comments-comment__date-font",
+                    "prefix": "acf[field_5847bd3400ffe]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 7,
+                    "instructions": "Default: Label 1",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5898aa8b479dc",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5847bd19c6778",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-comments-comment__date-font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".comment-meta",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "label_1",
+                    "_clone": "field_5847bd3400ffe",
+                    "__key": "field_5898aaac479dd",
+                    "__name": "flo-cube-comments-comment__date-font",
+                    "__label": "B.3.1. Date and Time Font"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5847bd3400ffe_field_5898ac0b479de",
+                    "label": "B.4. Text Font",
+                    "name": "flo-cube-comments-comment__text-font",
+                    "prefix": "acf[field_5847bd3400ffe]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 8,
+                    "instructions": "Default: Paragraph 1",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bd19c6778",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-comments-comment__text-font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".comment-content",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "paragraph_1",
+                    "_clone": "field_5847bd3400ffe",
+                    "__key": "field_5898ac0b479de",
+                    "__name": "flo-cube-comments-comment__text-font",
+                    "__label": "B.4. Text Font"
+                },
+                {
+                    "default_value": "REPLY",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "ID": 0,
+                    "key": "field_5847bd3400ffe_field_5898aca8479df",
+                    "label": "B.5.1. \"Reply\" Button Label",
+                    "name": "flo-cube-comments-comment__reply-label",
+                    "prefix": "acf[field_5847bd3400ffe]",
+                    "type": "text",
+                    "value": null,
+                    "menu_order": 9,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bd19c6778",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-comments-comment__reply-label",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5847bd3400ffe",
+                    "__key": "field_5898aca8479df",
+                    "__name": "flo-cube-comments-comment__reply-label",
+                    "__label": "B.5.1. \"Reply\" Button Label"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5847bd3400ffe_field_5898ace5479e0",
+                    "label": "B.5.2. \"Reply\" Button Label Font",
+                    "name": "flo-cube-comments-comment__reply-font",
+                    "prefix": "acf[field_5847bd3400ffe]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 10,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bd19c6778",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-comments-comment__reply-font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".comment .reply",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "label_2",
+                    "_clone": "field_5847bd3400ffe",
+                    "__key": "field_5898ace5479e0",
+                    "__name": "flo-cube-comments-comment__reply-font",
+                    "__label": "B.5.2. \"Reply\" Button Label Font"
+                },
+                {
+                    "default_value": "#fbfbfb",
+                    "ID": 0,
+                    "key": "field_5847bd3400ffe_field_5898ad292cdda",
+                    "label": "C. Reply Background Color",
+                    "name": "flo-cube-comments-reply__background-color",
+                    "prefix": "acf[field_5847bd3400ffe]",
+                    "type": "color_picker",
+                    "value": null,
+                    "menu_order": 11,
+                    "instructions": "Default: #fbfbfb",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bd19c6778",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-comments-reply__background-color",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5847bd3400ffe",
+                    "__key": "field_5898ad292cdda",
+                    "__name": "flo-cube-comments-reply__background-color",
+                    "__label": "C. Reply Background Color"
+                },
+                {
+                    "value": null,
+                    "message": "To modify the font styles of the form elements, such as the \"Add Comment\" button and the input fields, please go to Flotheme -> 5. Generics -> 5.3. Generic Typography.",
+                    "esc_html": 0,
+                    "new_lines": "wpautop",
+                    "ID": 0,
+                    "key": "field_5847bd3400ffe_field_58525d412202e",
+                    "label": "D. Form Typography",
+                    "name": "",
+                    "prefix": "acf[field_5847bd3400ffe]",
+                    "type": "message",
+                    "menu_order": 12,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bd19c6778",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5847bd3400ffe",
+                    "__key": "field_58525d412202e",
+                    "__name": "",
+                    "__label": "D. Form Typography"
+                },
+                {
+                    "default_value": "YOUR COMMENT",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "ID": 0,
+                    "key": "field_5847bd3400ffe_field_5898aebcb38d5",
+                    "label": "D.1. Comment Form Title",
+                    "name": "flo-cube-comments-form__title",
+                    "prefix": "acf[field_5847bd3400ffe]",
+                    "type": "text",
+                    "value": null,
+                    "menu_order": 13,
+                    "instructions": "Default: YOUR COMMENT",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bd19c6778",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-comments-form__title",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5847bd3400ffe",
+                    "__key": "field_5898aebcb38d5",
+                    "__name": "flo-cube-comments-form__title",
+                    "__label": "D.1. Comment Form Title"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5847bd3400ffe_field_5898af1eb38d6",
+                    "label": "D.1.1. Comment Form Title Font",
+                    "name": "flo-cube-comments-form__title-font",
+                    "prefix": "acf[field_5847bd3400ffe]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 14,
+                    "instructions": "Default: Heading 2",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bd19c6778",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-comments-form__title-font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".flo-comment-form__title",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "heading_2",
+                    "_clone": "field_5847bd3400ffe",
+                    "__key": "field_5898af1eb38d6",
+                    "__name": "flo-cube-comments-form__title-font",
+                    "__label": "D.1.1. Comment Form Title Font"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5847bd3400ffe_field_5898b06141024",
+                    "label": "D.2. Field Label Font",
+                    "name": "flo-cube-comments-form__field-label-font",
+                    "prefix": "acf[field_5847bd3400ffe]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 15,
+                    "instructions": "Default: Label 2",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bd19c6778",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-comments-form__field-label-font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".flo-comment-form__field-label",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "label_2",
+                    "_clone": "field_5847bd3400ffe",
+                    "__key": "field_5898b06141024",
+                    "__name": "flo-cube-comments-form__field-label-font",
+                    "__label": "D.2. Field Label Font"
+                },
+                {
+                    "default_value": "SUBMIT",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "ID": 0,
+                    "key": "field_5847bd3400ffe_field_5898b1d241025",
+                    "label": "D.3. Submit Button Label",
+                    "name": "flo-cube-comments-form__submit-label",
+                    "prefix": "acf[field_5847bd3400ffe]",
+                    "type": "text",
+                    "value": null,
+                    "menu_order": 16,
+                    "instructions": "Default: SUBMIT",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847bd19c6778",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-comments-form__submit-label",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5847bd3400ffe",
+                    "__key": "field_5898b1d241025",
+                    "__name": "flo-cube-comments-form__submit-label",
+                    "__label": "D.3. Submit Button Label"
+                }
+            ]
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_58513deef47d9",
+            "label": "5.3. Custom Code",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "clone": [
+                "group_5847b804e589d"
+            ],
+            "prefix_label": 0,
+            "prefix_name": 0,
+            "display": "seamless",
+            "layout": "block",
+            "key": "field_58513dfff47da",
+            "label": "Custom Code Fields",
+            "name": "56_custom_code_fields",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "sub_fields": [
+                {
+                    "mode": "css",
+                    "theme": "monokai",
+                    "ID": 0,
+                    "key": "field_58513dfff47da_field_5847b81bb3ca3",
+                    "label": "5.4.1. Enter your <b>CSS<\/b> code here:",
+                    "name": "flo-custom-css",
+                    "prefix": "acf[field_58513dfff47da]",
+                    "type": "acf_code_field",
+                    "value": null,
+                    "menu_order": 0,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847b804e589d",
+                    "wrapper": {
+                        "width": "",
+                        "class": "acf-field--label-on-top",
+                        "id": ""
+                    },
+                    "_name": "flo-custom-css",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "_clone": "field_58513dfff47da",
+                    "__key": "field_5847b81bb3ca3",
+                    "__name": "flo-custom-css",
+                    "__label": "5.4.1. Enter your <b>CSS<\/b> code here:"
+                },
+                {
+                    "mode": "javascript",
+                    "theme": "monokai",
+                    "ID": 0,
+                    "key": "field_58513dfff47da_field_5849128f7f619",
+                    "label": "5.4.2. Enter your <b>JavaScript<\/b> code here:",
+                    "name": "flo-custom-js",
+                    "prefix": "acf[field_58513dfff47da]",
+                    "type": "acf_code_field",
+                    "value": null,
+                    "menu_order": 1,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5847b804e589d",
+                    "wrapper": {
+                        "width": "",
+                        "class": "acf-field--label-on-top",
+                        "id": ""
+                    },
+                    "_name": "flo-custom-js",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "_clone": "field_58513dfff47da",
+                    "__key": "field_5849128f7f619",
+                    "__name": "flo-custom-js",
+                    "__label": "5.4.2. Enter your <b>JavaScript<\/b> code here:"
+                }
+            ]
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_5847bbdbccfb9",
+            "label": "5.5. Miscellaneous",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#212121",
+            "key": "field_588ef9273c3b7",
+            "label": "5.5.2.1. Button Background Color",
+            "name": "flo-cube-button__background-color",
+            "type": "color_picker",
+            "instructions": "Default: #212121",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#FFFFFF",
+            "key": "field_588ef9703c3b8",
+            "label": "5.5.2.2. Button Text Color",
+            "name": "flo-cube-button__text-color",
+            "type": "color_picker",
+            "instructions": "Default: #FFFFFF",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_588ef99a3c3b9",
+            "label": "5.5.2.3. Button Text Font",
+            "name": "flo-cube-button__text-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 3",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "input[type='submit'], .flo-btn, .flo-card-4__open-post, .button, .woocommerce .product .woocommerce-tabs a",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_3"
+        },
+        {
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_58c94e6e950ac",
+            "label": "5.5.3. Disable Fading Effect",
+            "name": "flo-cube-setions__fade-effect-disable",
+            "type": "true_false",
+            "instructions": "Disable the fading effect when scrolling through pages.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_5899cbce6a9c9",
+            "label": "- 1. Pagination",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "clone": [
+                "group_5899c68a8251a"
+            ],
+            "prefix_label": 0,
+            "prefix_name": 0,
+            "display": "seamless",
+            "layout": "block",
+            "key": "field_5899cbe66a9ca",
+            "label": "Pagination Fields",
+            "name": "pagination_fields",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "sub_fields": [
+                {
+                    "default_value": 1,
+                    "message": "",
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": "",
+                    "ID": 0,
+                    "key": "field_5899cbe66a9ca_field_580a03458e5b5",
+                    "label": "Display Pagination",
+                    "name": "flo-cube-pagination__display-next-link",
+                    "prefix": "acf[field_5899cbe66a9ca]",
+                    "type": "true_false",
+                    "value": null,
+                    "menu_order": 0,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": 0,
+                    "parent": "group_5899c68a8251a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-pagination__display-next-link",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5899cbe66a9ca",
+                    "__key": "field_580a03458e5b5",
+                    "__name": "flo-cube-pagination__display-next-link",
+                    "__label": "Display Pagination"
+                },
+                {
+                    "layout": "vertical",
+                    "choices": {
+                        "block": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__next-gallery-link-thumb--type-a.jpg\"><p>Type A<\/p>",
+                        "card": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__next-gallery-link-thumb--type-b.jpg\"><p>Type B<\/p>",
+                        "classic": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__next-gallery-link-thumb--type-c.jpg\"><p>Type C<\/p>"
+                    },
+                    "default_value": "block",
+                    "other_choice": 0,
+                    "save_other_choice": 0,
+                    "allow_null": 0,
+                    "return_format": "value",
+                    "ID": 0,
+                    "key": "field_5899cbe66a9ca_field_58402167ae43b",
+                    "label": "Layout",
+                    "name": "flo-cube-pagination__next-type",
+                    "prefix": "acf[field_5899cbe66a9ca]",
+                    "type": "radio",
+                    "value": null,
+                    "menu_order": 1,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_580a03458e5b5",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899c68a8251a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "flo-image-select acf-field--label-on-top",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-pagination__next-type",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5899cbe66a9ca",
+                    "__key": "field_58402167ae43b",
+                    "__name": "flo-cube-pagination__next-type",
+                    "__label": "Layout"
+                },
+                {
+                    "value": null,
+                    "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__next-gallery-link-thumb--style-1.jpg\" class=\"acf-img\"\/>",
+                    "esc_html": 0,
+                    "new_lines": "wpautop",
+                    "ID": 0,
+                    "key": "field_5899cbe66a9ca_field_5809d92809408",
+                    "label": "Type A. Overview",
+                    "name": "",
+                    "prefix": "acf[field_5899cbe66a9ca]",
+                    "type": "message",
+                    "menu_order": 2,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_580a03458e5b5",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_58402167ae43b",
+                                "operator": "==",
+                                "value": "block"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899c68a8251a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "acf-field--full-width",
+                        "id": ""
+                    },
+                    "_name": "",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5899cbe66a9ca",
+                    "__key": "field_5809d92809408",
+                    "__name": "",
+                    "__label": "Type A. Overview"
+                },
+                {
+                    "default_value": "#FFFFFF",
+                    "ID": 0,
+                    "key": "field_5899cbe66a9ca_field_589345f0a420c",
+                    "label": "Type A.1. Elements Color",
+                    "name": "flo-cube-pagination__next-block-elements-color",
+                    "prefix": "acf[field_5899cbe66a9ca]",
+                    "type": "color_picker",
+                    "value": null,
+                    "menu_order": 3,
+                    "instructions": "Default: #ffffff",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_580a03458e5b5",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_58402167ae43b",
+                                "operator": "==",
+                                "value": "block"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899c68a8251a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-pagination__next-block-elements-color",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5899cbe66a9ca",
+                    "__key": "field_589345f0a420c",
+                    "__name": "flo-cube-pagination__next-block-elements-color",
+                    "__label": "Type A.1. Elements Color"
+                },
+                {
+                    "default_value": "next one",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "ID": 0,
+                    "key": "field_5899cbe66a9ca_field_5893473fc7ce8",
+                    "label": "Type A.2.1. Block Title",
+                    "name": "flo-cube-pagination__next-block-title",
+                    "prefix": "acf[field_5899cbe66a9ca]",
+                    "type": "text",
+                    "value": null,
+                    "menu_order": 4,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_580a03458e5b5",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_58402167ae43b",
+                                "operator": "==",
+                                "value": "block"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899c68a8251a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-pagination__next-block-title",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5899cbe66a9ca",
+                    "__key": "field_5893473fc7ce8",
+                    "__name": "flo-cube-pagination__next-block-title",
+                    "__label": "Type A.2.1. Block Title"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5899cbe66a9ca_field_5893487191b0a",
+                    "label": "Type A.2.2. Block Title Font",
+                    "name": "flo-cube-pagination__next-block-title-font",
+                    "prefix": "acf[field_5899cbe66a9ca]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 5,
+                    "instructions": "Default: Heading 1",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_580a03458e5b5",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_58402167ae43b",
+                                "operator": "==",
+                                "value": "block"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899c68a8251a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-pagination__next-block-title-font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".flo-next-post__title",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "heading_1",
+                    "_clone": "field_5899cbe66a9ca",
+                    "__key": "field_5893487191b0a",
+                    "__name": "flo-cube-pagination__next-block-title-font",
+                    "__label": "Type A.2.2. Block Title Font"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5899cbe66a9ca_field_5893491991b0b",
+                    "label": "Type A.3. Next Gallery Title Font",
+                    "name": "flo-cube-pagination__next-block-gallery-title-font",
+                    "prefix": "acf[field_5899cbe66a9ca]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 6,
+                    "instructions": "Default: Heading 3",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_580a03458e5b5",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_58402167ae43b",
+                                "operator": "==",
+                                "value": "block"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899c68a8251a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-pagination__next-block-gallery-title-font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".flo-next-post__post-title",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "heading_3",
+                    "_clone": "field_5899cbe66a9ca",
+                    "__key": "field_5893491991b0b",
+                    "__name": "flo-cube-pagination__next-block-gallery-title-font",
+                    "__label": "Type A.3. Next Gallery Title Font"
+                },
+                {
+                    "default_value": "CONTINUE",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "ID": 0,
+                    "key": "field_5899cbe66a9ca_field_580a02a98e5b4",
+                    "label": "Type A.4. Button Title",
+                    "name": "flo-cube-pagination__next-block-button-title",
+                    "prefix": "acf[field_5899cbe66a9ca]",
+                    "type": "text",
+                    "value": null,
+                    "menu_order": 7,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_580a03458e5b5",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_58402167ae43b",
+                                "operator": "==",
+                                "value": "block"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899c68a8251a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-pagination__next-block-button-title",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5899cbe66a9ca",
+                    "__key": "field_580a02a98e5b4",
+                    "__name": "flo-cube-pagination__next-block-button-title",
+                    "__label": "Type A.4. Button Title"
+                },
+                {
+                    "value": null,
+                    "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__next-gallery-link-thumb--style-2.jpg\" class=\"acf-img\"\/>",
+                    "esc_html": 0,
+                    "new_lines": "wpautop",
+                    "ID": 0,
+                    "key": "field_5899cbe66a9ca_field_5840207aae43a",
+                    "label": "Type B. Card Overview",
+                    "name": "",
+                    "prefix": "acf[field_5899cbe66a9ca]",
+                    "type": "message",
+                    "menu_order": 8,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_580a03458e5b5",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_58402167ae43b",
+                                "operator": "==",
+                                "value": "card"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899c68a8251a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "acf-field--full-width",
+                        "id": ""
+                    },
+                    "_name": "",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5899cbe66a9ca",
+                    "__key": "field_5840207aae43a",
+                    "__name": "",
+                    "__label": "Type B. Card Overview"
+                },
+                {
+                    "default_value": "next post",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "ID": 0,
+                    "key": "field_5899cbe66a9ca_field_580a027e8e5b3",
+                    "label": "Type B.1.1. Title",
+                    "name": "flo-cube-pagination__next-card-title",
+                    "prefix": "acf[field_5899cbe66a9ca]",
+                    "type": "text",
+                    "value": null,
+                    "menu_order": 9,
+                    "instructions": "",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_580a03458e5b5",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_58402167ae43b",
+                                "operator": "==",
+                                "value": "card"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899c68a8251a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-pagination__next-card-title",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "_clone": "field_5899cbe66a9ca",
+                    "__key": "field_580a027e8e5b3",
+                    "__name": "flo-cube-pagination__next-card-title",
+                    "__label": "Type B.1.1. Title"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5899cbe66a9ca_field_589349929c642",
+                    "label": "Type B.1.2. Title Font",
+                    "name": "flo-cube-pagination__next-card-title-font",
+                    "prefix": "acf[field_5899cbe66a9ca]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 10,
+                    "instructions": "Default: Heading 1",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_580a03458e5b5",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_58402167ae43b",
+                                "operator": "==",
+                                "value": "card"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899c68a8251a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-pagination__next-card-title-font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".flo-card-5__category",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "heading_1",
+                    "_clone": "field_5899cbe66a9ca",
+                    "__key": "field_589349929c642",
+                    "__name": "flo-cube-pagination__next-card-title-font",
+                    "__label": "Type B.1.2. Title Font"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5899cbe66a9ca_field_589349ad9c643",
+                    "label": "Type B.2. Next Gallery Title Font",
+                    "name": "flo-cube-pagination__next-card-gallery-title-font",
+                    "prefix": "acf[field_5899cbe66a9ca]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 11,
+                    "instructions": "Default: Heading 3",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_580a03458e5b5",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_58402167ae43b",
+                                "operator": "==",
+                                "value": "card"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899c68a8251a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-pagination__next-card-gallery-title-font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".flo-card-5__title",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "heading_3",
+                    "_clone": "field_5899cbe66a9ca",
+                    "__key": "field_589349ad9c643",
+                    "__name": "flo-cube-pagination__next-card-gallery-title-font",
+                    "__label": "Type B.2. Next Gallery Title Font"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5899cbe66a9ca_field_58934a369c644",
+                    "label": "Type B.3. Next Gallery Excerpt Font",
+                    "name": "flo-cube-pagination__next-card-gallery-excerpt-font",
+                    "prefix": "acf[field_5899cbe66a9ca]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 12,
+                    "instructions": "Default: Label 2",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_580a03458e5b5",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_58402167ae43b",
+                                "operator": "==",
+                                "value": "card"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899c68a8251a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-pagination__next-card-gallery-excerpt-font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".flo-card-5__excerpt",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "label_2",
+                    "_clone": "field_5899cbe66a9ca",
+                    "__key": "field_58934a369c644",
+                    "__name": "flo-cube-pagination__next-card-gallery-excerpt-font",
+                    "__label": "Type B.3. Next Gallery Excerpt Font"
+                },
+                {
+                    "ID": 0,
+                    "key": "field_5899cbe66a9ca_field_5899da123f4e2",
+                    "label": "Type C.1. Font",
+                    "name": "flo-cube-pagination__classic-font",
+                    "prefix": "acf[field_5899cbe66a9ca]",
+                    "type": "font_style_select",
+                    "value": null,
+                    "menu_order": 13,
+                    "instructions": "Default: Label 2",
+                    "required": 0,
+                    "id": "",
+                    "class": "",
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_580a03458e5b5",
+                                "operator": "==",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_58402167ae43b",
+                                "operator": "==",
+                                "value": "classic"
+                            }
+                        ]
+                    ],
+                    "parent": "group_5899c68a8251a",
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "_name": "flo-cube-pagination__classic-font",
+                    "_prepare": 0,
+                    "_valid": 1,
+                    "default_css_selectors": ".flo-post-pagination__pager-item",
+                    "active_css_selectors": "",
+                    "hover_css_selectors": "",
+                    "typography_option_name": "",
+                    "default_typography_style": "label_2",
+                    "_clone": "field_5899cbe66a9ca",
+                    "__key": "field_5899da123f4e2",
+                    "__name": "flo-cube-pagination__classic-font",
+                    "__label": "Type C.1. Font"
+                }
+            ]
+        },
+        {
+            "key": "field_58a58ab37b1bc",
+            "label": "Listing Pagination Font",
+            "name": "flo-cube-listing__pagination_font",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-pagination__items",
+            "active_css_selectors": ".flo-pagination__items span",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-5-generics"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1490194296
+}

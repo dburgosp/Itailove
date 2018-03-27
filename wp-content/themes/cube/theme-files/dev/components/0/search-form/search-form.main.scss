@@ -1,0 +1,29 @@
+.search-form{
+  display: flex;
+  align-items: center;
+
+  input[type]{
+    min-width: rem-calc(220);
+    height: rem-calc(28);
+    letter-spacing: 0.325em;
+    text-overflow: ellipsis;
+    margin: 0;
+    //color: white;
+    &:hover,
+    &:focus{
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+//   @include placeholder(1,white);
+  }
+
+  &__btn{
+    font-size: rem-calc(14);
+    margin-left: rem-calc(20);
+    @include global-transition(color);
+    &:hover{
+      color: $color-gray;
+    }
+  }
+}

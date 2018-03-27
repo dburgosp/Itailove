@@ -1,0 +1,47 @@
+.flo-form-1{
+
+  &__field{
+    margin-bottom: rem-calc(9.5);
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  &__textarea{
+    padding-top: rem-calc(15);
+  }
+
+  input[type],
+  textarea,
+  .parsley-errors-list li {
+    font-size: rem-calc(11);
+    letter-spacing: 0.1875em;
+    text-align: center;
+    margin: 0;
+  }
+  .parsley-errors-list {
+    margin-top: rem-calc(10);
+    margin-bottom: rem-calc(20);
+    @include global-transition(max-height);
+    animation: 0.4s parsley-errors-list__appear;
+    @at-root {
+      @keyframes parsley-errors-list__appear {
+        0% {
+          max-height: 0;
+        }
+        100% {
+          max-height: rem-calc(100);
+        }
+      }
+    }
+  }
+    .parsley-required {
+      color: red;
+    }
+
+  input[type="submit"]{
+    display: block;
+    margin: rem-calc(35) auto 0;
+    text-decoration: none !important;
+  }
+
+}

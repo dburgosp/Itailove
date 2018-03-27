@@ -1,0 +1,35 @@
+.flo-block-title-2 {
+  $b: ".flo-block-title-2";
+
+  &__title {
+
+  }
+  &__side-text {
+
+  }
+
+  @include breakpoint(medium up) {
+    display: flex;
+    padding: rem-calc(50) $global-padding--horizontal;
+
+    &__title {
+      width: 41.6%;
+      flex-shrink: 0;
+      padding-right: $global-column-width;
+    }
+    &__side-text {
+      flex-grow: 1;
+    }
+  }
+
+  @include breakpoint(small only) {
+    padding: rem-calc(40) $global-padding-mobile--horizontal;
+    text-align: center;
+    &__title {
+      margin-bottom: rem-calc(30);
+    }
+    &__side-text {
+
+    }
+  }
+}

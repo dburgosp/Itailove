@@ -1,0 +1,36 @@
+.flo_page_wrap{
+  display: flex;
+  // flex-wrap: wrap;
+  &--padding-top-large{
+    padding-top: rem-calc(150);
+  }
+}
+
+.flo_page{
+  flex-grow: 1;
+  max-width: 100%;
+}
+.page-content-wrap{
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.post-password-form{
+	max-width: 700px;
+	margin: 0 auto;
+	label{
+		display: block;
+		vertical-align: middle;
+		input[type="password"]{
+			border: 1px solid #181818;
+			//margin-left: 30px;
+		}
+	}
+	input[type="submit"]{
+		//margin: 0 auto;
+		display: block;
+	}
+	p{
+		font-size: 0.8rem !important;
+	}
+}

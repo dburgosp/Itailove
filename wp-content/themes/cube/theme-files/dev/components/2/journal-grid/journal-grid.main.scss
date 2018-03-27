@@ -1,0 +1,10 @@
+.flo-section{
+  &--journal-grid-section{
+    //padding-top: rem-calc(86.5);
+    // margin-bottom: rem-calc(50);
+
+    .row-flex {
+      align-items: stretch;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.flo-share-wrap{
+  display: flex;
+  align-items: center;
+  font-size: rem-calc(11);
+
+  &__link{
+    padding-left: rem-calc(32);
+  }
+}

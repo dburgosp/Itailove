@@ -1,0 +1,38 @@
+.flo-special-link {
+  $b: ".flo-special-link";
+
+  text-align: center;
+
+  &__pretitle {
+    margin-bottom: rem-calc(25);
+  }
+
+  &__title {
+    text-decoration: underline;
+  }
+
+  @include breakpoint(medium up) {
+    padding-bottom: rem-calc(134);
+
+    &__pretitle {
+
+    }
+
+    &__title {
+
+    }
+
+  }
+
+  @include breakpoint(small only) {
+    padding-bottom: rem-calc(80);
+
+    &__pretitle {
+
+    }
+    &__title {
+
+    }
+
+  }
+}

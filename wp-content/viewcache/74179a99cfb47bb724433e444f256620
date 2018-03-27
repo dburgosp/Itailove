@@ -1,0 +1,2 @@
+<?php echo $__env->make("components.flo-footer", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php /* <?php echo $__env->make("components.newsletter-popup", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?> */ ?>

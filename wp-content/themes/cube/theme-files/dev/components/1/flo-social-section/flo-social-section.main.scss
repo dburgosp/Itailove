@@ -1,0 +1,26 @@
+.flo-social-section{
+  $gap-side: rem-calc(40);
+   .flo-instagram-images{
+     margin-top: rem-calc(40);
+   }
+
+  @include breakpoint(medium up){
+    .flo-social-block{
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: rem-calc(62);
+      &:last-of-type{
+        padding-left: 0;
+      }
+    }
+  }
+
+  @include breakpoint(small only){
+    display: flex;
+    flex-direction: column;
+    &--order-3{
+      order: 3;
+    }
+
+  }
+}

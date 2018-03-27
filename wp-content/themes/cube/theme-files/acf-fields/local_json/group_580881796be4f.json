@@ -1,0 +1,314 @@
+{
+    "key": "group_580881796be4f",
+    "title": "4.5. Category Listing Page Template",
+    "fields": [
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_580881796f962",
+            "label": "Template Overview",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "post": "Blog Post",
+                "gallery": "Gallery"
+            },
+            "default_value": [
+                "post"
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value",
+            "key": "field_580881796f990",
+            "label": "4.4.1. What to list?",
+            "name": "page-category-listing__post-type",
+            "type": "select",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "taxonomy": "category",
+            "field_type": "multi_select",
+            "multiple": 0,
+            "allow_null": 1,
+            "return_format": "id",
+            "add_term": 0,
+            "load_terms": 0,
+            "save_terms": 0,
+            "key": "field_580881796f99c",
+            "label": "4.4.2. Which Post Categories to List",
+            "name": "page-category-listing-listing__post-categories",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580881796f990",
+                        "operator": "==",
+                        "value": "post"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "taxonomy": "gallery-category",
+            "field_type": "multi_select",
+            "multiple": 0,
+            "allow_null": 1,
+            "return_format": "id",
+            "add_term": 0,
+            "load_terms": 0,
+            "save_terms": 0,
+            "key": "field_580881796f9a7",
+            "label": "4.4.2. Which Gallery Categories to List",
+            "name": "page-category-listing-listing__gallery-categories",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580881796f990",
+                        "operator": "==",
+                        "value": "gallery"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "<img src=\"http:\/\/flothemes.com\/wp-content\/uploads\/dashboard-images\/monte\/page-category-listing.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_580881796f9b2",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_580881796f9be",
+            "label": "4.4.1. Title",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "<img src=\"http:\/\/flothemes.com\/wp-content\/uploads\/dashboard-images\/monte\/page-category-listing__title.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_580881796f9c9",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_580881796f9d4",
+            "label": "Show Block",
+            "name": "page-category-listing-title__enabled",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_580881796f9e0",
+            "label": "A. Decoration Image",
+            "name": "page-category-listing__decoration-image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "The page title will be used for this field. Edit the page title to change it.",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_580881796f9eb",
+            "label": "B. Title",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_580881796fa2e",
+            "label": "4.4.2. Category Listing",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "vertical",
+            "choices": {
+                "category-and-thumbs": "<img src=\"http:\/\/flothemes.com\/wp-content\/uploads\/dashboard-images\/monte\/page-category-listing-listing--category-and-thumbs.jpg\"><p>Categories with Thumbs<\/p>",
+                "fancy": "<img src=\"http:\/\/flothemes.com\/wp-content\/uploads\/dashboard-images\/monte\/page-category-listing-listing--fancy.jpg\"><p>Fancy<\/p>",
+                "big-images": "<img src=\"http:\/\/flothemes.com\/wp-content\/uploads\/dashboard-images\/monte\/page-category-listing-listing--big-images.jpg\"><p>Big Images<\/p>"
+            },
+            "default_value": "",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_580881796fa39",
+            "label": "A.1. Listing Layout",
+            "name": "page-category-listing-listing__layout",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "flo-image-select",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 20,
+            "min": "",
+            "max": "",
+            "step": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_580881796fa65",
+            "label": "A.1.1. Gutter",
+            "name": "page-category-listing-listing__gutter",
+            "type": "number",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580881796fa39",
+                        "operator": "==",
+                        "value": "category-and-thumbs"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_580881796fa39",
+                        "operator": "==",
+                        "value": "category-and-thumbs"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1486723986
+}

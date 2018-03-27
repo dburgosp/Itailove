@@ -1,0 +1,195 @@
+{
+    "key": "group_57fe687a9bed6",
+    "title": "5.1. Social Media",
+    "fields": [
+        {
+            "multiple": 1,
+            "allow_null": 0,
+            "choices": {
+                "facebook": "Facebook",
+                "twitter": "Twitter",
+                "gplus": "Google +"
+            },
+            "default_value": [
+                "facebook",
+                "twitter"
+            ],
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "array",
+            "key": "field_585404234efd5",
+            "label": "5.1.1. Social Sharing Options",
+            "name": "flo-cube-sharing-options",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "sub_fields": [
+                {
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "choices": {
+                        "facebook": "Facebook",
+                        "twitter": "Twitter",
+                        "gplus": "Google Plus",
+                        "yahoo": "Yahoo",
+                        "dribbble": "Dribble",
+                        "linkedin": "Linkedin",
+                        "vimeo": "Vimeo",
+                        "youtube": "YouTube",
+                        "tumblr": "Tumblr",
+                        "delicious": "Delicious",
+                        "flickr": "Flickr",
+                        "instagram": "Instagram",
+                        "pinterest": "Pinterest",
+                        "mail": "Email",
+                        "custom": "Add Other"
+                    },
+                    "default_value": [],
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "return_format": "array",
+                    "key": "field_57fe68e4c57a9",
+                    "label": "9.1.1. Label and Icon",
+                    "name": "type",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_57fe68cdc57a8",
+                    "label": "9.1.2. Link",
+                    "name": "link",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "key": "field_57fe69c6c57ab",
+                    "label": "9.1.5. Custom Icon",
+                    "name": "custom-icon",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57fe68e4c57a9",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "key": "field_57ff3b7a4dc83",
+                    "label": "9.1.6. Custom Icon - Hover State",
+                    "name": "custom-icon--hover",
+                    "type": "image",
+                    "instructions": "If set, this image will appear when pointing on the  custom icon (9.1.4.) with your mouse cursor.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_57fe68e4c57a9",
+                                "operator": "==",
+                                "value": "custom"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add Social Link",
+            "collapsed": "",
+            "key": "field_57fe68b5c57a7",
+            "label": "5.1.2. Social Links Options",
+            "name": "flo-social-links",
+            "type": "repeater",
+            "instructions": "<b>NOTE!<\/b> The font icons are available for the following services: <b>Facebook, Twitter, Google Plus, Yahoo, Dribbble, Linkedin, Vimeo, YouTube, Tumblr, Delicious, Flickr, Instagram, Pinterest, Email<\/b>. For any other social profiles you'll have to upload custom image icons.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-1-introduction"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "Options -> 9. Social Links",
+    "modified": 1486547392
+}

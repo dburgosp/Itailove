@@ -1,0 +1,1113 @@
+{
+    "key": "group_587cd5b6bb3cb",
+    "title": "4.8. Portfolio Gallery",
+    "fields": [
+        {
+            "key": "field_5809d8d109405",
+            "label": "Portfolio Gallery Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/vjFVxqXg8IA\" frameborder=\"0\" allowfullscreen><\/iframe>\r\n<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/w8m4HkCklXM\" frameborder=\"0\" allowfullscreen><\/iframe>\r\n<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_587ce5fe9faba",
+            "label": "Portfolio Link Url (gallery slug)",
+            "name": "flo-portfolio-gallery__gallery-slug",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "gallery",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_587ce65e9fabb",
+            "label": "Portfolio Categories Link Url (gallery category slug)",
+            "name": "flo-portfolio-gallery__gallery-category-slug",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "gallery-category",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_587ce6799fabc",
+            "label": "Portfolio Tag Link Url (gallery tag slug)",
+            "name": "flo-portfolio-gallery__gallery-tag-slug",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "gallery-tag",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5809d610e2954",
+            "label": "- 4.8.1. Title & Content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_584036032ebef",
+            "label": "Position",
+            "name": "flo-cube-portfolio-gallery__title-and-content-block-type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "flo-image-select acf-field--label-on-top",
+                "id": ""
+            },
+            "layout": "vertical",
+            "choices": {
+                "above": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__title-and-content-thumb--above.jpg\"><p>Above Gallery View<\/p>",
+                "under": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__title-and-content-thumb--under.jpg\"><p>Under Gallery View<\/p>"
+            },
+            "default_value": "above",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5809d8ef09406",
+            "label": "Above Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_584036032ebef",
+                        "operator": "==",
+                        "value": "above"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__title-and-content--above.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_584038502ebf0",
+            "label": "Under Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_584036032ebef",
+                        "operator": "==",
+                        "value": "under"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__title-and-content--under.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5890b80a951b9",
+            "label": "Display Featured Image?",
+            "name": "gallery_featured_image",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_584036032ebef",
+                        "operator": "==",
+                        "value": "above"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5894a613d1879",
+            "label": "Elements Color",
+            "name": "flo-cube-portfolio-gallery__elements-color",
+            "type": "color_picker",
+            "instructions": "Default: #ffffff",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_584036032ebef",
+                        "operator": "==",
+                        "value": "above"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ffffff"
+        },
+        {
+            "key": "field_589acaeba4e22",
+            "label": "A. Show categories on gallery pages",
+            "name": "flo-cube-portfolio-gallery__show-categories",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5890beedaca22",
+            "label": "А.1. Category Font",
+            "name": "flo-cube-portfolio-gallery__category-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_589acaeba4e22",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-header-section--layout-page-title .flo-page-hero__slide-category, .flo-portfolio-post__subtitle",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_1"
+        },
+        {
+            "key": "field_580a019b8e5b0",
+            "label": "B.1. Title",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "This is you Gallery title.",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5890bfacb0111",
+            "label": "B.2. Title Font",
+            "name": "flo-cube-portfolio-gallery__title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 3",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-header-section--layout-page-title .flo-page-hero__slide-title, .flo-portfolio-post__title",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_3"
+        },
+        {
+            "key": "field_5890c095b0112",
+            "label": "C. Excerpt Font",
+            "name": "flo-cube-portfolio-gallery__excerpt-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-header-section--layout-page-title .flo-page-hero__slide-description, .flo-post-title-wrap__excerpt",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        },
+        {
+            "key": "field_580a01c28e5b1",
+            "label": "D. Content",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Text content can be added to a Gallery in the main text editor under the Page Title.\r\n\r\nThe Fonts can be setup at Flotheme -> 8. Typography -> 8.1. Generic Typography",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5890c120b0114",
+            "label": "E. Slideshow Thumbnails",
+            "name": "flo-portfolio-gallery__slideshow-thumbnails-display",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_584036032ebef",
+                        "operator": "==",
+                        "value": "under"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5809d80ee01d2",
+            "label": "- 4.8.2. Gallery View",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5809e8b8f59b1",
+            "label": "Gallery View Type",
+            "name": "flo-cube-portfolio-gallery__gallery-view-type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "flo-image-select acf-field--full-width",
+                "id": ""
+            },
+            "layout": "vertical",
+            "choices": {
+                "grid": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__gallery-view-thumb--grid.jpg\"><p>Type A<\/p>",
+                "slideshow": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__gallery-view-thumb--nearby.jpg\"><p>Type B<\/p>",
+                "slideshow__no-crop": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__gallery-view-thumb--no-crop.jpg\"><p>Type C<\/p>",
+                "slideshow__crop": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__gallery-view-thumb--slideshow.jpg\"><p>Type D<\/p>"
+            },
+            "default_value": "slideshow",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5809f021c17ab",
+            "label": "Grid Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "grid"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__gallery-view--grid.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5809f2c425f9b",
+            "label": "A. Thumbnail Aspect Ratio",
+            "name": "flo-cube-portfolio-gallery__grid-thumb-size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "grid"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "3_2": "\"3:2\" (Landscape)",
+                "2_3": "\"2:3\" (Portrait)",
+                "4_3": "\"4:3\" (Landscape)",
+                "3_4": "\"3:4\" (Portrait)",
+                "masonry": "Original Picture Ratio",
+                "custom": "Custom Ratio",
+                "advanced": "Custom Image Size (Advanced)"
+            },
+            "default_value": [
+                "3_2"
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5809f41725f9c",
+            "label": "A.1. Thumbnail Custom Ratio",
+            "name": "flo-cube-portfolio-gallery__grid-thumb-size-custom",
+            "type": "text",
+            "instructions": "The ratio should be specified by the following example: 1:1",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "grid"
+                    },
+                    {
+                        "field": "field_5809f2c425f9b",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Example:   1:1",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5809f6b0840d5",
+            "label": "A.2. Thumbnail Custom Image Size (Advanced)",
+            "name": "flo-cube-portfolio-gallery__grid-thumb-size-px",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "grid"
+                    },
+                    {
+                        "field": "field_5809f2c425f9b",
+                        "operator": "==",
+                        "value": "advanced"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Example:   600×400",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5809f84517e1e",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "grid"
+                    },
+                    {
+                        "field": "field_5809f2c425f9b",
+                        "operator": "==",
+                        "value": "advanced"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "The Image Size is set in pixels, by the example: 600x400. <br> Note: the proper thumbnail size should be set considering the number of columns of the grid, and the screen resolution that the viewers of the grid will use. E.g. the thumbnail size for a grid of two columns should be bigger than the thumbnail size of a grid with 3 columns.",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5809f4d14f1d9",
+            "label": "B. Gutter",
+            "name": "flo-cube-portfolio-gallery__grid-gutter",
+            "type": "number_slider",
+            "instructions": "Default: 20px",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "grid"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_min_value": 0,
+            "slider_max_value": 50,
+            "increment_value": 1,
+            "slider_units": "px",
+            "default_value": 20
+        },
+        {
+            "key": "field_5809f5154f1da",
+            "label": "C. Columns",
+            "name": "flo-cube-portfolio-gallery__grid-columns",
+            "type": "number_slider",
+            "instructions": "Default: 3",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "grid"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_min_value": 2,
+            "slider_max_value": 4,
+            "increment_value": 1,
+            "slider_units": "",
+            "default_value": 3
+        },
+        {
+            "key": "field_58933a9bfc3d1",
+            "label": "Nearby Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "slideshow"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__gallery-view--nearby.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_58933da163894",
+            "label": "No Crop Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "slideshow__no-crop"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__gallery-view--no-crop.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5809efc3c17aa",
+            "label": "Slider Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "slideshow__crop"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__gallery-view--slideshow.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_589db2f0fdd07",
+            "label": "Note:",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "slideshow__crop"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "This slideshow uses the entire windows width and thus will crop the image.",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_580dc64b32d49",
+            "label": "A.1. Image Height",
+            "name": "flo-cube-portfolio-gallery__max_slider_image_height",
+            "type": "number_slider",
+            "instructions": "Default: 715px",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "slideshow"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "slideshow__no-crop"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "slideshow__crop"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_min_value": 150,
+            "slider_max_value": 900,
+            "increment_value": 1,
+            "slider_units": "px",
+            "default_value": 715
+        },
+        {
+            "key": "field_58a1d6837a9fe",
+            "label": "A.1.1. Image Height Sizing",
+            "name": "flo-cube-portfolio-gallery__max_slider_image_height_sizing",
+            "type": "select",
+            "instructions": "Default: Fixed Pixels",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "slideshow"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "slideshow__no-crop"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "slideshow__crop"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "px": "Fixed Pixels",
+                "rem": "Proportional to Screen Size"
+            },
+            "default_value": [
+                "px"
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        },
+        {
+            "key": "field_58933f33e01fa",
+            "label": "A.2. Gap Between Images",
+            "name": "flo-cube-portfolio-gallery__image-gap",
+            "type": "number_slider",
+            "instructions": "Default: 35px",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "slideshow"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_min_value": 0,
+            "slider_max_value": 100,
+            "increment_value": 5,
+            "slider_units": "px",
+            "default_value": 35
+        },
+        {
+            "key": "field_58933eca54b23",
+            "label": "B. Arrows Color",
+            "name": "flo-cube-portfolio-gallery__arrows-color",
+            "type": "color_picker",
+            "instructions": "Default: #000000",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "slideshow"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "slideshow__no-crop"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "slideshow__crop"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#000000"
+        },
+        {
+            "key": "field_58d8b7d39f8ec",
+            "label": "C. Slider Transition Effect",
+            "name": "flo-cube-portfolio-gallery__slider-transition-effect",
+            "type": "radio",
+            "instructions": "Default: Slide",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "slideshow__no-crop"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5809e8b8f59b1",
+                        "operator": "==",
+                        "value": "slideshow__crop"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "vertical",
+            "choices": {
+                "slide": "Slide",
+                "fade": "Fade"
+            },
+            "default_value": "",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5809d82e18251",
+            "label": "- 4.8.3. Social Sharing",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5893406132f98",
+            "label": "Social Sharing Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_584036032ebef",
+                        "operator": "==",
+                        "value": "above"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__social-sharing.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_580a02198e5b2",
+            "label": "Display Sharing Options",
+            "name": "flo-portfolio-gallery__content-share",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_58934199cffa2",
+            "label": "Label",
+            "name": "flo-cube-portfolio-gallery__content-share-label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a02198e5b2",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "share",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_589341c4cffa3",
+            "label": "Label Font",
+            "name": "flo-cube-portfolio-gallery__content-share-label-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 5",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a02198e5b2",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_5"
+        },
+        {
+            "key": "field_587ce9ed6cbfe",
+            "label": "- 4.8.4. Gallery Comments",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_587cea2f6cbff",
+            "label": "Display Comments",
+            "name": "flo-cube-portfolio-gallery__comments-enabled",
+            "type": "true_false",
+            "instructions": "Go to section 5. Generics -> 5.2. Comments Area to chose your comments type.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5809d84918252",
+            "label": "- 4.8.5. Pagination",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5899cc5f29cf7",
+            "label": "Message",
+            "name": "",
+            "type": "message",
+            "instructions": "The pagination type can be modified by going to Flotheme -> 5. Generics -> 5.5. Miscelanious -> 1. Pagination.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "Pagination options can be modified by going to Flotheme -> 5. Generics -> 5.5. Miscelanious -> 1. Pagination.",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1505834035
+}

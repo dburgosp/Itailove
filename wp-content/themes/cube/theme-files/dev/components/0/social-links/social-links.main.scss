@@ -1,0 +1,43 @@
+.flo-social-links {
+  $b: ".flo-social-links";
+
+  &__link {
+    &--has-hover-icon:hover {
+      #{$b}__custom-icon--default {
+        opacity: 0;
+      }
+      #{$b}__custom-icon--hover {
+        opacity: 1;
+      }
+    }
+  }
+    &__custom-icon-wrap {
+      position: relative;
+
+    }
+      &__custom-icon {
+        display: inline-block;
+        height: 1em;
+        @include global-transition(opacity);
+      }
+        &__custom-icon--default {
+
+        }
+        &__custom-icon--hover {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0;
+        }
+    &__label {
+
+    }
+
+  @include breakpoint(medium up) {
+
+  }
+  @include breakpoint(small only) {
+
+  }
+}

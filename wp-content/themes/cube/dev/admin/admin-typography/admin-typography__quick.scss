@@ -1,0 +1,28 @@
+.acf-field-flo-quick-typography {
+  & > .acf-label {
+    display: none!important;
+  }
+  & > .acf-input {
+    padding: 0!important;
+  }
+
+  .jdfs-main {
+    padding-top: 0;
+  }
+    .jdfs-font-name {
+      font-size: 18px;
+      padding: 20px 0;
+    }
+
+  .content {
+    padding: 0; 
+    p {
+      font-size: 18px;
+    }
+
+  }
+
+  .acf-input--quick-typography {
+  }
+
+}

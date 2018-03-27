@@ -1,0 +1,532 @@
+# Copyright (C) 2016 Flo Forms
+# This file is distributed under the same license as the Flo Forms package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Flo Forms 1.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/flo-forms\n"
+"POT-Creation-Date: 2016-06-22 14:58:07+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: admin/class-flo-entry-meta-box.php:28
+msgid "Entry content"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:21
+msgid "Field Label"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:29
+msgid "Field Placeholder"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:35
+msgid "Field width"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:43
+msgid "CSS class (optional)"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:48
+msgid "Required"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:78
+msgid "Click to edit. Drag to reorder"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:89
+msgid "Delete"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:105
+msgid "Untitled"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:121 admin/class-flo-form-fields.php:147
+msgid "First choice"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:126 admin/class-flo-form-fields.php:148
+msgid "Second choice"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:131 admin/class-flo-form-fields.php:149
+msgid "Third choice"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:211
+msgid "Field ID: "
+msgstr ""
+
+#: admin/class-flo-form-fields.php:335
+msgid "%s Field layout : %s"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:338
+msgid "Side by side"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:339
+msgid "One column"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:340
+msgid "Two columns"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:341
+msgid "Three columns"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:370
+msgid "The first choice"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:374
+msgid "The second choice"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:378
+msgid "The third choice"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:384
+msgid "%s Choices : %s"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:397
+msgid "Make this choice pre-selected."
+msgstr ""
+
+#: admin/class-flo-form-fields.php:399
+msgid "Add another choice"
+msgstr ""
+
+#: admin/class-flo-form-fields.php:401
+msgid "Remove this choice"
+msgstr ""
+
+#: admin/class-flo-form-meta-box.php:15
+msgid "Single line text"
+msgstr ""
+
+#: admin/class-flo-form-meta-box.php:20
+msgid "Paragraph text"
+msgstr ""
+
+#: admin/class-flo-form-meta-box.php:25
+msgid "Email"
+msgstr ""
+
+#: admin/class-flo-form-meta-box.php:30
+msgid "Date"
+msgstr ""
+
+#: admin/class-flo-form-meta-box.php:35
+msgid "Checkbox"
+msgstr ""
+
+#: admin/class-flo-form-meta-box.php:39
+msgid "Radio button"
+msgstr ""
+
+#: admin/class-flo-form-meta-box.php:43
+msgid "Dropdown"
+msgstr ""
+
+#: admin/class-flo-form-meta-box.php:47
+msgid "Section break"
+msgstr ""
+
+#: admin/class-flo-form-meta-box.php:70
+msgid "Form Settings"
+msgstr ""
+
+#: admin/class-flo-form-meta-box.php:109
+msgid "Select a page"
+msgstr ""
+
+#: admin/class-flo-form-meta-box.php:224
+msgid "A new message from %s"
+msgstr ""
+
+#: admin/class-flo-form-meta-box.php:227
+msgid "Thank you!"
+msgstr ""
+
+#: admin/class-flo-forms-admin.php:204
+msgid "%s Add fields to the form %s"
+msgstr ""
+
+#: admin/class-flo-forms-admin.php:236
+msgid "Shortcode"
+msgstr ""
+
+#: admin/class-flo-forms-admin.php:256
+msgid "User Email"
+msgstr ""
+
+#: admin/class-flo-forms-admin.php:338 admin/class-flo-forms-admin.php:362
+msgid "Mark as unread"
+msgstr ""
+
+#: admin/class-flo-forms-admin.php:340 admin/class-flo-forms-admin.php:358
+msgid "Mark as read"
+msgstr ""
+
+#: admin/class-flo-forms-admin.php:396
+msgid "Unread entries"
+msgstr ""
+
+#: admin/class-flo-forms-mce.php:41
+msgid "There are no mosaic posts. You can create one from  %s here %s "
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:20
+msgid "Add a field"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:21
+msgid "Field settings"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:22
+msgid "Form settings"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:25
+msgid "Click on the field type button you need to add it to the Form"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:32
+msgid "Edit selected Field options"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:64
+msgid "Button text"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:69
+msgid "Button Position"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:71
+msgid "Auto"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:72
+msgid "Left"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:73
+msgid "Center"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:74
+msgid "Right"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:79
+msgid "Button background color"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:85
+msgid "Button text color"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:93
+msgid "Edit the Form settings"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:95
+msgid "Recipient email"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:102
+msgid "Email subject"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:104
+msgid ""
+"You can use any of the existing fields value by using %field_id%. For "
+"example: %fid_95908% - where fid_95908 is the ID of one of the form fields. "
+"To find out the ID of any field, just click on if in the preview on the "
+"right."
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:109
+msgid "Label placement"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:111
+msgid "Top Aligned"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:112
+msgid "Left Aligned"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:113
+msgid "Right Aligned"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:118
+msgid "Confirmation options"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:121
+msgid "Show a text message"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:124
+msgid "Redirect to a page"
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:141
+msgid "Click to edit."
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:153
+msgid "You can use the following shortcode in any page or post: "
+msgstr ""
+
+#: admin/partials/flo-forms-admin-display.php:165
+msgid "Save form"
+msgstr ""
+
+#: admin/partials/options-form.php:3
+msgid "Flo Forms Settings"
+msgstr ""
+
+#: admin/partials/options-form.php:9
+msgid "Enable email reminder if there are unread Entries?"
+msgstr ""
+
+#: admin/partials/options-form.php:12
+msgid "Yes"
+msgstr ""
+
+#: admin/partials/options-form.php:16
+msgid "No"
+msgstr ""
+
+#: admin/partials/options-form.php:21
+msgid "How old should the Entries be to receive the reminder via email?"
+msgstr ""
+
+#: admin/partials/options-form.php:25
+msgid "%d Day"
+msgid_plural "%d Days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/partials/options-form.php:32
+msgid "Enter the email address the reminder will be sent to:"
+msgstr ""
+
+#: admin/partials/options-form.php:36
+msgid "Save Options"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:37
+msgctxt "post type general name"
+msgid "Forms"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:38
+msgctxt "post type singular name"
+msgid "Form"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:39
+msgctxt "admin menu"
+msgid "Flo Forms"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:40
+msgctxt "add new on admin bar"
+msgid "Forms"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:41
+msgctxt "form"
+msgid "Add New Form"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:42
+msgid "Add New Form"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:43
+msgid "New Form"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:44
+msgid "Edit Form"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:45
+msgid "View Form"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:46
+msgid "All Forms"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:47
+msgid "Search Forms"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:48
+msgid "Parent Forms:"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:49
+msgid "No forms found."
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:50
+msgid "No forms found in Trash."
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:76
+msgctxt "post type general name"
+msgid "Flo Form Entries"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:77
+msgctxt "post type singular name"
+msgid "Entry"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:78
+msgctxt "admin menu"
+msgid "Entries"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:79
+msgctxt "add new on admin bar"
+msgid "Entries"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:80
+msgctxt "entry"
+msgid "Add New"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:81
+msgid "Add New Entry"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:82
+msgid "New Entry"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:83
+msgid "Edit Entry"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:84
+msgid "View Entry"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:85
+msgid "All Entries"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:86
+msgid "Search Entries"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:87
+msgid "Parent Entries:"
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:88
+msgid "No entry found."
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:89
+msgid "No entry found in Trash."
+msgstr ""
+
+#: includes/class-flo-forms-custom-posts.php:126
+msgid "Forms"
+msgstr ""
+
+#: public/class-flo-forms-public.php:169
+msgid ""
+"Please add the Recipient email for this form. Make sure there is a valid "
+"email"
+msgstr ""
+
+#: public/class-flo-forms-public.php:180
+msgid "Something is wrong with the form settings"
+msgstr ""
+
+#: public/class-flo-forms-public.php:185
+msgid "The passed Form ID is not valid"
+msgstr ""
+
+#: public/class-flo-forms-public.php:240
+msgid "Please enter your email address"
+msgstr ""
+
+#: public/class-flo-forms-public.php:240
+msgid "Please enter a valid email address"
+msgstr ""
+
+#: public/class-flo-forms-public.php:289
+msgid "This field is required"
+msgstr ""
+
+#: public/class-flo-forms-public.php:375
+msgid "Busted! Wrong Nonce. Refresh the page and try again."
+msgstr ""
+
+#: public/class-flo-forms-public.php:380
+msgid "%s Are you kidding me ? %s"
+msgstr ""
+
+#: public/class-flo-forms-public.php:398
+msgid "%s The email could not be sent %s"
+msgstr ""
+
+#: public/class-flo-forms-public.php:620
+msgid "Entry #"
+msgstr ""
+
+#: public/class-flo-forms-public.php:722
+msgid "You have unread form entries on your site"
+msgstr ""
+
+#: public/class-flo-forms-public.php:723
+msgid ""
+"This is a reminder that there are unread Entries on your website. You can "
+"check them %s here %s"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Flo Forms"
+msgstr ""
+
+#. #-#-#-#-#  flo-forms.pot (Flo Forms 1.1.0)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  flo-forms.pot (Flo Forms 1.1.0)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "http://flothemes.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A easy to use contact form builder plugin"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Alex G."
+msgstr ""

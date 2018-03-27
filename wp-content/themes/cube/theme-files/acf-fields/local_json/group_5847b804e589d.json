@@ -1,0 +1,60 @@
+{
+    "key": "group_5847b804e589d",
+    "title": "5.4. Custom Code",
+    "fields": [
+        {
+            "mode": "css",
+            "theme": "monokai",
+            "key": "field_5847b81bb3ca3",
+            "label": "5.4.1. Enter your <b>CSS<\/b> code here:",
+            "name": "flo-custom-css",
+            "type": "acf_code_field",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--label-on-top",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "mode": "javascript",
+            "theme": "monokai",
+            "key": "field_5849128f7f619",
+            "label": "5.4.2. Enter your <b>JavaScript<\/b> code here:",
+            "name": "flo-custom-js",
+            "type": "acf_code_field",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--label-on-top",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-1-introduction"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1481794694
+}

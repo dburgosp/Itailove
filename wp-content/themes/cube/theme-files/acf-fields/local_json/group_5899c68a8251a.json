@@ -1,0 +1,508 @@
+{
+    "key": "group_5899c68a8251a",
+    "title": "5.Part. Pagination",
+    "fields": [
+        {
+            "key": "field_580a03458e5b5",
+            "label": "Display Pagination",
+            "name": "flo-cube-pagination__display-next-link",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_58402167ae43b",
+            "label": "Layout",
+            "name": "flo-cube-pagination__next-type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a03458e5b5",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "flo-image-select acf-field--label-on-top",
+                "id": ""
+            },
+            "layout": "vertical",
+            "choices": {
+                "block": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__next-gallery-link-thumb--type-a.jpg\"><p>Type A<\/p>",
+                "card": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__next-gallery-link-thumb--type-b.jpg\"><p>Type B<\/p>",
+                "classic": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__next-gallery-link-thumb--type-c.jpg\"><p>Type C<\/p>"
+            },
+            "default_value": "block",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5809d92809408",
+            "label": "Type A. Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a03458e5b5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58402167ae43b",
+                        "operator": "==",
+                        "value": "block"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__next-gallery-link-thumb--style-1.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_589345f0a420c",
+            "label": "Type A.1. Elements Color",
+            "name": "flo-cube-pagination__next-block-elements-color",
+            "type": "color_picker",
+            "instructions": "Default: #ffffff",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a03458e5b5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58402167ae43b",
+                        "operator": "==",
+                        "value": "block"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#FFFFFF"
+        },
+        {
+            "key": "field_59c537507356a",
+            "label": "Type A.1.2 Button Background Color",
+            "name": "flo-cube-pagination__next-block-button-background_color",
+            "type": "color_picker",
+            "instructions": "Default: #ffffff",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a03458e5b5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58402167ae43b",
+                        "operator": "==",
+                        "value": "block"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#FFFFFF"
+        },
+        {
+            "key": "field_59c53be9ba986",
+            "label": "Type A.1.3 Button Text Color",
+            "name": "flo-cube-pagination__next-block-button_color",
+            "type": "color_picker",
+            "instructions": "Default: #000000",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a03458e5b5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58402167ae43b",
+                        "operator": "==",
+                        "value": "block"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#000000"
+        },
+        {
+            "key": "field_5893473fc7ce8",
+            "label": "Type A.2.1. Block Title",
+            "name": "flo-cube-pagination__next-block-title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a03458e5b5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58402167ae43b",
+                        "operator": "==",
+                        "value": "block"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "next one",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5893487191b0a",
+            "label": "Type A.2.2. Block Title Font",
+            "name": "flo-cube-pagination__next-block-title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a03458e5b5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58402167ae43b",
+                        "operator": "==",
+                        "value": "block"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-next-post__title",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_1"
+        },
+        {
+            "key": "field_5893491991b0b",
+            "label": "Type A.3. Next Gallery Title Font",
+            "name": "flo-cube-pagination__next-block-gallery-title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 3",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a03458e5b5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58402167ae43b",
+                        "operator": "==",
+                        "value": "block"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-next-post__post-title",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_3"
+        },
+        {
+            "key": "field_580a02a98e5b4",
+            "label": "Type A.4. Button Title",
+            "name": "flo-cube-pagination__next-block-button-title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a03458e5b5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58402167ae43b",
+                        "operator": "==",
+                        "value": "block"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "CONTINUE",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5840207aae43a",
+            "label": "Type B. Card Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a03458e5b5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58402167ae43b",
+                        "operator": "==",
+                        "value": "card"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__next-gallery-link-thumb--style-2.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_580a027e8e5b3",
+            "label": "Type B.1.1. Title",
+            "name": "flo-cube-pagination__next-card-title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a03458e5b5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58402167ae43b",
+                        "operator": "==",
+                        "value": "card"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "next post",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_589349929c642",
+            "label": "Type B.1.2. Title Font",
+            "name": "flo-cube-pagination__next-card-title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a03458e5b5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58402167ae43b",
+                        "operator": "==",
+                        "value": "card"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-card-5__category",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_1"
+        },
+        {
+            "key": "field_589349ad9c643",
+            "label": "Type B.2. Next Gallery Title Font",
+            "name": "flo-cube-pagination__next-card-gallery-title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 3",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a03458e5b5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58402167ae43b",
+                        "operator": "==",
+                        "value": "card"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-card-5__title",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_3"
+        },
+        {
+            "key": "field_58934a369c644",
+            "label": "Type B.3. Next Gallery Excerpt Font",
+            "name": "flo-cube-pagination__next-card-gallery-excerpt-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 2",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a03458e5b5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58402167ae43b",
+                        "operator": "==",
+                        "value": "card"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-card-5__excerpt",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        },
+        {
+            "key": "field_5899da123f4e2",
+            "label": "Type C.1. Font",
+            "name": "flo-cube-pagination__classic-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 2",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a03458e5b5",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58402167ae43b",
+                        "operator": "==",
+                        "value": "classic"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post-pagination__pager-item",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1506098429
+}

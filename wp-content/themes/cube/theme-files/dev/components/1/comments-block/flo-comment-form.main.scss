@@ -1,0 +1,124 @@
+.flo-comment-form {
+  $b: ".flo-comment-form";
+
+  border-top: 1px solid $color-gray;
+  padding-top: rem-calc(54);
+
+  &__wrap {
+
+  }
+    &__title {
+      margin-bottom: rem-calc(50);
+    }
+    &__form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+      &__field-wrap {
+
+        &--third {
+        }
+        &--full {
+        }
+      }
+        &__field-label {
+          margin-bottom: rem-calc(5);
+        }
+        &__field {
+
+        }
+          &__name {
+
+          }
+          &__email {
+
+          }
+          &__message {
+            min-height: rem-calc(133.5);
+          }
+      .form-submit {
+      }
+        .submit {
+        }
+
+  @include breakpoint(medium up) {
+    $gap__horizontal: rem-calc(32);
+    padding-right: rem-calc(240);
+    margin-bottom: rem-calc(100);
+
+    &__wrap {
+
+    }
+      &__form {
+        margin: 0 #{$gap__horizontal / -2};
+      }
+        &__field-wrap {
+          padding: 0 #{$gap__horizontal / 2};
+
+          &--third {
+            width: calc(100% / 3);
+          }
+          &--full {
+            width: 100%;
+          }
+        }
+          &__field-label {
+
+          }
+            &__field {
+              margin-bottom: rem-calc(30);
+            }
+            &__name {
+
+            }
+            &__email {
+
+            }
+            &__message {
+              margin-bottom: rem-calc(50);
+            }
+        &__form .form-submit {
+          padding-left: $gap__horizontal / 2;
+        }
+          .submit {
+          }
+  }
+
+  @include breakpoint(small only) {
+    margin-bottom: rem-calc(50);
+
+    &__wrap {
+
+    }
+      &__form {
+
+      }
+        &__field-wrap {
+          width: 100%;
+          &--third {
+
+          }
+          &--full {
+
+          }
+        }
+          &__field-label {
+
+          }
+            &__field {
+
+              }
+            &__name {
+
+            }
+            &__email {
+
+            }
+            &__message {
+
+            }
+        .submit {
+        }
+  }
+
+}

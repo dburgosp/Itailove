@@ -1,0 +1,563 @@
+{
+    "key": "group_57fcc4945d442",
+    "title": "4.2. Contact Page Template",
+    "fields": [
+        {
+            "key": "field_57fcc8c4bb537",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/contact-1.jpg\" class=\"acf-img\"\/>\r\n<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/SP9gf5GYOTE\" frameborder=\"0\" allowfullscreen><\/iframe>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_589c22702a4bb",
+            "label": "Top padding",
+            "name": "page-contact__top-padding",
+            "type": "number_slider",
+            "instructions": "Padding between the page content and the header.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_min_value": 0,
+            "slider_max_value": 150,
+            "increment_value": 1,
+            "slider_units": "px",
+            "default_value": 111
+        },
+        {
+            "key": "field_589c23ee9854c",
+            "label": "Bottom padding",
+            "name": "page-contact__bottom-padding",
+            "type": "number_slider",
+            "instructions": "Padding between the page content and the footer.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_min_value": 0,
+            "slider_max_value": 150,
+            "increment_value": 1,
+            "slider_units": "px",
+            "default_value": 140
+        },
+        {
+            "key": "field_57fcc56f80904",
+            "label": "A.1.1. Pretitle",
+            "name": "page-contact__pretitle",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Contact us",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_588a21a94dee5",
+            "label": "A.1.2. Pretitle Font",
+            "name": "page-contact__page-title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_1"
+        },
+        {
+            "key": "field_582f0049b4fda",
+            "label": "A.2.1. Title",
+            "name": "page-contact__title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "GET IN TOUCH<br>WITH US",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_588a22134dee6",
+            "label": "A.2.2 Title Font",
+            "name": "page-contact__form-title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 3",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_3"
+        },
+        {
+            "key": "field_59f1c86f5e03e",
+            "label": "B.1 Content Type",
+            "name": "page-contact__content-type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page": "Page Content",
+                "custom": "Custom"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "custom",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_57fcc5d580905",
+            "label": "B.1.1. Content",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59f1c86f5e03e",
+                        "operator": "==",
+                        "value": "page"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "The Content can be changed in the editor above.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_59f1c8c85e03f",
+            "label": "B.1.1. Custom Content",
+            "name": "page-contact__content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59f1c86f5e03e",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_588a224e4dee7",
+            "label": "B.2. Content Font",
+            "name": "page-contact__content-font",
+            "type": "font_style_select",
+            "instructions": "Default: Paragraph 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "paragraph_1"
+        },
+        {
+            "key": "field_582f009ab4fdb",
+            "label": "C. Contact Blocks",
+            "name": "page-contact__contact_blocks",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_582f0132b4fdc",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Contact Block",
+            "sub_fields": [
+                {
+                    "key": "field_582f0132b4fdc",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "CONTACT",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_582f0143b4fdd",
+                    "label": "Content",
+                    "name": "content",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "acf-field--label-on-top",
+                        "id": ""
+                    },
+                    "default_value": "Lorem ipsum dolor sit amet.",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
+        },
+        {
+            "key": "field_588a22b84dee8",
+            "label": "C.1. Contact Blocks Title Font",
+            "name": "page-contact__contact_blocks-title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_2"
+        },
+        {
+            "key": "field_588a23014dee9",
+            "label": "C.2. Contact Blocks Content Font",
+            "name": "page-contact__contact_blocks-content-font",
+            "type": "font_style_select",
+            "instructions": "Default: Paragraph 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "paragraph_1"
+        },
+        {
+            "key": "field_58009f7c53cf4",
+            "label": "D.1. Contact Form Type",
+            "name": "page-contact__form-type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "builtin": "Built In",
+                "shortcode": "Custom Shortcode"
+            },
+            "default_value": [
+                "builtin"
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        },
+        {
+            "key": "field_58009fb953cf5",
+            "label": "D.1.2. Contact Form Shortcode",
+            "name": "page-contact__form-shortcode",
+            "type": "textarea",
+            "instructions": "To use a custom contact form, add your shortcode here. We suggest using Flo Forms plugin, you can also use CF7, and Ninja forms, however we are not responsible for trouble shooting issues with 3rd party plugins.",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58009f7c53cf4",
+                        "operator": "==",
+                        "value": "shortcode"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "new_lines": "wpautop",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": ""
+        },
+        {
+            "key": "field_58009fda53cf6",
+            "label": "D.2. Your Email",
+            "name": "flo-contact-page__contact_email",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58009f7c53cf4",
+                        "operator": "==",
+                        "value": "builtin"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_58009ffd53cf7",
+            "label": "D.3. Use Reply To Header",
+            "name": "page-contact__use-reply-to-header",
+            "type": "true_false",
+            "instructions": "The reply to header allows you to reply directly to the clients email. However this option can send your email to spam, or get it blocked by your hosting provider. If your emails aren't sending, turn this option off and test again.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58009f7c53cf4",
+                        "operator": "==",
+                        "value": "builtin"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5800a068b7c24",
+            "label": "D.4. Custom \"Thank you\" message.",
+            "name": "page-contact__custom-thank-you-message",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58009f7c53cf4",
+                        "operator": "==",
+                        "value": "builtin"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Thank you for contacting us!",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_59f1cbfaf0d4f",
+            "label": "E.1. Featured Image Type",
+            "name": "page-contact__featured-image-type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "page": "Page's Featured Image",
+                "custom": "Custom"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_59f1cc63f0d50",
+            "label": "E.1.1. Featured Image",
+            "name": "page-contact__featured-image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59f1cbfaf0d4f",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_582f017cb4fde",
+            "label": "E.1.1. Featured Image",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_59f1cbfaf0d4f",
+                        "operator": "==",
+                        "value": "page"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "The Featured Image setting can be found on right side of this page.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "classy-template-contact"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1509019720
+}

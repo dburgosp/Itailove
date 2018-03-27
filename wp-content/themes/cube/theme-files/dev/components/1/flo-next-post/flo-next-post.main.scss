@@ -1,0 +1,110 @@
+.flo-next-post {
+  $b: ".flo-next-post";
+  display: flex;
+  flex-direction: column;
+
+  background-size: 100%;
+  background-position: center center;
+
+  height: rem-calc(462);
+  color: $color-white;
+
+  transition: background-size 1s, opacity 0.4s!important;
+
+  &__title {
+  }
+
+  &__post-title {
+    margin-top: rem-calc(15);
+    text-align: center;
+  }
+  .button {
+    // width: rem-calc(133.5);
+    // height: rem-calc(41.5);
+    margin-top: rem-calc(50);
+    margin-bottom: rem-calc(120);
+    padding: 0.85em 1.8em;
+  }
+
+  &--card{
+    border-top: 1px solid $color-black;
+    color: $color-black;
+    align-items: center;
+    justify-content: center;
+    padding-top: rem-calc(66);
+    cursor: pointer;
+
+    .flo-card-5 {
+      &__content {
+        width: 100%;
+      }
+      &__img {
+        background-size: 100%;
+        background-position: center center;
+        max-width: rem-calc(727.5);
+        max-height: rem-calc(289.5);
+        overflow: hidden;
+        transition: background-size 2s, opacity 0.4s;
+      }
+      &__category {
+        text-transform: lowercase;
+      }
+    }
+  }
+
+  @include breakpoint(medium up){
+    justify-content: flex-end;
+    align-items: center;
+    &:hover {
+      background-size: 104%;
+    }
+    &--card {
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: rem-calc(66) rem-calc(117.5);
+    }
+    .flo-card-5 {
+      &__text {
+        margin: 0;
+      }
+      &__img {
+        max-width: 100%;
+        width: rem-calc(727.5);
+        height: rem-calc(290);
+
+        &:hover {
+            background-size: 108%;
+        }
+      }
+    }
+  }
+  @include breakpoint(small only){
+    justify-content: center;
+    align-items: center;
+    min-height: rem-calc(400);
+    background-size: cover;
+    &--card{
+      padding-left: rem-calc(25);
+      padding-right:rem-calc(25);
+      padding-top: rem-calc(0);
+      .flo-card-5 {
+        &__text {
+          width: 100%;
+        }
+        &__excerpt {
+          margin-top: rem-calc(30);
+          margin-bottom: rem-calc(30);
+        }
+        &__img {
+          display: none;
+        }
+      }
+    }
+    .button {
+      margin-bottom: rem-calc(60);
+    }
+    &__post-title {
+      font-size: rem-calc(32);
+    }
+  }
+}

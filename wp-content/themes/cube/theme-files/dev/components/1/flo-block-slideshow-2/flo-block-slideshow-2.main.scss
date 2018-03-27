@@ -1,0 +1,177 @@
+.flo-block-slideshow-2 {
+  $b: ".flo-block-slideshow-2";
+  position: relative;
+
+  &__slides {
+    position: relative;
+  }
+    &__slide {
+
+    }
+      &__slide-content {
+        position: relative;
+      }
+        &__slide-image {
+          display: inline-block;
+        }
+        &__title-area {
+          z-index: 1;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+        }
+          &__title {
+            color: inherit!important;
+          }
+          &__subtitle {
+            margin-top: rem-calc(19);
+            color: inherit!important;
+          }
+        &__button {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+
+          color: inherit!important;
+          padding: rem-calc(12) rem-calc(19);
+          border: 1px solid;
+        }
+    .slick-dots {
+      z-index: 1;
+      display: flex!important;
+      align-items: center;
+      position: absolute;
+      left: 50%;
+      bottom: rem-calc(42);
+      transform: translateX(-50%);
+
+      li {
+        $size: 6px;
+        width: $size;
+        height: $size;
+        border-radius: $size;
+        overflow: hidden;
+        border: 1px solid;
+        margin: 0 rem-calc(8.5);
+        @include global-transition(background-color);
+        &:not(.slick-active) {
+          background-color: transparent!important;
+        }
+      }
+        button {
+          display: none;
+        }
+    }
+  &__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    @include global-clickable();
+    @include global-transition(color);
+
+    &--next {
+    }
+    &--prev {
+    }
+  }
+
+  @include breakpoint(medium up) {
+    &__slides {
+
+    }
+      &__slide {
+
+      }
+        &__slide-content {
+
+        }
+          &__slide-image {
+          }
+          &__title-area {
+            width: 90%;
+          }
+            &__title {
+
+            }
+            &__subtitle {
+
+            }
+          &__button {
+            bottom: 27.375%;
+          }
+      .slick-dots {
+      }
+    &__arrow {
+      &--next {
+        right: $global-padding--horizontal;
+      }
+      &--prev {
+        left: $global-padding--horizontal;
+      }
+    }
+
+    .flo-hero-video-embed__button {
+      z-index: 1;
+      top: auto;
+      left: auto;
+      transform: translate(0, 0);
+      bottom: rem-calc(40)!important;
+      right: rem-calc(50)!important;
+    }
+  }
+
+  @include breakpoint(small only) {
+    &__slides {
+
+    }
+      &__slide {
+
+      }
+        &__slide-content {
+
+        }
+          &__slide-image {
+            height: 60vh;
+            @media (orientation: landscape) {
+              height: 100vh;
+            }
+          }
+          &__title-area {
+
+          }
+            &__title {
+
+            }
+            &__subtitle {
+
+            }
+          &__button {
+            bottom: 20%;
+          }
+    &__arrow {
+      @media (orientation: portrait) {
+        transform: translateY(0);
+        top: rem-calc(30);
+      }
+      $side-position: rem-calc(20);
+      &--next {
+        right: $side-position;
+      }
+      &--prev {
+        left: $side-position;
+      }
+    }
+    div.flo-hero-video-embed__button{
+      top:6.25rem;
+    }
+  }
+}
+.video-is-playing{
+  .flo-block-slideshow-2__title-area{
+    z-index: -1;
+  }
+}

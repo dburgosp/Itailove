@@ -1,0 +1,21 @@
+.flo-card-1-list{
+
+  @include breakpoint(medium up){
+    .column{
+      padding: 0 rem-calc(48);
+    }
+    .row{
+      margin: 0 -#{rem-calc(48)};
+    }
+  }
+
+  @include breakpoint(small only){
+    flex-direction: column;
+    .column{
+      margin-top: rem-calc(60);
+      &:first-of-type{
+        margin-top: 0;
+      }
+    }
+  }
+}

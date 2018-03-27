@@ -1,0 +1,32 @@
+.flo_post_page{
+
+  @include breakpoint(medium up) {
+
+    .flo-block-title-wrap,
+    .flo-post,
+    .comments-block{
+      width: rem-calc(750);
+      margin: 0 auto;
+    }
+
+    .flo-post-form{
+      width: rem-calc(500);
+      margin: 0 auto;
+    }
+
+  }
+
+  }
+
+//Set Margins
+.flo-section{
+
+   &--post-comments{
+    // padding-top: rem-calc(74);
+  }
+
+  &--post-form {
+    padding-top: rem-calc(60);
+  }
+
+}

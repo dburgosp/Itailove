@@ -1,0 +1,16 @@
+.flo-grid{
+
+  .column{
+    //margin-bottom: rem-calc(98.5);
+  }
+
+  @include breakpoint(medium up){
+    .column{
+      //padding: 0 $gap-side;
+    }
+    .row{
+      //margin: 0 -#{$gap-side};
+    }
+  }
+
+}

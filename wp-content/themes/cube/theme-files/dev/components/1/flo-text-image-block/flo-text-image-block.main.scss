@@ -1,0 +1,55 @@
+.flo-text-image-block {
+  $b: ".flo-text-image-block";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__text {
+  }
+    &__title {
+      font-family: $font-playfair;
+      font-size: rem-calc(24.025);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    &__content {
+      font-family: $font-playfair;
+      font-size: rem-calc(17.5);
+      line-height: rem-calc(35.395);
+    }
+    &__image {
+      width: 100%;
+    }
+      &__image-description {
+        font-family: $font-playfair;
+        font-style: italic;
+        font-size: rem-calc(15);
+        line-height: rem-calc(22.395);
+        margin-top: rem-calc(20);
+      }
+
+  @include breakpoint(medium up){
+    &__text {
+      max-width: rem-calc(360);
+    }
+
+    &__content {
+      margin-top: rem-calc(100);
+    }
+
+    &__image {
+      width: rem-calc(444);
+      max-width: rem-calc(444);
+    }
+  }
+
+  @include breakpoint(small only){
+    flex-direction: column;
+
+    &__content {
+      margin-top: rem-calc(50);
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.flo-listing-wide-cards {
+  $b: ".flo-listing-wide-cards";
+  position: relative;
+
+  &__item {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+  }
+    &__image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      @include global-bgi-cover;
+    }
+    &__overlay {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      padding: rem-calc(20);
+    }
+      &__title {
+        display: block;
+        color: inherit;
+      }
+      &__date-and-category {
+        margin-top: rem-calc(19);
+      }
+    &__button {
+      padding: rem-calc(12) rem-calc(13);
+      border: 1px solid;
+    }
+
+  @include breakpoint(medium up) {
+    &__item {
+      position: relative;
+      margin-bottom: 0;
+      &:hover {
+        #{$b}__button {
+          opacity: 1;
+        }
+      }
+    }
+
+      &__image {
+
+      }
+      &__overlay {
+        @include global-transition(background-color);
+      }
+        &__title {
+
+        }
+        &__date-and-category {
+
+        }
+      &__button {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: rem-calc(60);
+
+        opacity: 0;
+        @include global-transition(opacity);
+      }
+  }
+
+  @include breakpoint(small only) {
+
+    &__item {
+    }
+      &__image {
+
+      }
+      &__overlay {
+
+      }
+        &__title {
+
+        }
+        &__date-and-category {
+
+        }
+      &__button {
+        margin-top: rem-calc(30);
+      }
+
+  }
+}

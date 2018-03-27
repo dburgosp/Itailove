@@ -1,0 +1,113 @@
+.flo-pricing-packages {
+  $b: ".flo-pricing-packages";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__packages {
+
+  }
+    &__package {
+
+    }
+      &__package-image {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        @include global-bgi-cover;
+      }
+        &__package-title {
+
+        }
+        &__package-subtitle {
+
+        }
+      &__package-description {
+
+      }
+      &__package-price {
+
+      }
+    &__button {
+
+    }
+
+  @include breakpoint(medium up) {
+    padding-bottom: rem-calc(115);
+    &__packages {
+      display: flex;
+      justify-content: center;
+    }
+      $gap: rem-calc(45);
+      &__package {
+        width: calc(100% / 3 - #{$gap / 2});
+        text-align: center;
+        &:nth-child(4) {
+          margin-left: $gap;
+        }
+        &:nth-child(3) {
+          margin-left: $gap;
+        }
+        &:nth-child(2) {
+          margin-left: $gap;
+        }
+      }
+        &__package-image {
+          height: rem-calc(534.5);
+          padding-bottom: rem-calc(61.5);
+          &-4-cols{
+            height: rem-calc(400);
+          }
+        }
+          &__package-title {
+
+          }
+          &__package-subtitle {
+            margin-top: rem-calc(12);
+          }
+        &__package-description {
+          padding-top: rem-calc(75);
+          p:last-child{
+            margin-bottom: 0;
+          }
+        }
+        &__package-price {
+          padding-top: rem-calc(86);
+          padding-bottom: rem-calc(30);
+        }
+      &__button {
+        margin-top: rem-calc(97.5);
+      }
+  }
+
+  @include breakpoint(small only) {
+    margin-bottom: rem-calc(50);
+    &__packages {
+
+    }
+      &__package {
+        text-align: center;
+        margin-bottom: rem-calc(50);
+      }
+        &__package-image {
+          height: rem-calc(300);
+          padding-bottom: rem-calc(30);
+        }
+          &__package-title {
+
+          }
+          &__package-subtitle {
+
+          }
+        &__package-description {
+          margin-top: rem-calc(20);
+        }
+        &__package-price {
+
+        }
+      &__button {
+
+      }
+  }
+
+}

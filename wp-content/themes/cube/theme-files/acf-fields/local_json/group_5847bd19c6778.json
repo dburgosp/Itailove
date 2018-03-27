@@ -1,0 +1,355 @@
+{
+    "key": "group_5847bd19c6778",
+    "title": "5.2. Comment Areas",
+    "fields": [
+        {
+            "multiple": 1,
+            "allow_null": 1,
+            "choices": {
+                "wp": "Enable WordPress comments",
+                "fb_comments": "Enable Facebook comments"
+            },
+            "default_value": [
+                "wp"
+            ],
+            "ui": 1,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value",
+            "key": "field_58203eb886db3",
+            "label": "Comment Type",
+            "name": "flo-cube-blog-post__comments",
+            "type": "select",
+            "instructions": "If both comment types are enabled, you can change their order by simply dragging them around.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "<img class=\"acf-img\" src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/comment-area.jpg\" \/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_585257ec49f95",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "COMMENTS",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_5898a767479d8",
+            "label": "A.1. Comments Area Title",
+            "name": "flo-cube-comments-top-bar__comments-title",
+            "type": "text",
+            "instructions": "Default: COMMENTS",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_5898a7a7479d9",
+            "label": "A.2. Comments Area Title Font",
+            "name": "flo-cube-comments-top-bar__comments-title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".comments-block__title",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_2"
+        },
+        {
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_5898a89d479da",
+            "label": "B.1. Display Avatars",
+            "name": "flo-cube-comments-comment__avatars-display",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_5898a8dd479db",
+            "label": "B.2. Comment Author Name Font",
+            "name": "flo-cube-comments-comment__name-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 5",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".comment-author",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_5"
+        },
+        {
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_5898aa8b479dc",
+            "label": "B.3. Display Date and Time",
+            "name": "flo-cube-comments-comment__date-display",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_5898aaac479dd",
+            "label": "B.3.1. Date and Time Font",
+            "name": "flo-cube-comments-comment__date-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5898aa8b479dc",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".comment-meta",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_1"
+        },
+        {
+            "key": "field_5898ac0b479de",
+            "label": "B.4. Text Font",
+            "name": "flo-cube-comments-comment__text-font",
+            "type": "font_style_select",
+            "instructions": "Default: Paragraph 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".comment-content",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "paragraph_1"
+        },
+        {
+            "default_value": "REPLY",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_5898aca8479df",
+            "label": "B.5.1. \"Reply\" Button Label",
+            "name": "flo-cube-comments-comment__reply-label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_5898ace5479e0",
+            "label": "B.5.2. \"Reply\" Button Label Font",
+            "name": "flo-cube-comments-comment__reply-font",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".comment .reply",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        },
+        {
+            "default_value": "#fbfbfb",
+            "key": "field_5898ad292cdda",
+            "label": "C. Reply Background Color",
+            "name": "flo-cube-comments-reply__background-color",
+            "type": "color_picker",
+            "instructions": "Default: #fbfbfb",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "To modify the font styles of the form elements, such as the \"Add Comment\" button and the input fields, please go to Flotheme -> 5. Generics -> 5.3. Generic Typography.",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_58525d412202e",
+            "label": "D. Form Typography",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "YOUR COMMENT",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_5898aebcb38d5",
+            "label": "D.1. Comment Form Title",
+            "name": "flo-cube-comments-form__title",
+            "type": "text",
+            "instructions": "Default: YOUR COMMENT",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_5898af1eb38d6",
+            "label": "D.1.1. Comment Form Title Font",
+            "name": "flo-cube-comments-form__title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-comment-form__title",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_2"
+        },
+        {
+            "key": "field_5898b06141024",
+            "label": "D.2. Field Label Font",
+            "name": "flo-cube-comments-form__field-label-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-comment-form__field-label",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        },
+        {
+            "default_value": "SUBMIT",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_5898b1d241025",
+            "label": "D.3. Submit Button Label",
+            "name": "flo-cube-comments-form__submit-label",
+            "type": "text",
+            "instructions": "Default: SUBMIT",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1486466095
+}

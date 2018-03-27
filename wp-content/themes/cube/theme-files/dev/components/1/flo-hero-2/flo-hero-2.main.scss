@@ -1,0 +1,117 @@
+.flo-hero-2{
+  $b: '.flo-hero-2';
+  $hero-text-gap: rem-calc(102);
+
+  &__slide-content{
+    height: rem-calc(620);
+    @include global-bgi-cover;
+    display: block;
+  }
+
+  &__slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    width: calc(100% - #{$hero-text-gap * 2});
+    right: $hero-text-gap;
+    height: 100%;
+    padding-bottom: rem-calc(103);
+    outline: none;
+  }
+
+
+  &__text{
+    color: white;
+    text-align: center;
+  }
+
+
+  &__category{
+    font-size: rem-calc(29.765);
+    font-family: $font-playfair;
+    font-style: italic;
+    text-transform: capitalize;
+  }
+
+  &__title{
+    display: block;
+    margin-top: rem-calc(8);
+    font-size: rem-calc(47.905);
+    font-family: $font-lato;
+    letter-spacing: 0.2em;
+  }
+
+  &__excerpt {
+    display: block;
+    font-size: rem-calc(9.48);
+    font-family: $font-lato;
+    letter-spacing: 0.3em;
+    line-height: rem-calc(18.875);
+    text-transform: uppercase;
+    max-width: rem-calc(319.5);
+    margin: rem-calc(6) auto 0;
+  }
+
+  &__read-more-button {
+    display: block;
+    margin-top: rem-calc(85);
+    font-size: rem-calc(10);
+    font-family: $font-lato;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: rem-calc(41.5);
+    text-transform: uppercase;
+    color: $color-black;
+    background-color: $color-white;
+    display: inline-block;
+    width: rem-calc(133.5);
+    height: rem-calc(41.5);
+    border: 1px solid $color-white;
+    @include box-sizing(border-box);
+    @include global-transition(color, border-color, background-color);
+
+    &:hover {
+      background-color: transparent;
+      color: $color-white;
+    }
+  }
+
+  &__text--large{
+    #{$b}__title{
+      font-size: rem-calc(36);
+    }
+  }
+
+  @include breakpoint(small only){
+   $hero-text-gap: rem-calc(10);
+
+    &__slide-content{
+      height: rem-calc(480);
+    }
+    &__text-block{
+      width: 100%;
+      right: 0;
+      align-items: center;
+      padding-bottom: rem-calc(50);
+    }
+    &__category {
+      font-size: rem-calc(25);
+    }
+    &__title {
+      font-size: rem-calc(35);
+    }
+    &__read-more-button {
+      margin-top: rem-calc(45);
+    }
+  }
+}

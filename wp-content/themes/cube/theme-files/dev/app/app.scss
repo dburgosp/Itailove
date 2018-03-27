@@ -1,0 +1,15 @@
+/* START: VENDOR */
+  @import "foundation.scss";
+  @import "vendor/foundation/_settings.scss";
+  @include foundation-everything($flex: false);
+  @import "motion-ui";
+  @include motion-ui-transitions;
+/* END: VENDOR */
+
+/* START: GLOBAL */
+  @import "global/global.scss";
+/* END: GLOBAL */
+
+/* START: COMPONENTS (KEEP THIS ONE AT THE BOTTOM ALL THE TIME) */
+  @import "../components/**/**/**/**.main.scss";
+/* END: COMPONENTS (KEEP THIS ONE AT THE BOTTOM ALL THE TIME) */

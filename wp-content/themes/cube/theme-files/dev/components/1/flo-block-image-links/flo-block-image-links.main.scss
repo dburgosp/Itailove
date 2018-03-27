@@ -1,0 +1,95 @@
+.flo-block-image-links {
+  $b: ".flo-block-image-links";
+
+  &__link {
+    display: inline-block;
+    position: relative;
+  }
+    &__link-image {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      @include global-bgi-cover;
+    }
+    &__link-overlay {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      $size: calc(100% - #{rem-calc(25 * 2)});
+      width: $size;
+      height: $size;
+      @include global-transition(background-color);
+    }
+      &__link-text {
+        display: block;
+        color: inherit!important;
+        @include global-transition(color);
+      }
+
+  @include breakpoint(medium up) {
+    display: flex;
+    align-items: center;
+    padding: rem-calc(40) $global-padding--horizontal;
+
+    $gap: rem-calc(45);
+    &--columns-1,
+    &--columns-2,
+    &--columns-3,
+    {
+      #{$b}__link {
+        $columns: 3;
+        $gap_per_item: $gap * ($columns - 1) / $columns;
+        $item_width: calc(100% / #{$columns} - #{$gap_per_item});
+        width: $item-width;
+      }
+    }
+
+    &--columns-4 {
+      #{$b}__link {
+        $columns: 4;
+        $gap_per_item: $gap * ($columns - 1) / $columns;
+        $item_width: calc(100% / #{$columns} - #{$gap_per_item});
+        width: $item-width;
+      }
+    }
+
+    &__link {
+      &:not(:last-child) {
+        margin-right: $gap;
+      }
+    }
+      &__link-image {
+
+      }
+      &__link-overlay {
+
+      }
+        &__link-text {
+
+        }
+  }
+
+  @include breakpoint(small only) {
+    padding: rem-calc(30) $global-padding-mobile--horizontal;
+
+    &__link {
+      width: 100%;
+      margin-bottom: $global-padding-mobile--horizontal / 2;
+    }
+      &__link-image {
+
+      }
+      &__link-overlay {
+
+      }
+        &__link-text {
+
+        }
+  }
+}

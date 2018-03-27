@@ -1,0 +1,35 @@
+.flo-social-share-block {
+  $b: ".flo-social-share-block";
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  .flo-icon-facebook {
+    padding-left: 0;
+  }
+
+  &__title {
+    font-family: $font-playfair;
+    font-style: italic;
+    font-size: rem-calc(14);
+  }
+
+  @include breakpoint(medium up){
+    margin-top: rem-calc(84);
+    margin-bottom: rem-calc(100);
+
+    &__title {
+     margin-bottom: rem-calc(26);
+   }
+  }
+
+  @include breakpoint(small only){
+    &__title {
+      margin-bottom: rem-calc(13);
+    }
+
+    margin-top: rem-calc(40);
+    margin-bottom: rem-calc(60);
+  }
+}

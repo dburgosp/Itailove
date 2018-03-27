@@ -1,0 +1,128 @@
+{
+    "key": "group_58ad53b7c7ab1",
+    "title": "4.6. Advanced: Blog Post Decorative Overlay",
+    "fields": [
+        {
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_58ad540a78594",
+            "label": "Display Decorative Overlay",
+            "name": "decorative_overlay",
+            "type": "true_false",
+            "instructions": "Note: The decorative layer for this post will be visible while listing it inside a \"Grid\" Type Listing.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_58ad542d78595",
+            "label": "Decorative Image",
+            "name": "decorative_image",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58ad540a78594",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#000000",
+            "key": "field_58ad548d78596",
+            "label": "Decorative Overlay Background Color",
+            "name": "decorative_overlay_color",
+            "type": "color_picker",
+            "instructions": "Default: #000000",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58ad540a78594",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "#FFFFFF",
+            "key": "field_58ad54ae78597",
+            "label": "Decorative Overlay Elements Color",
+            "name": "decorative_overlay_elements_color",
+            "type": "color_picker",
+            "instructions": "Default: #FFFFFF",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58ad540a78594",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "gallery"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1487940446
+}

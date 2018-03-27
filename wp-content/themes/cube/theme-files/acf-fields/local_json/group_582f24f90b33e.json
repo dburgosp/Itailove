@@ -1,0 +1,233 @@
+{
+    "key": "group_582f24f90b33e",
+    "title": "8.3. Generic Typography",
+    "fields": [
+        {
+            "slider_min_value": 0,
+            "slider_max_value": 300,
+            "increment_value": 1,
+            "slider_units": "%",
+            "default_value": 0,
+            "key": "field_58c9638a9343e",
+            "label": "Tablet Font Size Zoom Factor",
+            "name": "flo-tablet_font-size-zoom",
+            "type": "number_slider",
+            "instructions": "Default: 0\r\n<br\/>\r\nUse this option only if the tablet font size seems too small. This option will affect ONLY the Fonts smaller than 29px. <br\/>\r\nThe tablet font size will be increased by the value specified here. <br\/>\r\nRecommended value is 50% for the default fonts. <br\/>\r\nBe aware that a value too big will make the text not fit in the parent container and break some layouts.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_585263c319ddc",
+            "label": "Text Input Field Font",
+            "name": "flo-cube-text_input_field_font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "input[type]:not([type=\"submit\"]), textarea",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        },
+        {
+            "key": "field_582f2596820c3",
+            "label": "Paragraph Font",
+            "name": "flo-cube-post__paragraph-font",
+            "type": "font_style_select",
+            "instructions": "Default: Paragraph 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post, .flo-post p, .woocommerce .product",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "paragraph_1"
+        },
+        {
+            "key": "field_5832c3021e483",
+            "label": "Paragraph Link Font",
+            "name": "flo-cube-post__paragraph-link-font",
+            "type": "font_style_select",
+            "instructions": "Default: Paragraph 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post a, .flo-post p a, .woocommerce .product a",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "paragraph_2"
+        },
+        {
+            "key": "field_5832bd34b4b68",
+            "label": "H1 font",
+            "name": "flo-cube-post__h1",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post h1, .woocommerce h1",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "h1"
+        },
+        {
+            "key": "field_5832bf278d95a",
+            "label": "H2 font",
+            "name": "flo-cube-post__h2",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post h2, .woocommerce h2",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "h2"
+        },
+        {
+            "key": "field_5832bf3c8d95b",
+            "label": "H3 font",
+            "name": "flo-cube-post__h3",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post h3, .woocommerce h3",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "h3"
+        },
+        {
+            "key": "field_5832bf508d95e",
+            "label": "H4 font",
+            "name": "flo-cube-post__h4",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post h4, .woocommerce h4",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "h4"
+        },
+        {
+            "key": "field_5832bf4e8d95d",
+            "label": "H5 font",
+            "name": "flo-cube-post__h5",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post h5",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "h5"
+        },
+        {
+            "key": "field_5832bf4c8d95c",
+            "label": "H6 font",
+            "name": "flo-cube-post__h6",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post h6",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "h6"
+        },
+        {
+            "key": "field_5832c91c78881",
+            "label": "Blockquote Font",
+            "name": "flo-cube-post__blockquote-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 5",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post blockquote, .flo-post blockquote p",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_5"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1490603830
+}

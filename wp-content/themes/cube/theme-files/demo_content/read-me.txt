@@ -1,0 +1,29 @@
+Intructions about setting up the export files.
+
+
+
+You must have installed the following plugins:
+
+widget-importer-exporter - https://github.com/stevengliebe/widget-importer-exporter
+
+flo-exporter
+
+
+Then you will have an option to access Export settings in WP options.
+This will generate a zip file that will contain the following files:
+
+export.xml
+nav_menus.options
+static_pages.options
+widgets.options
+
+
+Then you'll have to go in the theme options and coppy the code from Export zone and create a file called 'fw_import.options' and paste those option in there.
+
+And in the end you must put  the following files inside export folder:
+
+export.xml
+nav_menus.options
+static_pages.options
+widgets.options
+fw_import.options

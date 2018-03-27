@@ -1,0 +1,84 @@
+.acf-flo-image-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+
+  width: 100vw;
+  height: 100vh;
+
+
+  z-index: 10000;
+}
+
+  .acf-flo-image-modal__background {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    opacity: 0.3;
+  }
+  .acf-flo-image-modal__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    /*width: 80%;*/
+    /*height: 80%;*/
+
+    box-sizing: border-box;
+    padding: 50px;
+    overflow: hidden;
+    text-align: center;
+
+    border-radius: 15px;
+
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.0.05);
+  }
+    /* START: APPEAR ANIMATION */
+      .acf-flo-image-modal__content {
+        /*transform-origin: center;
+        transition: transform 0.4s, box-shadow 0.4s;*/
+      }
+      .acf-flo-image-modal:not(.acf-flo-image-modal--visible) .acf-flo-image-modal__content {
+        /*transform: scale(1.2) translate(-50%, -50%);
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;*/
+      }
+    /* END: APPEAR ANIMATION */
+    .acf-flo-image-modal__close {
+      position: absolute;
+      top: 25px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+
+      transition: color 0.4s;
+    }
+      .acf-flo-image-modal__close:hover {
+        color: #ec6042;
+      }
+    .acf-flo-image-modal__section {
+
+    }
+      .acf-flo-image-modal__section-title-area {
+        margin-bottom: 40px;
+      }
+        .acf-flo-image-modal__section-title {
+          font-family: "Miller Banner";
+          font-size: 23px;
+          letter-spacing: -0.02;
+          margin-bottom: 15px;
+        }
+        .acf-flo-image-modal__section-title {
+        }
+      .acf-flo-image-modal__section-content {
+
+      }

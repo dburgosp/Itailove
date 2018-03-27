@@ -1,0 +1,47 @@
+.flo-links-block-2{
+  &__title{
+    font-size: rem-calc(10);
+    letter-spacing: 0.6875em;
+    text-transform: uppercase;
+  }
+
+  &__item{
+    font-size: rem-calc(18);
+    line-height: 1.6;
+    display: block;
+  }
+
+  @include breakpoint(medium up){
+
+    &__title{
+      margin-bottom: rem-calc(80);
+    }
+
+    &__items{
+      display: flex;
+      flex-wrap: wrap;
+      padding-right: rem-calc(20);
+    }
+
+      &__item{
+        width: 48%;
+        margin-right: 2%;
+        &:nth-child(2n){
+          margin-right: 0;
+        }
+
+      }
+  }
+
+  @include breakpoint(small only){
+
+    &__title{
+      margin-bottom: rem-calc(30);
+    }
+
+    &__items{
+      margin-bottom: rem-calc(80);
+      text-align: center;
+    }
+  }
+}

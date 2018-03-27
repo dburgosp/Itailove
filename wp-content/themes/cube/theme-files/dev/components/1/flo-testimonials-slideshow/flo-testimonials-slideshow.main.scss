@@ -1,0 +1,99 @@
+.flo-testimonials-slideshow {
+  $b: ".flo-testimonials-slider";
+  width: 100%;
+  text-align: center;
+  &__title {
+  }
+  &__testimonials {
+
+    .slick-next,
+    .slick-prev {
+      position: absolute;
+      cursor: pointer;
+      z-index: 1;
+    }
+  }
+    &__testimonial {
+
+    }
+      &__testimonial-text {
+
+      }
+      &__testimonial-name {
+
+      }
+
+  @include breakpoint(medium up) {
+    padding-bottom: rem-calc(95);
+
+    &__title {
+      margin-bottom: rem-calc(60);
+    }
+    &__testimonials {
+      margin-bottom: rem-calc(100);
+
+      .slick-list {
+        overflow: visible!important;
+      }
+
+      $side-position: rem-calc(51.5);
+      .slick-next,
+      .slick-prev {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .slick-next {
+        right: $side-position;
+      }
+      .slick-prev {
+        left: $side-position;
+      }
+
+    }
+      &__testimonial {
+        position: relative;
+        padding: 0 rem-calc(170);
+        overflow-y: visible;
+      }
+        &__testimonial-text {
+        }
+        &__testimonial-name {
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+  }
+
+  @include breakpoint(small only) {
+    padding-top: rem-calc(60);
+    padding-bottom: rem-calc(80);
+
+    &__title {
+      margin-bottom: rem-calc(30);
+    }
+    &__testimonials {
+
+      .slick-next,
+      .slick-prev {
+        top: rem-calc(20);
+      }
+      $side-position: rem-calc(20);
+      .slick-next {
+        right: $side-position;
+      }
+      .slick-prev {
+        left: $side-position;
+      }
+    }
+      &__testimonial {
+        padding-top: rem-calc(75);
+      }
+        &__testimonial-text {
+
+        }
+        &__testimonial-name {
+
+        }
+  }
+}

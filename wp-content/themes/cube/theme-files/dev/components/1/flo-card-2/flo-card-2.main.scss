@@ -1,0 +1,38 @@
+.flo-card-2{
+ text-align: center;
+  &__title{
+    font-size: rem-calc(40);
+    line-height: 1.2;
+    display: inline-block;
+    margin-top: rem-calc(28);
+    &:after{
+      border-width: 3px;
+    }
+    a{
+      &:hover{
+        color: inherit;
+      }
+    }
+  }
+
+  @include breakpoint(medium up){
+    &__img{
+      width: 100%;
+      height: rem-calc(350);
+      @include global-bgi-cover;
+
+      img{
+        display: none;
+      }
+    }
+    &__title{
+      font-size: rem-calc(45);
+    }
+
+    }
+  @include breakpoint(small only){
+    &__img{
+      background: none;
+    }
+  }
+}

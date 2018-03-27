@@ -1,0 +1,233 @@
+{
+    "key": "group_585bbbc937d43",
+    "title": "Section Text Content",
+    "fields": [
+        {
+            "message": "<img class=\"acf-img\" src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/section-text-content.png\" \/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_585bd7f4dedcf",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_585bbd12e7057",
+            "label": "Display Block",
+            "name": "section-text-content__enabled",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "slider_min_value": 30,
+            "slider_max_value": 100,
+            "increment_value": 1,
+            "slider_units": "%",
+            "default_value": 80,
+            "key": "field_585bcfd8e133f",
+            "label": "Block Width",
+            "name": "section-text-content__width",
+            "type": "number_slider",
+            "instructions": "Default: 80%",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_585bbd12e7057",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--label-on-top",
+                "id": ""
+            }
+        },
+        {
+            "slider_min_value": 0,
+            "slider_max_value": 400,
+            "increment_value": 5,
+            "slider_units": "px",
+            "default_value": 40,
+            "key": "field_585bce4ce133c",
+            "label": "Top Gutter",
+            "name": "section-text-content__top-gutter",
+            "type": "number_slider",
+            "instructions": "Default: 40px",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_585bbd12e7057",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "slider_min_value": 0,
+            "slider_max_value": 400,
+            "increment_value": 5,
+            "slider_units": "px",
+            "default_value": 40,
+            "key": "field_585bcf8ce133e",
+            "label": "Bottom Gutter",
+            "name": "section-text-content__bottom-gutter",
+            "type": "number_slider",
+            "instructions": "Default: 40px",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_585bbd12e7057",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "Title",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "key": "field_585bc120b8d64",
+            "label": "A.2. Title",
+            "name": "section-text-content__title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_585bd40153a6e",
+            "label": "A.3. Title Font",
+            "name": "section-text-content__title-font",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_585bbd12e7057",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_2"
+        },
+        {
+            "slider_min_value": 0,
+            "slider_max_value": 400,
+            "increment_value": 5,
+            "slider_units": "px",
+            "default_value": 40,
+            "key": "field_585bd4ff24668",
+            "label": "A.3. Title Bottom Margin",
+            "name": "section-text-content__title-bottom-margin",
+            "type": "number_slider",
+            "instructions": "Default: 40px",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_585bbd12e7057",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "",
+            "delay": 0,
+            "key": "field_585bbf92e7058",
+            "label": "B. Content",
+            "name": "section-text-content__content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--label-on-top",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1485795093
+}

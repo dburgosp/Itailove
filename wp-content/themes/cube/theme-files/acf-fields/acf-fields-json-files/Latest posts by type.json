@@ -1,0 +1,294 @@
+[
+    {
+        "key": "group_57b4748f2ee90",
+        "title": "Latest posts by type",
+        "fields": [
+            {
+                "key": "field_57b474c08bb11",
+                "label": "Select post type",
+                "name": "flo_post_type",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "post": "Post",
+                    "gallery": "Gallery",
+                    "page": "Page"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_57b4756f8bb12",
+                "label": "Post categories",
+                "name": "flo_post_categories",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57b474c08bb11",
+                            "operator": "==",
+                            "value": "post"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "uncategorized": "Uncateg"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 1,
+                "ui": 0,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_57b475b38bb13",
+                "label": "Gallery categories",
+                "name": "flo_gallery_categories",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57b474c08bb11",
+                            "operator": "==",
+                            "value": "gallery"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": [],
+                "default_value": [
+                    "wedding",
+                    "portraits"
+                ],
+                "allow_null": 0,
+                "multiple": 1,
+                "ui": 0,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_57b4784f905f1",
+                "label": "View type",
+                "name": "flo_view_type",
+                "type": "radio",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "flo-image-select layout_sidebars hidden-label ",
+                    "id": ""
+                },
+                "choices": {
+                    "grid1": "Grid 1",
+                    "grid2": "Grid 2",
+                    "grid3": "Grid 3",
+                    "grid4": "Grid 4"
+                },
+                "allow_null": 0,
+                "other_choice": 0,
+                "save_other_choice": 0,
+                "default_value": "",
+                "layout": "horizontal",
+                "return_format": "value"
+            },
+            {
+                "key": "field_57b47ae5905f2",
+                "label": "Number of columns",
+                "name": "flo_nr_columns",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57b4784f905f1",
+                            "operator": "==",
+                            "value": "grid1"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_57b4784f905f1",
+                            "operator": "==",
+                            "value": "grid2"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "1": "1 Column",
+                    "2": "2 Columns",
+                    "3": "3 Columns",
+                    "4": "4 Columns",
+                    "6": "5 Columns"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_57b47b6c905f4",
+                "label": "Gutter type",
+                "name": "flo_gutter_type",
+                "type": "select",
+                "instructions": "The spacing between columns",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57b4784f905f1",
+                            "operator": "==",
+                            "value": "grid1"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_57b4784f905f1",
+                            "operator": "==",
+                            "value": "grid2"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "gutter-default": "Default 30px",
+                    "gutter-0": "No gutter",
+                    "gutter-2": "Gutter 2px",
+                    "gutter-5": "Gutter 5px",
+                    "gutter-10": "Gutter 10px",
+                    "gutter-20": "Gutter 20px",
+                    "gutter-40": "Gutter 40px",
+                    "gutter-50": "Gutter 50px"
+                },
+                "default_value": [
+                    "gutter-default"
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
+            },
+            {
+                "key": "field_57b47c58905f6",
+                "label": "Enable masonry",
+                "name": "flo_enable_masonry",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_57b4784f905f1",
+                            "operator": "==",
+                            "value": "grid2"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_57b4763d8bb14",
+                "label": "Number of posts",
+                "name": "flo_number_of_posts",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_57b476938bb15",
+                "label": "Enable pagination",
+                "name": "flo_enable_pagination",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "classy-template_latest_posts_type"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

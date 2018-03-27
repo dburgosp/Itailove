@@ -1,0 +1,53 @@
+.flo-portfolio-card {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+
+  &[data-open="popup-gallery"]{
+    outline: none;
+    cursor: pointer;
+    //&:after{
+    //  content: '+';
+    //  font-size: rem-calc(30);
+    //  color: white;
+    //  display: flex;
+    //  justify-content: center;
+    //  align-items: center;
+    //  width: rem-calc(40);
+    //  height: rem-calc(40);
+    //  border: 2px solid white;
+    //  border-radius: 50%;
+    //  position: absolute;
+    //  top: 50%;
+    //  left: 50%;
+    //  transform: translate(-50%, -50%);
+    //  visibility: hidden;
+    //  opacity: 0;
+    //  @include global-transition(opacity, visibility);
+    //
+    //}
+    //&:hover{
+    //  &:after{
+    //    visibility: visible;
+    //    opacity: 1;
+    //  }
+    //}
+}
+
+  @include breakpoint(medium up) {
+    height: rem-calc(168);
+    @include global-bgi-cover;
+    img {
+      display: none;
+    }
+  }
+  @include breakpoint(small only) {
+    background-image: none !important;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  }

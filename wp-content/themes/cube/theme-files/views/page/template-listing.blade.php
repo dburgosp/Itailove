@@ -1,0 +1,140 @@
+{{-- Template Name: 4.4. Listing Page --}}
+
+<?php
+
+$data = get_fields();
+
+$current_page_permalink = get_permalink();
+$post_type = get_field("page-listing__post-type");
+$post_type__category_taxonomy = $post_type == "gallery" ? "gallery-category" : "category";
+
+if(!isset($post_type)){
+  $post_type = 'post';
+}
+
+if($post_type == "gallery"){
+  $post_type__categories = get_field("page-listing-listing__gallery-categories");
+}else{
+  $post_type__categories = get_field("page-listing-listing__post-categories");
+}
+
+
+if( !(is_array($post_type__categories) && sizeof($post_type__categories)) ){
+
+  $post_type__categories = array();
+}
+$show_grid_categ = get_field('flo-page-listing-listing__show-category');
+
+// if( (isset($page_options['flo-page-listing-listing__show-category']) && $page_options['flo-page-listing-listing__show-category']) || !isset($page_options['flo-page-listing-listing__show-category']) ){
+//   $show_grid_categ = true;
+// }else{
+//   $show_grid_categ = false;
+// }
+
+$listing_layout__field = get_field("page-listing-listing__layout");
+$listing_layout__views = array(
+  "classic"             => "components.flo-grid-2",
+  "grid"                => "components.flo-grid",
+  "grid_2"                => "components.flo-grid-2-items",
+  "cards"               => "components.flo-grid-3"
+);
+
+$posts_per_page = get_field("page-listing-listing__posts-per-page");
+
+$columns_count = get_field("page-listing-listing__columns-count");
+$gutter = get_field("page-listing-listing__gutter");
+
+$show_content = get_field('page-listing-listing__show-content');
+$show_excerpt = get_field('page-listing-listing__show-excerpt');
+
+
+//$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+if ( get_query_var('paged') ) {
+  $paged = get_query_var('paged');
+} else if ( get_query_var('page') ) {
+  $paged = get_query_var('page');
+} else {
+  $paged = 1;
+}
+
+$the_query__args = array(
+  'post_type'                   => $post_type,
+  'ignore_sticky_posts'         => true,
+  'paged'                       => $paged
+);
+
+if(isset($_GET['categ']) && strlen($_GET['categ']) ){
+  // when the category filter is passed via URL
+  $the_query__args['tax_query'] = array(
+    array(
+        'taxonomy' => $post_type__category_taxonomy,
+        'field'    => 'slug',
+        'terms'    => $_GET['categ'],
+      )
+  );
+
+}else if( sizeof($post_type__categories) ){
+  $the_query__args['tax_query'] = array(
+    array(
+        'taxonomy' => $post_type__category_taxonomy,
+        'field'    => 'term_id',
+        'terms'    => $post_type__categories,
+        'operator' => 'IN'
+      )
+  );
+}
+
+if(is_numeric($posts_per_page)){
+  $the_query__args['posts_per_page'] = $posts_per_page;
+}
+
+//deb_e($the_query__args); die(0);
+$the_query = new WP_Query( $the_query__args );
+
+?>
+
+@extends("layout.default")
+
+
+
+@section("content")
+
+  @include('components.flo-page-hero-image')
+
+  @include('components.flo-listing-title', [
+    "data" => $data
+  ])
+
+  @if(isset($post->post_content) && strlen($post->post_content) )
+    <div class="flo-section flo-section--full-width full-scrollable-section flo-section--default-content">
+        <article class="flo-section__content flo-post">
+          <div class="section-text-content" style="width: 80%;">
+            <?php while ( have_posts() ) : the_post(); ?>
+            <div class="section-text-content__content">
+              {{ the_content(); }}
+            </div>
+          <?php endwhile; ?>
+
+          </div>
+        </article>
+    </div>
+  @endif
+
+  @include('components.flo-listing-featured-item', [
+    "data" => $data
+  ])
+
+  @if($the_query->have_posts())
+    {{-- @include($listing_layout__views[$listing_layout__field]) --}}
+    @include('components.flo-listing', [
+      "data" => $data
+    ])
+  @else
+    {{ "No Posts" }}
+  @endif
+
+  @include('components.flo-listing-pagination', [
+    "data" => $data
+  ])
+
+@stop

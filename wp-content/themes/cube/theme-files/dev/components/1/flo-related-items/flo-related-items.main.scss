@@ -1,0 +1,75 @@
+.flo-related-items {
+  $b: ".flo-related-items";
+
+  text-align: center;
+
+  &__title {
+    margin-bottom: rem-calc(50);
+  }
+  &__items {
+  }
+    &__item {
+      display: inline-block;
+    }
+      &__item-image {
+        margin-bottom: rem-calc(30);
+        @include global-bgi-cover;
+      }
+      &__item-title {
+
+      }
+
+  @include breakpoint(medium up) {
+    width: 100%;
+    margin: 0 auto;
+    padding: rem-calc(100) 0;
+
+    &__title {
+
+    }
+    &__items {
+      display: flex;
+      align-items: flex-start;
+    }
+      &__item {
+        width: 25%;
+        padding: 0 rem-calc(10);
+
+        &:hover {
+          #{$b}__item-image {
+            opacity: 0.5;
+          }
+        }
+      }
+        &__item-image {
+          width: 100%;
+          height: rem-calc(250);
+          @include global-transition(opacity);
+        }
+        &__item-title {
+
+        }
+  }
+
+  @include breakpoint(small only) {
+    margin-top: rem-calc(80);
+
+    &__title {
+
+    }
+    &__items {
+
+    }
+      &__item {
+        width: 100%;
+        margin-bottom: rem-calc(40);
+      }
+        &__item-image {
+          width: 100%;
+          height: rem-calc(400);
+        }
+        &__item-title {
+
+        }
+  }
+}

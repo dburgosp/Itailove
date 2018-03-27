@@ -1,0 +1,20 @@
+<head>
+  <meta charset="<?php echo bloginfo( 'charset' ); ?>" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="alternate" type="application/rss+xml" title="<?php echo bloginfo('name'); ?> RSS Feed" href="<?php echo bloginfo('rss2_url'); ?>" />
+  <?php if( strlen($flo_custom_favicon)): ?>
+      <link rel="shortcut icon" href="<?php echo $flo_custom_favicon; ?>" />
+  <?php else: ?>
+      <link rel="shortcut icon" href="<?php echo CLASSY_THEME_DIR; ?>assets/favicon.ico" />
+  <?php endif; ?>
+  <link rel="profile" href="http://gmpg.org/xfn/11">
+  <?php if( is_singular() && pings_open( get_queried_object() ) ): ?>
+  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+  <?php endif; ?>
+  <?php /* <title><?php echo wp_title('|', true, 'right');; ?></title> */ ?>
+  <?php echo wp_head(); ?>
+
+  <?php echo $__env->yieldContent('head__styles'); ?>
+
+</head>

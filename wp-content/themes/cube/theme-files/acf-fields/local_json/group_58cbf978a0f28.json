@@ -1,0 +1,135 @@
+{
+    "key": "group_58cbf978a0f28",
+    "title": "Grid Thumb Sizes",
+    "fields": [
+        {
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "3_2": "\"3:2\" (Landscape)",
+                "2_3": "\"2:3\" (Portrait)",
+                "4_3": "\"4:3\" (Landscape)",
+                "3_4": "\"3:4\" (Portrait)",
+                "masonry": "Original Picture Ratio",
+                "custom": "Custom Ratio",
+                "advanced": "Custom Image Size (Advanced)"
+            },
+            "default_value": [
+                "custom"
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value",
+            "key": "field_58cbf997fe486",
+            "label": "Thumbnail Aspect Ratio",
+            "name": "flo-cube-grid__thumb-size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "1:1",
+            "maxlength": "",
+            "placeholder": "Example:   1:1",
+            "prepend": "",
+            "append": "",
+            "key": "field_58cbf9e4fe487",
+            "label": "Thumbnail Custom Ratio",
+            "name": "flo-cube-grid__thumb-size-custom",
+            "type": "text",
+            "instructions": "The ratio should be specified by the following example: 1:1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58cbf997fe486",
+                        "operator": "==",
+                        "value": "custom"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Example:   600\u00d7400",
+            "prepend": "",
+            "append": "",
+            "key": "field_58cbfa47fe488",
+            "label": "Thumbnail Custom Image Size (Advanced)",
+            "name": "flo-cube-grid__thumb-size-px",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58cbf997fe486",
+                        "operator": "==",
+                        "value": "advanced"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "The Image Size is set in pixels, by the example: 600x400. <br> Note: the proper thumbnail size should be set considering the number of columns of the grid, and the screen resolution that the viewers of the grid will use. E.g. the thumbnail size for a grid of two columns should be bigger than the thumbnail size of a grid with 3 columns.",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_58cbfa79fe489",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58cbf997fe486",
+                        "operator": "==",
+                        "value": "advanced"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1489763577
+}

@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?> class="layout-default">
+  <?php echo $__env->make('layout.head', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+  <body <?php echo body_class($body_sidebar_class); ?>>
+
+    <?php echo $__env->make("layout.header", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

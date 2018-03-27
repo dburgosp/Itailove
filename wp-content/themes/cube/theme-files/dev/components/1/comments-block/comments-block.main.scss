@@ -1,0 +1,208 @@
+.comments-block {
+  $b: ".comments-block";
+  $avatar-size: rem-calc(54);
+
+
+  &__title {
+    margin-bottom: rem-calc(25);
+    // border-top: 1px solid $color-gray;
+    padding-top: rem-calc(50);
+  }
+
+  &__post {
+  }
+    /* START: COMMENT */
+      .comment {
+      }
+        .comment-body {
+        }
+          .comment-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-sizing: content-box;
+            min-width: rem-calc(135.5);
+          }
+            .comment-avatar {
+              display: block;
+              width: $avatar-size;
+              height: $avatar-size;
+              border-radius: $avatar-size;
+              overflow: hidden;
+              margin-bottom: rem-calc(15);
+              img {
+                width: 100%;
+              }
+            }
+            .comment-name-and-date {
+            }
+              .comment-author {
+                margin-bottom: rem-calc(10);
+              }
+              .comment-meta {
+              }
+            .reply {
+            }
+          .comment-content {
+          }
+          .reply {
+          }
+    /* END: COMMENT */
+
+    /* START: REPLY COMMENT */
+      .coment .comment {
+
+        .comment-body {
+        }
+          .comment-header {
+          }
+            .comment-avatar {
+            }
+
+            .comment-name-and-date {
+            }
+              .comment-author {
+              }
+              .comment-meta {
+              }
+            .reply {
+            }
+          .comment-content {
+          }
+      }
+    /* END: REPLY COMMENT */
+
+    .comment-reply-title {
+      text-align: center;
+      padding-top: rem-calc(20);
+    }
+
+    #cancel-comment-reply-link {
+
+    }
+
+  @include breakpoint(medium up) {
+    $vertical_padding: rem-calc(75);
+
+    &__post {
+    }
+      /* START: COMMENT */
+        .comment {
+
+          .comment {
+            .comment-header {
+              padding-left: rem-calc(118.5);
+            }
+            .comment-content {
+              padding-right: rem-calc(240);
+
+            }
+          }
+        }
+          .comment-body {
+            display: flex;
+            width: 100%;
+          }
+            .comment-header {
+              padding-top: $vertical_padding;
+              padding-bottom: $vertical_padding;
+              padding-left: rem-calc(36);
+            }
+              .comment-avatar {
+              }
+              .comment-name-and-date {
+              }
+                .comment-author {
+                }
+                .comment-meta {
+                }
+              .reply {
+              }
+            .comment-content {
+              padding-left: rem-calc(80);
+              padding-right: rem-calc(331);
+              padding-top: $vertical_padding;
+              padding-bottom: $vertical_padding;
+            }
+            .reply {
+              margin-top: rem-calc(30);
+            }
+      /* END: COMMENT */
+
+      /* START: REPLY COMMENT */
+        .comment .comment {
+          .comment-body {
+          }
+            .comment-header {
+            }
+              .comment-avatar {
+              }
+
+              .comment-name-and-date {
+              }
+                .comment-author {
+                }
+                .comment-meta {
+                }
+              .reply {
+              }
+            .comment-content {
+            }
+        }
+      /* END: REPLY COMMENT */
+  }
+
+  @include breakpoint(small only) {
+    &__title {
+      text-align: center;
+    }
+      /* START: COMMENT */
+        .comment {
+          padding: rem-calc(15);
+        }
+          .comment-body {
+            padding: rem-calc(15);
+          }
+            .comment-header {
+            }
+              .comment-avatar {
+              }
+              .comment-name-and-date {
+              }
+                .comment-author {
+                }
+                .comment-meta {
+                }
+              .reply {
+              }
+            .comment-content {
+            }
+            .reply {
+            }
+      /* END: COMMENT */
+
+      /* START: REPLY COMMENT */
+        .comment .comment {
+
+          .comment-body {
+          }
+            .comment-header {
+            }
+              .comment-avatar {
+              }
+
+              .comment-name-and-date {
+              }
+                .comment-author {
+                }
+                .comment-meta {
+                }
+              .reply {
+              }
+            .comment-content {
+            }
+        }
+      /* END: REPLY COMMENT */
+  }
+}

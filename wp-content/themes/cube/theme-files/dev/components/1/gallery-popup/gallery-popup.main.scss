@@ -1,0 +1,88 @@
+.flo-popup-gallery{
+  $gaps-side: rem-calc(40);
+   outline: none;
+   padding: 0 0 rem-calc(70);
+
+  &__top-wrap{
+    display: flex;
+    justify-content: flex-end;
+    padding: rem-calc(27) $gaps-side;
+  }
+
+
+  &__title{
+    font-size: rem-calc(36.5);
+    text-align: center;
+    &:before{
+      padding-bottom: 0;
+    }
+  }
+
+
+  &__categories{
+    display: flex;
+  }
+
+  &__link{
+    font-size: rem-calc(15.6);
+    color: $color-gray95;
+    padding-left: rem-calc(54);
+    text-align: center;
+    &:first-of-type{
+      padding-left: 0;
+    }
+    &:visited{
+      color: $color-gray95;
+
+    }
+  }
+  &__close{
+    display: block;
+    position: initial;
+    appearance: none!important;
+    @include global-transition(color)
+  }
+  @include breakpoint(medium up){
+
+    &__title{
+      width: 40%;
+    }
+    &__top-left{
+      width: 30%;
+    }
+
+    &__top-right{
+      width: 30%;
+      justify-content: flex-end;
+    }
+
+    .flo-hero-3__arrow {
+      color: $color-gray-dark;
+    }
+
+    .flo-hero-3__slide {
+      margin: 0 rem-calc(35/2);
+    }
+      .flo-hero-3__slide-img {
+        height: 80vh;
+        min-height: rem-calc(700);
+      }
+
+  }
+  @include breakpoint(small only){
+    $gaps-side: rem-calc(30);
+
+    &__top-wrap{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: $gaps-side;
+      padding-right: $gaps-side;
+    }
+    &__top-right{
+      justify-content: center;
+      margin-top: rem-calc(10);
+    }
+
+  }
+}

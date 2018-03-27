@@ -1,0 +1,223 @@
+.flo-block-information-block-3 {
+  $b: ".flo-block-information-block-3";
+
+  &__left-side {
+
+  }
+    &__text-area {
+      margin-bottom: rem-calc(69);
+    }
+      &__pretitle {
+        display: block;
+        margin-bottom: rem-calc(3);
+      }
+      &__title {
+        display: block;
+      }
+      &__text {
+        display: block;
+        margin-top: rem-calc(56);
+      }
+      &__bottom-link {
+        display: inline-block;
+        margin-top: rem-calc(70);
+        border: 1px solid;
+        padding: rem-calc(12) rem-calc(20)
+      }
+
+    &__bottom-left-image {
+      width: 100%;
+      height: rem-calc(302);
+      @include global-bgi-cover;
+    }
+
+  &__right-side {
+
+  }
+    &__slideshow {
+      .slick-dots {
+        position: absolute;
+        display: flex;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: rem-calc(52);
+
+
+        li {
+          $size: 8px;
+          width: $size;
+          height: $size;
+          border-radius: $size;
+          overflow: hidden;
+          margin: 0 rem-calc(17 / 2);
+          border: 1px solid;
+          @include global-clickable;
+          @include global-transition(background-color);
+          &:not(.slick-active) {
+            background-color: transparent!important;
+          }
+        }
+          button {
+            display: none;
+          }
+      }
+    }
+      &__slide {
+
+      }
+        &__slide-wrap {
+
+        }
+          &__slide-title {
+
+          }
+          &__slide-image {
+            position: relative;
+            @include global-bgi-cover;
+
+            @at-root {
+              #{$b}--display-image-stroke {
+                #{$b}__slide-image {
+                  &:before {
+                    content: " ";
+
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+
+                    $size: calc(100% - #{rem-calc(18 * 2)});
+                    width: $size;
+                    height: $size;
+
+                    border: 1px solid;
+                  }
+                }
+              }
+            }
+          }
+
+  @include breakpoint(medium up) {
+    display: flex;
+    align-items: stretch;
+    padding: rem-calc(61) $global-padding--horizontal + $global-column-width / 2;
+
+    &__left-side,
+    &__right-side
+    {
+      width: 50%;
+      flex-grow: 0;
+      flex-shrink: 0;
+      padding-right: $global-column-width / 2;
+    }
+    &__left-side {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-between;
+    }
+      &__text-area {
+        padding-right: $global-column-width * 0.75;
+      }
+        $text-area-offset: $global-column-width / 4;
+        &__pretitle {
+
+        }
+        &__title {
+          padding-left: $text-area-offset;
+        }
+        &__text {
+          padding-left: $text-area-offset * 1.5;
+        }
+        &__bottom-link {
+          margin-left: $text-area-offset;
+        }
+
+      &__bottom-left-image {
+      }
+
+    &__right-side {
+
+    }
+      &__slideshow {
+
+      }
+        &__slide {
+
+        }
+          &__slide-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: flex-end;
+            height: rem-calc(817);
+          }
+            &__slide-title {
+              position: absolute;
+              left: 0;
+              top: rem-calc(32);
+              padding-right: $global-column-width * 1.5;
+            }
+            &__slide-image {
+              height: rem-calc(680);
+            }
+  }
+
+  @include breakpoint(small only) {
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding: rem-calc(40) $global-padding-mobile--horizontal;
+
+    &__left-side {
+
+    }
+      &__text-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: rem-calc(40);
+      }
+        &__pretitle {
+          text-align: center;
+        }
+        &__title {
+          text-align: center;
+        }
+        &__text {
+
+        }
+        &__bottom-link {
+
+        }
+
+      &__bottom-left-image {
+
+      }
+
+    &__right-side {
+
+    }
+      &__slideshow {
+
+      }
+        &__slide {
+
+        }
+          &__slide-wrap {
+          }
+            &__slide-title {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              z-index: 1;
+              text-align: center;
+              width: 80%;
+            }
+            &__slide-image {
+              height: rem-calc(300);
+            }
+  }
+}

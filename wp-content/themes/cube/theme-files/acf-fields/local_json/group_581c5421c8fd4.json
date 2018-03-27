@@ -1,0 +1,320 @@
+{
+    "key": "group_581c5421c8fd4",
+    "title": "1. Introduction",
+    "fields": [
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_5848009f48e4c",
+            "label": "1.1. Introduction",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "Hi there! \r\n\r\nThanks again for choosing Flothemes. Please take a few minutes to watch the video below where we briefly go over back-end structure and the initial steps required to get started. The video is based on a different theme, but the structure is the same. \r\n\r\n<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/vmPFI1Dfd2o\" frameborder=\"0\" allowfullscreen><\/iframe>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_58483036115e3",
+            "label": "Hello",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_58492c458a2af",
+            "label": "1.2. Page Structure",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "<img class=\"acf-img\" src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/theme-structure.jpg\" \/>\r\n\r\n\r\nBelow you will find a short description of the sections mentioned above. \r\n<ul style=\"list-style: none; padding-left: 20px;\">\r\n<li>\r\n<b>Header<\/b> - is the top section of your website\u2019s page where the site Navigation and Logo are located. For a more detailed overview of settings and features please look into Flotheme -> 3. Header section.  \r\n<\/li>\r\n<li>\r\n<b>Pages<\/b> -contain all your website content. This includes Blog Posts, Galleries, About Info, etc. More info on Pages, Layouts and Functionality can be found by going to the Flotheme -> 4. Pages section.\r\n<\/li>\r\n<li>\r\n<b>Sidebars<\/b> - an area commonly used to display additional info about your website. For more info and settings options go to Flotheme -> 6. Sidebars area.\r\n<\/li>\r\n<li>\r\n<b>Footer<\/b> - an area located at the bottom of each page that contains additional information such as Copyrights, Social Links, Newsletter Signup, Instagram feed, etc. For more info and settings options go to Flotheme -> 7. Footer area.\r\n<\/li>\r\n<\/ul>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_58482e3f07b0f",
+            "label": "Theme Structure",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_584800b72db97",
+            "label": "1.3. Next Steps",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "Now that you are familiar with the basic terminology (from 1.2. Page Structure) let's go ahead and get started with the initial setup process by going to the <b>2. Getting Started<\/b> section located in the left Sidebar. There you will find a step by step guide on how to setup your Website, create Pages, install our recommended Plugins and much more.\r\n\r\nLet's get started!",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_584833dc4a337",
+            "label": "Next Steps",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_581c56550bfc1",
+            "label": "Optional Settings",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "enhanced_message": "<?php\r\n\t\t\techo sprintf(__('We recommend a few plugins which are necessary or useful. %s\r\n\t\t\t\tReview please the recommended plugins and install only those you need. %s\r\n\t\t\t\tIf you are not sure what you need, you can leave this for later. %s%s','flotheme'), '<br\/>','<br\/>','<br\/>','<br\/>');\r\n\r\n\t\t\techo sprintf(__('%sInstall and activate%s the recommended plugins','flotheme'),'<a href=\"'.get_dashboard_url().'themes.php?page=install-required-plugins\" target=\"_blank\">','<\/a>' );\r\n\t\t?>",
+            "hide_label": "no",
+            "key": "field_5848069c94380",
+            "label": "1.1.1. Install the Recommended Plugins",
+            "name": "11_install_the_recommended_plugins",
+            "type": "enhanced_message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "ico",
+            "key": "field_581c543a0bfbd",
+            "label": "1.1.1 Favicon",
+            "name": "flo-get_started__favicon",
+            "type": "image",
+            "instructions": "<h3>What are favicons?<\/h3>\r\n\r\nFavicons are small 16x16 icon files that are displayed next to the URL of your site in a browser's address bar.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": "",
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": "",
+            "key": "field_581c55ff0bfc0",
+            "label": "1.1.2. Analytics code",
+            "name": "flo-get_started__analytics",
+            "type": "textarea",
+            "instructions": "Paste your Google Analytics or other tracking code here. It will be added into the header of this theme",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/hAVS-y1vUoU\" frameborder=\"0\" allowfullscreen><\/iframe>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_58da6ac21081e",
+            "label": "Importing dummy content tutorial:",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "0": "Select the demo to be imported",
+                "export": "Demo version 1",
+                "export-2": "Demo version 2"
+            },
+            "default_value": [
+                "export"
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value",
+            "key": "field_5825bb2ff94a3",
+            "label": "1.2.1. Select demo content you want to import",
+            "name": "flo-get_started__import_demo_content",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "demo-content-folder",
+                "id": ""
+            }
+        },
+        {
+            "message": "<input type=\"button\" class=\"import-demo-content generic-record-button  button-primary  \" value=\"Import dummy data\" onclick=\"importDummyData();\">\r\n<div class=\"spinner-container\"><span class=\"spinner import-demo-spinner\"><\/span><\/div>\r\n<div class=\"import-response\"><\/div>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_5825bc11f94a4",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--no-top-border",
+                "id": ""
+            }
+        },
+        {
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "0": "Select the demo Settings to be imported",
+                "export": "Settings from Demo version 1",
+                "export-2": "Settings from Demo version 2"
+            },
+            "default_value": [
+                "export"
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value",
+            "key": "field_58da698911769",
+            "label": "1.2.2. Select demo Settings you want to import",
+            "name": "flo-get_started__import_demo_settings",
+            "type": "select",
+            "instructions": "This allows you to import the demo settings only.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "demo-settings-folder",
+                "id": ""
+            }
+        },
+        {
+            "message": "<input type=\"button\" class=\"import-demo-settings generic-record-button  button-primary  \" value=\"Import dummy settings\" onclick=\"importDummySettings();\">\r\n<div class=\"spinner-container\"><span class=\"spinner import-demo-settings-spinner\"><\/span><\/div>\r\n<div class=\"settings-import-response\"><\/div>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_58da69dc1176a",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--no-top-border",
+                "id": ""
+            }
+        },
+        {
+            "options_prefix": "flo-",
+            "key": "field_581c56710bfc2",
+            "label": "1.3.1. Import or Export Current Theme Options",
+            "name": "flo-get_started__import_export",
+            "type": "import_export",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-1-introduction"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1490709218
+}

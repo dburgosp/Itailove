@@ -1,0 +1,142 @@
+{
+    "key": "group_581c7022314ca",
+    "title": "6. Sidebars",
+    "fields": [
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_581c7042a2f0b",
+            "label": "Introduction to Widget Areas",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "Every once in a while you need that extra space to add some content on the side of your Pages. This is when a Sidebar can come in handy.\r\nYou can create multiple Sidebars for different Pages and customize them accordingly. \r\n\r\nBelow you find all the necessary info in order to properly manage and setup your Sidebars.\r\n\r\n\r\n<h3>Quick Overview<\/h3>\r\n\r\n<b>Go to Appearance \u2013 Widgets.<\/b> Your Sidebars are located in the Widgets section of the site.\r\n\r\n<img class=\"aligncenter size-full wp-image-4500\" src=\"http:\/\/docs.flothemes.com\/wp-content\/uploads\/2017\/01\/Screen-Shot-2017-01-04-at-4.36.01-PM.png\" alt=\"screen-shot-2017-01-04-at-4-36-01-pm\"  style=\"max-width: 100%;\" \/>\r\n\r\nWhen in this area, you can add what ever content you need to your Sidebar. The process of populating the Sidebar is the same as adding Widgets. Simply drag and drop the required Widget into the Sidebar section.\r\n\r\n<hr\/>\r\n\r\n\r\n<h3>Adding a New Sidebar<\/h3>\r\n\r\nAs you may know, you can have multiple Sidebars used across different Pages. In order to create a new Sidebar area go to:\r\n<strong>Flotheme - Sidebars<\/strong>\r\n\r\nClick on Add Sidebar - add Sidebar Title - click Update in the top right corner.\r\n<a href=\"http:\/\/docs.flothemes.com\/wp-content\/uploads\/2017\/01\/Screen-Shot-2017-01-04-at-4.43.06-PM.png\" rel=\"attachment wp-att-4501\"><img class=\"aligncenter size-full wp-image-4501\" src=\"http:\/\/docs.flothemes.com\/wp-content\/uploads\/2017\/01\/Screen-Shot-2017-01-04-at-4.43.06-PM.png\" alt=\"screen-shot-2017-01-04-at-4-43-06-pm\" \/><\/a>\r\n\r\nOnce you've created a new Sidebar it will appear in the Widgets section.\r\n<img class=\"aligncenter size-full wp-image-4350\" src=\"http:\/\/docs.flothemes.com\/wp-content\/uploads\/2016\/09\/Screen-Shot-2016-09-23-at-4.41.59-PM.png\" alt=\"screen-shot-2016-09-23-at-4-41-59-pm\"  \/>\r\nAt this point you can start adding content to the New Sidebar\r\n\r\n<hr\/>\r\n\r\n\r\n<h3>Managing Sidebars<\/h3>\r\n\r\nOnce you've added content to the Sidebar, you are ready to add it to a Page or a Blog Post.\r\nWhen editing a Page or Blog Post, in the right column you can add the created Sidebar to it.\r\n1. Select where you want to have the Sidebar located. Right or Left side.\r\n2. Select the Sidebar you want to use.\r\n3. Once you've added the Sidebar, go ahead and update your page to apply the changes.\r\n\r\n<img class=\"aligncenter size-full wp-image-4502\" src=\"http:\/\/docs.flothemes.com\/wp-content\/uploads\/2017\/01\/Screen-Shot-2017-01-04-at-4.52.37-PM.png\" alt=\"screen-shot-2017-01-04-at-4-52-37-pm\"  \/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_586265eefd2df",
+            "label": "Introduction to Widget Areas",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "flo-documentation",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_581c705aa2f0c",
+            "label": "6.2 Sidebars options",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "2": "1\/6",
+                "3": "1\/4",
+                "4": "1\/3",
+                "5": "5\/12"
+            },
+            "default_value": [
+                3
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value",
+            "key": "field_581c70cfa2f0d",
+            "label": "A.1 Sidebar width",
+            "name": "flo-sidebars__sidebar_width",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "sub_fields": [
+                {
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "key": "field_581c73ce38d6c",
+                    "label": "Available sidebars",
+                    "name": "flo-sidebar",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Sidebar",
+            "collapsed": "",
+            "key": "field_581c72a638d6b",
+            "label": "Create new Sidebars",
+            "name": "flo-sidebars__custom_sidebars",
+            "type": "repeater",
+            "instructions": "The custom sidebars(widget areas) created here can be used on individual pages or posts instead of main sidebar or sidebars before and after the content.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-6-sidebars"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1483607729
+}

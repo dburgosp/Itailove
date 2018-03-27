@@ -1,0 +1,232 @@
+{
+    "key": "group_585cd97a951b6",
+    "title": "4.9.2. Text Content",
+    "fields": [
+        {
+            "message": "<img class=\"acf-img\" src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/section-text-content.png\" \/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_585cd97a97d63",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_585cd97a97d95",
+            "label": "Display Block",
+            "name": "section-text-content__enabled",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "slider_min_value": 30,
+            "slider_max_value": 100,
+            "increment_value": 1,
+            "slider_units": "%",
+            "default_value": 80,
+            "key": "field_585cd97a97da4",
+            "label": "Block Width",
+            "name": "section-text-content__width",
+            "type": "number_slider",
+            "instructions": "Default: 80%",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_585cd97a97d95",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--label-on-top",
+                "id": ""
+            }
+        },
+        {
+            "slider_min_value": 0,
+            "slider_max_value": 400,
+            "increment_value": 5,
+            "slider_units": "px",
+            "default_value": 80,
+            "key": "field_585cd97a97dae",
+            "label": "Top Gutter",
+            "name": "section-text-content__top-gutter",
+            "type": "number_slider",
+            "instructions": "Default: 80px",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_585cd97a97d95",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "slider_min_value": 0,
+            "slider_max_value": 400,
+            "increment_value": 5,
+            "slider_units": "px",
+            "default_value": 40,
+            "key": "field_585cd97a97dc8",
+            "label": "Bottom Gutter",
+            "name": "section-text-content__bottom-gutter",
+            "type": "number_slider",
+            "instructions": "Default: 40px",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_585cd97a97d95",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_58a7642278f0d",
+            "label": "A.1. Show Title",
+            "name": "section-text-content__show-title",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_585cd97a97d95",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_585cd97a97df8",
+            "label": "A.2. Title Font",
+            "name": "section-text-content__title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 3",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_585cd97a97d95",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58a7642278f0d",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": "",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_3"
+        },
+        {
+            "slider_min_value": 0,
+            "slider_max_value": 400,
+            "increment_value": 5,
+            "slider_units": "px",
+            "default_value": 40,
+            "key": "field_585cd97a97e0b",
+            "label": "A.3. Title Bottom Margin",
+            "name": "section-text-content__title-bottom-margin",
+            "type": "number_slider",
+            "instructions": "Default: 40px",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_585cd97a97d95",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58a7642278f0d",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1487690241
+}

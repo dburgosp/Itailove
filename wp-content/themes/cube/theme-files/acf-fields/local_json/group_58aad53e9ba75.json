@@ -1,0 +1,371 @@
+{
+    "key": "group_58aad53e9ba75",
+    "title": "Page Slideshow",
+    "fields": [
+        {
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_57fe1988860bc",
+            "label": "Diplay Slideshow",
+            "name": "page-home__slider-enabled",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-home__slideshow.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_57fd046e8b4c0",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57fe1988860bc",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "post_type": [
+                "slideshow"
+            ],
+            "taxonomy": [],
+            "allow_null": 1,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1,
+            "key": "field_57fd0770630df",
+            "label": "A. Slideshow",
+            "name": "page-home__slider",
+            "type": "post_object",
+            "instructions": "Please choose a Slideshow to display in the Custom Header.\r\n<br>\r\n<br>\r\n<h4>To create a slideshow:<\/h4>\r\n<ol>\r\n<li>Go to Slideshows (on the left).<\/li>\r\n<li>Press the Add New button.<\/li>\r\n<li>Follow the instructions provided on the page.<\/li>\r\n<\/ol>",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57fe1988860bc",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "vertical",
+            "choices": {
+                "center": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-home__slideshow--type-a.jpg\"><p>Type A<\/p>",
+                "left": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-home__slideshow--type-b.jpg\"><p>Type B<\/p>"
+            },
+            "default_value": "center",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_588f4d95a1c2b",
+            "label": "B. Title Area - Layout",
+            "name": "page-home__slider-layout",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57fe1988860bc",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "flo-image-select acf-field--label-on-top",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_588f5b42a1493",
+            "label": "B.1. Pretitle Font",
+            "name": "page-home__slider-pretitle-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57fe1988860bc",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-page-hero__slide-pretitle",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_1"
+        },
+        {
+            "key": "field_588f5baea1494",
+            "label": "B.2. Title Font",
+            "name": "page-home__slider-title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 3",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57fe1988860bc",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-page-hero__slide-title",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_3"
+        },
+        {
+            "key": "field_588f5bcca1495",
+            "label": "B.3. Subtitle Font",
+            "name": "page-home__slider-subtitle-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 3",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57fe1988860bc",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-page-hero__slide-subtitle",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_3"
+        },
+        {
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_57fde1a189d78",
+            "label": "C. Display Scroll Down Button",
+            "name": "custom-header__addons-enabled",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57fe1988860bc",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_58aaac4be1a47",
+            "label": "D. Display Logo Inside of Slideshow",
+            "name": "custom-header__logo-display",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57fe1988860bc",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "slider_min_value": 50,
+            "slider_max_value": 1000,
+            "increment_value": 1,
+            "slider_units": "px",
+            "default_value": 400,
+            "key": "field_58aaad561e6cb",
+            "label": "D.1. Logo Maximum Width",
+            "name": "custom-header__logo-width",
+            "type": "number_slider",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57fe1988860bc",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58aaac4be1a47",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_58aaac77e1a48",
+            "label": "D.2.1. Custom Logo",
+            "name": "custom-header__logo-custom",
+            "type": "image",
+            "instructions": "If the Custom Logo is not set, the logo that has been setup in Flotheme -> 3. Header will be used.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57fe1988860bc",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58aaac4be1a47",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_58aab59bca891",
+            "label": "D.2.2. Custom Light Logo",
+            "name": "custom-header__logo-custom--light",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_57fe1988860bc",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_58aaac4be1a47",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1487684061
+}

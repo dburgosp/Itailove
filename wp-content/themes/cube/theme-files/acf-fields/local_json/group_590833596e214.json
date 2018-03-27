@@ -1,0 +1,60 @@
+{
+    "key": "group_590833596e214",
+    "title": "Block. WordPress Content",
+    "fields": [
+        {
+            "key": "field_591481bf777a7",
+            "label": "Maximum content width",
+            "name": "flo-porto2-block-wp-content__width",
+            "type": "number_slider",
+            "instructions": "*For Desktops screens only",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_units": "%",
+            "default_value": 80,
+            "slider_min_value": 1,
+            "slider_max_value": 100,
+            "increment_value": 1
+        },
+        {
+            "key": "field_590835e55ef54",
+            "label": "Note:",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "The fonts can be setup at 8. Typography -> 8.1. Generic Typography.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1508314886
+}

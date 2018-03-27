@@ -1,0 +1,1175 @@
+{
+    "key": "group_5878e922c74bf",
+    "title": "4.6 Blog post options",
+    "fields": [
+        {
+            "key": "field_580a1388fe4ce",
+            "label": "Blog Post Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/WSEkmbrtL94\" frameborder=\"0\" allowfullscreen><\/iframe>\r\n<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/w8m4HkCklXM\" frameborder=\"0\" allowfullscreen><\/iframe>\r\n<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-post.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_581c9a224d08c",
+            "label": "Default single post layout",
+            "name": "flo-post__default-layout",
+            "type": "select",
+            "instructions": "The selected layout option will apply to future Blog Posts only. It will not affect existing Blog Posts.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--instructions-below-field post-default-layout",
+                "id": ""
+            },
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "left_sidebar": "Left Sidebar",
+                "right_sidebar": "Right Sidebar",
+                "full_width": "Full Width"
+            },
+            "default_value": [
+                "full_width"
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        },
+        {
+            "key": "field_581ca994a3b23",
+            "label": "Default post sidebar",
+            "name": "flo-post__default-sidebar",
+            "type": "select_sidebar",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_581c9a224d08c",
+                        "operator": "!=",
+                        "value": "full_width"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "post-default-sidebar",
+                "id": ""
+            }
+        },
+        {
+            "key": "field_5825835626d17",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--no-top-border",
+                "id": ""
+            },
+            "message": "<input type=\"button\" class=\"update-layout generic-record-button  button-primary  \" value=\"Update all posts\" onclick=\"updateLayoutMeta('post', 'post-default-layout','post-default-sidebar');\"> \r\n<div class=\"spinner-container\"><span class=\"spinner update-post-layout-spinner\"><\/span><\/div>\r\n<p class=\"description\">Click here if you wish to update all Blog Posts to the layout selected above. <\/p>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_58203ca686db0",
+            "label": "Auto set featured image",
+            "name": "flo-cube-blog-post__auto-set-featured",
+            "type": "true_false",
+            "instructions": "Enable this option if you want the first image of your Blog Post or Gallery to be set as the Featured Image by default at all times.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--instructions-below-field",
+                "id": ""
+            },
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_58203d6b86db2",
+            "label": "Blog Post Responsive Images",
+            "name": "flo-blog-post__responsive_images",
+            "type": "select",
+            "instructions": "You can control from here the responsive images introduced in WP 4.4. It is recommended to have the responsive images enabled, at least for the mobile devices. But this may affect image quality. If you disable the responsive images, then the quality will be good, but the performance will be affected, especially on mobile devices.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--instructions-below-field",
+                "id": ""
+            },
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "no_responsive": "Disable responsive images for all devices",
+                "mobile_only": "Allow responsive images only for mobile devices",
+                "all_devices": "Allow responsive images for all devices"
+            },
+            "default_value": [
+                "no_responsive"
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        },
+        {
+            "key": "field_580a147419f70",
+            "label": "- 4.6.1. Title Block",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_580a181175d68",
+            "label": "Title Block Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-post__title-block.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_583d4f01d9a9b",
+            "label": "4.6.1.1. Position",
+            "name": "flo-cube-blog-post__title-block-position",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "flo-image-select acf-field--label-on-top",
+                "id": ""
+            },
+            "layout": "vertical",
+            "choices": {
+                "above": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-post__title-position-thumb--above.jpg\"><p>Above Featured Image<\/p>",
+                "under": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-post__title-position-thumb--under.jpg\"><p>Under Featured Image<\/p>"
+            },
+            "default_value": "above",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_598995031ea28",
+            "label": "4.6.1.2. Centered Style",
+            "name": "flo-cube-blog-post__title-block-centered",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_580a1cc37bc4a",
+            "label": "A.1. Display Category",
+            "name": "flo-cube-blog-post__title-block-category",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5888463416997",
+            "label": "A.1.1. Category Font",
+            "name": "flo-cube-blog-post__category-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580a1cc37bc4a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post-title-wrap__category",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_1"
+        },
+        {
+            "key": "field_580a1cee7bc4b",
+            "label": "A.2. Title",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "This is you Blog Post \/ Gallery title.",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5888451916996",
+            "label": "A.2.1. Title Font",
+            "name": "flo-cube-blog-post__title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Heading 3",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post-title-wrap__title",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "heading_3"
+        },
+        {
+            "key": "field_583ebe06682fb",
+            "label": "A.3. Excerpt",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "This is area is used for Blog Post preview texts.",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_588847ac16999",
+            "label": "A.3.1 Excerpt Font",
+            "name": "flo-cube-blog-post__excerpt-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 2",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post-title-wrap__excerpt",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        },
+        {
+            "key": "field_587cbb1a74899",
+            "label": "B.1. Display Post Date",
+            "name": "flo-cube-blog-post__title-area-date",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_588846b316998",
+            "label": "B.1.1. Post Date Font",
+            "name": "flo-cube-blog-post__date-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 2",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_587cbb1a74899",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post-title-wrap__date",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        },
+        {
+            "key": "field_580a1aae469c1",
+            "label": "B.3. Display Sharing Links",
+            "name": "flo-cube-blog-post__display-share-options",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_580a145e19f6f",
+            "label": "- 4.6.2. Featured Image",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_580dfcda23980",
+            "label": "4.6.2.1. Display Featured Image inside the Blog Post",
+            "name": "flo-cube-blog-post__featured-image-display",
+            "type": "true_false",
+            "instructions": "The Featured Image setting can be found on right side of the blog post editing page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_589aea372befd",
+            "label": "4.6.2.2. Featured Image Size",
+            "name": "flo-cube-blog-post__featured-image-size",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580dfcda23980",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "full-width": "Full Width",
+                "original": "Original Size"
+            },
+            "default_value": [
+                "full-width"
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        },
+        {
+            "key": "field_589aec6c2e4b9",
+            "label": "4.6.2.3. Featured Image Height",
+            "name": "flo-cube-blog-post__featured-image-height",
+            "type": "number_slider",
+            "instructions": "Default: 650px",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_580dfcda23980",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_min_value": 200,
+            "slider_max_value": 1200,
+            "increment_value": 10,
+            "slider_units": "px",
+            "default_value": 650
+        },
+        {
+            "key": "field_583e8e3176b30",
+            "label": "- 4.6.3. Special Block",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_583ea08c4cf9b",
+            "label": "4.6.3.1. Display Special Block",
+            "name": "flo-cube-blog-post__display-special-block",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_583e8e7976b31",
+            "label": "4.6.3.2. Special Block Type",
+            "name": "flo-cube-blog-post__special-block-type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "flo-image-select acf-field--label-on-top",
+                "id": ""
+            },
+            "layout": "vertical",
+            "choices": {
+                "related_posts": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-post__special-block-thumb--type-1.jpg\"><p>Type A<\/p>",
+                "additional_information": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-post__special-block-thumb--type-2.jpg\"><p>Type B<\/p>"
+            },
+            "default_value": "additional_information",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_583e917aa5bc5",
+            "label": "Type A. Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_583e8e7976b31",
+                        "operator": "==",
+                        "value": "related_posts"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-post__special-block--type-1.jpg\" class=\"acf-img\"\/>\r\n\r\nRelated Posts are blog posts within the same category.\r\n\r\nSAME APPLIED TO GALLERIES",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_589b3805437d4",
+            "label": "A.0. Related Posts Block Title",
+            "name": "flo-cube-blog-post__related-posts-block-title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_583e8e7976b31",
+                        "operator": "==",
+                        "value": "related_posts"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "RELATED POSTS",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_589b388604f4d",
+            "label": "A.0.1. Related Posts Block Title Font",
+            "name": "flo-cube-blog-post__related-posts-block-title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 3",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_583e8e7976b31",
+                        "operator": "==",
+                        "value": "related_posts"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-special-block__related-block-title",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_3"
+        },
+        {
+            "key": "field_583e905976b33",
+            "label": "A.1. Related Posts Count",
+            "name": "flo-cube-blog-post__related-posts_count",
+            "type": "number_slider",
+            "instructions": "Default: 6",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_583e8e7976b31",
+                        "operator": "==",
+                        "value": "related_posts"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_min_value": 1,
+            "slider_max_value": 12,
+            "increment_value": 1,
+            "slider_units": "",
+            "default_value": 6
+        },
+        {
+            "key": "field_5888c3a41f05a",
+            "label": "A.1.1. Related Posts Titles Font",
+            "name": "flo-cube-blog-post__related-posts-title-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 2",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_583e8e7976b31",
+                        "operator": "==",
+                        "value": "related_posts"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-special-block__related-posts-item",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        },
+        {
+            "key": "field_583e921ba5bc6",
+            "label": "Type B. Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_583e8e7976b31",
+                        "operator": "==",
+                        "value": "additional_information"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-post__special-block--type-2.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_588769d6994f4",
+            "label": "A.1. Additional Information",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "The content for this block can be set from the Post edit page.",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5888ca1f1f05b",
+            "label": "A.1.1. Additional Information Title Font",
+            "name": "flo-cube-blog-post__additionalinfo-key-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_583e8e7976b31",
+                        "operator": "==",
+                        "value": "additional_information"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-special-block__additional-information-item-key",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_1"
+        },
+        {
+            "key": "field_5888caa61f05c",
+            "label": "A.1.2. Additional Information Text Font",
+            "name": "flo-cube-blog-post__additionalinfo-value-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 2",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_583e8e7976b31",
+                        "operator": "==",
+                        "value": "additional_information"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-special-block__additional-information-item-value",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        },
+        {
+            "key": "field_583e96fe754e6",
+            "label": "B. Text",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "The content for this block can be set from the Post edit page.",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5888a68d099b0",
+            "label": "B.1. Text Font",
+            "name": "flo-cube-blog-post__special-block-text-font",
+            "type": "font_style_select",
+            "instructions": "Default: Paragraph 1",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-special-block__text",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "paragraph_1"
+        },
+        {
+            "key": "field_580a147c19f71",
+            "label": "- 4.6.4. Content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_580de3998c21e",
+            "label": "4.6.4.1. Content Width",
+            "name": "flo-blog-post__content-width",
+            "type": "number_slider",
+            "instructions": "Default: 1000",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_min_value": 400,
+            "slider_max_value": 1600,
+            "increment_value": 100,
+            "slider_units": "",
+            "default_value": 1000
+        },
+        {
+            "key": "field_589afc04a493f",
+            "label": "4.6.4.2. Content Sizing",
+            "name": "flo-blog-post__content-width-sizing",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "multiple": 0,
+            "allow_null": 0,
+            "choices": {
+                "px": "Fixed Pixels",
+                "rem": "Proportional to Screen Size"
+            },
+            "default_value": [
+                "rem"
+            ],
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "return_format": "value"
+        },
+        {
+            "key": "field_587cb06f06896",
+            "label": "4.6.4.3. Distance Between Blog Posts Images",
+            "name": "flo-cube-blog-post__content-distance-below-images",
+            "type": "number_slider",
+            "instructions": "Set the vertical distance between images inserted in the post content.\r\n\r\nDefault: 10px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_min_value": 0,
+            "slider_max_value": 100,
+            "increment_value": 1,
+            "slider_units": "px",
+            "default_value": 10
+        },
+        {
+            "key": "field_580a14ad19f72",
+            "label": "- 4.6.5. Bottom Area",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_589adb914be23",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-post__bottom-area.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_587cc03e90294",
+            "label": "A.1. Display Tags",
+            "name": "flo-cube-blog-post__show-tags",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_589a022f92ade",
+            "label": "A.1.1. Tags Font",
+            "name": "flo-cube-blog-post__tags-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 2",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_587cc03e90294",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post-bottom-wrap__tags",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        },
+        {
+            "key": "field_589a02979c4a6",
+            "label": "A.2. Display Share Links",
+            "name": "flo-cube-blog-post-bottom__share-display",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_589a02bf9c4a7",
+            "label": "A.2.1. Share Links Label",
+            "name": "flo-cube-blog-post-bottom__share-label",
+            "type": "text",
+            "instructions": "Default: SHARE",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_589a02979c4a6",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "SHARE",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_589a02e49c4a8",
+            "label": "A.2.2. Share Links Label Font",
+            "name": "flo-cube-blog-post-bottom__share-label-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 2",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_589a02979c4a6",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-post-bottom-wrap__share-label",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        },
+        {
+            "key": "field_587cc11e90296",
+            "label": "B. Comments",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Go to section 5. Generics -> 5.2. Comments Area to chose your comments type.",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5899d1e26817c",
+            "label": "C. Pagination",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Pagination options can be modified by going to Flotheme -> 5. Generics -> 5.5. Miscelanious -> 1. Pagination.",
+            "esc_html": 0,
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5988597d0d23c",
+            "label": "D. Display Related Posts",
+            "name": "flo-cube-post-bottom__related-posts-display",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_598859a00d23d",
+            "label": "D.1. Related Posts Title",
+            "name": "flo-cube-post-bottom__related-posts-title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5988597d0d23c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Related Posts",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_598859ec0d23e",
+            "label": "D.2. Posts Title Font",
+            "name": "flo-cube-post-bottom__related-posts-posts-title-font",
+            "type": "font_style_select",
+            "instructions": "Default: H5",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5988597d0d23c",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-related-items__item-title",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "h5"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1506088776
+}

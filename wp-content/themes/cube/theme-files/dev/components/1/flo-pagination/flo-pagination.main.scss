@@ -1,0 +1,101 @@
+.flo-pagination{
+  $b: ".flo-pagination";
+  $padding: rem-calc(65);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: $padding;
+
+  &--style-all {
+
+  }
+  &--style-numbers {
+    #{$b}__prev,
+    #{$b}__next {
+      display: none;
+    }
+    #{$b}__items {
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+  &--style-buttons {
+    //#{$b}__prev {
+    //  &:after {
+    //    content: "/";
+    //    display: inline-block;
+    //    margin: 0 rem-calc(24);
+    //  }
+    //}
+    #{$b}__items {
+      display: none;
+    }
+  }
+
+  &--gap-bottom{
+    padding-bottom: $padding;
+  }
+
+  //%slash {
+  //  content: '/';
+  //  display: inline-block;
+  //  vertical-align: middle;
+  //}
+  &__prev,
+  &__next{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    $size: rem-calc(34);
+    width: $size;
+    height: $size;
+    border: 1px solid $color-black;
+    text-align: center;
+    @include box-sizing(border-box);
+    a {
+
+    }
+  }
+  &__prev {
+    &:after{
+      //@extend %slash;
+    }
+  }
+  &__next {
+    &:before{
+      //@extend %slash;
+      padding-right: rem-calc(24);
+    }
+  }
+  a, span {
+    display: inline-block;
+    vertical-align: middle;
+    // font-size: rem-calc(14);
+    // font-family: $font-lato;
+    // font-weight: 700;
+    // letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  span {
+    cursor: default;
+  }
+  &__items{
+    display: flex;
+    position: relative;
+    a, span{
+      min-width: rem-calc(50.5);
+    }
+  }
+
+  @include breakpoint(small only){
+    justify-content: space-between;
+    &__items{
+      display: none;
+    }
+
+  }
+}

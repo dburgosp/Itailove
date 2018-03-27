@@ -1,0 +1,126 @@
+.flo-backup {
+  $b: ".flo-backup";
+
+  &__main-wrap {
+    display: flex;
+    padding: 0 60px;
+  }
+    &__left-wrap,
+    &__right-wrap,
+    {
+      width: 50%;
+      text-align: center;
+      box-sizing: border-box;
+    }
+      &__wrap-title {
+        font-family: "Miller Banner";
+        font-size: 23px;
+        letter-spacing: -0.02;
+        margin-bottom: 40px;
+      }
+
+    &__left-wrap {
+      padding: 0 30px;
+      position: relative;
+
+      &:after {
+        content: " ";
+        display: block;
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+
+        background-color: $color-gray;
+        height: 100%;
+        width: 1px;
+      }
+    }
+
+      &__name-block {
+        text-align: center;
+      }
+        &__name-value {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px!important;
+          text-transform: uppercase;
+        }
+        &__button-backup-stylekit {
+          display: inline-block;
+        }
+      .backup-spinner {
+      	float: none;
+      }
+
+    &__right-wrap {
+      padding-left: 10px;
+    }
+      &__available-backups {
+      }
+
+        #poststuff &__list-header-title {
+          font-size: 22px;
+        }
+
+        &__list-wrapper {
+
+        }
+
+          &__list-columns-title {
+          	display: flex;
+          	width: 450px;
+          }
+          &__list-entry {
+          	display: flex;
+            align-items: flex-start;
+            // align-items: center;
+            user-select: none;
+
+            font-family: "Open Sans", sans-serif;
+            letter-spacing: 0.1em;
+            font-size: 10px;
+            text-transform: uppercase;
+            padding-bottom: 15px;
+
+            &:hover {
+              #{$b}__entry-restore {
+                opacity: 1;
+                color: $color-orange!important;
+              }
+            }
+          }
+
+            &__entry-time {
+              width: 50%;
+              // text-align: left;
+            }
+            &__entry-name {
+              text-align: left;
+              width: 50%;
+            }
+            &__entry-restore {
+
+            }
+            &__list-columns-title {
+
+            }
+
+            &__entry-restore {
+            	width: 10%;
+            	padding-left: 10px;
+            	padding-right: 10px;
+            	cursor: pointer;
+              opacity: 0.2;
+              pointer-events: initial;
+
+              @include global-transition(opacity, color);
+
+              span {
+                font-size: 14px;
+                // font-size: 1em;
+              }
+            }
+
+}

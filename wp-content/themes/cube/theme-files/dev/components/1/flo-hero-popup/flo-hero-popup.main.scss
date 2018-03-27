@@ -1,0 +1,27 @@
+.flo-hero-popup{
+
+  .flo-icon-flo-arrow-left{
+    left: rem-calc(65);
+  }
+  .flo-icon-flo-arrow-right{
+    right: rem-calc(65);
+  }
+
+  &__slide-content{
+    height: rem-calc(594);
+    @include global-bgi-cover;
+    display: block;
+  }
+
+  &__slide{
+    border-left: 2px solid #fff;
+  }
+
+  @include breakpoint(small only){
+    $hero-text-gap: rem-calc(30);
+
+    &__slide-content{
+      height: rem-calc(480);
+    }
+  }
+}

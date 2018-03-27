@@ -1,0 +1,102 @@
+{
+    "key": "group_582c5bbf9a31a",
+    "title": "4.11. Press Page Template",
+    "fields": [
+        {
+            "message": "<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/0gPKQlV9GhI\" frameborder=\"0\" allowfullscreen><\/iframe>\r\n<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-press.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_582c5be9a5cc7",
+            "label": "Overview",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "slider_min_value": 0,
+            "slider_max_value": 150,
+            "increment_value": 1,
+            "slider_units": "px",
+            "default_value": 85,
+            "key": "field_589c27af4dbeb",
+            "label": "Top padding",
+            "name": "page-press__top-padding",
+            "type": "number_slider",
+            "instructions": "Padding between the page content and the header.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "slider_min_value": 0,
+            "slider_max_value": 150,
+            "increment_value": 1,
+            "slider_units": "px",
+            "default_value": 20,
+            "key": "field_589c28884dbec",
+            "label": "Bottom padding",
+            "name": "page-press__bottom-padding",
+            "type": "number_slider",
+            "instructions": "Padding between the page content and the footer.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "clone": [
+                "group_588af11212532"
+            ],
+            "prefix_label": 0,
+            "prefix_name": 0,
+            "display": "seamless",
+            "layout": "block",
+            "key": "field_588af24fbf275",
+            "label": "Press Page Block options",
+            "name": "press_page_block__options",
+            "type": "clone",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "classy-template-press"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": [
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1487684117
+}

@@ -1,0 +1,444 @@
+{
+    "key": "group_58243b3637b1d",
+    "title": "4.8. Portfolio Gallery - single",
+    "fields": [
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_5824717c84591",
+            "label": "Gallery Options",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "vertical",
+            "choices": {
+                "image": "Images",
+                "prius": "Images and Videos"
+            },
+            "default_value": "image",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_58a30f05dd859",
+            "label": "Gallery Type",
+            "name": "flo-cube-portfolio-gallery__type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "library": "all",
+            "min": "",
+            "max": "",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "insert": "append",
+            "key": "field_58243d7d9c3e2",
+            "label": "Gallery Images",
+            "name": "_post_image_gallery",
+            "type": "gallery",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a30f05dd859",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "sub_fields": [
+                {
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "key": "field_58a30fa1dd85c",
+                    "label": "Cover Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "",
+                    "new_lines": "wpautop",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "rows": "",
+                    "key": "field_58a30f8add85b",
+                    "label": "Video Embed Code",
+                    "name": "video_embed_code",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Video",
+            "collapsed": "",
+            "key": "field_58a30f5ddd85a",
+            "label": "Gallery Videos",
+            "name": "_post_video_gallery",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a30f05dd859",
+                        "operator": "==",
+                        "value": "video"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "sub_fields": [
+                {
+                    "return_format": "url",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "key": "field_58a31109e30ef",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                },
+                {
+                    "default_value": "",
+                    "new_lines": "wpautop",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "rows": "",
+                    "key": "field_58a31109e30ee",
+                    "label": "Video Embed Code",
+                    "name": "video_embed_code",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    }
+                }
+            ],
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Image and Video",
+            "collapsed": "",
+            "key": "field_58a31109e30ed",
+            "label": "Gallery Images and Videos",
+            "name": "_post_prius_gallery",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58a30f05dd859",
+                        "operator": "==",
+                        "value": "prius"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "placement": "left",
+            "endpoint": 0,
+            "key": "field_58243b999c3db",
+            "label": "Overview",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery.jpg\" class=\"acf-img\"\/>",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_58243b5f9c3da",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_58243ba59c3dc",
+            "label": "4.8.1. Title & Content",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "The generic settings for this block can be setup by going to Flotheme -> 4. Pages -> 4.8. Portfolio Gallery -> 4.8.1. Title & Content.",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_58243cf29c3e0",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/monte\/portfolio-gallery__top-bar.jpg\" class=\"acf-img\"\/>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_5899e35842bef",
+            "label": "Custom Position",
+            "name": "flo-cube-portfolio-gallery__custom-content-position",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "vertical",
+            "choices": {
+                "above": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__title-and-content-thumb--above.jpg\"><p>Above Gallery View<\/p>",
+                "under": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__title-and-content-thumb--under.jpg\"><p>Under Gallery View<\/p>"
+            },
+            "default_value": "",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_5899e30542bee",
+            "label": "Position",
+            "name": "flo-cube-portfolio-gallery__title-and-content-block-type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5899e35842bef",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "flo-image-select acf-field--label-on-top",
+                "id": ""
+            }
+        },
+        {
+            "placement": "top",
+            "endpoint": 0,
+            "key": "field_58243cdf9c3df",
+            "label": "4.8.2. Gallery View",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "message": "The Gallery View for <b>all galleries<\/b> can be set up by going to 4. Pages -> 4.8.2. Gallery View",
+            "esc_html": 0,
+            "new_lines": "wpautop",
+            "key": "field_58248b0c79d30",
+            "label": "",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            }
+        },
+        {
+            "default_value": 0,
+            "message": "",
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "key": "field_58248c4a79d31",
+            "label": "Custom Gallery View",
+            "name": "custom_gallery_view",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
+            "layout": "vertical",
+            "choices": {
+                "grid": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__gallery-view-thumb--grid.jpg\"><p>Type A<\/p>",
+                "slideshow": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__gallery-view-thumb--nearby.jpg\"><p>Type B<\/p>",
+                "slideshow__no-crop": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__gallery-view-thumb--no-crop.jpg\"><p>Type C<\/p>",
+                "slideshow__crop": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/page-gallery__gallery-view-thumb--slideshow.jpg\"><p>Type D<\/p>"
+            },
+            "default_value": "slider",
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "allow_null": 0,
+            "return_format": "value",
+            "key": "field_58248c7879d32",
+            "label": "Gallery View Type",
+            "name": "flo-portfolio-gallery__gallery-view-type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58248c4a79d31",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "flo-image-select acf-field--full-width",
+                "id": ""
+            }
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "gallery"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "On Single Gallery",
+    "modified": 1487086223
+}

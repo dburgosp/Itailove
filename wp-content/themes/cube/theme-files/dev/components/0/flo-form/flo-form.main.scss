@@ -1,0 +1,86 @@
+.flo-form{
+  $b: ".flo-form";
+
+  &__built-in{
+    display: flex;
+    align-items: flex-start;
+
+    input[type]{
+      margin: 0;
+    }
+  }
+
+
+
+
+  &__field{
+    input[type="text"].invalid{
+      border-bottom: 1px solid red;
+    }
+  }
+
+   &__submit{
+     margin-top: rem-calc(40);
+     border:none;
+   }
+    &__submit--button {
+    }
+
+  &--light-bordered {
+    input[type]:not([type="submit"]) {
+      border: 1px solid $color-gray6f;
+      color: $light-gray;
+      padding-left: rem-calc(15);
+      padding-right: rem-calc(15);
+      &:hover,
+      &:focus {
+        border-color: $light-gray;
+      }
+    }
+    #{$b}__submit--button {
+      background-color: $color-white !important;
+      color: $color-black !important;
+      min-width: rem-calc(133.5);
+      height: rem-calc(41.5);
+      &:hover {
+        border: 1px solid $color-gray6f;
+        background-color: $color-black !important;
+        color: $color-white !important;
+      }
+    }
+  }
+
+  @include breakpoint(medium up){
+
+  }
+
+  @include breakpoint(small only){
+
+  }
+}
+
+.flo-modal{
+    position: fixed;
+    z-index: 9;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    display: none;
+    .thx-msg {
+      width: 300px;
+      height: 200px;
+      text-align: center;
+      padding: 20px;
+      vertical-align: middle;
+      margin: 0 auto;
+      top: 50%;
+      margin-top: -180px;
+      position: absolute;
+      left: 50%;
+      margin-left: -170px;
+      background-color: #fff;
+      border: 2px solid #e5e5e5;
+    }
+}

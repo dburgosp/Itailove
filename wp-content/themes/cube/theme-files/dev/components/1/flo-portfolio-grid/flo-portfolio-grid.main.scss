@@ -1,0 +1,75 @@
+.flo-portfolio-grid{
+  $gutter-horizontal: rem-calc(12.5);
+  $gutter-vertical: rem-calc(55);
+
+  .row {
+    position: relative;
+    &:last-of-type {
+      margin-bottom: -$gutter-vertical;
+    }
+  }
+
+  .column {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: $gutter-vertical;
+  }
+
+  &__thumbnail {
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: 0;
+    overflow: hidden;
+    &:after{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      content: '+';
+      font-size: rem-calc(30);
+      line-height: 1em;
+      text-align: center;
+      color: white;
+
+
+      width: rem-calc(40);
+      height: rem-calc(40);
+      border: 2px solid white;
+      border-radius: 50%;
+
+      visibility: hidden;
+      opacity: 0;
+      @include global-transition(opacity, visibility);
+    }
+
+    img {
+      width: 100%;
+      &:not([src]) {
+        height: rem-calc(200);
+      }
+    }
+  }
+
+  @include breakpoint(medium up){
+    padding: 0 rem-calc(62.5);
+    .column{
+      margin-left: calc(#{$gutter-horizontal});
+      margin-right: calc(#{$gutter-horizontal});
+      &.medium-3 {
+        width: calc(100% / 4 - #{$gutter-horizontal} * 2);
+      }
+    }
+
+    &__thumbnail {
+      &:hover{
+        &:after{
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+
+    }
+
+  }
+}

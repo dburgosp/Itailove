@@ -1,0 +1,21 @@
+.flo-block-title-1 {
+  $b: ".flo-block-title-1";
+
+  &__title {
+    text-align: center;
+  }
+
+  @include breakpoint(medium up) {
+    padding: rem-calc(69) $global-padding--horizontal + $global-column-width * 3;
+    &__title {
+
+    }
+  }
+
+  @include breakpoint(small only) {
+    padding: rem-calc(40) $global-padding-mobile--horizontal;
+    &__title {
+
+    }
+  }
+}

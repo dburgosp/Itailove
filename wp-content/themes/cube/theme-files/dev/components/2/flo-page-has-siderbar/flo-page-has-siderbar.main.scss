@@ -1,0 +1,53 @@
+.flo-page-has-sidebar,
+.body_has_sidebar
+{
+
+  &--margin-bottom{
+    margin-bottom: rem-calc(60);
+  }
+  &__column{
+    margin-bottom: rem-calc(40);
+    padding: 0 rem-calc(40);
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .figure-hide-img{
+    background-image: none !important;
+    height: auto;
+    img{
+      display: block;
+    }
+  }
+
+  @include breakpoint(medium up){
+   .flo_page {
+       width: 75%;
+     }
+     .flo_sidebar {
+       width: 25%;
+     }
+   }
+  @include breakpoint(small only){
+
+    &__sidebar{
+      display: none;
+      padding: rem-calc(60) 0;
+      position: fixed;
+      top: rem-calc(50);
+      right: -100%;
+      background: white;
+      overflow: auto;
+      @include global-transition(right);
+      width: 100%;
+      height: 100%;
+    }
+
+    .sidebar-display{
+      right: 0;
+    }
+
+  }
+
+}

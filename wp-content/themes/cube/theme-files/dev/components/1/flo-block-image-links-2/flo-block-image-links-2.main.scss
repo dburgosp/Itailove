@@ -1,0 +1,120 @@
+.flo-block-image-links-2 {
+  $b: ".flo-block-image-links-2";
+  text-align: center;
+
+  &__title {
+    display: block;
+    margin-bottom: rem-calc(81);
+  }
+  &__links {
+
+  }
+    &__link {
+      position: relative;
+      display: block;
+      height: rem-calc(384);
+      @include global-bgi-cover;
+    }
+      &__link-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+        &__link-title {
+        }
+        &__link-subtitle {
+          margin-top: rem-calc(13);
+        }
+        &__link-bottom-button {
+          margin-top: rem-calc(56);
+          padding: rem-calc(13) rem-calc(17);
+        }
+  &__bottom-link {
+    display: block;
+    // margin-top: rem-calc(76);
+  }
+
+  @include breakpoint(medium up) {
+    padding-top: rem-calc(63);
+    padding-bottom: rem-calc(68);
+    padding-left: $global-column-width / 2;
+    padding-right: $global-column-width / 2;
+
+    &__title {
+
+    }
+    &__links {
+      display: flex;
+      flex-wrap: wrap;
+    }
+      &__link {
+        width: calc(50% - #{$global-column-width / 4});
+        &:not(:last-child),
+        &:not(:nth-last-child(2)) {
+          margin-bottom: $global-column-width / 2;
+        }
+        &:nth-child(2n - 1) {
+          margin-right: $global-column-width / 2;
+        }
+        &:hover {
+          #{$b}__link-overlay {
+            opacity: 1;
+          }
+        }
+      }
+        &__link-overlay {
+          opacity: 0;
+          @include global-transition(opacity);
+        }
+          &__link-title {
+
+          }
+          &__link-subtitle {
+
+          }
+          &__link-bottom-button {
+
+          }
+    &__bottom-link {
+
+    }
+  }
+
+  @include breakpoint(small only) {
+    padding: rem-calc(40) $global-padding-mobile--horizontal;
+
+    &__title {
+
+    }
+    &__links {
+
+    }
+      &__link {
+        width: 100%;
+        margin-bottom: $global-padding-mobile--horizontal;
+      }
+        &__link-overlay {
+
+        }
+          &__link-title {
+
+          }
+          &__link-subtitle {
+
+          }
+          &__link-bottom-button {
+
+          }
+    &__bottom-link {
+
+    }
+
+  }
+}

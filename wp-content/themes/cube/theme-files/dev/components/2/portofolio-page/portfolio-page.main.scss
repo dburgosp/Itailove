@@ -1,0 +1,39 @@
+//Set Margins
+.flo-section{
+
+  //Flo Portfolio 1
+  &--portfolio-1-title{
+    padding-top: rem-calc(54);
+  }
+
+  &--portfolio-1-first-category{
+    padding-top: rem-calc(36.5);
+  }
+  &--portfolio-2-category{
+    padding-top: rem-calc(88);
+  }
+
+  &--portfolio-2-last-category{
+    padding-bottom: rem-calc(115);
+  }
+
+
+  &--portfolio-post{
+    .flo-section-content {
+      & > *:first-child {
+        margin-top: rem-calc(65);
+      }
+    }
+  }
+  &--portfolio-cards{
+    padding-top: rem-calc(165);
+  }
+
+  &--portfolio-last-section{
+    padding-bottom: rem-calc(130);
+  }
+
+  &--portfolio-grid-images{
+    padding-top: rem-calc(8.5);
+  }
+}

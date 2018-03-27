@@ -1,0 +1,25 @@
+.flo-page-top-nav{
+  $gap-side: rem-calc(40);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: rem-calc(20) 0;
+  width: calc(100% - #{$gap-side * 2});
+  color: white;
+  &--on-hero-page{
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 99;
+  }
+
+
+  @include breakpoint(small only){
+    $gap-side: rem-calc(30);
+
+    width: calc(100% - #{$gap-side * 2});
+
+  }
+}

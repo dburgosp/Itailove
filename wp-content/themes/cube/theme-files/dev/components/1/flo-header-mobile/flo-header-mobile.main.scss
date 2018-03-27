@@ -1,0 +1,105 @@
+.flo-header-mobile{
+  $b: ".flo-header-mobile";
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem-calc(25);
+  z-index: 100;
+
+  @include box-sizing(border-box);
+  @include global-transition(background-color);
+
+  $menu_trigger__size: rem-calc(36);
+
+  &.is-not-sticky {
+    #{$b}__logo--light {
+      #{$b}__logo-image--default {
+        opacity: 0;
+      }
+      #{$b}__logo-image--light {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__menu-trigger {
+    position: relative;
+    display: inline-block;
+    width: $menu_trigger__size;
+    height: $menu_trigger__size;
+    border-radius: $menu_trigger__size;
+    font-size: $menu_trigger__size / 1.6 / 1.6 / 1.6;
+
+    @include global-transition(box-shadow);
+  }
+    &__menu-trigger-icon{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      cursor: pointer;
+    }
+
+  &__logo {
+    position: relative;
+  }
+
+    &__logo-image {
+      @include global-transition(opacity);
+    }
+
+      &__logo-image--light {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+      }
+
+  .flo-icon-sidebar{
+    display: none;
+    cursor: pointer;
+  }
+
+  @include breakpoint(medium up){
+    display: none;
+  }
+
+}
+
+.flo-header-mobile-sticky-wrapper {
+  width: 100%;
+
+  @include breakpoint(medium up) {
+    display: none;
+  }
+}
+
+.body--flo-page-hero-elements-color-is-light {
+  .flo-header-section > .flo-header-mobile .flo-header-mobile__logo-image,
+  .flo-header-section .flo-header-mobile-sticky-wrapper:not(.is-sticky) .flo-header-mobile .flo-header-mobile__logo-image {
+    &--default {
+      opacity: 0;
+    }
+    &--light {
+      opacity: 1;
+    }
+  }
+}
+
+.flo-block--merged-with-header {
+  .flo-block__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100000;
+  }
+  .is-not-sticky.flo-header,
+  .is-not-sticky.flo-header-mobile
+  {
+    background-color: transparent!important;
+  }
+}

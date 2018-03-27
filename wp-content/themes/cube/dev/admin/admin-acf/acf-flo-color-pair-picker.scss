@@ -1,0 +1,118 @@
+.flo-color-pair-picker {
+  $b: ".flo-color-pair-picker";
+
+  /* START: SWATCHES */
+    &__swatches {
+      display: flex;
+    }
+      &__swatch {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        $size: 50px;
+        width: $size;
+        height: $size;
+        border: 2px solid rgba(0, 0, 0, 0.03);
+        margin-right: 15px;
+        position: relative;
+        cursor: pointer;
+        border-radius: $size;
+        // border-radius: $size / 5;
+
+        overflow: hidden;
+
+        @include global-transition(border-color);
+
+        &:hover,
+        &--selected {
+          border-color: $color-orange;
+        }
+        &--custom {
+          width: auto;
+          padding: 0px 20px;
+          font-size: 11.5px;
+          font-weight: bold;
+          @include global-transition(border-color, background-color, color);
+
+          &:hover {
+            background-color: $color-orange;
+            color: white;
+            border-color: transparent;
+          }
+        }
+      }
+        &__swatch-background-color {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          $size: 100%;
+          width: $size;
+          height: $size;
+        }
+        &__swatch-elements-color {
+          position: relative;
+
+          font-family: "Miller Banner", sans;
+          font-size: 14px;
+          letter-spacing: 0.15em;
+          font-weight: bold;
+
+
+          &:before {
+            content: "Aa";
+          }
+        }
+  /* END: SWATCHES */
+
+  /* START: CUSTOM COLOR PAIR */
+    &__custom-colors {
+      display: none;
+      margin-top: 20px;
+      opacity: 0;
+      @include global-transition(opacity);
+      &--active {
+        opacity: 1;
+      }
+    }
+      &__custom-colors-label {
+        font-weight: 600;
+        font-size: 11.5px;
+        line-height: 1.4em;
+        margin-bottom: 15px;
+      }
+      &__custom-color {
+        margin-bottom: 10px;
+      }
+        &__custom-color {
+          display: inline-block;
+          .wp-color-result {
+            &:after {
+              min-width: 90px;
+              text-align: left;
+            }
+          }
+          &--background-color {
+            .wp-color-result {
+              &:after {
+                content: "Background Color"!important;
+              }
+            }
+          }
+          &--elements-color {
+            .wp-color-result {
+              &:after {
+                content: "Elements Color"!important;
+              }
+            }
+          }
+        }
+          &__custom-color .wp-picker-container {
+            display: block;
+            margin-right: 10px;
+          }
+  /* END: CUSTOM COLOR PAIR */
+
+}

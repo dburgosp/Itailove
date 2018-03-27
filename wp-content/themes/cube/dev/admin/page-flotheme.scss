@@ -1,0 +1,118 @@
+.page-flotheme {
+  background-color: #ffffff;
+  margin-top: 20px;
+  margin-right: 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  padding-bottom: 193px;
+}
+
+.page-flotheme-title-wrap {
+  $b: ".page-flotheme-title-wrap";
+
+  padding-top: 41px;
+  text-align: center;
+  margin-bottom: 67.5px;
+
+  &__icon {
+    font-size: 24px;
+    line-height: 1em;
+    margin-bottom: 37px;
+    color: $color-brown;
+  }
+  &__title {
+    font-size: 37px;
+    letter-spacing: 0.04em;
+    line-height: 1em;
+    font-family: $font-miller-banner;
+  }
+}
+
+.page-flotheme-items {
+  $b: ".page-flotheme-items";
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 32.5px;
+
+  $columns: 3;
+  $gap: 36.5px;
+  $gap-per-column: $gap * ($columns - 1) / $columns;
+  $column-width: calc(100% / #{$columns} - #{$gap-per-column});
+
+  @mixin column-margin {
+    @for $i from 1 through ($columns - 1) {
+      &:nth-child( #{$columns + "n - " + $i} ) {
+        margin-right: $gap;
+      }
+    }
+  }
+
+  &__item {
+    display: block;
+    width: $column-width;
+    box-sizing: border-box;
+    @include column-margin;
+    margin-bottom: $gap;
+    border: 1px solid $color-gray;
+    border-radius: 12.5px;
+
+    padding: 33px 48.5px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: black;
+    cursor: pointer;
+
+    @include global-transition(color, background-color, border-color, box-shadow, transform);
+  }
+    &__item:hover,
+    &__item:active,
+    &__item:focus {
+      background-color: $color-black;
+      border-color: $color-black;
+      box-shadow: 0px 14px 73px -8px #{transparentize($color-black, 0.8)};
+      transform: scale(1.04);
+      #{$b}__item-index {
+        color: white;
+      }
+      #{$b}__item-title {
+        color: $color-brown;
+        border-color: white;
+      }
+      #{$b}__item-description {
+        color: white;
+      }
+    }
+
+    &__item-index {
+      display: block;
+      font-size: 16px;
+      line-height: 1em;
+      font-family: $font-open-sans;
+      font-weight: 200;
+      color: $color-brown;
+      margin-bottom: 18px;
+      @include global-transition(color);
+    }
+    &__item-title {
+      display: block;
+      font-family: $font-miller-banner;
+      font-size: 16px;
+      letter-spacing: 0.15em;
+      font-weight: bold;
+      padding-bottom: 25px;
+      margin-bottom: 27px;
+      border-bottom: 1px solid $color-gray;
+      @include global-transition(color, border-color);
+    }
+    &__item-description {
+      font-family: $font-open-sans;
+      font-weight: 200;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      line-height: 1.38em;
+      @include global-transition(color);
+    }
+}

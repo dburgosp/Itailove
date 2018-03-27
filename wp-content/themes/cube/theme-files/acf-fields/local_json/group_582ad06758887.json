@@ -1,0 +1,1212 @@
+{
+    "key": "group_582ad06758887",
+    "title": "7. Footer",
+    "fields": [
+        {
+            "key": "field_5a1faf2bda3ff",
+            "label": "1. Layout",
+            "name": "flo-cube-footer__layout",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--label-on-top flo-image-select flo-image-select--columns-2",
+                "id": ""
+            },
+            "choices": {
+                "a": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/flo-footer-type-a.thumb.jpg\"><p>Type A<\/p>",
+                "b": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/flo-footer-type-b.thumb.jpg\"><p>Type B<\/p>"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "save_other_choice": 0,
+            "default_value": "a",
+            "layout": "vertical",
+            "return_format": "value"
+        },
+        {
+            "key": "field_582ad07885584",
+            "label": "1.1. Overview Type A",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/flo-footer-type-a.overview.jpg\" class=\"acf-img\"\/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5a1fb2ecdd732",
+            "label": "1.2. Overview Type B",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "b"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "acf-field--full-width",
+                "id": ""
+            },
+            "message": "<img src=\"http:\/\/flothemes-dashboard-images.s3.amazonaws.com\/cube\/flo-footer-type-b.overview.jpg\" class=\"acf-img\"\/>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5880c434211cd",
+            "label": "2. Footer Background Color",
+            "name": "flo-cube-footer__background-color",
+            "type": "color_picker",
+            "instructions": "Default: #000000",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#000000"
+        },
+        {
+            "key": "field_5a1fbabf4d771",
+            "label": "2. Footer Background Color",
+            "name": "flo-cube-footer-b__background-color",
+            "type": "color_picker",
+            "instructions": "Default: #ffffff",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "b"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ffffff"
+        },
+        {
+            "key": "field_5880c45e211ce",
+            "label": "3. Footer Elements Color",
+            "name": "flo-cube-footer__text-color",
+            "type": "color_picker",
+            "instructions": "Default: #ffffff",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#ffffff"
+        },
+        {
+            "key": "field_5a1fbac44d773",
+            "label": "3. Footer Elements Color",
+            "name": "flo-cube-footer-b__text-color",
+            "type": "color_picker",
+            "instructions": "Default: #000000",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "b"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#000000"
+        },
+        {
+            "key": "field_58a1a703745fe",
+            "label": "4. Footer Top Padding",
+            "name": "flo-cube-footer__top-padding",
+            "type": "number_slider",
+            "instructions": "The space above the footer content.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_units": "px",
+            "default_value": 113,
+            "slider_min_value": 0,
+            "slider_max_value": 150,
+            "increment_value": 1
+        },
+        {
+            "key": "field_58a1a7c0745ff",
+            "label": "5. Footer Bottom Padding",
+            "name": "flo-cube-footer__bottom-padding",
+            "type": "number_slider",
+            "instructions": "The space below the footer content.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "slider_units": "px",
+            "default_value": 100,
+            "slider_min_value": 0,
+            "slider_max_value": 150,
+            "increment_value": 1
+        },
+        {
+            "key": "field_582b0bc0cbd01",
+            "label": "A. Display Instagram Feed",
+            "name": "flo-cube-footer__show-instagram-feed",
+            "type": "true_false",
+            "instructions": "In order to have the Instagram feed in the footer it is necessary to have installed and set up the <a href=\"https:\/\/wordpress.org\/plugins-wp\/flo-instagram\/\" target=\"_blank\">Flo Instagram <\/a>plugin.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_582b0c0dcbd02",
+            "label": "B. Display Logo",
+            "name": "flo-cube-footer__show-logo",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5891d1ad04afd",
+            "label": "B.1. Logo Type",
+            "name": "flo-cube-footer__logo-type",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_582b0c0dcbd02",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "image": "Image Logo",
+                "site-title": "Site Title",
+                "text": "Text Logo"
+            },
+            "default_value": [
+                "site-title"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        },
+        {
+            "key": "field_588085847aa82",
+            "label": "B.2. Logo Image",
+            "name": "flo-cube-footer__logo-image",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_582b0c0dcbd02",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5891d1ad04afd",
+                        "operator": "==",
+                        "value": "image"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5891d22b04afe",
+            "label": "B.3. Logo Font",
+            "name": "flo-cube-footer__logo-font",
+            "type": "font_style_select",
+            "instructions": "Default: Special Heading 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_582b0c0dcbd02",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5891d1ad04afd",
+                        "operator": "==",
+                        "value": "site-title"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_582b0c0dcbd02",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5891d1ad04afd",
+                        "operator": "==",
+                        "value": "text"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-footer__logo",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "special_heading_1"
+        },
+        {
+            "key": "field_5891d2d7efcd8",
+            "label": "B.4. Logo Text",
+            "name": "flo-cube-footer__logo-text",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_582b0c0dcbd02",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5891d1ad04afd",
+                        "operator": "==",
+                        "value": "text"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "CUBE",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_58935e9e04f99",
+            "label": "C. Display Footer Menu",
+            "name": "flo-cube-footer__enable-menu",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5891d5d981e40",
+            "label": "C.1. Use a Different Menu",
+            "name": "flo-cube-footer__use-different-menu",
+            "type": "true_false",
+            "instructions": "By default the Primary (Header) menu is used. Enable this option to use a different one.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58935e9e04f99",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_582b0c2b455db",
+            "label": "C. Custom Menu",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5891d5d981e40",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "You can add menu from Appearance -> Menus and set it as 'Footer Menu'.\r\nThe footer menu will show up only if a menu will be set as 'Footer Menu'.",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_5880d090fed67",
+            "label": "C.1. Menu Font",
+            "name": "flo-cube-footer_menu-font",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-footer__menu > div > ul > li > a",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_3"
+        },
+        {
+            "key": "field_589d88f3de8b3",
+            "label": "C.2.1. Dropdown Background Color",
+            "name": "flo-cube-footer_menu-dropdown-background-color",
+            "type": "color_picker",
+            "instructions": "Default: #ffffff",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58935e9e04f99",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#FFFFFF"
+        },
+        {
+            "key": "field_589d891fde8b4",
+            "label": "C.2.2. Dropdown Elements Color",
+            "name": "flo-cube-footer_menu-dropdown-elements-color",
+            "type": "color_picker",
+            "instructions": "Default: #000000",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_58935e9e04f99",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#000000"
+        },
+        {
+            "key": "field_589d8d26f276e",
+            "label": "C.2.3. Dropdown Font",
+            "name": "flo-cube-footer_menu-dropdown-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-footer__menu ul li a",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_1"
+        },
+        {
+            "key": "field_582b0c8c56465",
+            "label": "E.1. Enable Contact Block",
+            "name": "flo-cube-footer__contact-block--show",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_582b0ca256466",
+            "label": "E.2. Contact Block - Message",
+            "name": "flo-cube-footer__contact-block--message",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_582b0c8c56465",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Blood & Co Artist Management",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5881df4a573eb",
+            "label": "E.2.1. Contact Block - Message Font",
+            "name": "flo-cube-footer__contact-block--message-font",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_582b0c8c56465",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-footer__contact-block-message",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_4"
+        },
+        {
+            "key": "field_582b0cfd56467",
+            "label": "E.3. Contact Block - Email",
+            "name": "flo-cube-footer__contact-block--email",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_582b0c8c56465",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "info@bloodandco.com",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_582b1ae82f096",
+            "label": "E.3. Contact Block - Phone",
+            "name": "flo-cube-footer__contact-block--phone",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_582b0c8c56465",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "+44 (0)20 7195 2303",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5881dfb7573ec",
+            "label": "E.3.1. Contact Block - Email\/Phone font",
+            "name": "flo-cube-footer__contact-block--email-phobe-font",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_582b0c8c56465",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-footer__contact-block .flo-footer__contact-block-email, .flo-footer__contact-block .flo-footer__contact-block-phone",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_5"
+        },
+        {
+            "key": "field_582b0d1956468",
+            "label": "E.4. Enable Mailchimp Subscription",
+            "name": "flo-cube-footer__contact-block--show-subscription-form",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_582b0c8c56465",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_58944cf7f2d1a",
+            "label": "E.4.1 Mailchimp Embedded Form Code",
+            "name": "flo-cube-footer__mailchimp-form-code",
+            "type": "textarea",
+            "instructions": "Check this documentation to learn how to find the Mailchimp Fom Code: <a href=\"http:\/\/docs.flothemes.com\/integrating-mailchimp-theme-subscription-form\/\" target=\"_blank\">http:\/\/docs.flothemes.com\/integrating-mailchimp-theme-subscription-form\/<\/a>",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_582b0d1956468",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_582b17e256469",
+            "label": "D.1. Enable Add-Ons",
+            "name": "flo-cube-footer___addons--show",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_582b180e5646a",
+            "label": "D.2. Copyright",
+            "name": "flo-cube-footer__copyright-text",
+            "type": "textarea",
+            "instructions": "In order to display the current year use \"%year%\"",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_582b17e256469",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "© 2016 CUBE | FLOTHEMES",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_5880d17efed68",
+            "label": "D.2.1. Copyright Font",
+            "name": "flo-cube-footer__copyright-text-font",
+            "type": "font_style_select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-footer__addons-copyright",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_2"
+        },
+        {
+            "key": "field_582b184b5646b",
+            "label": "D.3. Show Social Links",
+            "name": "flo-cube-footer__addons--show-social-links",
+            "type": "true_false",
+            "instructions": "If this option is enabled then the social links set in the 5.4. Generics -> Social Links section will be displayed.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_582b17e256469",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "a"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a1fb331172c6",
+            "label": "A. Copyright Notice",
+            "name": "flo-cube-footer__copyright-notice",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "b"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "© 2017 CUBE | FLOTHEMES | IMAGES BY A GREAT PHOTOGRAPHER",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a1fb372172c7",
+            "label": "A.1. Copyright Notice Font",
+            "name": "flo-cube-footer__copyright-notice-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "b"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-footer-b__copyright-notice",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_1"
+        },
+        {
+            "key": "field_5a1fb392de9bf",
+            "label": "B.1. Display Social Links",
+            "name": "flo-cube-footer__addons-display-social-links",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "b"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a1fb3c0de9c0",
+            "label": "B.2. Display \"Back To Top\" Button",
+            "name": "flo-cube-footer__addons-display-back-to-top",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "b"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a1fb918de9c1",
+            "label": "B.2.1. \"Back To Top\" Button Label",
+            "name": "flo-cube-footer__addons-back-to-top-button-label",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "b"
+                    },
+                    {
+                        "field": "field_5a1fb3c0de9c0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "BACK TO TOP",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a1fb940de9c3",
+            "label": "B.2.2. \"Back To Top\" Button Font",
+            "name": "flo-cube-footer__addons-back-to-top-button-font",
+            "type": "font_style_select",
+            "instructions": "Default: Label 1",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a1faf2bda3ff",
+                        "operator": "==",
+                        "value": "b"
+                    },
+                    {
+                        "field": "field_5a1fb3c0de9c0",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_css_selectors": ".flo-footer-b__back-to-top",
+            "active_css_selectors": "",
+            "hover_css_selectors": "",
+            "typography_option_name": "",
+            "default_typography_style": "label_1"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-7-footer"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "field",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1512029963
+}

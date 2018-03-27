@@ -1,0 +1,593 @@
+$yellow: #bd965a;
+$grey_bg: #f8f8f8;
+$dark_bg: #23282d;
+@font-face {
+  font-family: 'ProximaNovaSemibold';
+  src: url(../fonts/proxima-nova-semibold.ttf)  format('truetype'), /* Safari, Android, iOS */
+       url(../fonts/proxima-nova-semibold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url(../fonts/proxima-nova-regular.ttf)  format('truetype'), /* Safari, Android, iOS */
+       url(../fonts/proxima-nova-regular.otf) format('opentype');
+}
+
+.flo-forms-settings{
+	padding: 30px;
+	background-color: #fff;
+	.title{
+		font-family: ProximaNovaSemibold;
+		font-size: 30px;
+	}
+	.options-header{
+		margin-bottom: 30px;
+	}
+	.button-primary,.button-primary:hover{
+		font-family: ProximaNovaSemibold;
+		background: $yellow;
+		border-width: 0px;
+		border-radius: 40px;
+		box-shadow: 0 0 0 $yellow;
+		text-shadow: 0 0 0 $yellow;
+		padding: 2px 25px!important;
+		height: 40px !important;
+	}
+	.for-submit{
+		text-align: right;
+	}
+	input[type="text"]{
+		width: 250px;
+	}
+	.hint{
+		font-size: 10px;
+		font-style: italic;
+	}
+	h4{
+		margin-bottom: 0.3em;
+	}
+
+}
+.post-type-flo_forms{
+	.form-settings-wrapper{
+		font-family: ProximaNovaRegular;
+		.hint{
+			font-style: italic;
+			color: #6d6d6d;
+			font-size: 10px;
+		}
+	}
+	.ui-widget{
+		font-family: ProximaNovaSemibold;
+		font-size: 13px;
+	}
+	#poststuff #post-body.columns-2{
+		margin-right: 0px;
+	}
+	#post-body.columns-2 #postbox-container-1{
+		margin-right: 0px;
+		width: 100%;
+
+	}
+	#poststuff #post-body.columns-2 #side-sortables{
+		width: 100%;
+	}
+
+	#submitdiv.postbox {
+		width: 280px;
+		float: right
+	}
+
+	#flo-publishing-action{
+		text-align: right;
+		bottom: 10px;
+	    position: absolute;
+	    right: 0px;
+		.button-primary{
+			font-family: ProximaNovaSemibold;
+			background: $yellow;
+			border-width: 0px;
+			border-radius: 40px;
+			box-shadow: 0 0 0 $yellow;
+			text-shadow: 0 0 0 $yellow;
+			padding: 2px 25px;
+			height: 40px;
+		}
+	}
+
+	.flo-submit-button{
+		background-color: $dark_bg;
+		color: #fff;
+		width: 125px;
+		text-align: center;
+		height: 35px;
+		vertical-align: middle;
+	}
+	.ui-corner-all{
+		border-radius: 0px;
+		border-top: 0px;
+		border-bottom: 0px;
+		border-left: 0px;
+	}
+
+	// hide the default WP update post button
+	#submitdiv{
+		display: none;
+	}
+
+	input[type="text"],input[type="email"]{
+		padding: 7px;
+	}
+}
+#flo_form_settings{
+	.form-settings-wrapper{display: flex;}
+}
+#form-tabs{
+	max-width: 280px;
+	display: inline-block;
+	vertical-align: top;
+	&.ui-tabs{
+		padding-left: 0px;
+		padding-right: 0.4em;
+	}
+	.tab-title{
+		font-family: ProximaNovaRegular;
+		font-style: italic;
+		font-size: 12px;
+		color: #565656;
+		margin-bottom: 23px;
+	}
+	input,textarea{
+		font-family: ProximaNovaRegular;
+
+	}
+	.field-settings-label{
+		position: relative;
+		display: block;
+	}
+	.ui-tabs-nav{
+		background: transparent;
+		border-width: 0px;
+		a{
+			outline: none;
+			padding: .5em .5em;
+			&:focus{
+				box-shadow:0 0 0 0 #cfcfcf, 0 0 0 0 #cfcfcf;
+			}
+		}
+		.ui-state-default{
+			background: $grey_bg;
+			color: $dark_bg;
+			border-radius: 0px;
+			border-width: 0px;
+			&.ui-state-active{
+				background: $dark_bg;
+				border-color: $dark_bg;
+				a{
+					color: #ffffff;
+				}
+			}
+		}
+		li{
+			padding-left: 1px;
+			padding-right: 1px;
+		}
+	}
+
+	.ui-tabs-panel{
+		padding: 1em 0.5em;
+	}
+	.field-buttons{
+		li{
+			width: 48%;
+			display: inline-block;
+			position: relative;
+			margin-bottom: 18px;
+			height: 30px;
+			font-family: ProximaNovaSemibold;
+			vertical-align: middle;
+			&:before{
+				position: absolute;
+				left: 8px;
+				font-size: 14px;
+				top: 11px;
+				font-family: 'dashicons';
+				color:$yellow;
+			}
+			a{
+				font-family: ProximaNovaSemibold;
+				padding: 9px 0 7px 30px;
+			    display: block;
+			    position: relative;
+			    border: 1px solid #d8d8d8;
+			    border-right: 1px solid #ccc;
+			    border-bottom: 1px solid #ccc;
+			    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+			    background-clip: padding-box;
+			    font-size: 13px !important;
+			    text-align: left;
+			    vertical-align: middle;
+			    text-decoration: none;
+			    line-height: 20px;
+			}
+			&.dashicons-editor-textcolor{
+				&:before{
+					content: 'Aa';
+					font-family: ProximaNovaSemibold;
+				}
+			}
+			&.dashicons-arrow-down{
+				&:before{
+					font-size: 18px;
+					left: 4px;
+					top: 10px;
+				}
+			}
+			&.dashicons-marker{
+				&:before{
+					font-size: 16px;
+					color:#d6d6d6;
+				}
+				
+				&:after{
+					content:'.';
+					position: absolute;
+					top: -7px;
+					left:11.5px;
+					font-size: 36px;
+					color:$yellow;
+				}
+			}
+			&:nth-child(odd){
+				padding-right: 5px;
+			}
+
+		}
+	}
+	#form-settings,#fields-settings{
+		input[type="text"],textarea,.page-confirmation-value{
+			width: 98%;
+		}
+		input.flo-forms-color-picker{
+			width: 50px;
+			margin-right: 5px;
+		}
+
+	}
+	label.label-placement{
+		line-height: 26px;
+		margin-bottom: 10px;
+		select{
+			float: right;
+		}
+	}
+	.confirmation-label{
+		width: 130px;
+		display: inline-block;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		div{
+			display: inline-block;
+			width: 85px;
+		}
+		input{
+			vertical-align: top;
+			margin-top: 1px;
+		}
+	}
+}
+
+.form-preview{
+	padding-left: 12px;
+	display: inline-block;
+	flex:1;
+	.flo-section-break{
+		width: 96%;
+	}
+	.add-field-spinner{
+		margin-right: 50%;
+	}
+	.req{
+		color: red;
+	}
+
+	label.desc{
+		display: inline-block;
+		width: 110px;
+		vertical-align: top;
+		padding-right: 10px;
+	}
+
+	li.form-preview-row{
+		padding: 5px 2px;
+		border: 2px solid #fff;
+		position: relative;
+		vertical-align: top;
+		&:hover{
+			cursor: pointer;
+		}
+		&:not(.focused):hover{
+			border: 2px dashed #d3d3d3;
+		}
+		&.hidden{
+			display:block;
+		}
+		.delete-field{
+			display: none;
+		}
+		&.focused{
+			background-color: $grey_bg;
+			border: 2px dashed #d3d3d3;
+			.delete-field{
+				display: block;
+				color: red;
+				position: absolute;
+				right: -8px;
+				bottom: -10px;
+				font-size: 16px;
+
+			}
+			.field-id{
+				color: grey;
+			}
+		}
+
+		&.width-50{
+			width:48%;
+			display: inline-block;
+		}
+
+		.choice{
+			margin-right: 20px;
+		}
+		.the-choice{
+			vertical-align: top;
+		}
+		&.two-columns{
+			.the-choice{
+				width: 49%;
+				display: inline-block;
+			}
+			.the-choice:nth-child(2n+1){
+				&:after{
+					visibility: hidden;
+					display: block;
+					content: "";
+					clear: both;
+					height: 0;
+				}
+				
+			}
+		}
+		&.three-columns{
+			.the-choice{
+				width: 32.5%;
+				display: inline-block;
+			}
+			.the-choice:nth-child(3n+1){
+				&:after{
+					visibility: hidden;
+					display: block;
+					content: "";
+					clear: both;
+					height: 0;
+				}
+			}
+		}
+		&.one-column{
+			.the-choice{
+				display: block
+			}
+		}
+		.field-id{
+			display:none;
+			//clear: both;
+			//display: block;
+			//color: #fff;
+		}
+		// &.flo-left{
+		// 	float: left;
+		// }
+		// &.flo-right{
+		// 	float: right;
+		// }
+	}
+
+	.fid_submit_button{
+		width: 97%;
+		overflow: auto;
+		div{
+			&.center{
+				text-align: center;
+			}
+			&.right {
+				text-align: right;
+			}
+		}
+	} 
+
+	label.desc{
+		line-height: 32px;
+	}
+	&.topLabel{
+		label.desc{
+			width: 100%;
+		}
+	}
+	&.rightLabel{
+		label.desc{
+			text-align: right;
+		}
+	}
+	input[type="text"],input[type="email"],textarea{
+		width: 100%
+	}
+	&.rightLabel,&.leftLabel{
+		.width-100{
+			display: flex;
+			.desc{
+				margin-right: 5px;
+			}
+		}
+		.field-box-wrap{
+			width: 70%;
+			display: inline-block;
+			padding-top: 8px;
+		}
+
+
+	}
+	
+	.width-100{
+		
+		&.form-preview-row{
+			width: 94%;
+            margin: 7px;
+		}
+		input[type="text"],input[type="email"],textarea{
+			width: 70%
+		}
+
+	}
+
+	&.topLabel{
+		.width-100{
+			label.desc{
+				width: 98%;
+			}	
+		}
+	}
+	.the-label{
+		font-family: ProximaNovaSemibold;
+	}
+	[class^="choice_block_"]{
+		line-height: 30px;
+	}
+  .left_block, .right_block{
+    width: 48%;
+    float: left;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    display: inline-flex;
+    height: 100%;
+    visibility: hidden;
+
+  }
+  .right_block, .left_block {
+    ul{
+      width: 99.9%;
+      margin: 0;
+      min-height: 60px;
+      background-color: #f8f8f8 ;
+      li{
+        width: 94%;
+        border: 2px solid #f8f8f8;
+        &.width-50{
+          width: 44%;
+          margin: 5px;
+        }
+        .field-id{
+          color: #f8f8f8;
+        }
+        //margin: 7px;
+      }
+    }
+  }
+
+
+}
+.form-preview.row{
+  height: 100%;
+}
+
+.fields-controls{
+	.preselected-choice{
+		display: none;
+	}
+	.field-settings{
+		display: none;
+		&.visible{
+			display: block;
+		}
+		
+	}
+	.field-id-value{
+		display: block;
+	    margin-bottom: 23px;
+	    font-weight: 100;
+	    font-family: ProximaNovaRegular;
+	    color: #565656;
+	}
+	.add-new-choice{
+		cursor: pointer;
+		color: #fff;
+		position:relative;
+	    width: 20px;
+	    height: 20px;
+	    font-size: 12px;
+	    color: #fff;
+	    position: relative;
+	    width: 20px;
+	    height: 20px;
+	    font-size: 12px;
+	    vertical-align: middle;
+	    border-radius: 50%;
+	    background-color: $yellow;
+		&:before{
+			content: "\f132" !important;
+		    position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);
+		}
+	}
+	.remove-choice{
+		color: #000;
+		cursor: pointer;
+		position: relative;
+		width: 12px;
+		height: 12px;
+		margin-top: 2px;
+		&:before{
+			width: 12px;
+			height: 12px;
+			font-size: 12px;
+			position: absolute;
+			left: 0;
+			top: 1px;
+		}
+	}
+	.choice-block{
+		margin-top: 4px;
+		margin-bottom: 8px;
+		input[type="text"]{
+			margin-right: 7px;
+			width: 190px !important;
+		}
+	}
+
+}
+
+.form-shortcode-preview{
+	display: block;
+	width: 100%;
+	margin-top: 40px;
+	clear: both;
+	position: relative;
+}
+
+// style the read/unread entries
+.post-type-flo_form_entry{
+	.wp-list-table tbody{
+		tr{
+			font-weight: bold;
+			&.entry-read{
+				font-weight: 100;
+				strong a{
+					font-weight: 100;
+				}
+			}
+		}
+
+	}
+}

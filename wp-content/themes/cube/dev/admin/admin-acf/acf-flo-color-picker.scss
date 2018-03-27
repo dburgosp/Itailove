@@ -1,0 +1,48 @@
+.acf-flo-color-picker {
+  $b: ".acf-flo-color-picker";
+  display: flex;
+  align-items: center;
+
+  &__color_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50px;
+    width: 110px;
+    position: relative;
+  }
+    &__current-color {
+      flex-shrink: 0;
+      $size: 32px;
+      width: $size;
+      height: $size;
+      border-radius: $size;
+      overflow: hidden;
+      box-shadow: 0 0 2px 2px rgba(0,0,0,0.10);
+      // border: 1px solid $color-gray-dark;
+
+    }
+    &__custom-color-picker {
+      //display: none;
+      flex-shrink: 0;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      z-index: 1111;
+    }
+
+  &__custom-color-wrap {
+
+  }
+    &__custom-color-question {
+      display: flex;
+      align-items: center;
+    }
+      &__custom-color-checkbox {
+      }
+      &__custom-color-text {
+        margin-left: 15px;
+      }
+
+}

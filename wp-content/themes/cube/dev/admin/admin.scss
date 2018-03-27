@@ -1,0 +1,543 @@
+$color-white: white;
+$color-black: #1c1c1c;
+$color-gray: #ededed;
+$color-gray-light: #f8f8f8;
+$color-gray-dark: #d8d8d8;
+$color-gray-dark-2: #8d8d8d;
+$color-gray-dark-3: #828282;
+$color-peach: #f8f7f5;
+$color-peach-dark: #ebeae9;
+$color-orange: #ec6042;
+$color-pastel-blue: #e9f0f2;
+$color-brown: #b7946d;
+
+/* Start: Fonts */
+
+  // Start: Imports
+    @import url('slick.css');
+    @import url('../fonts/fontello/css/flo-admin-icons.css');
+  // End: Imports
+
+  // Start: Local Fonts
+    @font-face {
+      font-family: 'Miller Banner';
+      src: url('../fonts/MillerBanner-Light.eot'); /* IE9 Compat Modes */
+      src: url('../fonts/MillerBanner-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('../fonts/MillerBanner-Light.woff') format('woff'), /* Modern Browsers */
+           url('../fonts/MillerBanner-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+           url('../fonts/MillerBanner-Light.svg#98c131f9fb31f732b136f87e64ff686a') format('svg'); /* Legacy iOS */
+
+      font-style:   normal;
+      font-weight:  300;
+    }
+  // End: Local Fonts
+
+  // Start: Google Fonts
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+  // End: Google Fonts
+
+  $font-admin-icons: "flo-admin-icons";
+  $font-miller-banner: "Miller Banner", sans;
+  $font-open-sans: 'Open Sans', sans-serif;
+
+
+/* End: Fonts */
+
+/* Start: Global Admin Font Styles */
+  .flo-acf-label {
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+/* End: Global Admin Font Styles */
+
+/* Start: Transitions */
+  $global-transition-speed: 0.24s;
+  $global-easing: cubic-bezier(0.445, 0.050, 0.550, 0.950);
+
+  @mixin global-transition($transitions...) {
+    $s: $global-transition-speed;
+    $unfoldedTransitions: ();
+    @each $transition in $transitions {
+      $unfoldedTransitions: append($unfoldedTransitions, $transition + " " + $s, comma)
+    }
+    transition: $unfoldedTransitions;
+    transition-timing-function: $global-easing;
+  }
+/* End: Transitions */
+
+@import "common.scss";
+
+
+// Only for users not devs
+body:not(.post-type-acf-field-group):not(.wp-customizer) {
+  /* START: ON LOAD ANIMATION - CSS */
+    .postbox.acf-postbox {
+      display: none;
+    }
+  /* END: ON LOAD ANIMATION - CSS */
+
+  /* Start: Radio Image Select */
+    .flo-image-select  {
+      .acf-radio-list {
+
+      }
+      &--no-titles {
+        label {
+          font-size: 0;
+        }
+      }
+      &--columns-1,
+      &--columns-fixed
+      {
+        li {
+          width: 100%!important;
+        }
+      }
+      &--columns-2 {
+        li {
+          width: calc(100% / 2) !important;
+        }
+      }
+      &--columns-3 {
+        li {
+          width: calc(100% / 3) !important;
+        }
+      }
+      &--columns-4 {
+        li {
+          width: calc(100% / 4) !important;
+        }
+      }
+      &--columns-5 {
+        li {
+          width: calc(100% / 5) !important;
+        }
+      }
+      &--columns-8 {
+        li {
+          width: calc(100% / 8) !important;
+        }
+      }
+    }
+
+      .flo-image-select li {
+        display: inline-block!important;
+        vertical-align: top;
+        padding-right: 25px!important;
+        box-sizing: border-box;
+        width: calc(100% / 2);
+        max-width: 100%;
+        margin: 0!important;
+        margin-bottom: 15px!important;
+      }
+        .flo-image-select label input {
+          display: none;
+        }
+        .flo-image-select label img {
+          display: block;
+          box-sizing: border-box;
+          width: 100%;
+        	border: dashed 1px $color-gray;
+          margin-bottom: 14px;
+          transition: border-color 0.4s;
+          border-radius: 15px;
+          padding: 7.5px;
+          background-color: $color-gray-light;
+          @include global-transition(border, background-color);
+        }
+          .flo-image-select label:hover img,
+          .flo-image-select label.selected img {
+          	border: solid 1px $color-orange;
+            background-color: $color-pastel-blue;
+          }
+
+        .flo-image-select label p {
+        	margin: 0;
+        	font-weight: bold;
+        	text-align: center;
+          font-family: $font-miller-banner;
+          font-weight: 300;
+          font-size: 18.5px;
+          letter-spacing: -0.02em;
+        }
+      // Start: Inside Sidebars
+        .layout_sidebars.flo-image-select {
+          li {
+            margin-right: 0!important;
+            padding: 5px!important;
+            width: calc(100% / 3);
+            text-align: center;
+          }
+        }
+      // End: Inside Sidebars
+
+  /* End: Radio Image Select */
+
+
+  /* Start: Message Elements */
+    .acf-field-message p {
+      margin-top: 0;
+    }
+    .acf-field-message .acf-img {
+      display: block;
+      width: 100%;
+    }
+  /* End: Message Elements*/
+  .acf-postbox {
+    font-family: $font-open-sans;
+    // animation: acf-postbox__appear $global-transition-speed $global-easing 0.8s forwards;
+    // visibility: hidden;
+    @at-root {
+      @keyframes acf-postbox__appear {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  @mixin flying {
+    box-shadow: 0px 14px 73px -8px #{transparentize($color-black, 0.8)};
+    transform: scale(1.04);
+  }
+  .inside.acf-fields.-top.-sidebar > .acf-tab-wrap.-left > .acf-hl.acf-tab-group,
+  .inside.acf-fields.-left.-sidebar > .acf-tab-wrap.-left > .acf-hl.acf-tab-group {
+    max-height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 0px!important;
+    border-bottom: 1px solid $color-peach-dark!important;
+    border-top: 1px solid $color-peach-dark!important;
+    @include global-transition(box-shadow, transform);
+    // &.fixed_to_bottom {
+    //   @include global-transition(box-shadow, transform, top);
+    // }
+    transform-origin: top;
+    padding-left: 20px;
+    &[data-mfx-is-fixed="1"]:not(.fixed_to_bottom) {
+      @include flying;
+      li.active a:after {
+        opacity: 0.94!important;
+      }
+    }
+  }
+
+
+  @import "admin-acf.scss";
+  @import "admin-typography.scss";
+
+  /* START: FULL WIDTH FIELD */
+    .acf-field--full-width {
+      &:before {
+        content: none!important;
+      }
+      & > .acf-label {
+        display: none;
+      }
+      & > .acf-input {
+        width: 100%!important;
+      }
+    }
+  /* END: FULL WIDTH FIELD */
+
+  /* START: NARROW FIELD */
+    .acf-field--narrow {
+      &:before {
+        content: none!important;
+      }
+      & > .acf-label {
+        display: none;
+      }
+      & > .acf-input {
+        width: 640px!important;
+        max-width: 100%;
+        margin: 0 auto!important;
+        float: none!important;
+      }
+    }
+  /* END: NARROW FIELD */
+
+  /* START: LABEL ON TOP FIELD */
+    .acf-field--label-on-top {
+      &:before {
+        content: none!important;
+      }
+      & > .acf-label {
+        width: 100%!important;
+      }
+      & > .acf-input {
+        width: 100%!important;
+        padding-top: 0!important;
+      }
+    }
+  /* END: LABEL ON TOP FIELD */
+
+  /* START: FIELD WITH NO TOP BORDER */
+    .acf-field--no-top-border {
+      border-top: 0!important;
+      & > .acf-label {
+        padding-top: 0!important;
+      }
+      & > .acf-input {
+        padding-top: 0!important;
+      }
+    }
+  /* END: FIELD WITH NO TOP BORDER */
+
+  /* START: COLOR PICKER */
+    .acf-color_picker {
+    }
+    .acf-field{
+      .wp-picker-container{
+        position: relative;
+        z-index: 100;
+
+        /* START: IRIS */
+          .iris-border {
+            border: 0;
+          }
+            .iris-palette-container {
+              display: flex;
+              flex-wrap: wrap;
+              margin-bottom: -5px;
+            }
+              .iris-palette {
+                $size: 30px;
+                width: $size;
+                height: $size;
+                border-radius: $size;
+                overflow: hidden;
+                box-shadow: none!important;
+                border: 1px solid $color-gray;
+                box-sizing: border-box;
+              }
+        /* END: IRIS */
+
+        // Start: Appear Animation
+          &:before,
+          &:after,
+          .wp-picker-input-wrap,
+          .wp-picker-holder {
+            opacity: 0;
+            pointer-events: none;
+            @include global-transition(opacity);
+          }
+          &.wp-picker-active {
+            z-index: 9999;
+            &:before,
+            &:after,
+            .wp-picker-input-wrap,
+            .wp-picker-holder,
+            .wp-picker-clear {
+              opacity: 1!important;
+              pointer-events: initial;
+            }
+          }
+        // End: Appear Animation
+
+        $specific-options-size: 29px;
+        .wp-color-result {
+          margin: 0;
+          border: 1px solid $color-gray-dark;
+          border-radius: $specific-options-size;
+          height: $specific-options-size;
+          box-shadow: none;
+          padding: 0;
+          overflow: hidden;
+          z-index: 1111;
+          span {
+            display: none;
+          }
+          &:before {
+            content: " ";
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: $specific-options-size / 2;
+            $size: $specific-options-size / 1.52;
+            width: $size;
+            height: $size;
+            border-radius: $size;
+            background-color: inherit;
+            z-index: 1;
+            @include global-transition(background-color);
+          }
+          &:after {
+            content: "Color";
+            display: block;
+            padding: 0 17.5px 0 36px;
+            background-color: white;
+            border: 0;
+            height: 100%;
+            line-height: $specific-options-size;
+          }
+        }
+
+        $picker-width: 255px;
+        $picker-padding: 20px;
+        $picker-background-color: $color-white;
+        $picker-shadow: 0px 14px 73px -8px #{transparentize($color-black, 0.8)};
+
+
+        @mixin picker-top($value: 0){
+          $picker-top: 20px;
+          top: calc(100% + #{$picker-top + $value});
+        }
+
+        $picker-first-height: 35px;
+        $picker-first-top: $picker-padding;
+
+        $picker-second-height: 233px;
+        $picker-second-top: $picker-first-top + $picker-first-height + $picker-padding;
+
+        $picker-height: $picker-padding + $picker-first-height + $picker-padding + $picker-second-height + $picker-padding;
+
+        &:before {
+          content: " ";
+          position: absolute;
+          @include picker-top();
+          left: 50%;
+          transform: translateX(-50%);
+          width: $picker-width + $picker-padding * 2;
+          height: $picker-height;
+          background-color: $picker-background-color;
+          border-radius: 12.5px;
+          box-shadow: $picker-shadow;
+        }
+        &:after {
+          content: " ";
+          position: absolute;
+          @include picker-top();
+          left: 50%;
+          transform: translate(-50%, -100%);
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 10px 10px 10px;
+          border-color: transparent transparent $picker-background-color transparent;
+          box-shadow: $picker-shadow;
+        }
+        .wp-picker-input-wrap {
+          display: flex;
+          align-items: stretch;
+          position: absolute;
+          @include picker-top($picker-first-top);
+          left: 50%;
+          transform: translateX(-50%);
+          width: $picker-width;
+          .wp-picker-clear {
+            display: inline-block;
+            height: auto;
+            border-radius: 0;
+            box-shadow: none;
+            border: 1px solid $color-gray-dark;
+            margin: 0!important;
+            border-left: 0;
+            transform: translate(0);
+            opacity: 0;
+            @include global-transition(background-color, color, border);
+          }
+        }
+        .wp-picker-holder {
+          position: absolute;
+          @include picker-top($picker-second-top);
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  /* END: COLOR PICKER */
+}
+
+li.flo-docs {
+    float: none;
+    width: 100% !important;
+    img{
+      max-width: 100%;
+    }
+    a:before{
+      content: ''!important;
+    }
+}
+
+.success{
+  color: green;
+}
+
+.flo-button__set-primary-menu{
+  .spinner-container{
+    top: 25px;
+    left: 170px;
+  }
+}
+
+#flo-custom-css-div{
+  height: 400px;
+}
+
+/* START: FLOTHEME PAGE */
+  @import "page-flotheme.scss";
+/* END: FLOTHEME PAGE */
+
+/* START: YOUTUBE VIDEOS */
+  .acf-input iframe {
+    max-width: 100%;
+  }
+/* END: YOUTUBE VIDEOS */
+
+/* flo-documentation is a class added manually to the message ACF fields. Usually for messages that act as documentation */
+.flo-documentation h3{
+  font-size: 1.75rem;
+}
+
+.flo-documentation img{
+  max-width: 100%;
+}
+
+.flo-rd-img img{
+  max-width: 150px;
+}
+
+/* START: POST FORMATS STYLING */
+
+  // Start: Post Format "Aside" -> stylize as "Custom"
+    .post-format-icon.post-format-aside {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 0;
+
+      &:before {
+        content: "\f339";
+      }
+      &:after {
+        content: "Custom";
+        display: inline-block;
+        font-size: 13px;
+        line-height: 13px;
+      }
+    }
+  // End: Post Format "Aside" -> stylize as "Custom"
+
+/* END: POST FORMATS STYLING */
+
+.acf-button.button[data-name="add"] {
+  position: relative;
+}
+
+.flo-wpml-config-regeneration {
+  position: relative;
+
+  .spinner-container {
+    top: 30px;
+  }
+
+  .import-response {
+    padding-top: 30px;
+  }
+}
