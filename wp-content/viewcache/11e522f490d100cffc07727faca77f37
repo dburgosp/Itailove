@@ -1,0 +1,252 @@
+<?php
+	$data = get_fields();
+
+// echo '<pre>';
+// var_dump($data);
+// echo '</pre>';
+
+	if(isset($data['page-home__slider-enabled']) && $data['page-home__slider-enabled'] && isset($data['page-home__slider']) ){
+		$header__slider_id = $data['page-home__slider'];
+	}
+
+	// if($field = get_field("page-home__slider-logo")) {
+	//   $header__slider_logo = $field;
+	// }
+
+	if( isset($data["custom-header__addons-enabled"]) && $data["custom-header__addons-enabled"] ) { // scroll down_button
+	  $header__section_title_enabled = $data["custom-header__addons-enabled"];
+	}
+
+
+	if( isset($data["page-home__slider-layout"]) ) {
+	  //$slider_title_layout = $data["page-home__slider-layout"];
+	  $header__slider_layout = $data["page-home__slider-layout"];
+	}else{
+		$header__slider_layout = 'center';
+	}
+?>
+
+
+<?php $__env->startSection('custom_classes'); ?>
+  page-default
+<?php $__env->stopSection(); ?>
+
+
+<?php $__env->startSection('content'); ?>
+	<?php echo $__env->make('components.section-text-content--only-wp-content', [
+	    "data" => $data
+	], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+	<?php if( !post_password_required() && isset($data["layout"]) && is_array($data["layout"]) && sizeof($data["layout"])): ?>
+      <?php
+        $section_index = 0;
+        // var_dump($data["layout"]);
+      ?>
+    	<?php foreach($data["layout"] as $section_data): ?>
+        <?php /* Open Block */ ?>
+          <?php echo $__env->make('layout.block-opening', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+    	      <?php
+    	        $section_name = $section_data["acf_fc_layout"];
+    	      ?>
+
+            <?php /* START: ABOUT TEMPLATE */ ?>
+              <?php if($section_name == "top_block"): ?>
+                <?php echo $__env->make("components.flo-about-block", [
+                    "data" => $section_data
+                  ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+              <?php elseif($section_name == "image_block"): ?>
+                <?php echo $__env->make("components.flo-about-image-block", [
+                    "data" => $section_data
+                  ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+              <?php elseif($section_name == "info_block"): ?>
+                <?php echo $__env->make("components.flo-text-image-block", [
+                  "data" => $section_data
+                ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+              <?php elseif($section_name == "quote_block"): ?>
+                <?php echo $__env->make("components.flo-quote-block", [
+                  "data" => $section_data
+                ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php /* END: ABOUT TEMPLATE */ ?>
+
+            <?php /* START: PRESS TEMPLATE */ ?>
+      	      <?php elseif($section_name == "press_block"): ?>
+      	        <?php echo $__env->make("components.press-page", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php /* END: PRESS TEMPLATE */ ?>
+
+            <?php /* START: CONTACT TEMPLATE */ ?>
+              <?php elseif($section_name == "contact"): ?>
+      	        <?php echo $__env->make("components.flo-contact-block", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php /* END: CONTACT TEMPLATE */ ?>
+
+            <?php /* START: HOME TEMPLATE */ ?>
+              <?php elseif($section_name == "image_blocks"): ?>
+      	        <?php echo $__env->make('components.flo-featured-posts', [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+      	      <?php elseif($section_name == "home_text_block"): ?>
+      	        <?php echo $__env->make("components.flo-information-block", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+      	      <?php elseif($section_name == "featured_posts"): ?>
+      	        <?php echo $__env->make('components.flo-featured-items', [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php /* END: HOME TEMPLATE */ ?>
+
+            <?php /* START: MISC */ ?>
+      	      <?php elseif($section_name == "section-text-content"): ?>
+      	        <?php echo $__env->make("components.section-text-content", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+			  <?php elseif($section_name == "wordpress_content"): ?>
+				  <?php echo $__env->make("components.section-text-content--only-wp-content", [
+					"data" => $section_data,
+					"block_content" => true
+				  ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+      	      <?php elseif($section_name == "section-pricing-packages"): ?>
+      	        <?php echo $__env->make("components.flo-pricing-packages", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+      	      <?php elseif($section_name == "section-testimonials-slideshow"): ?>
+      	        <?php echo $__env->make("components.flo-testimonials-slideshow", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+      	      <?php elseif($section_name == "section-special-link"): ?>
+      	        <?php echo $__env->make("components.flo-special-link", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+      	      <?php elseif($section_name == "slideshow-1"): ?>
+      	        <?php echo $__env->make("components.flo-block-slideshow-1", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+
+      	      <?php elseif($section_name == "slideshow-2"): ?>
+      	        <?php echo $__env->make("components.flo-block-slideshow-2", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php /* END: MISC */ ?>
+
+            <?php /* START: LISTING */ ?>
+      	      <?php elseif($section_name == "section-listing-title"): ?>
+      	        <?php echo $__env->make("components.flo-listing-title", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+      	      <?php elseif($section_name == "section-listing-featured-item"): ?>
+      	        <?php echo $__env->make("components.flo-listing-featured-item", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+      	      <?php elseif($section_name == "section-listing"): ?>
+      	        <?php echo $__env->make("components.flo-listing", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+      	      <?php elseif($section_name == "section-listing-pagination"): ?>
+      	        <?php echo $__env->make("components.flo-listing-pagination", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php /* END: LISTING */ ?>
+
+            <?php /* START: OLD LISTING */ ?>
+      	      <?php elseif($section_name == "section-listing-layout"): ?>
+      	        <?php echo $__env->make("components.flo-listing", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+      	        <?php echo $__env->make("components.flo-listing-pagination", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php /* END: OLD LISTING */ ?>
+
+            <?php /* START: TEMPLATE HOME A */ ?>
+              <?php elseif($section_name == "title-1"): ?>
+      	        <?php echo $__env->make("components.flo-block-title-1", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+              <?php elseif($section_name == "image-links"): ?>
+      	        <?php echo $__env->make("components.flo-block-image-links", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php /* END: TEMPLATE HOME A */ ?>
+
+            <?php /* START: TEMPLATE HOME B */ ?>
+              <?php elseif($section_name == "video"): ?>
+      	        <?php echo $__env->make("components.flo-block-video", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+              <?php elseif($section_name == "information-block-2"): ?>
+      	        <?php echo $__env->make("components.flo-block-information-block-2", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+              <?php elseif($section_name == "image-links-2"): ?>
+      	        <?php echo $__env->make("components.flo-block-image-links-2", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+              <?php elseif($section_name == "image-link-with-parallax"): ?>
+      	        <?php echo $__env->make("components.flo-block-image-link-with-parallax", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php /* END: TEMPLATE HOME B */ ?>
+
+            <?php /* START: TEMPLATE HOME C */ ?>
+              <?php elseif($section_name == "featured-slideshow-1"): ?>
+      	        <?php echo $__env->make("components.flo-block-featured-slideshow-1", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+              <?php elseif($section_name == "information-block-3"): ?>
+      	        <?php echo $__env->make("components.flo-block-information-block-3", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+              <?php elseif($section_name == "divider"): ?>
+      	        <?php echo $__env->make("components.flo-block-divider", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+              <?php elseif($section_name == "featured-links-1"): ?>
+      	        <?php echo $__env->make("components.flo-block-featured-links-1", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+              <?php elseif($section_name == "newsletter-2"): ?>
+      	        <?php echo $__env->make("components.flo-block-newsletter-2", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php /* END: TEMPLATE HOME C */ ?>
+
+            <?php /* START: FIJI INVESTMENT */ ?>
+              <?php elseif($section_name == "title-2"): ?>
+      	        <?php echo $__env->make("components.flo-block-title-2", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+              <?php elseif($section_name == "pricing-packages-2"): ?>
+      	        <?php echo $__env->make("components.flo-block-pricing-packages-2", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+              <?php elseif($section_name == "testimonials-2"): ?>
+      	        <?php echo $__env->make("components.flo-block-testimonials-2", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+              <?php elseif($section_name == "instagram"): ?>
+      	        <?php echo $__env->make("components.flo-block-instagram", [
+      	          "data" => $section_data
+      	        ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+            <?php /* END: FIJI INVESTMENT */ ?>
+
+
+  	      <?php endif; ?>
+          <?php
+            $section_index++;
+          ?>
+        <?php echo $__env->make('layout.block-closing', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+      <?php /* Close Block */ ?>
+	  <?php endforeach; ?>
+	<?php endif; ?>
+
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

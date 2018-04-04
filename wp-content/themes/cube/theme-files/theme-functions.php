@@ -146,6 +146,14 @@
         $classes[] = 'flo-appear-disabled'; // disable the blocks fade in effect
       }
 
+      if(flo_get_option('flo-cube-setings__tablet-fade-effect-disable', true)){ // default value should be true
+        $classes[] = 'flo-tablet-appear-disabled'; // Tablet: disable the blocks fade in effect
+      }
+
+      if(flo_get_option('flo-cube-setings__mobile-fade-effect-disable', true)){ // default value should be true
+        $classes[] = 'flo-mobile-appear-disabled'; // Mobile: disable the blocks fade in effect
+      }
+
       return $classes;
     }
   }

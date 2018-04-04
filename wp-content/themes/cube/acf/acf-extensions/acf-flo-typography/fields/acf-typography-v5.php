@@ -326,7 +326,7 @@ class acf_field_flo_typography extends acf_field {
 			  <div class="font-style-modal__divider"></div>
 		      <div class="font-style-modal__label">
 		      	<?php
-		         	_e('Preview','flotheme');
+		         	_e('Preview desktop size','flotheme');
 
 		         	echo sprintf(__("%s Note that the font size will increase and decrease proportionally depending on the window size. The current preview reflects the current window size. %s","flotheme"), '<span class="hint">', '</span>');
 
@@ -335,6 +335,23 @@ class acf_field_flo_typography extends acf_field {
 
 		      <div class="font-style-modal__input">
 		  			<div class="font-style-modal__specific-options-preview {{setContrastBg(popup, '<?php echo $state ?>')}}" style="{{setStyleTypography( popup, '<?php echo $state ?>')}}">
+		  				Lorem ipsum dolor sit amet, consectetur adipisicing elit
+		  			</div>
+		  			<style>
+		  				{{floGetFontFace(popup['font_family'], popup['font_url'])}}
+		  			</style>
+		      </div>
+
+		      <br/> <br/>
+
+		      <div class="font-style-modal__label">
+		      	<?php
+		         	_e('Preview mobile size','flotheme');
+		        ?>
+		      </div>
+
+		      <div class="font-style-modal__input">
+		  			<div class="font-style-modal__specific-options-preview {{setContrastBg(popup, '<?php echo $state ?>')}}" style="{{setStyleTypography( popup, '<?php echo $state ?>');}} {{floSetMobileSize( popup );}}">
 		  				Lorem ipsum dolor sit amet, consectetur adipisicing elit
 		  			</div>
 		  			<style>

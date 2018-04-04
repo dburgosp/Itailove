@@ -1,0 +1,43 @@
+V 1.0.6
+
+Added option to disable disk checking when the server does not allow it. 
+
+========================================================================
+
+V 1.0.5
+Disk space verification - added additional conditions in case we can not 
+detect how much disk space is left
+
+========================================================================
+
+V 1.0.4
+We make sure there is enough disk space before enabling the test mode.
+	Otherwise we can stop the site from working.
+
+========================================================================
+
+V 1.0.3
+
+Added comments in the footer to be able easy to see if the user uses the plugin
+
+========================================================================
+
+V 1.0.2
+
+Check if wp-config is writable before enabling the test mode.
+
+Added possibility to start over with the test drive
+
+Added the possibility to use the test mode multiple times after the site was launched.
+
+========================================================================
+
+V 1.0.1
+
+fixed the GET param that is supposed to enable the test mode via the URL
+
+========================================================================
+
+V 1.0
+
+Initial release

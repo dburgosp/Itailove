@@ -1,0 +1,17 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ .flo-test-mode-enabled{
+ 	position: fixed;
+ 	top: 30px;
+ 	right: 30px;
+ 	padding: 10px 25px;
+ 	border-radius: 40px;
+ 	background-color: #b99667;
+ 	color: #fff;
+ 	font-size: 12px;
+ }
+.flo-test-mode-enabled .dashicons-info{
+	margin-right: 5px;
+}

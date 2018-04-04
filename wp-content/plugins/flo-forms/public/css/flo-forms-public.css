@@ -26,7 +26,8 @@
       margin-bottom: 15px; }
     .flo-form .field-row textarea {
       min-height: 90px; }
-    .flo-form .field-row input[type="checkbox"] {
+    .flo-form .field-row input[type="checkbox"],
+    .flo-form .field-row input[type="radio"] {
       height: auto; }
   .flo-form .main-label {
     vertical-align: top; }

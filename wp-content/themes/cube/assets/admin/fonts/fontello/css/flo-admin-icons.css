@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'flo-admin-icons';
-  src: url('../font/flo-admin-icons.eot?77106830');
-  src: url('../font/flo-admin-icons.eot?77106830#iefix') format('embedded-opentype'),
-       url('../font/flo-admin-icons.woff2?77106830') format('woff2'),
-       url('../font/flo-admin-icons.woff?77106830') format('woff'),
-       url('../font/flo-admin-icons.ttf?77106830') format('truetype'),
-       url('../font/flo-admin-icons.svg?77106830#flo-admin-icons') format('svg');
+  src: url('../font/flo-admin-icons.eot?97825657');
+  src: url('../font/flo-admin-icons.eot?97825657#iefix') format('embedded-opentype'),
+       url('../font/flo-admin-icons.woff2?97825657') format('woff2'),
+       url('../font/flo-admin-icons.woff?97825657') format('woff'),
+       url('../font/flo-admin-icons.ttf?97825657') format('truetype'),
+       url('../font/flo-admin-icons.svg?97825657#flo-admin-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'flo-admin-icons';
-    src: url('../font/flo-admin-icons.svg?77106830#flo-admin-icons') format('svg');
+    src: url('../font/flo-admin-icons.svg?97825657#flo-admin-icons') format('svg');
   }
 }
 */
@@ -55,6 +55,8 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
+.flo-admin-icon-desktop:before { content: '\e800'; } /* '' */
+.flo-admin-icon-refresh-1:before { content: '\e801'; } /* '' */
 .flo-admin-icon-move:before { content: '\e802'; } /* '' */
 .flo-admin-icon-arrow-down:before { content: '\e803'; } /* '' */
 .flo-admin-icon-arrow-up:before { content: '\e804'; } /* '' */
@@ -67,5 +69,9 @@
 .flo-admin-icon-drag:before { content: '\e80c'; } /* '' */
 .flo-admin-icon-info:before { content: '\e80d'; } /* '' */
 .flo-admin-icon-flothemes:before { content: '\e81c'; } /* '' */
+.flo-admin-icon-laptop:before { content: '\e81d'; } /* '' */
+.flo-admin-icon-tablet:before { content: '\e81e'; } /* '' */
+.flo-admin-icon-phone:before { content: '\e81f'; } /* '' */
+.flo-admin-icon-refresh:before { content: '\e820'; } /* '' */
 .flo-admin-icon-angle-left:before { content: '\f104'; } /* '' */
 .flo-admin-icon-angle-right:before { content: '\f105'; } /* '' */

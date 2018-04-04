@@ -229,11 +229,11 @@ body {
 }
 @font-face {
       font-family: 'flo-admin-icons';
-      src: url('./font/flo-admin-icons.eot?10950096');
-      src: url('./font/flo-admin-icons.eot?10950096#iefix') format('embedded-opentype'),
-           url('./font/flo-admin-icons.woff?10950096') format('woff'),
-           url('./font/flo-admin-icons.ttf?10950096') format('truetype'),
-           url('./font/flo-admin-icons.svg?10950096#flo-admin-icons') format('svg');
+      src: url('./font/flo-admin-icons.eot?12368621');
+      src: url('./font/flo-admin-icons.eot?12368621#iefix') format('embedded-opentype'),
+           url('./font/flo-admin-icons.woff?12368621') format('woff'),
+           url('./font/flo-admin-icons.ttf?12368621') format('truetype'),
+           url('./font/flo-admin-icons.svg?12368621#flo-admin-icons') format('svg');
       font-weight: normal;
       font-style: normal;
     }
@@ -275,7 +275,7 @@ body {
       /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
     }
      </style>
-    <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/flo-admin-icons-ie7.css"><![endif]-->
+    <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/" + font.fontname + "-ie7.css"><![endif]-->
     <script>
       function toggleCodes(on) {
         var obj = document.getElementById('icons');
@@ -291,36 +291,41 @@ body {
   </head>
   <body>
     <div class="container header">
-      <h1>
-        flo-admin-icons
-         <small>font demo</small>
-      </h1>
+      <h1>flo-admin-icons <small>font demo</small></h1>
       <label class="switch">
         <input type="checkbox" onclick="toggleCodes(this.checked)">show codes
       </label>
     </div>
-    <div id="icons" class="container">
+    <div class="container" id="icons">
       <div class="row">
-        <div title="Code: 0xe802" class="the-icons span3"><i class="demo-icon flo-admin-icon-move">&#xe802;</i> <span class="i-name">flo-admin-icon-move</span><span class="i-code">0xe802</span></div>
-        <div title="Code: 0xe803" class="the-icons span3"><i class="demo-icon flo-admin-icon-arrow-down">&#xe803;</i> <span class="i-name">flo-admin-icon-arrow-down</span><span class="i-code">0xe803</span></div>
-        <div title="Code: 0xe804" class="the-icons span3"><i class="demo-icon flo-admin-icon-arrow-up">&#xe804;</i> <span class="i-name">flo-admin-icon-arrow-up</span><span class="i-code">0xe804</span></div>
-        <div title="Code: 0xe805" class="the-icons span3"><i class="demo-icon flo-admin-icon-close">&#xe805;</i> <span class="i-name">flo-admin-icon-close</span><span class="i-code">0xe805</span></div>
+        <div class="the-icons span3" title="Code: 0xe800"><i class="demo-icon flo-admin-icon-desktop">&#xe800;</i> <span class="i-name">flo-admin-icon-desktop</span><span class="i-code">0xe800</span></div>
+        <div class="the-icons span3" title="Code: 0xe801"><i class="demo-icon flo-admin-icon-refresh-1">&#xe801;</i> <span class="i-name">flo-admin-icon-refresh-1</span><span class="i-code">0xe801</span></div>
+        <div class="the-icons span3" title="Code: 0xe802"><i class="demo-icon flo-admin-icon-move">&#xe802;</i> <span class="i-name">flo-admin-icon-move</span><span class="i-code">0xe802</span></div>
+        <div class="the-icons span3" title="Code: 0xe803"><i class="demo-icon flo-admin-icon-arrow-down">&#xe803;</i> <span class="i-name">flo-admin-icon-arrow-down</span><span class="i-code">0xe803</span></div>
       </div>
       <div class="row">
-        <div title="Code: 0xe806" class="the-icons span3"><i class="demo-icon flo-admin-icon-letters">&#xe806;</i> <span class="i-name">flo-admin-icon-letters</span><span class="i-code">0xe806</span></div>
-        <div title="Code: 0xe807" class="the-icons span3"><i class="demo-icon flo-admin-icon-link">&#xe807;</i> <span class="i-name">flo-admin-icon-link</span><span class="i-code">0xe807</span></div>
-        <div title="Code: 0xe808" class="the-icons span3"><i class="demo-icon flo-admin-icon-paragraph">&#xe808;</i> <span class="i-name">flo-admin-icon-paragraph</span><span class="i-code">0xe808</span></div>
-        <div title="Code: 0xe809" class="the-icons span3"><i class="demo-icon flo-admin-icon-pen">&#xe809;</i> <span class="i-name">flo-admin-icon-pen</span><span class="i-code">0xe809</span></div>
+        <div class="the-icons span3" title="Code: 0xe804"><i class="demo-icon flo-admin-icon-arrow-up">&#xe804;</i> <span class="i-name">flo-admin-icon-arrow-up</span><span class="i-code">0xe804</span></div>
+        <div class="the-icons span3" title="Code: 0xe805"><i class="demo-icon flo-admin-icon-close">&#xe805;</i> <span class="i-name">flo-admin-icon-close</span><span class="i-code">0xe805</span></div>
+        <div class="the-icons span3" title="Code: 0xe806"><i class="demo-icon flo-admin-icon-letters">&#xe806;</i> <span class="i-name">flo-admin-icon-letters</span><span class="i-code">0xe806</span></div>
+        <div class="the-icons span3" title="Code: 0xe807"><i class="demo-icon flo-admin-icon-link">&#xe807;</i> <span class="i-name">flo-admin-icon-link</span><span class="i-code">0xe807</span></div>
       </div>
       <div class="row">
-        <div title="Code: 0xe80a" class="the-icons span3"><i class="demo-icon flo-admin-icon-trash">&#xe80a;</i> <span class="i-name">flo-admin-icon-trash</span><span class="i-code">0xe80a</span></div>
-        <div title="Code: 0xe80c" class="the-icons span3"><i class="demo-icon flo-admin-icon-drag">&#xe80c;</i> <span class="i-name">flo-admin-icon-drag</span><span class="i-code">0xe80c</span></div>
-        <div title="Code: 0xe80d" class="the-icons span3"><i class="demo-icon flo-admin-icon-info">&#xe80d;</i> <span class="i-name">flo-admin-icon-info</span><span class="i-code">0xe80d</span></div>
-        <div title="Code: 0xe81c" class="the-icons span3"><i class="demo-icon flo-admin-icon-flothemes">&#xe81c;</i> <span class="i-name">flo-admin-icon-flothemes</span><span class="i-code">0xe81c</span></div>
+        <div class="the-icons span3" title="Code: 0xe808"><i class="demo-icon flo-admin-icon-paragraph">&#xe808;</i> <span class="i-name">flo-admin-icon-paragraph</span><span class="i-code">0xe808</span></div>
+        <div class="the-icons span3" title="Code: 0xe809"><i class="demo-icon flo-admin-icon-pen">&#xe809;</i> <span class="i-name">flo-admin-icon-pen</span><span class="i-code">0xe809</span></div>
+        <div class="the-icons span3" title="Code: 0xe80a"><i class="demo-icon flo-admin-icon-trash">&#xe80a;</i> <span class="i-name">flo-admin-icon-trash</span><span class="i-code">0xe80a</span></div>
+        <div class="the-icons span3" title="Code: 0xe80c"><i class="demo-icon flo-admin-icon-drag">&#xe80c;</i> <span class="i-name">flo-admin-icon-drag</span><span class="i-code">0xe80c</span></div>
       </div>
       <div class="row">
-        <div title="Code: 0xf104" class="the-icons span3"><i class="demo-icon flo-admin-icon-angle-left">&#xf104;</i> <span class="i-name">flo-admin-icon-angle-left</span><span class="i-code">0xf104</span></div>
-        <div title="Code: 0xf105" class="the-icons span3"><i class="demo-icon flo-admin-icon-angle-right">&#xf105;</i> <span class="i-name">flo-admin-icon-angle-right</span><span class="i-code">0xf105</span></div>
+        <div class="the-icons span3" title="Code: 0xe80d"><i class="demo-icon flo-admin-icon-info">&#xe80d;</i> <span class="i-name">flo-admin-icon-info</span><span class="i-code">0xe80d</span></div>
+        <div class="the-icons span3" title="Code: 0xe81c"><i class="demo-icon flo-admin-icon-flothemes">&#xe81c;</i> <span class="i-name">flo-admin-icon-flothemes</span><span class="i-code">0xe81c</span></div>
+        <div class="the-icons span3" title="Code: 0xe81d"><i class="demo-icon flo-admin-icon-laptop">&#xe81d;</i> <span class="i-name">flo-admin-icon-laptop</span><span class="i-code">0xe81d</span></div>
+        <div class="the-icons span3" title="Code: 0xe81e"><i class="demo-icon flo-admin-icon-tablet">&#xe81e;</i> <span class="i-name">flo-admin-icon-tablet</span><span class="i-code">0xe81e</span></div>
+      </div>
+      <div class="row">
+        <div class="the-icons span3" title="Code: 0xe81f"><i class="demo-icon flo-admin-icon-phone">&#xe81f;</i> <span class="i-name">flo-admin-icon-phone</span><span class="i-code">0xe81f</span></div>
+        <div class="the-icons span3" title="Code: 0xe820"><i class="demo-icon flo-admin-icon-refresh">&#xe820;</i> <span class="i-name">flo-admin-icon-refresh</span><span class="i-code">0xe820</span></div>
+        <div class="the-icons span3" title="Code: 0xf104"><i class="demo-icon flo-admin-icon-angle-left">&#xf104;</i> <span class="i-name">flo-admin-icon-angle-left</span><span class="i-code">0xf104</span></div>
+        <div class="the-icons span3" title="Code: 0xf105"><i class="demo-icon flo-admin-icon-angle-right">&#xf105;</i> <span class="i-name">flo-admin-icon-angle-right</span><span class="i-code">0xf105</span></div>
       </div>
     </div>
     <div class="container footer">Generated by <a href="http://fontello.com">fontello.com</a></div>

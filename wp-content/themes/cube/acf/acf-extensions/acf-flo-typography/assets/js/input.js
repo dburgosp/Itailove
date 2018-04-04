@@ -304,6 +304,16 @@
 
 		};
 
+		/**
+		 * Font Styles
+		 * array font - font style properties
+		 * string state - font state: default, link, link hover, link visited
+		 */
+		$scope.floSetMobileSize = function( font) {
+			return floSetMobileSize( font );
+
+		};
+
 		$scope.setContrastBg = function( font, state) {
 			if(typeof font[state] !== 'undefined' && typeof font[state]['font_color'] !== 'undefined' ){
 				luminance = floGetLuminance(font[state].font_color);
@@ -585,6 +595,14 @@ function floSetStyleTypography( font, state ){
 	return typography;
 }
 
+
+function floSetMobileSize( font ){
+	if(typeof font['font_size_mobile'] !== 'undefined'){
+		return ' font-size: ' + font['font_size_mobile'] + 'px ;';
+	}else{
+		return '';
+	}
+}
 
 // When the user clicks on <span> (x), close the modal
 function floCloseModal(){

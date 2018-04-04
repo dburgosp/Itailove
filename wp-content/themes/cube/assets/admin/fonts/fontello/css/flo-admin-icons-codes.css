@@ -1,4 +1,6 @@
 
+.flo-admin-icon-desktop:before { content: '\e800'; } /* '' */
+.flo-admin-icon-refresh-1:before { content: '\e801'; } /* '' */
 .flo-admin-icon-move:before { content: '\e802'; } /* '' */
 .flo-admin-icon-arrow-down:before { content: '\e803'; } /* '' */
 .flo-admin-icon-arrow-up:before { content: '\e804'; } /* '' */
@@ -11,5 +13,9 @@
 .flo-admin-icon-drag:before { content: '\e80c'; } /* '' */
 .flo-admin-icon-info:before { content: '\e80d'; } /* '' */
 .flo-admin-icon-flothemes:before { content: '\e81c'; } /* '' */
+.flo-admin-icon-laptop:before { content: '\e81d'; } /* '' */
+.flo-admin-icon-tablet:before { content: '\e81e'; } /* '' */
+.flo-admin-icon-phone:before { content: '\e81f'; } /* '' */
+.flo-admin-icon-refresh:before { content: '\e820'; } /* '' */
 .flo-admin-icon-angle-left:before { content: '\f104'; } /* '' */
 .flo-admin-icon-angle-right:before { content: '\f105'; } /* '' */

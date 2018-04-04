@@ -1,3 +1,8 @@
+V 1.6.1
+	Check if 'wp_enqueue_editor' function exists to avoid errors with older WP version.
+
+============================================================	
+	
 V 1.6
 	For the message field we are using now the WP editor to be able to create more coplex messages.
 	

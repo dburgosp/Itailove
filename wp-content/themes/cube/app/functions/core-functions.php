@@ -809,7 +809,9 @@ if(!function_exists('flo_delete_theme_options_transient')){
 		$theme_name = flo_theme_data_variable('Name');
 		$options_transient_name = $theme_name . '_flo_options';
 		$options_objects_transient_name = $theme_name . '_flo_options_objects';
-
+		if(function_exists('icl_object_id')) {
+			delete_multilingual_transients($options_transient_name);
+		}
 		delete_transient($options_transient_name);
 		delete_transient($options_objects_transient_name);
 	}
@@ -823,7 +825,7 @@ if(!function_exists('flo_delete_theme_options_transient')){
  */
 if(!function_exists('flo_get_flo_options')){
 	function flo_get_flo_options(){
-		
+
 		$flo_wmpl_disable_cache = get_option( 'flo_wmpl_disable_cache', $default = false );
 
 		$theme_name = flo_theme_data_variable('Name');
@@ -831,8 +833,8 @@ if(!function_exists('flo_get_flo_options')){
 
 		// if WPML is enabled, then we need to store the options for each language in a different transient
 		if(function_exists('icl_object_id')) {
-            $options_transient_name .= '__'.ICL_LANGUAGE_CODE; 
-        }
+			$options_transient_name .= '__'.ICL_LANGUAGE_CODE;
+		}
 
 		if($flo_wmpl_disable_cache || (defined('TYPO_DEV') && TYPO_DEV == 'DEV') ){ // in dev mode we work directly with the DB
 			$flo_options = get_fields('options');
@@ -844,9 +846,6 @@ if(!function_exists('flo_get_flo_options')){
 				set_transient( $options_transient_name, $flo_options, 60 * 60 * 24 ); // save the options for 24h
 			}
 		}
-
-
-
 
 		return $flo_options;
 	}
@@ -893,13 +892,24 @@ if(!function_exists('flo_maybe_get_cached_layout')){
 	function flo_maybe_get_cached_layout($option_name) {
 
 		$transient_name = $option_name.'_cached';
+		// if WPML is enabled, then we need to store the options for each language in a different transient
+		if(function_exists('icl_object_id')) {
+			$transient_name .= '__'.ICL_LANGUAGE_CODE;
+		}
+		$flo_wmpl_disable_cache = get_option( 'flo_wmpl_disable_cache', $default = false );
+		
+		if(!$flo_wmpl_disable_cache){
+			
+			$layout = get_transient($transient_name);
 
-		$layout = get_transient($transient_name);
+			if(!$layout) {
+				$layout = get_field($option_name, "options");
 
-		if(!$layout) {
+				set_transient( $transient_name, $layout, 60 * 60 * 24 * 7 ); // save the options for 1 week
+			}
+			
+		} else {
 			$layout = get_field($option_name, "options");
-
-			set_transient( $transient_name, $layout, 60 * 60 * 24 * 7 ); // save the options for 1 week
 		}
 
 		return $layout;
@@ -927,6 +937,11 @@ function flo_acf_update_layouts( $value, $post_id, $field  ) {
 
 		foreach ($cached_layout as $layout_option_name) {
 			delete_transient($layout_option_name.'_cached');
+
+			// WPML compatibility
+			if(function_exists('icl_object_id')) {
+				delete_multilingual_transients($layout_option_name.'_cached');
+			}
 		}
 
 
@@ -2258,8 +2273,8 @@ function flo_get_copyright_year($str) {
 }
 
 /* START: AQUARESIZE SHORTHAND FUNCTION */
-  function flo_aq($url = "", $width = 300, $height = 200, $crop = true) {
-    return aq_resize( $url, $width, $height, $crop, $single = true, $upscale = false );
+  function flo_aq($url = "", $width = 300, $height = 200, $crop = true, $force_sizes = false) {
+    return aq_resize( $url, $width, $height, $crop, $single = true, $upscale = false, $force_sizes );
   }
 /* END: AQUARESIZE SHORTHAND FUNCTION */
 
@@ -2271,6 +2286,69 @@ function flo_get_copyright_year($str) {
     <?php
   }
 /* END: AQUARESIZE SHORTHAND FUNCTION THAT RETURNS A IMG */
+
+
+/**
+ *
+ * generate the images variables string that is used for 'responsive' background images
+ * @param int - attachment_id
+ * @param array - $size_array - example and required format:
+ *  	array(
+ *	  	'small' => array('width' => 500, 'height' => 350),
+ *	  	'medium' => array('width' => 750, 'height' => 500),
+ *	  	'large' => array('width' => 1800, 'height' => 1200),
+ *		);
+ * @param bool $crop - tell us to crop the image or not. It is used only when $size_array is not empty
+ * @return string - example:
+ *		"--img-small:url(http://localhost/single/wp-content/uploads/2018/03/photo-37-768x512.jpg);
+ *     --img-medium:url(http://localhost/single/wp-content/uploads/2018/03/photo-37-1024x683.jpg);
+ *     --img-large:url(http://localhost/single/wp-content/uploads/2018/03/photo-37.jpg);"
+ */
+function flo_get_bg_image_vars($attachment_id, $size_array = array(), $crop = false) {
+  
+  $img_vars = '';
+
+  // if the sizes are not passed, then we will return the 3 default wordpress thumb sizes: medium_large, large and full
+  
+  
+  	$url = wp_get_attachment_image_src($attachment_id,'full');
+  	$url = $url[0];
+
+  	if(isset($size_array['small']) && isset($size_array['small']['width']) && isset($size_array['small']['height']) ) {
+  		$medium_large_img = aq_resize( $url, $size_array['small']['width'], $size_array['small']['height'], $crop, $single = true, $upscale = false, $size_force = true );
+  												
+  	}else{
+  		$medium_large_img = wp_get_attachment_image_src($attachment_id,'medium_large');
+  		$medium_large_img = $medium_large_img[0];
+  	}
+
+  	if(isset($size_array['medium']) && isset($size_array['medium']['width']) && isset($size_array['medium']['height']) ) {
+  		$large_img = aq_resize( $url, $size_array['medium']['width'], $size_array['medium']['height'], $crop, $single = true, $upscale = false, $size_force = true );
+  	}else{
+  		$large_img = wp_get_attachment_image_src($attachment_id,'large');
+  		$large_img = $large_img[0];
+  	}
+
+  	if(isset($size_array['large']) && isset($size_array['large']['width']) && isset($size_array['large']['height']) ) {
+  		$full_img = aq_resize( $url, $size_array['large']['width'], $size_array['large']['height'], $crop, $single = true, $upscale = false, $size_force = true );
+  	}else{
+  		$full_img = $url;
+  	}
+
+  	$img_vars .= ' --img-small:url('.$medium_large_img.');';
+    $img_vars .= ' --img-medium:url('.$large_img.');';
+    $img_vars .= ' --img-large:url('.$full_img.');';
+
+    // the above will create something like this:
+    // <div class="test" 
+    //   style="--img-small:url(http://localhost/single/wp-content/uploads/2018/03/photo-37-768x512.jpg);  medium_large
+    //         --img-medium:url(http://localhost/single/wp-content/uploads/2018/03/photo-37-1024x683.jpg); large
+    //         --img-large:url(http://localhost/single/wp-content/uploads/2018/03/photo-37.jpg);">         full
+    // </div>
+
+
+    return $img_vars;
+}
 
 /* START: COLOR BRIGHTNESS CHECK */
 	if(!function_exists('flo_color_bright')){
@@ -2297,6 +2375,25 @@ function flo_get_copyright_year($str) {
 	}
 /* END: COLOR BRIGHTNESS CHECK */
 
+/* START: TRANSIENT MANAGEMENT WHEN USING WPML */
+	if(!function_exists('delete_multilingual_transients')){
+		function delete_multilingual_transients($transient_name, $delete_all = true){
+			if($delete_all){
+				// for most cases we will delete transients for all language variations
+				if(function_exists('icl_get_languages')){
+					$langs = icl_get_languages();
+					foreach ($langs as $lang) {
+						$wpml_transient = $transient_name . '__' . $lang['language_code'];
+						delete_transient($wpml_transient);
+					}
+				}
+			} else {
+				// in some cases we want to delete only passed transient (set $delete_all to false when calling function)
+				delete_transient($transient_name);
+			}
+		}
+	}
+/* END: TRANSIENT MANAGEMENT WHEN USING WPML */
 
 include_once 'wpml-conf-generation.php';
 

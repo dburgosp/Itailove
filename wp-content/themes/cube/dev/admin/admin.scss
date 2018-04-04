@@ -1,6 +1,7 @@
 $color-white: white;
 $color-black: #1c1c1c;
 $color-gray: #ededed;
+$color-gray-2: #b3b3b3;
 $color-gray-light: #f8f8f8;
 $color-gray-dark: #d8d8d8;
 $color-gray-dark-2: #8d8d8d;
@@ -174,7 +175,21 @@ body:not(.post-type-acf-field-group):not(.wp-customizer) {
       // End: Inside Sidebars
 
   /* End: Radio Image Select */
-
+  
+  /* START: Checkbox Column classes */
+    .acf-field-true-false{
+      &--columns-3{
+        width: calc(100% / 3 - 3px);
+        display: inline-block;
+        text-align: center;
+      }
+      &--columns-2{
+        width: calc(100% / 2 - 3px);
+        display: inline-block;
+        text-align: center;
+      }
+    }
+  /* END: Checkbox Column classes */
 
   /* Start: Message Elements */
     .acf-field-message p {
@@ -316,6 +331,13 @@ body:not(.post-type-acf-field-group):not(.wp-customizer) {
                 border: 1px solid $color-gray;
                 box-sizing: border-box;
               }
+              .iris-picker .iris-strip.iris-alpha-slider {
+                float: right;
+                margin-left: 5px !important;
+              }
+              .wp-picker-input-wrap > label{
+                width: 100%;
+              }
         /* END: IRIS */
 
         // Start: Appear Animation
@@ -379,7 +401,7 @@ body:not(.post-type-acf-field-group):not(.wp-customizer) {
           }
         }
 
-        $picker-width: 255px;
+        $picker-width: 235px;
         $picker-padding: 20px;
         $picker-background-color: $color-white;
         $picker-shadow: 0px 14px 73px -8px #{transparentize($color-black, 0.8)};
@@ -541,3 +563,5 @@ li.flo-docs {
     padding-top: 30px;
   }
 }
+
+@import "flo-admin-site-preview/flo-admin-site-preview.scss";

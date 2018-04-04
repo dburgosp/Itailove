@@ -9,7 +9,7 @@ window.flo_block_slideshow_2 = function(el){
   $el.find(dotb + "__slides")
     .on("init", function(){
       var $slides = $(this);
-      $slides.find('.slick-list').attr('tabindex', 0).focus();
+      // $slides.find('.slick-list').attr('tabindex', 0).focus();
       $el.find("."+b+"__slide--image_and_video_embed").each(function(){
         var active_slide__$ = $(this);
         var video_embed_host = parent;

@@ -1,0 +1,33 @@
+<?php /* Template Name: 4.1. About Page */ ?>
+<?php
+$data = get_fields();
+?>
+
+
+<?php $__env->startSection('content'); ?>
+  <?php /* Start: About Block*/ ?>
+    <?php echo $__env->make("components.flo-about-block", [
+      "data" => $data
+    ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+  <?php /* End: About Block*/ ?>
+
+  <?php /* Start: Image Block */ ?>
+    <?php echo $__env->make('components.flo-about-image-block', [
+      "data" => $data
+    ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+  <?php /* End: Image Block */ ?>
+
+  <?php /* Start: Information Block */ ?>
+    <?php echo $__env->make("components.flo-text-image-block", [
+      "data" => $data
+    ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+  <?php /* End: Information Block */ ?>
+
+  <?php /* Start: Quote Block */ ?>
+    <?php echo $__env->make("components.flo-quote-block", [
+      "data" => $data
+    ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+  <?php /* End: Quote Block */ ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layout.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

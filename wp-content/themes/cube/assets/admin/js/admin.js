@@ -3610,3 +3610,34 @@ jQuery(document).ready(function($) {
   });
 
 });
+
+function disableEnter(event){
+  if(event.keyCode == 13){
+    event.preventDefault();
+  }
+}
+
+function searchBlocks(event) {
+  var input, filter, blocks_container, child_block, child_block_label, i;
+  input = jQuery(".acf-flo-flexible-content-blocks-popup__search-blocks");
+  blocks_container = jQuery(".acf-flo-flexible-content-blocks-popup__items");
+  child_block = blocks_container.find(".acf-flo-flexible-content-blocks-popup__item");
+
+  if(event.keyCode == 27){
+    jQuery(input).val('');
+    jQuery(input).text('');
+  }
+
+  filter = input[0].value.toUpperCase();
+  
+  for (i = 0; i < child_block.length; i++) {
+    child_block_label = jQuery(child_block[i]).find(".acf-flo-flexible-content-blocks-popup__item-label");
+    if (child_block_label) {
+      if (child_block_label.text().toUpperCase().indexOf(filter) > -1) {
+        child_block[i].style.display = "";
+      } else {
+        child_block[i].style.display = "none";
+      }
+    } 
+  }
+}

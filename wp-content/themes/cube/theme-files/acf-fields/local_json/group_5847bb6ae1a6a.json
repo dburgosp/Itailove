@@ -3,8 +3,6 @@
     "title": "5. Generics",
     "fields": [
         {
-            "placement": "left",
-            "endpoint": 0,
             "key": "field_5865467716ba5",
             "label": "Introduction",
             "name": "",
@@ -16,12 +14,11 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
+            },
+            "placement": "left",
+            "endpoint": 0
         },
         {
-            "message": "This area is related to the miscellaneous settings.\r\n<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/l7n1t0vOows\" frameborder=\"0\" allowfullscreen><\/iframe>",
-            "esc_html": 0,
-            "new_lines": "wpautop",
             "key": "field_5865468016ba6",
             "label": "Video Tutorial",
             "name": "",
@@ -33,11 +30,12 @@
                 "width": "",
                 "class": "acf-field--full-width",
                 "id": ""
-            }
+            },
+            "message": "This area is related to the miscellaneous settings.\r\n<iframe width=\"560\" height=\"315\" src=\"https:\/\/www.youtube.com\/embed\/l7n1t0vOows\" frameborder=\"0\" allowfullscreen><\/iframe>",
+            "esc_html": 0,
+            "new_lines": "wpautop"
         },
         {
-            "placement": "left",
-            "endpoint": 0,
             "key": "field_5847bc1e3d637",
             "label": "5.1. Social Media",
             "name": "",
@@ -49,20 +47,16 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
+            },
+            "placement": "left",
+            "endpoint": 0
         },
         {
-            "clone": [
-                "group_57fe687a9bed6"
-            ],
-            "prefix_label": 0,
-            "prefix_name": 0,
-            "display": "seamless",
-            "layout": "block",
             "key": "field_5847bc5661301",
             "label": "5.1.1. Social Links Fields",
             "name": "social_links_fields",
             "type": "clone",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -71,6 +65,13 @@
                 "class": "",
                 "id": ""
             },
+            "clone": [
+                "group_57fe687a9bed6"
+            ],
+            "prefix_label": 0,
+            "prefix_name": 0,
+            "display": "seamless",
+            "layout": "block",
             "sub_fields": [
                 {
                     "multiple": 1,
@@ -314,8 +315,6 @@
             ]
         },
         {
-            "placement": "left",
-            "endpoint": 0,
             "key": "field_5847bb98ccfb8",
             "label": "5.2. Comment Areas",
             "name": "",
@@ -327,20 +326,16 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
+            },
+            "placement": "left",
+            "endpoint": 0
         },
         {
-            "clone": [
-                "group_5847bd19c6778"
-            ],
-            "prefix_label": 0,
-            "prefix_name": 0,
-            "display": "seamless",
-            "layout": "block",
             "key": "field_5847bd3400ffe",
             "label": "5.2. Comment Areas Fields",
             "name": "comment_areas_fields",
             "type": "clone",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -349,6 +344,13 @@
                 "class": "",
                 "id": ""
             },
+            "clone": [
+                "group_5847bd19c6778"
+            ],
+            "prefix_label": 0,
+            "prefix_name": 0,
+            "display": "seamless",
+            "layout": "block",
             "sub_fields": [
                 {
                     "multiple": 1,
@@ -922,8 +924,6 @@
             ]
         },
         {
-            "placement": "top",
-            "endpoint": 0,
             "key": "field_58513deef47d9",
             "label": "5.3. Custom Code",
             "name": "",
@@ -935,20 +935,16 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
+            },
+            "placement": "top",
+            "endpoint": 0
         },
         {
-            "clone": [
-                "group_5847b804e589d"
-            ],
-            "prefix_label": 0,
-            "prefix_name": 0,
-            "display": "seamless",
-            "layout": "block",
             "key": "field_58513dfff47da",
             "label": "Custom Code Fields",
             "name": "56_custom_code_fields",
             "type": "clone",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -957,6 +953,13 @@
                 "class": "",
                 "id": ""
             },
+            "clone": [
+                "group_5847b804e589d"
+            ],
+            "prefix_label": 0,
+            "prefix_name": 0,
+            "display": "seamless",
+            "layout": "block",
             "sub_fields": [
                 {
                     "mode": "css",
@@ -1025,8 +1028,6 @@
             ]
         },
         {
-            "placement": "top",
-            "endpoint": 0,
             "key": "field_5847bbdbccfb9",
             "label": "5.5. Miscellaneous",
             "name": "",
@@ -1038,14 +1039,16 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
+            },
+            "placement": "top",
+            "endpoint": 0
         },
         {
-            "default_value": "#212121",
             "key": "field_588ef9273c3b7",
             "label": "5.5.2.1. Button Background Color",
             "name": "flo-cube-button__background-color",
             "type": "color_picker",
+            "value": null,
             "instructions": "Default: #212121",
             "required": 0,
             "conditional_logic": 0,
@@ -1053,14 +1056,15 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
+            },
+            "default_value": "#212121"
         },
         {
-            "default_value": "#FFFFFF",
             "key": "field_588ef9703c3b8",
             "label": "5.5.2.2. Button Text Color",
             "name": "flo-cube-button__text-color",
             "type": "color_picker",
+            "value": null,
             "instructions": "Default: #FFFFFF",
             "required": 0,
             "conditional_logic": 0,
@@ -1068,13 +1072,15 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
+            },
+            "default_value": "#FFFFFF"
         },
         {
             "key": "field_588ef99a3c3b9",
             "label": "5.5.2.3. Button Text Font",
             "name": "flo-cube-button__text-font",
             "type": "font_style_select",
+            "value": null,
             "instructions": "Default: Label 3",
             "required": 0,
             "conditional_logic": 0,
@@ -1090,15 +1096,11 @@
             "default_typography_style": "label_3"
         },
         {
-            "default_value": 0,
-            "message": "",
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": "",
             "key": "field_58c94e6e950ac",
-            "label": "5.5.3. Disable Fading Effect",
+            "label": "5.5.3.1. Disable Fading Effect",
             "name": "flo-cube-setions__fade-effect-disable",
             "type": "true_false",
+            "value": null,
             "instructions": "Disable the fading effect when scrolling through pages.",
             "required": 0,
             "conditional_logic": 0,
@@ -1106,11 +1108,91 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         },
         {
-            "placement": "left",
-            "endpoint": 0,
+            "key": "field_5ab20b70f4009",
+            "label": "5.5.3.2. Disable Fading Effect on tablet",
+            "name": "flo-cube-setings__tablet-fade-effect-disable",
+            "type": "true_false",
+            "value": null,
+            "instructions": "Disable the fading effect when scrolling through pages.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5ab20b6ff4008",
+            "label": "5.5.3.3. Disable Fading Effect on mobile",
+            "name": "flo-cube-setings__mobile-fade-effect-disable",
+            "type": "true_false",
+            "value": null,
+            "instructions": "Disable the fading effect when scrolling through pages.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5ac3a1a958279",
+            "label": "5.6. Disable \"Preview Your Site\" Button",
+            "name": "flo-admin-settings__disable-flo-admin-preview",
+            "type": "true_false",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5ac39f73b8566",
+            "label": "",
+            "name": "",
+            "type": "enhanced_message",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "enhanced_message": "<?php if ( function_exists('icl_object_id') ) { ?>\r\n \r\n<div class=\"flo-wpml-config-regeneration\">\r\n    <h3>Regenerate WPML configuration file:<\/h3>\r\n    <input type=\"button\" class=\"wpml-conf-generator flo-admin-button\" style=\"margin-bottom: 25px;\" onclick=\"wpml_conf_generation();\"  value=\"Generate Now\">\r\n    <div class=\"spinner-container\"><span class=\"spinner wpml-conf-spinner\"><\/span><\/div>\r\n\r\n    <div class=\"flo-wmpl-disable-cache acf-true-false\">\r\n\t<?php \r\n\t\t$flo_wmpl_disable_cache = get_option( 'flo_wmpl_disable_cache', $default = false );\r\n\t\t$checked_f = $flo_wmpl_disable_cache;\r\n                \/\/ The value to compare with (the value of the checkbox below).\r\n                $current = 1; \r\n\t?>\r\n        <label>\r\n\t<input id=\"flo_wmpl_disable_cache\" type=\"checkbox\" value=\"1\" <?php checked( $checked_f, $current, $echo = true ); ?> > <p>Disable Options Cache. This is recommended only when translating the options using WPML String Translations. After you are done translating, we strongly recommed to uncheck this option to benefit from cache performance. <\/p>\r\n                 <\/label>\r\n        <\/div>\r\n\r\n    <div class=\"import-response\"><\/div>\r\n<\/div>\r\n\r\n<?php } ?>",
+            "hide_label": "no"
+        },
+        {
             "key": "field_5899cbce6a9c9",
             "label": "- 1. Pagination",
             "name": "",
@@ -1122,20 +1204,16 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            }
+            },
+            "placement": "left",
+            "endpoint": 0
         },
         {
-            "clone": [
-                "group_5899c68a8251a"
-            ],
-            "prefix_label": 0,
-            "prefix_name": 0,
-            "display": "seamless",
-            "layout": "block",
             "key": "field_5899cbe66a9ca",
             "label": "Pagination Fields",
             "name": "pagination_fields",
             "type": "clone",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -1144,6 +1222,13 @@
                 "class": "",
                 "id": ""
             },
+            "clone": [
+                "group_5899c68a8251a"
+            ],
+            "prefix_label": 0,
+            "prefix_name": 0,
+            "display": "seamless",
+            "layout": "block",
             "sub_fields": [
                 {
                     "default_value": 1,
@@ -1776,6 +1861,7 @@
             "label": "Listing Pagination Font",
             "name": "flo-cube-listing__pagination_font",
             "type": "font_style_select",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -1808,5 +1894,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1490194296
+    "modified": 1522770398
 }

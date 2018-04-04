@@ -351,6 +351,7 @@ class acf_field_flo_flexible_content extends acf_field {
     <div class="acf-fc-popup acf-flo-flexible-content-blocks-popup">
       <div class="acf-flo-flexible-content-blocks-popup__close dashicons dashicons-no-alt"></div>
       <div class="acf-flo-flexible-content-blocks-popup__items-wrap">
+				<input type="text" class="acf-flo-flexible-content-blocks-popup__search-blocks" placeholder="Search Block..." onkeypress="disableEnter(event)" onkeyup="searchBlocks(event)">
   			<div class="acf-flo-flexible-content-blocks-popup__items">
   				<?php foreach( $layouts as $layout ):
 

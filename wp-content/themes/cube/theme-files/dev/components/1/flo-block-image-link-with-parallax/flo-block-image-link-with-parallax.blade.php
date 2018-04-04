@@ -29,70 +29,76 @@ $button_font = flo_data($data, "button_font");
 $button_background_color = flo_data($data, "button_background_color");
 $button_text_color = flo_data($data, "button_text_color");
 ?>
-@include('core.style', [
-  "breakpoint__general" => "
-
-    ".
-    flo_render_typography_styles(
-    $b__uniq_for_css." ".$b__for_css."__title",
-    $title_font
-    )
-    ."
-
-    ".
-    flo_render_typography_styles(
-    $b__uniq_for_css." ".$b__for_css."__subtitle",
-    $subtitle_font
-    )
-    ."
-
-    ".
-    flo_render_typography_styles(
-    $b__uniq_for_css." ".$b__for_css."__button",
-    $button_font
-    )
-    ."
-
-    ".$b__uniq_for_css." ".$b__for_css."__overlay {
-      background-color: ".$overlay_background_color.";
-    }
-
-    ".$b__uniq_for_css." ".$b__for_css."__title,
-    ".$b__uniq_for_css." ".$b__for_css."__subtitle
-    {
-      color: ".$overlay_elements_color.";
-    }
-
-    ".$b__uniq_for_css." ".$b__for_css."__button {
-      color: ".$button_text_color.";
-      background-color: ".$button_background_color.";
-    }
-
-  ",
-  "breakpoint__medium_up" => "
-    ".$b__uniq_for_css." {
-      height: ".$image_height.";
-    }
-  "
+@extends('layout.block-individual', [
+  "block_classes" => "flo_no_transform", // Will be added to main block div. e.g. flo-block--full-width
+  // "data_onready" => "block_name" // Specify a function (see _blank.js on how to define) that will be executed on document ready.
 ])
-<a href="{{$image_link}}" class="{{$b}} {{$b__uniq}} {{$enable_parallax_effect_class}}" style='background-image: url({{$image_url}})'>
-  <span class="{{$b}}__overlay">
-    @if ($title)
-      <h3 class="{{$b}}__title">
-        {{$title}}
-      </h3>
-    @endif
+@section('block_content')
+  @include('core.style', [
+    "breakpoint__general" => "
 
-    @if ($subtitle)
-      <h5 class="{{$b}}__subtitle">
-        {{$subtitle}}
-      </h5>
-    @endif
+      ".
+      flo_render_typography_styles(
+      $b__uniq_for_css." ".$b__for_css."__title",
+      $title_font
+      )
+      ."
 
-    @if ($button_label)
-      <span class="{{$b}}__button">
-        {{$button_label}}
-      </span>
-    @endif
-  </span>
-</a>
+      ".
+      flo_render_typography_styles(
+      $b__uniq_for_css." ".$b__for_css."__subtitle",
+      $subtitle_font
+      )
+      ."
+
+      ".
+      flo_render_typography_styles(
+      $b__uniq_for_css." ".$b__for_css."__button",
+      $button_font
+      )
+      ."
+
+      ".$b__uniq_for_css." ".$b__for_css."__overlay {
+        background-color: ".$overlay_background_color.";
+      }
+
+      ".$b__uniq_for_css." ".$b__for_css."__title,
+      ".$b__uniq_for_css." ".$b__for_css."__subtitle
+      {
+        color: ".$overlay_elements_color.";
+      }
+
+      ".$b__uniq_for_css." ".$b__for_css."__button {
+        color: ".$button_text_color.";
+        background-color: ".$button_background_color.";
+      }
+
+    ",
+    "breakpoint__medium_up" => "
+      ".$b__uniq_for_css." {
+        height: ".$image_height.";
+      }
+    "
+  ])
+  <a href="{{$image_link}}" class="{{$b}} {{$b__uniq}} {{$enable_parallax_effect_class}}" style='background-image: url({{$image_url}})'>
+    <span class="{{$b}}__overlay">
+      @if ($title)
+        <h3 class="{{$b}}__title">
+          {{$title}}
+        </h3>
+      @endif
+
+      @if ($subtitle)
+        <h5 class="{{$b}}__subtitle">
+          {{$subtitle}}
+        </h5>
+      @endif
+
+      @if ($button_label)
+        <span class="{{$b}}__button">
+          {{$button_label}}
+        </span>
+      @endif
+    </span>
+  </a>
+@overwrite

@@ -1,3 +1,16 @@
+V 0.7.1
+
+- Added WPML Config area;
+- Image Link with Parallax -> Fixed minor Firefox bug;
+- Slideshow 2 -> Disabled auto-scroll in view;
+- Added "Flo Admin Preview" option;
+- Added options to disable fading effect per device (mobile, tablet, desktop);
+- 4.1.2 Image Blocks -> Fixed image visibility on mobile devices;
+- Fixed tablet zoom factor;
+- Typography - added preview for the mobile font size;
+
+============================================================
+
 V 0.7
 
 - Block header -> fixed video button overlapping over submenu items;

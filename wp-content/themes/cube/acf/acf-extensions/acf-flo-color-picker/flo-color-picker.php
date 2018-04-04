@@ -37,6 +37,7 @@ class acf_field_flo_color_picker extends acf_field {
 		$this->category = 'jquery';
 		$this->defaults = array(
 			'default_value'	=> '',
+			'use_alpha' => false,
       'color_options_prefix' => 'flo-color-'
 		);
 
@@ -96,8 +97,9 @@ class acf_field_flo_color_picker extends acf_field {
 
     $dir = get_template_directory_uri().'/acf/acf-extensions/acf-flo-color-picker/';
 
-    wp_register_script( 'acf-flo-color-picker', "{$dir}flo-color-picker.js" );
-    wp_enqueue_script( 'acf-flo-color-picker' );
+		wp_register_script( 'acf-flo-color-picker', "{$dir}flo-color-picker.js" );
+		wp_enqueue_script( 'wp-color-picker-alpha', "{$dir}wp-color-picker-alpha.js", array( 'wp-color-picker' ), '2.0.0', true );
+		wp_enqueue_script( 'acf-flo-color-picker' );
 	}
 
 
@@ -142,7 +144,7 @@ class acf_field_flo_color_picker extends acf_field {
 		}else{
 			$custom_color = '';
 		}
-
+		$use_alpha = $field['use_alpha'];
 		$e = '';
 
     /* START: GET STYLEKIT COLORS FOR COLOR PICKER PALETTE */
@@ -174,7 +176,7 @@ class acf_field_flo_color_picker extends acf_field {
         <div class="acf-flo-color-picker__current-color <?php echo $current_color_class; ?>" style="background-color: <?php echo $stylekit_color ?>" data-color="<?php echo $stylekit_color; ?>"></div>
         <div class="acf-flo-color-picker__custom-color-picker <?php echo $custom_color_class; ?> " data-palette="<?php echo $palette ?>">
     			<?php acf_hidden_input($hidden); ?>
-    			<input type="text" name="<?php echo esc_attr($field['name']) ?>[color]" value="<?php echo $custom_color; ?>" <?php echo acf_esc_attr($text); ?> />
+    			<input type="text" name="<?php echo esc_attr($field['name']) ?>[color]" value="<?php echo $custom_color; ?>" <?php echo acf_esc_attr($text); ?> data-alpha ="<?php echo $use_alpha; ?>" />
         </div>
       </div>
 
@@ -232,6 +234,14 @@ class acf_field_flo_color_picker extends acf_field {
       'name'			=> 'default_value',
       'placeholder'	=> '#FFFFFF'
     ));
+
+		// for rgba
+		acf_render_field_setting( $field, array(
+			'name'			=> 'use_alpha',
+			'label'			=> __('Use Alpha?','acf'),
+			'instructions'	=> '',
+			'type'			=> 'true_false'
+		));
 
   }
 

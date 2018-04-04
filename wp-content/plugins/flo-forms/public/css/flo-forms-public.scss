@@ -39,7 +39,8 @@
 			min-height: 90px;
 		}
 
-		input[type="checkbox"] {
+		input[type="checkbox"],
+		input[type="radio"] {
 			height: auto;
 		}
 	}

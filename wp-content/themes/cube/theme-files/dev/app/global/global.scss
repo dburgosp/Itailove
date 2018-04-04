@@ -77,6 +77,34 @@
     user-select: none;
   }
 
+  @mixin flo-disable-fading-effect($class) {
+    body:not(#{$class}) {
+      .flo-block:not(:first-child),
+      .flo_page > .flo-section:not(:first-of-type):not(.disable-appear),
+      .flo-post > .flo-to-be-visible,
+      .flo-footer,
+      .to-appear,
+      .widget:not(:first-child) {
+        opacity: 0;
+        transform: translateY(rem-calc(80));
+        // @include global_transition(opacity, transform);
+        transition-timing-function: $global-easing;
+        &:nth-child(1n),
+        &.to-appear--uniform
+        {
+          transition: opacity $global-transition-speed, transform $global-transition-speed, color $global-transition-speed;
+        }
+        &:not(.to-appear--uniform):nth-child(2n) {
+          transition: opacity $global-transition-speed 0.1s, transform $global-transition-speed 0.1s, color $global-transition-speed;
+        }
+        &.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
 /* END: MIXINS */
 
 /* START: COLORS */
@@ -394,30 +422,16 @@ body{
 }
 
 /* START: APPEAR ANIMATION */
-  body:not(.flo-appear-disabled) {
-    .flo-block:not(:first-child),
-    .flo_page > .flo-section:not(:first-of-type):not(.disable-appear),
-    .flo-post > .flo-to-be-visible,
-    .flo-footer,
-    .to-appear,
-    .widget:not(:first-child) {
-      opacity: 0;
-      transform: translateY(rem-calc(80));
-      // @include global_transition(opacity, transform);
-      transition-timing-function: $global-easing;
-      &:nth-child(1n),
-      &.to-appear--uniform
-      {
-        transition: opacity $global-transition-speed, transform $global-transition-speed, color $global-transition-speed;
-      }
-      &:not(.to-appear--uniform):nth-child(2n) {
-        transition: opacity $global-transition-speed 0.1s, transform $global-transition-speed 0.1s, color $global-transition-speed;
-      }
-      &.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+  @include breakpoint(large up) {
+    @include flo-disable-fading-effect('.flo-appear-disabled');
+  }
+
+  @include breakpoint(medium only) {
+    @include flo-disable-fading-effect('.flo-tablet-appear-disabled');
+  }
+
+  @include breakpoint(small only) {
+    @include flo-disable-fading-effect('.flo-mobile-appear-disabled');
   }
 /* END: APPEAR ANIMATION */
 
@@ -432,7 +446,9 @@ body{
     height: auto;
   }
 /* END: HTML OVERFLOW FOR SAFARI FIX */
-
+.flo_no_transform{
+  transform: none !important;
+}
 /* START: Z-INDEX MAP */
   @import "z-index-map.scss";
 /* END: Z-INDEX MAP */

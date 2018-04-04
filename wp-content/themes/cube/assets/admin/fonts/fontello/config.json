@@ -185,6 +185,82 @@
       "css": "angle-right",
       "code": 61701,
       "src": "fontawesome"
+    },
+    {
+      "uid": "3bd18d47a12b8709e9f4fe9ead4f7518",
+      "css": "refresh-1",
+      "code": 59393,
+      "src": "entypo"
+    },
+    {
+      "uid": "14cfb6dce5b380184b34070c37d9dd72",
+      "css": "desktop",
+      "code": 59392,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M1347.4 873.2V0H0V873.2H652.6V953.1H408.5V1000H943.7V953.1H699.5V873.2H1347.4ZM46.9 46.9H1300.5V826.3H46.9V46.9Z",
+        "width": 1347
+      },
+      "search": [
+        "desktop"
+      ]
+    },
+    {
+      "uid": "2e13a1ecc64d9799e0722f52707fa729",
+      "css": "laptop",
+      "code": 59421,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M1461.5 0H81.7V894.2H1461.5V0ZM1413.5 846.2H129.8V48.1H1413.5V846.2ZM1543.3 951.9V1000H0V951.9H1543.3Z",
+        "width": 1543
+      },
+      "search": [
+        "laptop"
+      ]
+    },
+    {
+      "uid": "0cdaedfe8cf2e39889a2f0304284eefb",
+      "css": "tablet",
+      "code": 59422,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M748.7 1000H0V0H748.7V1000ZM50.3 949.7H698.5V50.3H50.3V949.7Z",
+        "width": 749
+      },
+      "search": [
+        "tablet"
+      ]
+    },
+    {
+      "uid": "5f32e1ebf63f21eef2a9acfbd788ceb0",
+      "css": "phone",
+      "code": 59423,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M525.1 938.5H33.5V61.5H525.1V938.5ZM83.8 888.3H474.9V111.7H83.8V888.3Z",
+        "width": 559
+      },
+      "search": [
+        "phone"
+      ]
+    },
+    {
+      "uid": "0359c53adc7050e279c35b15d98fbc9b",
+      "css": "refresh",
+      "code": 59424,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M748.1 311.1L829.6 237C829.6 237 829.6 229.6 822.2 229.6 748.1 133.3 629.6 74.1 496.3 74.1 266.7 74.1 74.1 259.3 66.7 496.3 66.7 733.3 251.9 925.9 488.9 925.9 600 925.9 711.1 881.5 792.6 800 800 792.6 800 792.6 807.4 785.2 822.2 807.4 844.4 822.2 866.7 837 859.3 844.4 859.3 851.9 851.9 851.9 659.3 1044.4 340.7 1044.4 148.1 851.9S-44.4 340.7 148.1 148.1C244.4 51.9 370.4 0 503.7 0 651.9 0 800 66.7 896.3 185.2L896.3 185.2 985.2 103.7V311.1H748.1Z",
+        "width": 978
+      },
+      "search": [
+        "asset-6"
+      ]
     }
   ]
 }

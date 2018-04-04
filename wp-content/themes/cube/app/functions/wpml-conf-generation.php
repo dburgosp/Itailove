@@ -217,9 +217,9 @@
 	    if($repeater_field['value'] != null) {
 	      for($i = 0; $i < sizeof($repeater_field['value']); $i++) {
 	        foreach ($repeater_field['sub_fields'] as $key => $field_data) {
-	    
-	    
-	          if( ($field_data['type'] == 'text' || $field_data['type'] == 'textarea' || 'wysiwyg' == $field_data['type']) && 'flo-block__id' != $field_data['name'] && 'flo-block__classes' != $field_data['name'] ) {
+
+
+	          if( ($field_data['type'] == 'link' || $field_data['type'] == 'text' || $field_data['type'] == 'textarea' || 'wysiwyg' == $field_data['type']) && 'flo-block__id' != $field_data['name'] && 'flo-block__classes' != $field_data['name'] ) {
 	            $option_names[] = $op_start.'options_'.$repeater_field['name'].'_'.$i.'_' .$field_data['name'].$op_end;
 
 	          }
@@ -256,8 +256,8 @@
 	        
 	        for($t = 0; $t < $loop_size; $t++) {
 	          foreach ($repeater_field['sub_fields'] as $key => $field_data) {
-	  
-	            if( ($field_data['type'] == 'text' || $field_data['type'] == 'textarea' || 'wysiwyg' == $field_data['type']) && 'flo-block__id' != $field_data['name'] && 'flo-block__classes' != $field_data['name'] ) {
+
+	            if( ($field_data['type'] == 'link' || $field_data['type'] == 'text' || $field_data['type'] == 'textarea' || 'wysiwyg' == $field_data['type']) && 'flo-block__id' != $field_data['name'] && 'flo-block__classes' != $field_data['name'] ) {
 
 	              $option_names[] = $op_start.'options_'.$block_prefix.'_'.$repeater_field['name'].'_'.$t.'_' .$field_data['name'].$op_end;
 
@@ -289,25 +289,27 @@
 	function flo_wmpl_alter_cache_option() {
 
 		if($_POST['cache_action'] == 'disable_cache') {
-			update_option( 'flo_wmpl_disable_cache', 1, $autoload = false );	
-
-			// intit the Options transient name -  the same name as in 'flo_get_flo_options()' function
-			$theme_name = flo_theme_data_variable('Name');
-			$options_transient_name = $theme_name . '_flo_options';
-			// if WPML is enabled, then we need to store the options for each language in a different transient
-			if(function_exists('icl_object_id')) {
-	            $options_transient_name .= '__'.ICL_LANGUAGE_CODE; 
-	        }
-
-	        delete_transient($options_transient_name);
-
-	        echo '<div class="error warning">The cache was succesfully disabled</div>';
+			update_option( 'flo_wmpl_disable_cache', 1, $autoload = false );
+      echo '<div class="error warning">The cache was succesfully disabled</div>';
 		}else{
 			delete_option( 'flo_wmpl_disable_cache' );
-
 			echo '<span class="success">The cache was succesfully enabled</span>';
 		}
 		
+		// delete flo_options transient
+		$theme_name = flo_theme_data_variable('Name');
+		$options_transient_name = $theme_name . '_flo_options';
+		delete_multilingual_transients($options_transient_name);
+
+		// delete the global layout transients
+		$cached_layout = array('flo-p2-p_layout','flo-p2-g_layout');
+		$cached_layout = apply_filters( 'flo_cached_layout_options',$cached_layout);
+		foreach ($cached_layout as $layout_option_name) {
+			if(function_exists('icl_object_id')) {
+				delete_multilingual_transients($layout_option_name.'_cached');
+			}
+		}
+
 
 		exit();
 	}

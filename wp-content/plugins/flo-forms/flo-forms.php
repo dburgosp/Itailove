@@ -11,7 +11,7 @@
  * Plugin Name:       Flo Forms
  * Plugin URI:        http://flothemes.com
  * Description:       A easy to use contact form builder plugin
- * Version:           1.6
+ * Version:           1.6.1
  * Author:            Alex G.
  * Author URI:        http://flothemes.com
  * License:           GPL-2.0+

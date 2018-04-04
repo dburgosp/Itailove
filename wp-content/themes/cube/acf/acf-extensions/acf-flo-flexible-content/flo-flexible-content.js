@@ -778,8 +778,8 @@
 
 
 			// focus
-			$popup.children('.focus').trigger('focus');
-
+			$popup.children('.focus').trigger('focus'); 
+			$('.acf-flo-flexible-content-blocks-popup__search-blocks').focus();
 		},
 
 		_close: function( e ){ //console.log('_close');
@@ -844,6 +844,7 @@
 
 			// add row
 			this.add( layout, $before );
+			$('.acf-flo-flexible-content-blocks-popup__close').trigger('click');
 
 		},
 
@@ -943,6 +944,5 @@
 		}
 
 	});
-
 
 })(jQuery);

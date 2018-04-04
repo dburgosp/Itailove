@@ -110,7 +110,9 @@ class Flo_Forms_Admin {
 		 * class.
 		 */
 
-		wp_enqueue_editor();
+		if(function_exists('wp_enqueue_editor')) {
+			wp_enqueue_editor();	
+		}
 		
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/flo-forms-admin.js', array( 'jquery' ), $this->version, false );
 
