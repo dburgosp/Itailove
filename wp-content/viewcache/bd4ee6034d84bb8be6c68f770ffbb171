@@ -1,0 +1,10 @@
+<?php /* Template Name: 4.2. Contact Page */ ?>
+
+
+<?php $__env->startSection("content"); ?>
+  <?php echo $__env->make('components.flo-contact-block', [
+    "data" => get_fields()
+  ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make("layout.default", array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
